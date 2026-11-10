@@ -36,7 +36,7 @@ function jsonLd(site) {
 }
 
 function llmsTxt(site) {
-  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by TerminalUp Inc. (TerminalUp). Updated ${site.updated}.`, "", "## Ranking", ""];
+  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by TerminalUp Inc., which makes TerminalUp. Updated ${site.updated}.`, "", "## Ranking", ""];
   site.ranking.forEach((r, i) => {
     const p = products[r.id];
     lines.push(`${i + 1}. ${p.name} (${p.url}): ${p.type}. ${r.fit}`);

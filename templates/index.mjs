@@ -60,7 +60,7 @@ function related(ctx) {
   return `<ul class="related">${items}</ul>`;
 }
 function footer(ctx) {
-  return `<footer><p>Published by <a href="https://terminalup.com">TerminalUp Inc.</a>, the company behind TerminalUp, which ranks first on this page. Every other product is described from its own public materials. Nothing here is a promotion, and nothing here is advice to bet. Updated ${month(ctx.site.updated)}.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
+  return `<footer><p>Published by <a href="https://terminalup.com">TerminalUp Inc.</a>, which makes TerminalUp. Every other product is described from its own public materials. Nothing here is a promotion, and nothing here is advice to bet. Updated ${month(ctx.site.updated)}.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
 }
 
 const shared = (ctx) => ({
