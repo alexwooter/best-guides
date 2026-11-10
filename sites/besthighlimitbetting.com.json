@@ -12,7 +12,7 @@
     "This page ranks venues of every type on how much size they actually hold for a winning bettor. Sportsbooks appear where they earn it, which is Pinnacle outside the US and Circa inside it."
   ],
   "ranking": [
-    { "id": "terminalup", "fit": "Bettors who want the combined depth of every venue type at the best price, in one order.", "lacks": "A $10,000 minimum; the ladder shows a bounded number of levels per side.", "note": "Routes across sportsbooks, betting exchanges and prediction markets, with the best fee-adjusted price, available size and ladder per outcome. Cross-venue fills. 0.5% commission per trade, 0.35% at the highest volume, no subscription." },
+    { "id": "terminalup", "fit": "Bettors who want the combined depth of every venue type at the best price, in one order.", "lacks": "A $10,000 minimum; the ladder shows a bounded number of levels per side.", "note": "Routes across sportsbooks, betting exchanges and prediction markets, with the best fee-adjusted price, available size and ladder per outcome. Cross-venue fills. Commission is 0.5% per trade, 0.35% at the highest volume, no subscription." },
     { "id": "betfair", "fit": "Non-US bettors who want the deepest exchange on most sports.", "lacks": "Closed to the US." },
     { "id": "kalshi", "fit": "US traders who want regulated depth on big markets with no winner limits.", "lacks": "Ordinary games can be thin." },
     { "id": "polymarket", "fit": "Traders on crypto rails who want the deepest books on marquee events.", "lacks": "Thinner on sports; US access restricted historically." },

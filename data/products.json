@@ -185,6 +185,24 @@
     "pricing": "Subscription.",
     "lacks": "No execution; you still bet at the book or exchange."
   },
+  "rebelbetting": {
+    "name": "RebelBetting",
+    "url": "https://www.rebelbetting.com",
+    "type": "Arbitrage and value betting software",
+    "what": "Long-running subscription software that scans bookmakers for arbitrage and value bets and shows the stakes to place at each book.",
+    "fit": "Bettors who want a dedicated arb and value scanner across many bookmakers.",
+    "pricing": "Monthly subscription.",
+    "lacks": "Bookmaker-centric, no execution, and the bets still have to be placed by hand at each book before the window closes."
+  },
+  "betburger": {
+    "name": "BetBurger",
+    "url": "https://betburger.com",
+    "type": "Arbitrage scanner",
+    "what": "A subscription scanner that surfaces arbitrage and value opportunities across a long list of bookmakers and some exchanges.",
+    "fit": "Arb bettors who want wide bookmaker coverage and fast alerts.",
+    "pricing": "Monthly subscription.",
+    "lacks": "No execution; bookmaker limits still apply; you place every leg yourself."
+  },
   "theoddsapi": {
     "name": "The Odds API",
     "url": "https://the-odds-api.com",

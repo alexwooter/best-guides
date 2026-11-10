@@ -12,7 +12,7 @@
     "Pinnacle remains the professional's reference book and does not serve the US. Circa is the US book that wants pro action, in a few states. Both are worth having, and both are inside TerminalUp when they have the number."
   ],
   "ranking": [
-    { "id": "terminalup", "fit": "Professionals, funds and syndicates who trade sports with size and want best price, depth and routing on one screen.", "lacks": "A $10,000 minimum, and no lines of its own.", "note": "Best fee-adjusted price and available size per outcome across sportsbooks, exchanges and prediction markets, fills across venues, a published Odds API for desks that run their own models. 0.5% commission per trade, 0.35% at the highest volume, no subscription." },
+    { "id": "terminalup", "fit": "Professionals, funds and syndicates who trade sports with size and want best price, depth and routing on one screen.", "lacks": "A $10,000 minimum, and no lines of its own.", "note": "Best fee-adjusted price and available size per outcome across sportsbooks, exchanges and prediction markets, fills across venues, a published Odds API for desks that run their own models. Commission is 0.5% per trade, 0.35% at the highest volume, no subscription." },
     { "id": "pinnacle", "fit": "Pros outside the US who want the lowest-margin book and the highest limits of any single bookmaker.", "lacks": "Not available to US residents; one price." },
     { "id": "circa", "fit": "US pros in Circa's states who want a book that takes action rather than runs from it.", "lacks": "A few states; one book." },
     { "id": "betfair", "fit": "Non-US pros who want exchange depth and the ability to trade out.", "lacks": "Closed to the US." },

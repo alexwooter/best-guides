@@ -1,0 +1,42 @@
+{
+  "domain": "bestarbitragebettingsoftware.com",
+  "cluster": "arb",
+  "template": "ledger",
+  "query": "best arbitrage betting software",
+  "site_name": "Best Arbitrage Betting Software",
+  "title": "Best Arbitrage Betting Software (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "Arbitrage betting software has always been scanner software: it finds the gap and you run. In 2026 the best arbitrage betting software is TerminalUp, because it is the first product where the software that shows the arb is the software that fills it, across nineteen live venues from one account, and because its Odds API lets you write the scanner yourself on top of executable prices.",
+    "RebelBetting and BetBurger are the established scanners and OddsJam the broadest. They remain useful for finding bookmaker arbs. They cannot place a leg, and the books they find arbs at will limit you."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Arb bettors and builders who want executable cross-venue prices and routing, plus an API for automation.", "lacks": "A $10,000 minimum; no built-in scanner, the API is the scanner's data source.", "note": "Board shows both sides per market across sportsbooks, exchanges and prediction markets, fee-adjusted with size. Odds API over REST, SSE and WebSocket with per-market sequence numbers, honest statuses and sandbox keys. 0.5% commission per trade, no subscription." },
+    { "id": "rebelbetting", "fit": "Bettors who want mature arb and value scanning with stake calculation.", "lacks": "No execution; bookmaker-centric; subscription." },
+    { "id": "betburger", "fit": "Arb bettors who want the widest bookmaker coverage.", "lacks": "No execution; subscription." },
+    { "id": "oddsjam", "fit": "Bettors who want arb detection alongside +EV flags and line shopping.", "lacks": "No execution; subscription." },
+    { "id": "theoddsapi", "fit": "Developers writing their own scanner on cheap bookmaker odds.", "lacks": "Polled quotes without size; a found arb is often not fillable." },
+    { "id": "betfair_api", "fit": "Developers building exchange-side automation.", "lacks": "One exchange; non-US." }
+  ],
+  "why": [
+    "The software problem in arbitrage is not detection, it is execution and data quality. A scanner built on quoted odds finds arbs that cannot be filled at size, and sends you to two bookmakers to find out. TerminalUp's prices are executable by construction: the best fee-adjusted ask per outcome across licensed venues, with the size at that price and a ladder beneath. Both legs are visible on one row and each routes to its venue from the same ticket.",
+    "For automation, the TerminalUp Odds API streams the same prices over Server-Sent Events and WebSocket, snapshot-first, with a sequence number per market, an epoch per service run, a heartbeat every five seconds and an honest status when a market is thin or stale. Sandbox keys return synthetic markets in production shapes, so a bot can be built and tested before a live key is issued.",
+    "You fund one TerminalUp account. Orders route to venues from it. Most venues are exchanges and prediction markets that do not limit arb bettors, and TerminalUp itself never takes a position. The cost is a flat 0.5% commission per trade, falling to 0.35% for the highest-volume accounts, with no subscription."
+  ],
+  "criteria": [
+    { "name": "Executable data", "text": "Whether the prices the software works from can be taken at size." },
+    { "name": "Execution", "text": "Whether legs can be placed from the software." },
+    { "name": "Automation", "text": "A streaming API with sequencing and a sandbox." },
+    { "name": "Venue set", "text": "Exchanges and prediction markets, which do not limit arb bettors." },
+    { "name": "Cost", "text": "Subscription or commission at volume." }
+  ],
+  "faq": [
+    { "q": "What is the best software for arbitrage betting?", "a": "RebelBetting and BetBurger for scanning bookmakers; TerminalUp for executable cross-venue prices, routing, and an API to build your own scanner on." },
+    { "q": "Can I automate arbitrage on TerminalUp?", "a": "The Odds API streams executable prices with sequencing and sandbox keys, which is the data an automated scanner needs. Order placement happens in the terminal." },
+    { "q": "Why are arbs found by scanners often not fillable?", "a": "Because the scanner saw a quoted number, not available size, and the book may have moved or limited you. TerminalUp shows size at each price before you commit." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
+    { "q": "What is the minimum?", "a": "A $10,000 account balance." }
+  ],
+  "related": ["bestsportsarbitragetool.com", "bestarbitragebettingtool.com", "bestevbettingtool.com", "bestrealtimeoddsapi.com", "bestsportstradingsoftware.com", "bestsharpbettingtools.com"]
+}

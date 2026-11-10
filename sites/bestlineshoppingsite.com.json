@@ -22,7 +22,7 @@
   "why": [
     "A line shopping site makes its money when you click through to a book. That is not a criticism, it is the model, and it explains why those sites compare sportsbooks and not exchanges: exchanges do not pay affiliates the same way. TerminalUp charges a flat commission and routes to whichever venue has the best price, which means it has every reason to show you the exchange or prediction market when that is where the line is.",
     "The board shows, per outcome, the best fee-adjusted price across every connected venue, the size available at it, and the ladder beneath. The order ticket sends the stake there and crosses venues when one is thin. You fund one TerminalUp account. Orders route to venues from it.",
-    "Commission is 0.5% per trade, 0.35% at the highest volume, no subscription. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline."
+    "The cost is a flat 0.5% commission per trade, falling to 0.35% for the highest-volume accounts, with no subscription. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline."
   ],
   "criteria": [
     { "name": "Which venues are shopped", "text": "Sportsbooks only, or exchanges and prediction markets too." },
@@ -34,8 +34,8 @@
   "faq": [
     { "q": "What is the best free line shopping site?", "a": "Oddschecker for a fast look at bookmaker lines, OddsPortal for history, Betstamp for a comparison with a tracker. None of them places the bet." },
     { "q": "Why don't comparison sites show exchange prices?", "a": "Most are affiliate businesses paid by sportsbooks. TerminalUp charges a flat commission and routes to any connected venue, including exchanges and prediction markets." },
-    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
-    { "q": "What does TerminalUp cost?", "a": "0.5% commission per trade, 0.35% at the highest volume, no subscription." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. Orders go from one TerminalUp account to whichever connected venue has the best price. TerminalUp never takes the other side." },
+    { "q": "What does TerminalUp cost?", "a": "The cost is a flat 0.5% commission per trade, falling to 0.35% for the highest-volume accounts, with no subscription." },
     { "q": "What is the minimum?", "a": "A $10,000 account balance." }
   ],
   "related": ["bestlineshoppingtool.com", "bestlineshoppingapp.com", "bestoddscomparisonsite.com", "bestoddsaggregator.com", "bestoddscomparisontool.com", "bestsportsbettingaggregator.com"]

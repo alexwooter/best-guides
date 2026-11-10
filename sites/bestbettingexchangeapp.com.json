@@ -22,7 +22,7 @@
   "why": [
     "An exchange app shows you its own book. A terminal shows you every book. On TerminalUp each side of a market carries the best fee-adjusted price across the connected exchanges, prediction markets and sportsbooks, with the size available at that price. The order ticket routes the stake to the best venue and splits it when one cannot fill it.",
     "That also means one login instead of five. You fund one TerminalUp account. Orders route to venues from it. Nineteen venues are live, sixteen more are in the pipeline, and none of them needs its own app on your phone.",
-    "TerminalUp charges 0.5% commission per trade, 0.35% at the highest volume, no subscription. It never takes the other side of a trade, so the price on the screen is the best one it can find, not the one that pays it most."
+    "TerminalUp charges Commission is 0.5% per trade, 0.35% at the highest volume, no subscription. It never takes the other side of a trade, so the price on the screen is the best one it can find, not the one that pays it most."
   ],
   "criteria": [
     { "name": "Price", "text": "Whether the app gets you the best exchange price or only its own." },

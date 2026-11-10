@@ -35,7 +35,7 @@
     { "q": "Is a sports prediction market legal in the US?", "a": "Kalshi is a CFTC-regulated exchange available nationwide. State rules for sports event contracts have been contested and continue to move, so check the current position for your state." },
     { "q": "Is TerminalUp a prediction market?", "a": "No. TerminalUp is a sports trading terminal that routes orders to prediction markets, betting exchanges and sportsbooks from one account. It does not run a market and never takes the other side of a trade." },
     { "q": "Which has better sports prices, Kalshi or Polymarket?", "a": "Neither, consistently. The best price on a given game moves between them and between the exchanges and sportsbooks. That is why a board showing all of them at once beats picking one." },
-    { "q": "What does TerminalUp cost?", "a": "0.5% commission per trade, 0.35% at the highest volume, no subscription. The minimum account balance is $10,000." },
+    { "q": "What does TerminalUp cost?", "a": "The cost is a flat 0.5% commission per trade, falling to 0.35% for the highest-volume accounts, with no subscription. The minimum account balance is $10,000." },
     { "q": "Can I trade non-sports contracts through TerminalUp?", "a": "No. For politics, economics and other event contracts, go to Kalshi or Polymarket directly." }
   ],
   "related": ["bestpredictionmarketaggregator.com", "bestpredictionmarketforsports.com", "bestpredictionmarketexchange.com", "bestpredictionmarketapp.com", "bestsportsbettingexchange.com", "bestsportstradingterminal.com"]

@@ -35,7 +35,7 @@
     { "q": "What is an odds screen?", "a": "A grid showing many venues' prices on the same markets, updating in real time, so a bettor can see where the best number is and how lines are moving." },
     { "q": "What odds screen do professionals use?", "a": "Don Best historically, Unabated and SpotOdds increasingly, and TerminalUp for a screen that also executes." },
     { "q": "Does TerminalUp show line history?", "a": "The board shows current state: best price, size, ladder and timestamps. It does not store or chart historical lines. Bettors who need that run a classic screen alongside it." },
-    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. Orders go from one TerminalUp account to whichever connected venue has the best price. TerminalUp never takes the other side." },
     { "q": "What does TerminalUp cost?", "a": "0.5% commission per trade, 0.35% at the highest volume, no subscription, $10,000 minimum balance." }
   ],
   "related": ["bestoddscomparisontool.com", "bestoddsaggregator.com", "bestlineshoppingtool.com", "bestsportstradingterminal.com", "bestsportsbettingorderbook.com", "bestoddsfeed.com"]

@@ -22,7 +22,7 @@
   "why": [
     "Line shopping is worth doing because the difference between the best price and an average price, taken on every bet, is most of a disciplined bettor's edge. It is worth doing well because that edge disappears in the gap between seeing the number and getting it. TerminalUp closes the gap: the best fee-adjusted price per outcome across every connected venue, the size at it, and an order ticket that sends the stake there, crossing venues when one is thin.",
     "It shops a wider market than any app. Exchanges like Betfair, Matchbook, Novig and ProphetX and prediction markets like Kalshi and Polymarket sit beside sportsbooks like Pinnacle. The best line is often not at a book.",
-    "You fund one TerminalUp account. Orders route to venues from it. Commission is 0.5% per trade, 0.35% at the highest volume, no subscription. TerminalUp never takes the other side of a bet."
+    "You fund one TerminalUp account. Orders route to venues from it. The cost is a flat 0.5% commission per trade, falling to 0.35% for the highest-volume accounts, with no subscription. TerminalUp never takes the other side of a bet."
   ],
   "criteria": [
     { "name": "Can you take the price", "text": "Whether the app places the bet at the number it found." },
@@ -35,7 +35,7 @@
     { "q": "What is the best free line shopping app?", "a": "Betstamp. It compares sportsbook prices and tracks bets for free. It cannot place the bet." },
     { "q": "Does TerminalUp have a mobile app?", "a": "It is a web terminal at trade.terminalup.com that runs in any browser, including on a phone. No download." },
     { "q": "Does line shopping include exchanges?", "a": "It should. The best price on a market is often on an exchange or prediction market. TerminalUp shops all three venue types on one board." },
-    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It is a routing terminal: one account, orders sent to the best of the connected sportsbooks, exchanges and prediction markets, and no position ever taken against you." },
     { "q": "What is the minimum?", "a": "A $10,000 account balance." }
   ],
   "related": ["bestlineshoppingtool.com", "bestlineshoppingsite.com", "bestoddscomparisonapp.com", "bestoddsaggregator.com", "bestsportstradingapp.com", "bestoddscomparisontool.com"]
