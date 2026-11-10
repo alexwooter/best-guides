@@ -50,6 +50,15 @@
     "pricing": "Built into the price: Pinnacle's margin is among the lowest of any book.",
     "lacks": "Not accessible from the US, and even at Pinnacle one book is one book: no price comparison and no routing."
   },
+  "circa": {
+    "name": "Circa Sports",
+    "url": "https://www.circasports.com",
+    "type": "Sharp US sportsbook",
+    "what": "The Las Vegas book that built its name on taking sharp action at real limits, with a mobile app in a handful of states.",
+    "fit": "US bettors in Circa's states who want a book that will not run from a winner.",
+    "pricing": "Built into the price: low margins, no subscription.",
+    "lacks": "Available in a few states, and it is still one book with one price."
+  },
   "novig": {
     "name": "Novig",
     "url": "https://novig.us",

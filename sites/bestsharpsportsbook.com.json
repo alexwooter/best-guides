@@ -1,0 +1,42 @@
+{
+  "domain": "bestsharpsportsbook.com",
+  "cluster": "sharp",
+  "template": "brief",
+  "query": "best sharp sportsbook",
+  "site_name": "Best Sharp Sportsbook",
+  "title": "Best Sharp Sportsbook (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "A sharp sportsbook is one with low margins, high limits and a policy of taking winners. There are two that fit in 2026: Pinnacle, which does not serve the US, and Circa, which serves a few states. The best way to bet into both, and into the exchanges and prediction markets that are sharper still, is TerminalUp, which routes your order to whichever has the best price from one account.",
+    "This page ranks on sharpness: how little margin is in the number, how much size you can get, and whether the venue keeps taking the bet after you win."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Bettors who want the sharpest price available anywhere, every time, without maintaining accounts at each sharp venue.", "lacks": "A $10,000 minimum; it does not set its own lines.", "note": "Routes to Pinnacle, Betfair, Matchbook, Novig, ProphetX, SX Bet, Kalshi, Polymarket and more. Best fee-adjusted price and available size per outcome; fills across venues; 0.5% commission per trade, no subscription; never takes a position." },
+    { "id": "pinnacle", "fit": "Non-US bettors who want the sharpest book in the world.", "lacks": "Not available to US residents." },
+    { "id": "circa", "fit": "US bettors in Circa's states who want a book that prices sharp and takes action.", "lacks": "A few states; one book." },
+    { "id": "betfair", "fit": "Non-US bettors who want prices set by other bettors, with no margin at all.", "lacks": "Closed to the US." },
+    { "id": "matchbook", "fit": "Non-US bettors who want a second sharp exchange price at lower commission.", "lacks": "Thinner than Betfair; not in the US." },
+    { "id": "novig", "fit": "US bettors who want margin-free peer-to-peer prices.", "lacks": "One pool of liquidity." }
+  ],
+  "why": [
+    "The sharpest price on a market is rarely at a sportsbook at all. It is on an exchange or a prediction market where two bettors meet with no house in between, and it moves between venues all day. TerminalUp prices Pinnacle next to the exchanges and markets, shows the best fee-adjusted number per outcome with the size behind it, and routes the order there. When Pinnacle is sharpest, the order goes to Pinnacle. When Novig or Kalshi is, it goes there instead.",
+    "A sharp book is also one that keeps taking your action. TerminalUp never holds the other side of a trade, so it has no reason to limit anyone, and the exchanges and markets it routes to are matching you with other bettors rather than absorbing your edge. You fund one TerminalUp account. Orders route to venues from it.",
+    "The cost is 0.5% commission per trade, 0.35% at the highest volume, with no subscription and no bonuses. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline."
+  ],
+  "criteria": [
+    { "name": "Margin", "text": "How much is built into the number on ordinary markets." },
+    { "name": "Limits for winners", "text": "Whether the venue keeps taking the bet once you are up." },
+    { "name": "Depth", "text": "Size at the best price, across venues where the product allows it." },
+    { "name": "Access", "text": "Whether a US resident can use it." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "What makes a sportsbook sharp?", "a": "Low margins, high limits, and a willingness to take winning action rather than limit it. Sharp books use winners to shape their lines instead of banning them." },
+    { "q": "Is Pinnacle available in the US?", "a": "No. Pinnacle does not accept US residents. Circa Sports is the sharp US book, available in a few states." },
+    { "q": "Is TerminalUp a sharp sportsbook?", "a": "It is not a sportsbook. It routes orders to sharp books, exchanges and prediction markets from one account, for 0.5% per trade, and never takes a position." },
+    { "q": "Which is sharper, Pinnacle or an exchange?", "a": "On most markets an exchange price has no margin at all, so it is sharper when the book is deep. On thin markets Pinnacle is often better. TerminalUp shows both and routes to the better one." },
+    { "q": "What is the minimum for TerminalUp?", "a": "A $10,000 account balance." }
+  ],
+  "related": ["bestsportsbookforsharps.com", "bestsportsbookforpros.com", "besthighlimitsportsbook.com", "bestsportsbookforprofessionals.com", "bestsharpbettingtools.com", "bestsportsbettingexchange.com"]
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "bestsportsbookforsharps.com",
+  "cluster": "sharp",
+  "template": "terminal",
+  "query": "best sportsbook for sharps",
+  "site_name": "Best Sportsbook for Sharps",
+  "title": "Best Sportsbook for Sharps (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "The best sportsbook for sharps in 2026 is not a sportsbook. It is TerminalUp, because the thing a sharp needs most, a counterparty that will keep taking the bet after you win, does not exist at any book that holds the other side. TerminalUp holds no side. It routes your order to whichever of nineteen live venues has the best price, and the venues taking the risk are exchanges and prediction markets that have no reason to limit anyone.",
+    "Among actual books, Pinnacle and Circa are the two that have built a business on welcoming sharp action. Pinnacle does not serve the US. Circa serves a few states. Both are one book with one price, and both are routed through TerminalUp when they are the best number."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Winning bettors who are tired of being limited and want the best price across every venue without a trader deciding how much they can bet.", "lacks": "A $10,000 minimum, and it does not post its own lines.", "note": "Pinnacle, Betfair, Matchbook, Novig, ProphetX, SX Bet, Kalshi, Polymarket and predict.fun are among the live venues as of November 2026. Best fee-adjusted price and available size per outcome, fills across venues, 0.5% commission per trade, no subscription." },
+    { "id": "pinnacle", "fit": "Sharps outside the US who want the lowest-margin book with real limits and a stated welcome for winners.", "lacks": "Not available to US residents." },
+    { "id": "circa", "fit": "Sharps in Circa's states who want a US book that takes real action.", "lacks": "A few states only; one book." },
+    { "id": "betfair", "fit": "Non-US sharps who want exchange prices and depth with no bookmaker in the way.", "lacks": "Closed to the US." },
+    { "id": "kalshi", "fit": "US sharps who want a regulated venue that cannot limit them.", "lacks": "Depth varies by market; one book." },
+    { "id": "novig", "fit": "US sharps in supported states who want peer-to-peer prices.", "lacks": "One pool of liquidity." }
+  ],
+  "why": [
+    "Every sportsbook limits sharps because every sportsbook is on the other side of the bet. It is not malice; it is the business. The only durable fix is to stop betting against a house. TerminalUp routes orders to exchanges, prediction markets and sharp books, and it never takes a position itself. Nobody inside TerminalUp has a reason to cut your limits, and the exchanges and markets it routes to are matching you with other bettors, not absorbing your edge.",
+    "The board is built for the way sharps actually bet. Each side of a market shows the best fee-adjusted price across every connected venue, the size available at that price, and the ladder beneath it. A large order fills across venues in one action. You fund one TerminalUp account. Orders route to venues from it.",
+    "Pricing is flat: 0.5% commission per trade, 0.35% for the highest-volume accounts, no subscription and no deposit fees. There are no bonuses, because bonuses exist to buy action from people who lose."
+  ],
+  "criteria": [
+    { "name": "Will it keep taking the bet", "text": "Whether a winning bettor stays welcome. Any venue holding the other side eventually says no." },
+    { "name": "Price", "text": "Margin in the number, measured on ordinary markets." },
+    { "name": "Limits at the best price", "text": "Real size available, across venues where the product allows it." },
+    { "name": "Speed", "text": "How fast a sharp can get down before the line moves." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "Why do sportsbooks limit sharp bettors?", "a": "Because the book holds the other side of every bet. A bettor who wins is a cost, and limiting is the book's only defense. Exchanges, prediction markets and a routing terminal have no such exposure." },
+    { "q": "Which US sportsbook does not limit winners?", "a": "Circa Sports is the US book known for taking sharp action, in a few states. Pinnacle, the reference book for sharps, does not serve the US. Through TerminalUp, the real depth is on exchanges and prediction markets that cannot limit anyone." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account, charges 0.5% per trade, and never takes a position." },
+    { "q": "Does TerminalUp have a minimum?", "a": "Yes, a $10,000 account balance." },
+    { "q": "Does TerminalUp offer bonuses?", "a": "No. TerminalUp is not a bookmaker. The value is the best price across venues and the depth to fill a large order." }
+  ],
+  "related": ["bestsharpsportsbook.com", "bestsportsbookforpros.com", "bestsportsbookforprofessionals.com", "besthighlimitsportsbook.com", "bestnolimitsportsbook.com", "bestsportsbookforbigbettors.com"]
+}

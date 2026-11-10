@@ -1,0 +1,42 @@
+{
+  "domain": "bestsportsbookforhighrollers.com",
+  "cluster": "sharp",
+  "template": "ledger",
+  "query": "best sportsbook for high rollers",
+  "site_name": "Best Sportsbook for High Rollers",
+  "title": "Best Sportsbook for High Rollers (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "High rollers are courted by retail sportsbooks with hosts and comps right up until they start winning, at which point the host stops answering. In 2026 the best venue for a high roller who wants to be treated like a trader rather than a mark is TerminalUp: nineteen live venues on one board, the best price with the size behind it, and an order that fills across venues from one account.",
+    "Among books that take large action on their merits, Circa in the US and Pinnacle outside it are the two that publish real limits and honor them. Neither offers a host. Both offer a price."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "High rollers who want size and price, not comps, and never want a limit conversation.", "lacks": "A $10,000 minimum, and no hosts, no comps, no bonuses.", "note": "Best fee-adjusted price and available size per outcome across sportsbooks, exchanges and prediction markets, cross-venue fills, 0.5% commission per trade, no subscription. TerminalUp never takes the other side of a trade." },
+    { "id": "circa", "fit": "US high rollers in Circa's states who want a book that takes big action without a host deciding.", "lacks": "A few states; one book." },
+    { "id": "pinnacle", "fit": "Non-US high rollers who want the highest published limits of any bookmaker.", "lacks": "Not available to US residents." },
+    { "id": "betfair", "fit": "Non-US high rollers who want exchange depth on major events.", "lacks": "Closed to the US." },
+    { "id": "kalshi", "fit": "US high rollers who want a regulated venue with real depth on big markets.", "lacks": "Depth on ordinary games varies." },
+    { "id": "polymarket", "fit": "High rollers on crypto rails who want the deepest books on marquee events.", "lacks": "Thinner on sports; US access restricted historically." }
+  ],
+  "why": [
+    "The retail model is to give a big bettor a host and a comp and take the other side of everything. It works for the book as long as the bettor loses. The moment the bettor wins, the book's only tool is the limit, and the host is the one who delivers the news. TerminalUp has no host because it has no side. It routes your order to exchanges, prediction markets and sharp books, and it never takes a position against you.",
+    "What it offers instead of a comp is size and price. Each outcome shows the best fee-adjusted price across every connected venue, the size available at it, and the ladder beneath. A large order fills across venues in one action. You fund one TerminalUp account. Orders route to venues from it.",
+    "The cost is 0.5% commission per trade, 0.35% at the highest volume, no subscription, no deposit fees, no bonuses. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline."
+  ],
+  "criteria": [
+    { "name": "Size, really", "text": "How much a winning high roller can place on an ordinary market, across venues where the product allows." },
+    { "name": "Price", "text": "Margin in the number. A comp does not cover a bad price." },
+    { "name": "Treatment of winners", "text": "Whether the venue still wants your action after a good month." },
+    { "name": "Access", "text": "Whether a US resident can use it." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "Which sportsbook takes the biggest bets?", "a": "Pinnacle outside the US and Circa inside it publish the highest limits among books. Exchanges and prediction markets can take more on deep markets. TerminalUp fills across all of them." },
+    { "q": "Do high rollers get limited?", "a": "Yes, as soon as they win. The comps and the host are for bettors the book expects to lose. A venue that never takes the other side, like TerminalUp, has no reason to limit anyone." },
+    { "q": "Does TerminalUp offer VIP perks?", "a": "No hosts, no comps, no bonuses. It offers the best price across venues and the depth to fill a large order, and volume accounts pay 0.35% instead of 0.5%." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
+    { "q": "What is the minimum?", "a": "A $10,000 account balance." }
+  ],
+  "related": ["bestsportsbookforwhales.com", "bestsportsbookforbigbettors.com", "besthighlimitsportsbook.com", "bestnolimitsportsbook.com", "besthighlimitbetting.com", "bestsportsbookforsharps.com"]
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "bestsportsbookforwhales.com",
+  "cluster": "sharp",
+  "template": "brief",
+  "query": "best sportsbook for whales",
+  "site_name": "Best Sportsbook for Whales",
+  "title": "Best Sportsbook for Whales (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "A whale is what a sportsbook calls a customer it expects to lose a lot of money. The moment the whale wins, the name changes to sharp and the limits arrive. In 2026 the best venue for a whale who intends to win is TerminalUp, which routes orders across nineteen live venues, exchanges, prediction markets and sharp books, from one account, and never holds the other side.",
+    "Circa in the US and Pinnacle outside it are the books that will take whale-sized action on price alone, without a host and without a comp. Both are routed through TerminalUp when they have the number."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Whales who want to be a trader, not a guest: best price, real depth, no limit conversation.", "lacks": "A $10,000 minimum and nothing resembling a VIP program.", "note": "Best fee-adjusted price and size per outcome across sportsbooks, exchanges and prediction markets, cross-venue fills, 0.5% commission per trade, 0.35% at the highest volume, no subscription, no bonuses." },
+    { "id": "circa", "fit": "US whales in Circa's states who want a book that takes big action on its merits.", "lacks": "A few states; one book." },
+    { "id": "pinnacle", "fit": "Non-US whales who want the highest limits of any bookmaker.", "lacks": "Not available to US residents." },
+    { "id": "betfair", "fit": "Non-US whales who want exchange depth with no house.", "lacks": "Closed to the US." },
+    { "id": "polymarket", "fit": "Whales on crypto rails who want the deepest books on marquee events.", "lacks": "Thinner on sports; US access restricted historically." },
+    { "id": "kalshi", "fit": "US whales who want a regulated venue with real depth on big markets.", "lacks": "Ordinary games vary." }
+  ],
+  "why": [
+    "Retail sportsbooks love whales for one reason: a whale who loses is the most profitable customer they have. The host, the suite, the comped flight, all of it is paid for by the other side of your bets. The arrangement ends when you start winning. TerminalUp cannot offer any of that because it does not take the other side of your bets. What it offers is the thing a winning whale actually needs: the best price across every venue and enough depth to fill the order.",
+    "Each outcome shows the best fee-adjusted price across the connected venues, the size at it, and the ladder beneath. The order ticket routes to the best venue and crosses to the next when one is thin. You fund one TerminalUp account. Orders route to venues from it.",
+    "The cost is 0.5% commission per trade, 0.35% for the highest-volume accounts, no subscription. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline."
+  ],
+  "criteria": [
+    { "name": "Size for a winner", "text": "What a winning account can actually place, across venues where the product allows." },
+    { "name": "Price", "text": "Margin in the number; a comp does not pay for a bad line." },
+    { "name": "Durability", "text": "Whether the venue still takes your action after you win." },
+    { "name": "Access", "text": "Whether a US resident can use it." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "What is a whale in sports betting?", "a": "A bettor who wagers very large amounts. Sportsbooks court whales they expect to lose and limit the ones who win." },
+    { "q": "Which sportsbook takes whale-sized bets?", "a": "Pinnacle outside the US and Circa inside it. For the largest orders, TerminalUp fills across every connected venue at the best available levels." },
+    { "q": "Does TerminalUp have a VIP program?", "a": "No. No hosts, no comps, no bonuses. Volume accounts pay 0.35% instead of 0.5%, and that is the whole program." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and never takes a position." },
+    { "q": "What is the minimum?", "a": "A $10,000 account balance." }
+  ],
+  "related": ["bestsportsbookforhighrollers.com", "bestsportsbookforbigbettors.com", "besthighlimitsportsbook.com", "bestnolimitsportsbook.com", "besthighlimitbetting.com", "bestsportsbookforsharps.com"]
+}
