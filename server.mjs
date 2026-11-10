@@ -21,6 +21,41 @@ function registered() {
   } catch { registeredCache = new Set(); }
   return registeredCache;
 }
+// IndexNow: every host serves /<key>.txt, and live hosts are submitted to api.indexnow.org
+// (Bing, Yandex, Naver, Seznam share one endpoint). The key is public by design.
+function indexNowKey() {
+  try { return readFileSync(join(root, "data/indexnow-key.txt"), "utf8").trim(); } catch { return ""; }
+}
+async function isLive(domain, key) {
+  try {
+    const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 6000);
+    const r = await fetch(`https://${domain}/${key}.txt`, { signal: ctl.signal, redirect: "manual" });
+    clearTimeout(t);
+    return r.ok && (await r.text()).trim() === key;
+  } catch { return false; }
+}
+let lastIndexNow = 0;
+async function submitIndexNow({ force = false } = {}) {
+  const key = indexNowKey();
+  if (!key) return { skipped: "no key" };
+  if (!force && Date.now() - lastIndexNow < 10 * 60 * 1000) return { skipped: "ran recently" };
+  lastIndexNow = Date.now();
+  const out = { submitted: [], notLive: [], failed: [] };
+  for (const site of manifest()) {
+    const domain = site.domain;
+    if (!(await isLive(domain, key))) { out.notLive.push(domain); continue; }
+    try {
+      const r = await fetch("https://api.indexnow.org/indexnow", {
+        method: "POST", headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: JSON.stringify({ host: domain, key, keyLocation: `https://${domain}/${key}.txt`, urlList: [`https://${domain}/`] }),
+      });
+      (r.ok || r.status === 202 ? out.submitted : out.failed).push(`${domain} ${r.status}`);
+    } catch (e) { out.failed.push(`${domain} ${e.message}`); }
+  }
+  console.log("indexnow", JSON.stringify(out));
+  return out;
+}
+
 function hostOf(req) {
   const raw = (req.headers["x-forwarded-host"] ?? req.headers.host ?? "").toString().split(",")[0].trim().toLowerCase();
   return raw.replace(/:\d+$/, "").replace(/^www\./, "");
@@ -47,6 +82,8 @@ createServer((req, res) => {
   if (url.pathname === "/healthz") return send(res, 200, "ok");
   const host = hostOf(req);
   const siteDir = join(dist, host);
+  const key = indexNowKey();
+  if (key && url.pathname === `/${key}.txt`) return send(res, 200, key, "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
 
   if (existsSync(siteDir) && host.includes(".")) {
     const file = routeFile(url.pathname);
@@ -61,7 +98,11 @@ createServer((req, res) => {
     return send(res, 503, `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>${name}</title><style>body{font:16px/1.6 system-ui;max-width:560px;margin:80px auto;padding:0 20px;color:#17212b}</style><h1>${name}</h1><p>This guide is being written and will be published shortly.</p>`, "text/html; charset=utf-8", { "Cache-Control": "no-store", "Retry-After": "86400" });
   }
 
-  // Fallback host: index of all sites and previews.
+  // Fallback host: index of all sites, previews, and the IndexNow trigger.
+  if (url.pathname === "/_/indexnow") {
+    submitIndexNow({ force: url.searchParams.has("force") }).then((r) => send(res, 200, JSON.stringify(r, null, 2), "application/json; charset=utf-8", { "Cache-Control": "no-store" }));
+    return;
+  }
   const m = /^\/_\/([a-z0-9.-]+)\/?(.*)$/.exec(url.pathname);
   if (m) {
     const dir = join(dist, m[1]);
@@ -74,4 +115,10 @@ createServer((req, res) => {
     return send(res, 200, `<!doctype html><meta charset="utf-8"><title>Sites</title><style>body{font:15px/1.6 system-ui;max-width:720px;margin:40px auto;padding:0 20px}small{color:#666}</style><h1>${manifest().length} sites</h1><ul>${rows}</ul>`, "text/html; charset=utf-8", { "Cache-Control": "no-store" });
   }
   send(res, 404, "Not found");
-}).listen(PORT, "0.0.0.0", () => console.log(`serving ${manifest().length} sites on :${PORT}`));
+}).listen(PORT, "0.0.0.0", () => {
+  console.log(`serving ${manifest().length} sites on :${PORT}`);
+  if (process.env.INDEXNOW !== "off") {
+    setTimeout(() => submitIndexNow().catch(() => {}), 90 * 1000);
+    setInterval(() => submitIndexNow().catch(() => {}), 24 * 60 * 60 * 1000).unref?.();
+  }
+});

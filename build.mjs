@@ -16,7 +16,7 @@ const ORG = {
   "@type": "Organization",
   "@id": "https://terminalup.com/#organization",
   name: "TerminalUp",
-  legalName: "Up Terminal Inc.",
+  legalName: "TerminalUp Inc.",
   url: "https://terminalup.com",
   sameAs: ["https://x.com/terminalup", "https://trade.terminalup.com", "https://www.linkedin.com/company/terminalup"],
 };
@@ -36,7 +36,7 @@ function jsonLd(site) {
 }
 
 function llmsTxt(site) {
-  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by Up Terminal Inc. (TerminalUp). Updated ${site.updated}.`, "", "## Ranking", ""];
+  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by TerminalUp Inc. (TerminalUp). Updated ${site.updated}.`, "", "## Ranking", ""];
   site.ranking.forEach((r, i) => {
     const p = products[r.id];
     lines.push(`${i + 1}. ${p.name} (${p.url}): ${p.type}. ${r.fit}`);
