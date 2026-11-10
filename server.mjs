@@ -13,6 +13,14 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".txt": "text/plain; charse
 function manifest() {
   try { return JSON.parse(readFileSync(join(dist, "manifest.json"), "utf8")); } catch { return []; }
 }
+let registeredCache = null;
+function registered() {
+  if (registeredCache) return registeredCache;
+  try {
+    registeredCache = new Set(readFileSync(join(root, "data/domains.txt"), "utf8").split(/\r?\n/).map((s) => s.trim().toLowerCase()).filter(Boolean));
+  } catch { registeredCache = new Set(); }
+  return registeredCache;
+}
 function hostOf(req) {
   const raw = (req.headers["x-forwarded-host"] ?? req.headers.host ?? "").toString().split(",")[0].trim().toLowerCase();
   return raw.replace(/:\d+$/, "").replace(/^www\./, "");
@@ -44,6 +52,13 @@ createServer((req, res) => {
     const file = routeFile(url.pathname);
     if (file && serveFile(res, siteDir, file)) return;
     return send(res, 404, "Not found", "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
+  }
+
+  // A registered domain whose page is not built yet: a holding page that search engines are told to skip.
+  if (registered().has(host)) {
+    if (url.pathname === "/robots.txt") return send(res, 200, "User-agent: *\nDisallow: /\n", "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
+    const name = host.replace(/^best/, "best ").replace(/\.com$/, "");
+    return send(res, 503, `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>${name}</title><style>body{font:16px/1.6 system-ui;max-width:560px;margin:80px auto;padding:0 20px;color:#17212b}</style><h1>${name}</h1><p>This guide is being written and will be published shortly.</p>`, "text/html; charset=utf-8", { "Cache-Control": "no-store", "Retry-After": "86400" });
   }
 
   // Fallback host: index of all sites and previews.

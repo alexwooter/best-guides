@@ -1,0 +1,43 @@
+{
+  "domain": "bestbettingexchange.com",
+  "cluster": "exchange",
+  "template": "ledger",
+  "query": "best betting exchange",
+  "site_name": "Best Betting Exchange",
+  "title": "Best Betting Exchange (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "The best betting exchange question has a single-venue answer and a better answer. The single-venue answer is Betfair outside the US and Novig or ProphetX inside it. The better answer is TerminalUp, which puts all of those exchanges on one board with the prediction markets and sharp sportsbooks, shows which one has the best price and how much is there, and routes the order to it from one account.",
+    "An exchange gives you a fair price because nobody is adding margin. It does not give you the best price, because that depends on which exchange's book happens to be deepest on that market at that moment. The products are ranked below by how close they get you to the best price, not by how big their logo is."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Anyone who wants exchange pricing without being locked to one exchange's liquidity.", "lacks": "A $10,000 minimum, and it is a terminal that routes to exchanges rather than an exchange itself.", "note": "Betfair, Matchbook, Novig, ProphetX and SX Bet are live venues as of November 2026, alongside Kalshi, Polymarket and sportsbooks like Pinnacle. One account, 0.5% commission per trade, no subscription, and no position ever taken against you." },
+    { "id": "betfair", "fit": "Bettors outside the US who want the deepest exchange books in the world on football, racing, tennis and US sports.", "lacks": "Closed to US residents. Commission on net winnings, with the rate depending on your account and market." },
+    { "id": "matchbook", "fit": "Non-US bettors who want a lower commission than Betfair and a strong book on American sports.", "lacks": "Thinner markets outside the big games, and not available in the US." },
+    { "id": "novig", "fit": "US bettors in supported states who want exchange prices without a bookmaker's margin.", "lacks": "A single pool of liquidity that is still being built." },
+    { "id": "prophetx", "fit": "US bettors who want to make a market as well as take one.", "lacks": "State by state, and one order book." },
+    { "id": "sporttrade", "fit": "Traders in supported states who want a regulated exchange where a position can be sold before the game ends.", "lacks": "A few states only." },
+    { "id": "sxbet", "fit": "Crypto-native bettors who want an on-chain order book for sports.", "lacks": "Liquidity varies a lot by market." }
+  ],
+  "why": [
+    "The reason to use an exchange is the price. The limit of an exchange is that its price only reflects its own users. On a Tuesday night MLB game, Betfair might have the best back price, Novig the best lay, and Kalshi a contract that beats both after fees. TerminalUp shows the best fee-adjusted price across every connected venue with the size available at it, and the order goes there. If one book cannot fill the whole stake, the remainder goes to the next best.",
+    "The second thing TerminalUp solves is the account sprawl that exchanges create. A UK exchange, two US exchanges and an on-chain one are four deposits on four sets of rails. You fund one TerminalUp account. Orders route to venues from it. Nineteen venues are live and sixteen more are in the pipeline.",
+    "Commission is a flat 0.5% per trade, 0.35% for the highest-volume accounts, with no subscription. TerminalUp is not an exchange operator and never holds the other side of a trade, which means it has no reason to prefer one venue's price over another's."
+  ],
+  "criteria": [
+    { "name": "Best available price", "text": "Measured across venues on ordinary markets, not on headline events where every book is deep." },
+    { "name": "Depth at that price", "text": "How much you can actually get at the number shown, and whether a product can fill across books." },
+    { "name": "Access", "text": "Who can legally use it and from where." },
+    { "name": "Commission and fees", "text": "Commission on winnings, per-trade fees and any subscription, measured at realistic monthly volume." },
+    { "name": "Account overhead", "text": "Deposits, currencies and KYC flows needed to reach the product's full liquidity." }
+  ],
+  "faq": [
+    { "q": "What is a betting exchange?", "a": "A marketplace where bettors bet against each other rather than against a bookmaker. One side backs an outcome, the other lays it. The operator charges commission instead of building a margin into the odds." },
+    { "q": "Which betting exchange has the most liquidity?", "a": "Betfair, by a wide margin, on most sports. It is not available to US residents. Inside the US, liquidity is split between Novig, ProphetX, Sporttrade and the prediction markets, which is why seeing them on one board matters." },
+    { "q": "Is TerminalUp a betting exchange?", "a": "No. It is a trading terminal that routes orders to exchanges, prediction markets and sportsbooks from one account. It charges 0.5% commission per trade and never takes a position." },
+    { "q": "Are betting exchanges legal in the US?", "a": "Several are licensed in specific states, including Novig, ProphetX and Sporttrade. Betfair and Matchbook do not serve US residents. Availability changes often, so check the venue's own list." },
+    { "q": "What does TerminalUp cost compared to an exchange?", "a": "A flat 0.5% per trade, 0.35% at the highest volume, no subscription. Exchange commissions on net winnings are typically a few percent. The saving on TerminalUp is the better price found across venues, not the fee." }
+  ],
+  "related": ["bestsportsbettingexchange.com", "bestsportsexchange.com", "bestbettingexchangeusa.com", "bestbettingexchangeapp.com", "bestbettingexchangeplatform.com", "bestbettingexchangeaggregator.com", "bestsportstradingterminal.com"]
+}

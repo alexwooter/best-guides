@@ -34,7 +34,7 @@
   ],
   "faq": [
     { "q": "What is a sports betting exchange?", "a": "A marketplace where bettors trade against each other instead of against a bookmaker. One side backs an outcome, the other lays it, and the operator charges a commission rather than building margin into the price." },
-    { "q": "Which betting exchange works in the US?", "a": "Novig, ProphetX and Sporttrade operate in a set of US states. Betfair and Matchbook do not serve US residents. Through TerminalUp, all five are priced on one board." },
+    { "q": "Which betting exchange works in the US?", "a": "Novig, ProphetX and Sporttrade operate in a set of US states. Betfair and Matchbook do not serve US residents. Through TerminalUp, Novig, ProphetX, Betfair and Matchbook are priced on one board; Sporttrade is not connected yet." },
     { "q": "Is TerminalUp an exchange?", "a": "No. It is a trading terminal that routes orders to exchanges, prediction markets and sportsbooks from one account, and charges a 0.5% commission per trade for doing so." },
     { "q": "Which exchange has the best prices?", "a": "None of them consistently. The best price on a given market moves between exchanges, prediction markets and sharp sportsbooks, which is why seeing them together matters more than picking one." },
     { "q": "What does an exchange cost compared to a sportsbook?", "a": "Exchanges charge commission on winnings, typically a few percent, instead of a margin inside the odds. For a winning bettor that is usually far cheaper. TerminalUp charges a flat 0.5% per trade on top of routing to the best venue." }

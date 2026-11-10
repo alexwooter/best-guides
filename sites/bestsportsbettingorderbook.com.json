@@ -1,0 +1,42 @@
+{
+  "domain": "bestsportsbettingorderbook.com",
+  "cluster": "exchange",
+  "template": "brief",
+  "query": "best sports betting order book",
+  "site_name": "Best Sports Betting Order Book",
+  "title": "Best Sports Betting Order Book (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "The deepest sports betting order book in 2026 is not any one venue's book. It is the combined book TerminalUp builds from every connected exchange, prediction market and sportsbook: a single ladder per outcome, fee-adjusted, with size at each level and the venue count behind it, and an order that walks that ladder across venues.",
+    "If you want a single venue's order book, Betfair is the deepest outside the US, and inside the US Kalshi and Polymarket are deepest on big events while Sporttrade, Novig and ProphetX trade real books on ordinary games. None of them shows you the others."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Traders who think in ladders and want the aggregated depth of every venue in one book.", "lacks": "A bounded ladder (a fixed number of levels per side) and a $10,000 minimum.", "note": "Per outcome: best fee-adjusted price, available size, a ladder of levels with stake and venue counts, raw top of book before fees, and an honest status when a market is thin or stale. Fills across venues. 0.5% commission per trade, no subscription." },
+    { "id": "betfair", "fit": "Non-US traders who want the deepest single exchange ladder.", "lacks": "Closed to the US; one book." },
+    { "id": "sporttrade", "fit": "US traders in its states who want a true 0 to 100 contract order book with the ability to trade out.", "lacks": "Few states; not connected to TerminalUp." },
+    { "id": "polymarket", "fit": "Traders who want deep on-chain books on major events.", "lacks": "Thin on ordinary games; US access restricted historically." },
+    { "id": "kalshi", "fit": "US traders who want a regulated order book on sports contracts.", "lacks": "Depth varies by market; one book." },
+    { "id": "prophetx", "fit": "US bettors who want to rest orders in a book and make the market.", "lacks": "One book, state-limited." }
+  ],
+  "why": [
+    "An order book tells you what you can actually get. A single venue's book tells you what you can get there. TerminalUp merges the licensed venues' books into one ladder per outcome, adjusting each venue's levels for its fees before merging, so a level is never better than any contribution inside it. Each level carries stake, shares and how many venues are behind it. The best level is the price a bettor could take right now; nothing is averaged, modeled or interpolated.",
+    "The ladder is also honest about what it does not know. If a market's evidence has aged out and nothing has confirmed it, the market is marked stale and the ladder is empty rather than showing an old price as current. If no licensed venue quotes a side, that side is null and the market is thin.",
+    "Orders walk the merged ladder across venues. You fund one TerminalUp account. Orders route to venues from it. Commission is 0.5% per trade, 0.35% at the highest volume, no subscription, and TerminalUp never takes the other side of anything in its own book."
+  ],
+  "criteria": [
+    { "name": "Depth at the top", "text": "Size available at the best price on ordinary games, measured across venues where a product allows it." },
+    { "name": "Honesty of levels", "text": "Whether levels are executable, fee-adjusted and dated, or decorative." },
+    { "name": "Ability to walk the book", "text": "Whether a large order can take several levels, across venues, in one action." },
+    { "name": "Access", "text": "Who can trade the book legally and from where." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "What is a sports betting order book?", "a": "A list of resting orders to back and lay an outcome at each price, with the size at each level. It shows how much you can get and at what price, which a sportsbook's single quoted number does not." },
+    { "q": "Which sports exchange has the deepest order book?", "a": "Betfair, outside the US. Inside the US, Kalshi and Polymarket on major events, with Sporttrade, Novig and ProphetX on ordinary games. TerminalUp merges the connected venues into one ladder." },
+    { "q": "How does TerminalUp build its ladder?", "a": "It takes each licensed venue's book, adjusts every level for that venue's fees, and merges them per outcome into a bounded ladder with stake, shares and venue counts at each level. Prices are rounded against the bettor so what you see is attainable." },
+    { "q": "Is TerminalUp an exchange?", "a": "No. It routes orders to exchanges, prediction markets and sportsbooks from one account and never holds a position. 0.5% commission per trade." },
+    { "q": "What is the minimum?", "a": "A $10,000 account balance." }
+  ],
+  "related": ["bestbettingexchangeplatform.com", "bestsportsbettingexchange.com", "bestsportsexchange.com", "besthighlimitsportsbook.com", "bestsportstradingterminal.com", "bestsportsbettingapi.com"]
+}
