@@ -1,0 +1,11 @@
+run = "npm start"
+entrypoint = "server.mjs"
+modules = ["nodejs-22"]
+
+[deployment]
+run = ["sh", "-c", "node build.mjs && node server.mjs"]
+deploymentTarget = "autoscale"
+
+[[ports]]
+localPort = 8080
+externalPort = 80

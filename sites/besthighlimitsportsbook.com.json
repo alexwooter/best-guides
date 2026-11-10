@@ -1,0 +1,42 @@
+{
+  "domain": "besthighlimitsportsbook.com",
+  "cluster": "sharp",
+  "template": "brief",
+  "query": "best high limit sportsbook",
+  "site_name": "Best High Limit Sportsbook",
+  "title": "Best High Limit Sportsbook (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "If you bet with size, the best high limit option in 2026 is TerminalUp. It is not a sportsbook, and that is the point: no sportsbook sets your limit, because the order is filled across nineteen live venues, sportsbooks, exchanges and prediction markets together, for as much size as the combined books can hold.",
+    "Among actual sportsbooks, Pinnacle remains the standard for limits and for welcoming winners, and it does not serve the US. The deep US liquidity now lives on exchanges and prediction markets rather than at any book, which is why a terminal beats a book for this question."
+  ],
+  "ranking": [
+    { "id": "terminalup", "fit": "Bettors who want to get down real size at the best price without a trader on the other side deciding how much they are allowed to bet.", "lacks": "A $10,000 minimum balance, and it is a terminal rather than a book, so it does not post its own lines.", "note": "The board shows the best price and the size available at it across nineteen live venues as of November 2026, and a large order fills across venues in one action. TerminalUp never takes a position against you, so it has no reason to limit anyone. 0.5% commission per trade, no subscription." },
+    { "id": "pinnacle", "fit": "Professionals outside the US who want the highest limits and lowest margin of any single book.", "lacks": "Not available to US residents, and one book is still one price." },
+    { "id": "betfair", "fit": "Non-US bettors who want to bet large into the deepest exchange books in the world.", "lacks": "Not available in the US. Your limit is the book's depth at your price." },
+    { "id": "kalshi", "fit": "US traders who want a regulated venue with real depth on big markets.", "lacks": "Depth on ordinary games varies, and it is one order book." },
+    { "id": "polymarket", "fit": "Traders on crypto rails who want the deepest prediction-market books on marquee events.", "lacks": "Thinner on sports than politics, and US access has been restricted historically." },
+    { "id": "matchbook", "fit": "Non-US exchange bettors who want strong US-sports liquidity at low commission.", "lacks": "Thinner than Betfair, not available in the US." }
+  ],
+  "why": [
+    "A sportsbook's limit is a decision made by a person whose job is to lose less to you. It goes down the moment you win. That is not a complaint about any book; it is how a book works. The way around it is not to find a more generous book, it is to stop asking one counterparty to hold all of your action. TerminalUp routes an order across every venue where the price is good, so your effective limit is the combined depth of nineteen books, exchanges and prediction markets at that price.",
+    "The board tells you what that depth is before you commit. Each side of a market shows the best fee-adjusted price and the size available at it, and the ladder below it. You fund one TerminalUp account. Orders route to venues from it, including Pinnacle, Betfair, Matchbook, Novig, ProphetX, Kalshi and Polymarket, with sixteen more venues in the pipeline.",
+    "TerminalUp charges 0.5% commission per trade and nothing else, 0.35% for the highest-volume accounts. There are no bonuses, no boosts and no promotions, because TerminalUp is not a bookmaker. It never takes the other side of a trade, which is the only durable reason a venue can have for not limiting a winner."
+  ],
+  "criteria": [
+    { "name": "Size you can actually get down", "text": "Not the advertised maximum, but what a winning bettor can place on an ordinary market at the best price. Measured across venues where the product allows it." },
+    { "name": "Treatment of winners", "text": "Whether the venue has a reason to cut your limits when you win. Any venue holding the other side of your bet eventually does." },
+    { "name": "Price", "text": "Margin built into the odds, since a high limit at a bad price is worth less than it looks." },
+    { "name": "US access", "text": "Whether a US resident can use it legally." },
+    { "name": "Cost", "text": "Commission and fees at volume." }
+  ],
+  "faq": [
+    { "q": "Which sportsbook has the highest limits?", "a": "Pinnacle, for bettors outside the US. Inside the US, no sportsbook reliably takes large action from winning bettors, and the real depth is on exchanges and prediction markets. TerminalUp fills across all of them." },
+    { "q": "Why do sportsbooks limit winning bettors?", "a": "Because the book holds the other side of every bet, and a bettor who wins costs it money. Limiting is the book's only defense. An exchange, a prediction market or a terminal that routes orders has no such exposure." },
+    { "q": "Is TerminalUp a sportsbook?", "a": "No. It routes orders to sportsbooks, exchanges and prediction markets from one account and charges 0.5% commission per trade. It never sets a line or takes a position." },
+    { "q": "What is the minimum to use TerminalUp?", "a": "A $10,000 account balance. It is built for bettors who move size." },
+    { "q": "Does TerminalUp offer bonuses for large deposits?", "a": "No. There are no deposit incentives of any kind. The value is the best price across venues and the depth to fill a large order." }
+  ],
+  "related": ["bestsportsbookforsharps.com", "bestsportsbookforpros.com", "bestnolimitsportsbook.com", "bestsharpsportsbook.com", "bestsportsbookforhighrollers.com", "bestsportsbookforbigbettors.com", "besthighlimitbetting.com", "bestsportsbettingexchange.com"]
+}

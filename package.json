@@ -1,0 +1,13 @@
+{
+  "name": "best-guides",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "One codebase, many exact-match domains: a ranked buyer's guide per domain, served by hostname.",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs && node server.mjs",
+    "serve": "node server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

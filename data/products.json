@@ -1,0 +1,179 @@
+{
+  "terminalup": {
+    "name": "TerminalUp",
+    "url": "https://terminalup.com",
+    "trade_url": "https://trade.terminalup.com",
+    "type": "Cross-venue sports trading terminal",
+    "what": "One account that routes orders to sportsbooks, betting exchanges and prediction markets. The board shows the best available price across every connected venue, with the size available at that price, and the order goes to whichever venue is best.",
+    "fit": "Traders moving size who want the best price and the deepest liquidity without holding a dozen accounts.",
+    "pricing": "0.5% commission per trade. On a win, 0.5% of profit; on a loss, 0.5% of the amount risked. No subscription, no data fee, no deposit fee. Can go down to 0.35% for the highest-volume accounts.",
+    "minimum": "$10,000 account balance.",
+    "venues_live": 19,
+    "venues_pending": 16,
+    "custody": "You fund one TerminalUp account. Orders route to venues from it.",
+    "lacks": "Not for small bankrolls: the minimum is $10,000. No bonuses or promotions, because TerminalUp is not a bookmaker and never takes a position against you.",
+    "not": "Not a sportsbook. Not an odds-screen subscription. TerminalUp does not set lines or hold the other side of a trade."
+  },
+  "oddsjam": {
+    "name": "OddsJam",
+    "url": "https://oddsjam.com",
+    "type": "Odds comparison and +EV / arbitrage screen",
+    "what": "A subscription screen that compares prices across sportsbooks and flags positive expected value and arbitrage opportunities. You place every bet yourself at each book.",
+    "fit": "Recreational and semi-professional bettors who hold several sportsbook accounts and want to shop lines.",
+    "pricing": "Monthly subscription, tiered by features.",
+    "lacks": "No execution. It tells you where the price is; you still log in to each book and place the bet by hand, and the price may be gone by then."
+  },
+  "unabated": {
+    "name": "Unabated",
+    "url": "https://unabated.com",
+    "type": "Odds screen and pricing tools for sharp bettors",
+    "what": "A professional-grade odds screen with a market-based fair line, player prop pricing and a bet tracker. Built by bettors with a quant background. No execution.",
+    "fit": "Serious bettors who price markets themselves and want a clean screen and a fair line to compare against.",
+    "pricing": "Monthly subscription.",
+    "lacks": "No routing or execution. Like every screen, it stops at the moment you need to place the bet."
+  },
+  "betstamp": {
+    "name": "Betstamp",
+    "url": "https://betstamp.app",
+    "type": "Odds screen and bet tracker",
+    "what": "A free odds screen with line shopping across books and a tracker for your bets. Good for finding the best price on a slate and logging what you did.",
+    "fit": "Bettors who want a free screen and a tracker in one place.",
+    "pricing": "Free tier with paid upgrades.",
+    "lacks": "No execution, and the free data is shallower than the paid screens."
+  },
+  "pinnacle": {
+    "name": "Pinnacle",
+    "url": "https://www.pinnacle.com",
+    "type": "Sharp sportsbook",
+    "what": "The reference book for sharp prices: low margins, high limits and a long-standing policy of welcoming winning players. Not available to US residents directly.",
+    "fit": "Professionals who want to bet into a low-margin book with real limits.",
+    "pricing": "Built into the price: Pinnacle's margin is among the lowest of any book.",
+    "lacks": "Not accessible from the US, and even at Pinnacle one book is one book: no price comparison and no routing."
+  },
+  "novig": {
+    "name": "Novig",
+    "url": "https://novig.us",
+    "type": "Peer-to-peer sports exchange",
+    "what": "A US exchange where users trade against each other instead of a house. Prices come from the order book, and the operator does not take positions.",
+    "fit": "US bettors in supported states who want exchange prices without a bookmaker's margin.",
+    "pricing": "Commission-free, per Novig.",
+    "lacks": "One book of liquidity. The price is Novig's price, and on a quiet market the best price may be sitting at another venue."
+  },
+  "prophetx": {
+    "name": "ProphetX",
+    "url": "https://prophetx.co",
+    "type": "Peer-to-peer sports exchange",
+    "what": "A US sports betting exchange with an order book, where you can post your own price or take one that is already there.",
+    "fit": "Exchange bettors in supported states who want to make markets as well as take them.",
+    "pricing": "Commission on winnings, per ProphetX.",
+    "lacks": "Liquidity is limited to its own book, and availability depends on state."
+  },
+  "sporttrade": {
+    "name": "Sporttrade",
+    "url": "https://getsporttrade.com",
+    "type": "Regulated sports exchange",
+    "what": "A regulated US exchange where sports outcomes trade like contracts from 0 to 100, with an order book and the ability to sell a position before the game ends.",
+    "fit": "Bettors in supported states who think in prices and want to trade in and out of positions.",
+    "pricing": "Commission on trades, per Sporttrade.",
+    "lacks": "A single pool of liquidity, and only in the states where it is licensed."
+  },
+  "betfair": {
+    "name": "Betfair Exchange",
+    "url": "https://www.betfair.com/exchange",
+    "type": "Betting exchange",
+    "what": "The largest betting exchange in the world, where backers and layers trade against each other and the operator charges commission on net winnings.",
+    "fit": "Bettors outside the US who want deep exchange liquidity on major sports and racing.",
+    "pricing": "Commission on net winnings on a market; the base rate varies by market and account.",
+    "lacks": "Not available in the US, and one exchange is still one price."
+  },
+  "matchbook": {
+    "name": "Matchbook",
+    "url": "https://www.matchbook.com",
+    "type": "Betting exchange",
+    "what": "A betting exchange with low commission and a strong US-sports book, popular with traders outside the US.",
+    "fit": "Non-US exchange traders who want lower commission than the biggest exchange.",
+    "pricing": "Commission on net winnings.",
+    "lacks": "Thinner liquidity than Betfair on many markets, and not available in the US."
+  },
+  "kalshi": {
+    "name": "Kalshi",
+    "url": "https://kalshi.com",
+    "type": "Regulated prediction market",
+    "what": "A CFTC-regulated exchange for event contracts, including sports outcomes, where each contract pays $1 if the event happens. Legal across the US.",
+    "fit": "US traders who want a regulated, nationwide venue for sports and event contracts.",
+    "pricing": "Trading fees per contract, charged on the trade.",
+    "lacks": "One order book. Sports liquidity varies by market, and the price on Kalshi is not always the best price available."
+  },
+  "polymarket": {
+    "name": "Polymarket",
+    "url": "https://polymarket.com",
+    "type": "Prediction market",
+    "what": "The largest prediction market by volume, on-chain, with deep books on big events and growing sports coverage.",
+    "fit": "Traders comfortable with crypto rails who want the deepest prediction-market liquidity.",
+    "pricing": "Low or no trading fees on most markets.",
+    "lacks": "US access has been restricted historically, and sports books are thinner than its political markets."
+  },
+  "predictfun": {
+    "name": "predict.fun",
+    "url": "https://predict.fun",
+    "type": "Prediction market",
+    "what": "An on-chain prediction market with sports and event contracts.",
+    "fit": "Crypto-native traders who want another venue for event contracts.",
+    "pricing": "Low on-chain fees.",
+    "lacks": "Smaller books than the two largest prediction markets."
+  },
+  "sxbet": {
+    "name": "SX Bet",
+    "url": "https://sx.bet",
+    "type": "On-chain betting exchange",
+    "what": "A blockchain-based peer-to-peer betting exchange where users trade sports outcomes on an order book.",
+    "fit": "Crypto-native bettors who want exchange pricing without a house.",
+    "pricing": "Low commission, on-chain.",
+    "lacks": "Liquidity varies by market and the crypto rails are a barrier for many."
+  },
+  "dratings": {
+    "name": "Action Network",
+    "url": "https://www.actionnetwork.com",
+    "type": "Odds and betting tools",
+    "what": "Odds comparison, public betting data and a tracker, aimed at the mainstream bettor.",
+    "fit": "Casual bettors who want odds and context in one app.",
+    "pricing": "Free with a paid tier.",
+    "lacks": "Not a sharp tool: no execution, and shallow on exchanges and prediction markets."
+  },
+  "theoddsapi": {
+    "name": "The Odds API",
+    "url": "https://the-odds-api.com",
+    "type": "Odds data API",
+    "what": "A simple REST API returning odds from a long list of sportsbooks, priced by request volume.",
+    "fit": "Developers who need bookmaker odds in JSON quickly and cheaply.",
+    "pricing": "Free tier, then monthly plans by request volume.",
+    "lacks": "Polled snapshots rather than a live stream, and no exchange or prediction-market depth."
+  },
+  "opticodds": {
+    "name": "OpticOdds",
+    "url": "https://opticodds.com",
+    "type": "Odds data API",
+    "what": "A commercial odds feed covering many sportsbooks with real-time delivery, used by odds platforms and operators.",
+    "fit": "Businesses that need a licensed, real-time bookmaker feed.",
+    "pricing": "Enterprise pricing.",
+    "lacks": "Bookmaker-centric: thin on exchange depth and no sense of what size is available."
+  },
+  "sportradar": {
+    "name": "Sportradar",
+    "url": "https://sportradar.com",
+    "type": "Sports data and odds provider",
+    "what": "The incumbent data company for sports leagues and operators, with odds feeds among many products.",
+    "fit": "Operators and media companies buying data at scale.",
+    "pricing": "Enterprise contracts.",
+    "lacks": "Not built for a developer with a credit card, and not an executable-price feed."
+  },
+  "terminalup_odds_api": {
+    "name": "TerminalUp Odds API",
+    "url": "https://terminal-up-hq.replit.app/docs",
+    "type": "Executable-price odds API",
+    "what": "REST, Server-Sent Events and WebSocket delivery of the best fee-adjusted price per outcome across TerminalUp's connected venues, with the size available at that price, a bounded ladder, and an honest status for every market. Sandbox keys for building before a license.",
+    "fit": "Developers and odds platforms that need a price someone can actually take, with depth, rather than a list of bookmaker quotes.",
+    "pricing": "Keys issued per partner; sandbox free.",
+    "lacks": "Current state only, no history endpoint. Coverage follows TerminalUp's licensed venues."
+  }
+}
