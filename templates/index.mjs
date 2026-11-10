@@ -75,6 +75,7 @@ const shared = (ctx) => ({
   footer: footer(ctx),
   updated: month(ctx.site.updated),
   tu: ctx.products.terminalup,
+  cta: ctx.site.cta ?? { url: ctx.products.terminalup.url, text: 'See TerminalUp' },
 });
 const site_h1 = (ctx) => ctx.site.title;
 
@@ -112,7 +113,7 @@ ${s.table}
 ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} ranks first</h2>
 ${s.why}
-<a class="cta" href="${s.tu.url}">See the terminal</a>
+<a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
 <h2 id="faq">Questions people ask</h2>
@@ -162,7 +163,7 @@ ${s.table}
 ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} is first</h2>
 ${s.why}
-<a class="cta" href="${s.tu.url}">Open TerminalUp</a>
+<a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">Criteria</h2>
 ${s.criteria}
 <h2 id="faq">FAQ</h2>
@@ -211,7 +212,7 @@ function paper(ctx) {
 ${s.table}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} comes first</h2>
 ${s.why}
-<a class="cta" href="${s.tu.url}">Visit TerminalUp</a>
+<a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How this list was made</h2>
 ${s.criteria}
 <h2 id="faq">Common questions</h2>
@@ -256,7 +257,7 @@ ${s.table}
 ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} is the pick</h2>
 ${s.why}
-<a class="cta" href="${s.tu.url}">TerminalUp</a>
+<a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
 <h2 id="faq">FAQ</h2>

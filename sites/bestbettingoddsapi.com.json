@@ -1,0 +1,108 @@
+{
+  "domain": "bestbettingoddsapi.com",
+  "cluster": "api",
+  "template": "ledger",
+  "query": "best betting odds api",
+  "site_name": "Best Betting Odds API",
+  "title": "Best Betting Odds API (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "The best betting odds API in 2026 for anyone whose users will act on the number is the TerminalUp Odds API. It publishes the best fee-adjusted price per outcome across sportsbooks, betting exchanges and prediction markets, with the size available at that price, over REST and two streaming transports. Odds that nobody can take at size are not odds, they are decoration.",
+    "If you only need bookmaker quotes, The Odds API is cheap and quick, and OpticOdds is the licensed enterprise option. This page ranks by what the number means first and by developer experience second."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup_odds_api",
+      "fit": "Odds platforms, trading tools and apps that need a price with depth behind it.",
+      "lacks": "No history endpoint; partner-issued live keys.",
+      "note": "Best price, implied probability, size at best, bounded ladder with venue counts, raw pre-fee top of book, timestamps, status and freshness on every market. Sandbox keys free. OpenAPI 3.1 and llms.txt public."
+    },
+    {
+      "id": "opticodds",
+      "fit": "Businesses that need a licensed real-time bookmaker feed.",
+      "lacks": "Bookmaker-centric; no executable depth; enterprise pricing."
+    },
+    {
+      "id": "theoddsapi",
+      "fit": "Developers who want bookmaker odds as JSON fast and cheap.",
+      "lacks": "Polled, no size, no exchanges in depth."
+    },
+    {
+      "id": "betfair_api",
+      "fit": "Developers building on Betfair's exchange book.",
+      "lacks": "One exchange; non-US."
+    },
+    {
+      "id": "sportradar",
+      "fit": "Operators buying odds alongside official data at scale.",
+      "lacks": "Enterprise contracts; quotes, not executable prices."
+    },
+    {
+      "id": "kalshi_api",
+      "fit": "Developers building on a regulated US event-contract book.",
+      "lacks": "One venue."
+    }
+  ],
+  "why": [
+    "A betting odds API is judged by what happens when a user tries to bet the number it showed. The TerminalUp Odds API publishes, per outcome, the lowest fee-adjusted ask across licensed venues after the client's estimated commission, rounded against the bettor, so the price is attainable or slightly conservative, never optimistic. It carries the size at that price and a ladder beneath it. When a market goes quiet past its evidence window, it is marked stale with an empty ladder rather than showing an old number as live.",
+    "The venue set is the one that matters in 2026: sportsbooks like Pinnacle, exchanges like Betfair, Matchbook, Novig and ProphetX, and prediction markets like Kalshi and Polymarket, merged into one price per outcome with venue counts. Venue identities are never published; attribution lines are carried where a license requires them.",
+    "Keys carry entitlements for leagues, market types, ladder depth, delay and rate, and every response says what it is. A tu_test_ key returns synthetic data in the same shapes so you can ship an integration before a license is in place."
+  ],
+  "criteria": [
+    {
+      "name": "Executability",
+      "text": "Is the price one a user could take, at the size shown, after fees."
+    },
+    {
+      "name": "Coverage",
+      "text": "Exchanges and prediction markets, not just books."
+    },
+    {
+      "name": "Honesty",
+      "text": "Stale and thin markets marked as such; nothing interpolated."
+    },
+    {
+      "name": "Delivery",
+      "text": "Streaming with sequencing versus polling."
+    },
+    {
+      "name": "Developer experience",
+      "text": "Docs, OpenAPI, sandbox, error contract."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which odds API includes exchanges and prediction markets?",
+      "a": "The TerminalUp Odds API merges sportsbooks, betting exchanges and prediction markets into one price per outcome. Most odds APIs are bookmaker-only."
+    },
+    {
+      "q": "Is the TerminalUp Odds API free?",
+      "a": "Sandbox keys are free and return synthetic data in production shapes. Live keys are issued per partner."
+    },
+    {
+      "q": "What formats does it support?",
+      "a": "Decimal, American and implied probability, chosen per request."
+    },
+    {
+      "q": "Does it return history?",
+      "a": "No. Current state only. Build history from the stream."
+    },
+    {
+      "q": "How do I get started?",
+      "a": "Read the docs at terminal-up-hq.replit.app/docs, request a key, and build against the sandbox."
+    }
+  ],
+  "related": [
+    "bestsportsbettingapi.com",
+    "bestrealtimeoddsapi.com",
+    "bestoddsfeed.com",
+    "bestoddsaggregator.com",
+    "bestoddsscreen.com",
+    "bestbettingexchangeplatform.com"
+  ],
+  "cta": {
+    "url": "https://terminal-up-hq.replit.app/docs",
+    "text": "Read the Odds API docs"
+  }
+}

@@ -149,6 +149,42 @@
     "pricing": "Free with a paid tier.",
     "lacks": "Not a sharp tool: no execution, and shallow on exchanges and prediction markets."
   },
+  "oddschecker": {
+    "name": "Oddschecker",
+    "url": "https://www.oddschecker.com",
+    "type": "Odds comparison website",
+    "what": "The best-known odds comparison site, UK-born, listing bookmaker prices side by side with links out to each book. Free, funded by affiliate commissions.",
+    "fit": "Casual bettors who want a quick look at which book has the best price on a popular market.",
+    "pricing": "Free.",
+    "lacks": "Bookmaker-only, affiliate-driven, and read-only; you place the bet at the book."
+  },
+  "oddsportal": {
+    "name": "OddsPortal",
+    "url": "https://www.oddsportal.com",
+    "type": "Odds comparison and archive",
+    "what": "A global odds comparison site with a large archive of historical odds, used as much for research as for shopping.",
+    "fit": "Bettors and researchers who want to see how lines moved and compare books across many countries.",
+    "pricing": "Free.",
+    "lacks": "Read-only, bookmaker-focused, and slower to update than a professional screen."
+  },
+  "donbest": {
+    "name": "Don Best",
+    "url": "https://www.donbest.com",
+    "type": "Professional odds screen",
+    "what": "The long-running odds screen used in sportsbooks and by professionals, showing line movement across books in real time.",
+    "fit": "Professionals who want the classic multi-book screen with line history.",
+    "pricing": "Subscription.",
+    "lacks": "A screen, not a venue: no execution, and light on exchanges and prediction markets."
+  },
+  "spotodds": {
+    "name": "SpotOdds",
+    "url": "https://spotodds.com",
+    "type": "Real-time odds screen",
+    "what": "A real-time odds screen built for sharps, with fast line-move alerts across many books and exchanges.",
+    "fit": "Sharp bettors who care about seeing the move first.",
+    "pricing": "Subscription.",
+    "lacks": "No execution; you still bet at the book or exchange."
+  },
   "theoddsapi": {
     "name": "The Odds API",
     "url": "https://the-odds-api.com",
@@ -175,6 +211,24 @@
     "fit": "Operators and media companies buying data at scale.",
     "pricing": "Enterprise contracts.",
     "lacks": "Not built for a developer with a credit card, and not an executable-price feed."
+  },
+  "betfair_api": {
+    "name": "Betfair Exchange API",
+    "url": "https://developer.betfair.com",
+    "type": "Exchange API",
+    "what": "Betfair's developer API: streaming market data and order placement for the Betfair Exchange, with a long history of third-party tools built on it.",
+    "fit": "Developers building trading tools on the deepest single exchange.",
+    "pricing": "Free with an app key; some data tiers are charged.",
+    "lacks": "One exchange's book only, and Betfair does not serve the US."
+  },
+  "kalshi_api": {
+    "name": "Kalshi API",
+    "url": "https://trading-api.readme.io",
+    "type": "Prediction market API",
+    "what": "Kalshi's trading API: market data, order books and order placement for its regulated event contracts, with WebSocket feeds.",
+    "fit": "Developers building on a regulated US event-contract exchange.",
+    "pricing": "Free API access; trading fees apply to trades.",
+    "lacks": "One venue's book, and sports depth varies by market."
   },
   "terminalup_odds_api": {
     "name": "TerminalUp Odds API",

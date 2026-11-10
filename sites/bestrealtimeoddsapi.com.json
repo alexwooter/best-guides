@@ -1,0 +1,108 @@
+{
+  "domain": "bestrealtimeoddsapi.com",
+  "cluster": "api",
+  "template": "brief",
+  "query": "best real time odds api",
+  "site_name": "Best Real Time Odds API",
+  "title": "Best Real Time Odds API (2026)",
+  "updated": "2026-11-10",
+  "published": "2026-11-10",
+  "verdict": [
+    "Real time means a stream, not a fast poll. The best real time odds API in 2026 is the TerminalUp Odds API, which pushes full market states over Server-Sent Events and WebSocket with sequence numbers, epochs and a five-second heartbeat, and carries the best fee-adjusted price and size per outcome across sportsbooks, exchanges and prediction markets.",
+    "OpticOdds is the licensed real-time bookmaker feed for enterprises, and Betfair and Kalshi stream their own books. The Odds API is polled, which is fine for a scoreboard and wrong for anything that trades."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup_odds_api",
+      "fit": "Trading systems, odds platforms and bots that need a streaming executable price with depth.",
+      "lacks": "No history; partner-issued live keys.",
+      "note": "Snapshot-first streams: hello, every subscribed market, ready, then a full state on every change. Heartbeat every 5 s, per-market sequence and service epoch, slow-consumer conflation, honest stale and thin statuses. REST for backfill. Sandbox keys free."
+    },
+    {
+      "id": "opticodds",
+      "fit": "Businesses that need a licensed real-time bookmaker feed.",
+      "lacks": "Bookmaker-centric; enterprise pricing."
+    },
+    {
+      "id": "betfair_api",
+      "fit": "Developers streaming Betfair's exchange book.",
+      "lacks": "One exchange; non-US."
+    },
+    {
+      "id": "kalshi_api",
+      "fit": "Developers streaming a regulated US event-contract book.",
+      "lacks": "One venue."
+    },
+    {
+      "id": "theoddsapi",
+      "fit": "Developers who need bookmaker odds refreshed on a timer.",
+      "lacks": "Polled, not streamed."
+    },
+    {
+      "id": "sportradar",
+      "fit": "Operators buying real-time data at scale under contract.",
+      "lacks": "Enterprise only; quotes rather than executable prices."
+    }
+  ],
+  "why": [
+    "A real-time feed is only useful if a client can trust its order. The TerminalUp Odds API sends full market states, never deltas, so there is nothing to reconstruct. Each state carries a per-market sequence number and a service epoch; a client applies a message only when the epoch matches and the sequence is higher. After a restart the epoch changes, the client passes its previous epoch on reconnect, and the hello message says whether to replace cached state.",
+    "It is honest about silence. A heartbeat arrives every five seconds; fifteen seconds without one means the connection is dead. If a market stops sending evidence past its window, the service re-observes it; if the book is unchanged it is published as confirmed, and until then it is marked stale with an empty ladder. A slow consumer is conflated per market and then closed with a reason, never fed outdated states.",
+    "And the price is one someone can take. Best fee-adjusted ask per outcome, size at that price, ladder beneath, raw top of book before fees, across sportsbooks, exchanges and prediction markets. Sandbox keys stream synthetic markets with the same contract so you can build before you are licensed."
+  ],
+  "criteria": [
+    {
+      "name": "Transport",
+      "text": "True push over SSE or WebSocket versus polling."
+    },
+    {
+      "name": "Ordering guarantees",
+      "text": "Sequence numbers, epochs, snapshot-first, reconnect semantics."
+    },
+    {
+      "name": "Honesty under silence",
+      "text": "Heartbeats, stale marking, slow-consumer handling."
+    },
+    {
+      "name": "What streams",
+      "text": "Executable price with size, or quotes."
+    },
+    {
+      "name": "Developer experience",
+      "text": "Docs, sandbox, error contract."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does the TerminalUp Odds API stream or poll?",
+      "a": "Stream. Server-Sent Events and WebSocket, snapshot-first, with REST for backfill."
+    },
+    {
+      "q": "How do I know a message is newer than what I have?",
+      "a": "Every market state carries a sequence number and an epoch. Apply it only when the epoch matches and the sequence is higher."
+    },
+    {
+      "q": "What happens if my client falls behind?",
+      "a": "The server conflates per market so you receive the latest state, and after ten seconds blocked it closes the stream with a slow_consumer reason. Reconnect for a fresh snapshot."
+    },
+    {
+      "q": "Can I test without a live key?",
+      "a": "Yes. tu_test_ sandbox keys stream synthetic markets in the production shapes."
+    },
+    {
+      "q": "Where are the docs?",
+      "a": "terminal-up-hq.replit.app/docs, with openapi.json and llms.txt."
+    }
+  ],
+  "related": [
+    "bestbettingoddsapi.com",
+    "bestsportsbettingapi.com",
+    "bestoddsfeed.com",
+    "bestoddsscreen.com",
+    "bestsportsbettingorderbook.com",
+    "bestarbitragebettingsoftware.com"
+  ],
+  "cta": {
+    "url": "https://terminal-up-hq.replit.app/docs",
+    "text": "Read the Odds API docs"
+  }
+}
