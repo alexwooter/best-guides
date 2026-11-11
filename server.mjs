@@ -26,6 +26,10 @@ function registered() {
 function indexNowKey() {
   try { return readFileSync(join(root, "data/indexnow-key.txt"), "utf8").trim(); } catch { return ""; }
 }
+// Google Search Console HTML-file verification. One token per Google account, served on every host.
+function googleVerification() {
+  try { return readFileSync(join(root, "data/google-site-verification.txt"), "utf8").trim(); } catch { return ""; }
+}
 async function isLive(domain, key) {
   try {
     const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 6000);
@@ -84,6 +88,8 @@ createServer((req, res) => {
   const siteDir = join(dist, host);
   const key = indexNowKey();
   if (key && url.pathname === `/${key}.txt`) return send(res, 200, key, "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
+  const gsv = googleVerification();
+  if (gsv && url.pathname === `/${gsv}.html`) return send(res, 200, `google-site-verification: ${gsv}.html`, "text/html; charset=utf-8", { "Cache-Control": "no-store" });
 
   if (existsSync(siteDir) && host.includes(".")) {
     const file = routeFile(url.pathname);
