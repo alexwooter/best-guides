@@ -41,11 +41,12 @@ function clientIp(req) {
   return xf || req.socket?.remoteAddress || "";
 }
 
-let saltDay = "", salt = "";
+// The salt rotates daily so a visitor id never links two days. It must be the same on every
+// server instance, so it comes from a secret: ANALYTICS_SALT, else the database URL, else a
+// per-process random value (dev only).
+const SECRET = process.env.ANALYTICS_SALT || process.env.DATABASE_URL || randomBytes(16).toString("hex");
 function dailySalt() {
-  const day = new Date().toISOString().slice(0, 10);
-  if (day !== saltDay) { saltDay = day; salt = (process.env.ANALYTICS_SALT ?? "") + day + randomBytes(8).toString("hex"); }
-  return salt;
+  return createHash("sha256").update(`${SECRET}|${new Date().toISOString().slice(0, 10)}`).digest("hex");
 }
 
 export function visitorId(req) {
