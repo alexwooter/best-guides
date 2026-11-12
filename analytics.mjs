@@ -3,37 +3,79 @@
 // No cookies: a visitor is sha256(daily salt + ip + user agent), truncated.
 import { createHash, randomBytes } from "node:crypto";
 
+// [user-agent fragment, category, vendor, live]. "live" marks fetchers that fire while an
+// assistant answers a person (ChatGPT-User, Perplexity-User, Claude-User): a page being cited now.
 const BOTS = [
-  // AI crawlers and AI answer fetchers. ChatGPT-User, Perplexity-User and Claude-User fire
-  // when an assistant reads the page while answering someone; those are the ones to watch.
-  ["GPTBot", "ai"], ["ChatGPT-User", "ai"], ["OAI-SearchBot", "ai"], ["ClaudeBot", "ai"], ["Claude-User", "ai"],
-  ["Claude-SearchBot", "ai"], ["anthropic-ai", "ai"], ["PerplexityBot", "ai"], ["Perplexity-User", "ai"],
-  ["Amazonbot", "ai"], ["Applebot-Extended", "ai"], ["Bytespider", "ai"], ["CCBot", "ai"], ["cohere-ai", "ai"],
-  ["Diffbot", "ai"], ["meta-externalagent", "ai"], ["meta-externalfetcher", "ai"], ["YouBot", "ai"],
-  ["DuckAssistBot", "ai"], ["MistralAI-User", "ai"], ["Google-CloudVertexBot", "ai"], ["AI2Bot", "ai"],
-  ["ImagesiftBot", "ai"], ["omgili", "ai"], ["Timpibot", "ai"], ["PanguBot", "ai"],
-  // Search engines.
-  ["Googlebot", "search"], ["AdsBot-Google", "search"], ["Google-InspectionTool", "search"], ["Storebot-Google", "search"],
-  ["bingbot", "search"], ["BingPreview", "search"], ["Applebot", "search"], ["YandexBot", "search"], ["DuckDuckBot", "search"],
-  ["Baiduspider", "search"], ["Slurp", "search"], ["SeznamBot", "search"], ["Qwantify", "search"], ["PetalBot", "search"],
-  ["Kagibot", "search"], ["MojeekBot", "search"], ["Yeti", "search"], ["coccocbot", "search"],
-  // Everything else that is not a person.
-  ["AhrefsBot", "other"], ["SemrushBot", "other"], ["MJ12bot", "other"], ["DotBot", "other"], ["Screaming Frog", "other"],
-  ["facebookexternalhit", "other"], ["Twitterbot", "other"], ["LinkedInBot", "other"], ["Slackbot", "other"],
-  ["Discordbot", "other"], ["TelegramBot", "other"], ["WhatsApp", "other"], ["Pinterestbot", "other"],
-  ["HeadlessChrome", "other"], ["Lighthouse", "other"], ["PageSpeed", "other"], ["GTmetrix", "other"],
-  ["curl/", "other"], ["Wget/", "other"], ["python-requests", "other"], ["Python/", "other"], ["Go-http-client", "other"],
-  ["axios/", "other"], ["node-fetch", "other"], ["undici", "other"], ["okhttp", "other"], ["Java/", "other"], ["libwww", "other"],
-  ["bot", "other"], ["crawler", "other"], ["spider", "other"], ["scraper", "other"], ["fetcher", "other"],
+  // AI companies
+  ["GPTBot", "ai", "OpenAI", false], ["ChatGPT-User", "ai", "OpenAI", true], ["OAI-SearchBot", "ai", "OpenAI", false],
+  ["ClaudeBot", "ai", "Anthropic", false], ["Claude-User", "ai", "Anthropic", true], ["Claude-SearchBot", "ai", "Anthropic", false],
+  ["Claude-Web", "ai", "Anthropic", false], ["anthropic-ai", "ai", "Anthropic", false],
+  ["PerplexityBot", "ai", "Perplexity", false], ["Perplexity-User", "ai", "Perplexity", true],
+  ["Gemini-Deep-Research", "ai", "Google", true], ["Google-NotebookLM", "ai", "Google", true], ["Google-CloudVertexBot", "ai", "Google", false],
+  ["GoogleOther", "ai", "Google", false], ["Google-Extended", "ai", "Google", false],
+  ["xAI-Grok", "ai", "xAI", false], ["Grokbot", "ai", "xAI", false], ["Grok", "ai", "xAI", true],
+  ["MistralAI-User", "ai", "Mistral", true], ["meta-externalagent", "ai", "Meta", false], ["meta-externalfetcher", "ai", "Meta", true],
+  ["FacebookBot", "ai", "Meta", false], ["Amazonbot", "ai", "Amazon", false], ["bedrockbot", "ai", "Amazon", true],
+  ["Applebot-Extended", "ai", "Apple", false], ["Bytespider", "ai", "ByteDance", false], ["TikTokSpider", "ai", "ByteDance", false],
+  ["DuckAssistBot", "ai", "DuckDuckGo", true], ["CCBot", "ai", "Common Crawl", false], ["cohere-ai", "ai", "Cohere", false],
+  ["cohere-training-data-crawler", "ai", "Cohere", false], ["YouBot", "ai", "You.com", false], ["AI2Bot", "ai", "AI2", false],
+  ["Diffbot", "ai", "Diffbot", false], ["ImagesiftBot", "ai", "Hive", false], ["omgili", "ai", "Webz.io", false],
+  ["Webzio-Extended", "ai", "Webz.io", false], ["Timpibot", "ai", "Timpi", false], ["PanguBot", "ai", "Huawei", false],
+  ["iaskspider", "ai", "iAsk", false], ["Kangaroo Bot", "ai", "Kangaroo", false], ["Brightbot", "ai", "Bright Data", false],
+  // Search engines
+  ["Googlebot", "search", "Google", false], ["AdsBot-Google", "search", "Google", false], ["Google-InspectionTool", "search", "Google", false],
+  ["Storebot-Google", "search", "Google", false], ["bingbot", "search", "Bing", false], ["BingPreview", "search", "Bing", false],
+  ["Applebot", "search", "Apple", false], ["YandexBot", "search", "Yandex", false], ["DuckDuckBot", "search", "DuckDuckGo", false],
+  ["Baiduspider", "search", "Baidu", false], ["Slurp", "search", "Yahoo", false], ["SeznamBot", "search", "Seznam", false],
+  ["Qwantify", "search", "Qwant", false], ["PetalBot", "search", "Petal", false], ["Kagibot", "search", "Kagi", false],
+  ["MojeekBot", "search", "Mojeek", false], ["Yeti", "search", "Naver", false], ["coccocbot", "search", "Coc Coc", false],
+  // Everything else that is not a person
+  ["AhrefsBot", "other", "SEO tools", false], ["SemrushBot", "other", "SEO tools", false], ["MJ12bot", "other", "SEO tools", false],
+  ["DotBot", "other", "SEO tools", false], ["Screaming Frog", "other", "SEO tools", false],
+  ["facebookexternalhit", "other", "Link previews", false], ["Twitterbot", "other", "Link previews", false],
+  ["LinkedInBot", "other", "Link previews", false], ["Slackbot", "other", "Link previews", false],
+  ["Discordbot", "other", "Link previews", false], ["TelegramBot", "other", "Link previews", false],
+  ["WhatsApp", "other", "Link previews", false], ["Pinterestbot", "other", "Link previews", false],
+  ["HeadlessChrome", "other", "Scripts", false], ["Lighthouse", "other", "Scripts", false], ["PageSpeed", "other", "Scripts", false],
+  ["GTmetrix", "other", "Scripts", false], ["curl/", "other", "Scripts", false], ["Wget/", "other", "Scripts", false],
+  ["python-requests", "other", "Scripts", false], ["Python/", "other", "Scripts", false], ["Go-http-client", "other", "Scripts", false],
+  ["axios/", "other", "Scripts", false], ["node-fetch", "other", "Scripts", false], ["undici", "other", "Scripts", false],
+  ["okhttp", "other", "Scripts", false], ["Java/", "other", "Scripts", false], ["libwww", "other", "Scripts", false],
+  ["bot", "other", "Unnamed bots", false], ["crawler", "other", "Unnamed bots", false], ["spider", "other", "Unnamed bots", false],
+  ["scraper", "other", "Unnamed bots", false], ["fetcher", "other", "Unnamed bots", false],
 ];
 
+// Where a person came from, by referrer host.
+const SOURCES = [
+  [/^gemini\.google\.com$/, "Gemini", "ai"], [/^aistudio\.google\.com$/, "Gemini", "ai"], [/^notebooklm\.google\.com$/, "NotebookLM", "ai"],
+  [/(^|\.)google\./, "Google", "search"], [/(^|\.)bing\.com$/, "Bing", "search"], [/(^|\.)duckduckgo\.com$/, "DuckDuckGo", "search"],
+  [/(^|\.)yahoo\./, "Yahoo", "search"], [/(^|\.)yandex\./, "Yandex", "search"], [/(^|\.)brave\.com$/, "Brave", "search"],
+  [/(^|\.)ecosia\.org$/, "Ecosia", "search"], [/(^|\.)kagi\.com$/, "Kagi", "search"],
+  [/(^|\.)chatgpt\.com$/, "ChatGPT", "ai"], [/(^|\.)openai\.com$/, "ChatGPT", "ai"], [/(^|\.)perplexity\.ai$/, "Perplexity", "ai"],
+  [/(^|\.)claude\.ai$/, "Claude", "ai"], [/(^|\.)anthropic\.com$/, "Claude", "ai"], 
+  [/(^|\.)copilot\.microsoft\.com$/, "Copilot", "ai"], [/(^|\.)grok\.com$/, "Grok", "ai"], [/(^|\.)x\.ai$/, "Grok", "ai"],
+  [/(^|\.)you\.com$/, "You.com", "ai"], [/(^|\.)mistral\.ai$/, "Mistral", "ai"], [/(^|\.)meta\.ai$/, "Meta AI", "ai"],
+  [/(^|\.)x\.com$/, "X", "social"], [/(^|\.)twitter\.com$/, "X", "social"], [/^t\.co$/, "X", "social"],
+  [/(^|\.)reddit\.com$/, "Reddit", "social"], [/(^|\.)linkedin\.com$/, "LinkedIn", "social"], [/^lnkd\.in$/, "LinkedIn", "social"],
+  [/(^|\.)facebook\.com$/, "Facebook", "social"], [/(^|\.)instagram\.com$/, "Instagram", "social"], [/(^|\.)youtube\.com$/, "YouTube", "social"],
+  [/(^|\.)tiktok\.com$/, "TikTok", "social"], [/(^|\.)threads\.net$/, "Threads", "social"], [/(^|\.)discord\.com$/, "Discord", "social"],
+  [/(^|\.)t\.me$/, "Telegram", "social"], [/(^|\.)telegram\./, "Telegram", "social"],
+  [/(^|\.)terminalup\.com$/, "TerminalUp", "owned"], [/(^|\.)wagerup\.com$/, "WagerUp", "owned"],
+];
+
+export function sourceOf(refHost = "") {
+  if (!refHost) return { source: "Direct", group: "direct" };
+  for (const [re, source, group] of SOURCES) if (re.test(refHost)) return { source, group };
+  return { source: refHost, group: "other" };
+}
+
 export function classify(ua = "") {
-  if (!ua) return { bot: "no-ua", cat: "other" };
+  if (!ua) return { bot: "no-ua", cat: "other", vendor: "Unnamed bots", live: false };
   const lower = ua.toLowerCase();
-  for (const [name, cat] of BOTS) {
-    if (lower.includes(name.toLowerCase())) return { bot: name, cat };
+  for (const [name, cat, vendor, live] of BOTS) {
+    if (lower.includes(name.toLowerCase())) return { bot: name, cat, vendor, live };
   }
-  return { bot: null, cat: null };
+  return { bot: null, cat: null, vendor: null, live: false };
 }
 
 function clientIp(req) {
@@ -139,45 +181,69 @@ const dayFmt = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric",
 export function dayOf(ts) { return dayFmt.format(ts); }
 
 function blank() {
-  return { pageviews: 0, visitors: new Set(), ai: 0, search: 0, otherBots: 0, llms: 0, pages: 0 };
+  return { pageviews: 0, visitors: new Set(), ai: 0, aiLive: 0, search: 0, otherBots: 0, llms: 0, pages: 0,
+    src: { search: 0, ai: 0, social: 0, owned: 0, direct: 0, other: 0 } };
 }
 function bump(agg, r) {
-  if (r.kind === "beacon" && !r.bot) { agg.pageviews++; agg.visitors.add(r.visitor); }
-  if (r.bot_cat === "ai") agg.ai++;
+  if (r.kind === "beacon" && !r.bot) {
+    agg.pageviews++; agg.visitors.add(r.visitor);
+    const g = sourceOf(r.ref_host).group; agg.src[g] = (agg.src[g] ?? 0) + 1;
+  }
+  if (r.bot_cat === "ai") { agg.ai++; if (classify(r.bot).live) agg.aiLive++; }
   else if (r.bot_cat === "search") agg.search++;
   else if (r.bot_cat === "other") agg.otherBots++;
   if (r.path === "/llms.txt") agg.llms++;
   if (r.kind === "page") agg.pages++;
 }
 function finish(agg) { return { ...agg, visitors: agg.visitors.size }; }
+function tally(map, key, init, fn) { if (!map.has(key)) map.set(key, init()); fn(map.get(key)); }
 
 export async function stats({ days = 30, domains = [] } = {}) {
   const since = new Date(Date.now() - days * 86400000);
   const rows = await rowsSince(since);
-  const byDay = new Map(), byHost = new Map(), aiBots = new Map(), refs = new Map(), today = new Map();
+  const byDay = new Map(), byHost = new Map(), today = new Map();
+  const people = new Map(), refs = new Map(), aiVendors = new Map(), engines = new Map(), others = new Map();
   const todayKey = dayOf(new Date());
   for (const d of domains) byHost.set(d, blank());
-  // Fill every day in range so the chart has no holes.
   for (let i = days - 1; i >= 0; i--) byDay.set(dayOf(new Date(Date.now() - i * 86400000)), blank());
+  const total = blank();
   for (const r of rows) {
     const day = dayOf(new Date(r.ts));
-    if (!byDay.has(day)) byDay.set(day, blank());
-    bump(byDay.get(day), r);
-    if (!byHost.has(r.host)) byHost.set(r.host, blank());
-    bump(byHost.get(r.host), r);
-    if (day === todayKey) { if (!today.has(r.host)) today.set(r.host, blank()); bump(today.get(r.host), r); }
-    if (r.bot_cat === "ai") aiBots.set(r.bot, (aiBots.get(r.bot) ?? 0) + 1);
-    if (r.kind === "beacon" && !r.bot && r.ref_host) refs.set(r.ref_host, (refs.get(r.ref_host) ?? 0) + 1);
+    tally(byDay, day, blank, (a) => bump(a, r));
+    tally(byHost, r.host, blank, (a) => bump(a, r));
+    if (day === todayKey) tally(today, r.host, blank, (a) => bump(a, r));
+    bump(total, r);
+    if (r.kind === "beacon" && !r.bot) {
+      const { source, group } = sourceOf(r.ref_host);
+      tally(people, source, () => ({ source, group, visits: 0, visitors: new Set() }), (a) => { a.visits++; a.visitors.add(r.visitor); });
+      if (r.ref_host) refs.set(r.ref_host, (refs.get(r.ref_host) ?? 0) + 1);
+    }
+    if (r.bot_cat === "ai") {
+      const c = classify(r.bot);
+      tally(aiVendors, c.vendor, () => ({ vendor: c.vendor, hits: 0, live: 0, bots: new Map() }), (a) => {
+        a.hits++; if (c.live) a.live++; a.bots.set(r.bot, (a.bots.get(r.bot) ?? 0) + 1);
+      });
+    } else if (r.bot_cat === "search") {
+      const c = classify(r.bot);
+      tally(engines, c.vendor, () => ({ engine: c.vendor, hits: 0 }), (a) => { a.hits++; });
+    } else if (r.bot_cat === "other") {
+      const c = classify(r.bot);
+      tally(others, c.vendor, () => ({ kind: c.vendor, hits: 0 }), (a) => { a.hits++; });
+    }
   }
-  const total = blank();
-  for (const r of rows) bump(total, r);
+  const groupOrder = { search: 0, ai: 1, social: 2, owned: 3, direct: 4, other: 5 };
   return {
     days, since: since.toISOString(), tz: TZ, rows: rows.length, storage: pool ? "postgres" : "memory",
     totals: finish(total),
     daily: [...byDay.entries()].map(([day, a]) => ({ day, ...finish(a) })),
     domains: [...byHost.entries()].map(([host, a]) => ({ host, ...finish(a), today: finish(today.get(host) ?? blank()) }))
       .sort((a, b) => b.visitors - a.visitors || b.ai - a.ai || b.pageviews - a.pageviews || a.host.localeCompare(b.host)),
-    aiBots: [...aiBots.entries()].map(([bot, hits]) => ({ bot, hits })).sort((a, b) => b.hits - a.hits),
-    referrers: [...refs.entries()].map(([host, hits]) => ({ host, hits })).sort((a, b) => b.hits - a.hits).slice(0, 20),
+    people: [...people.values()].map((p) => ({ ...p, visitors: p.visitors.size }))
+      .sort((a, b) => b.visits - a.visits || groupOrder[a.group] - groupOrder[b.group]),
+    aiVendors: [...aiVendors.values()].map((v) => ({ ...v, bots: [...v.bots.entries()].map(([bot, hits]) => ({ bot, hits })).sort((a, b) => b.hits - a.hits) }))
+      .sort((a, b) => b.hits - a.hits),
+    engines: [...engines.values()].sort((a, b) => b.hits - a.hits),
+    otherBots: [...others.values()].sort((a, b) => b.hits - a.hits),
+    referrers: [...refs.entries()].map(([host, hits]) => ({ host, hits, ...sourceOf(host) })).sort((a, b) => b.hits - a.hits).slice(0, 25),
   };
 }
