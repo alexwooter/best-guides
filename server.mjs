@@ -4,6 +4,8 @@
 import { createServer } from "node:http";
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { join, normalize } from "node:path";
+import { initAnalytics, record, stats } from "./analytics.mjs";
+import { renderDashboard } from "./dashboard.mjs";
 
 const root = new URL(".", import.meta.url).pathname;
 const dist = join(root, "dist");
@@ -80,6 +82,19 @@ function routeFile(pathname) {
   const allowed = new Set(["/robots.txt", "/sitemap.xml", "/llms.txt", "/favicon.svg"]);
   return allowed.has(pathname) ? pathname.slice(1) : null;
 }
+function readBody(req, limit = 2048) {
+  return new Promise((resolve) => {
+    let data = "";
+    req.on("data", (c) => { data += c; if (data.length > limit) { resolve(""); req.destroy(); } });
+    req.on("end", () => resolve(data));
+    req.on("error", () => resolve(""));
+  });
+}
+// The dashboard is open when DASH_KEY is unset; set the secret and pass ?key= to lock it.
+function dashAllowed(url) {
+  const key = process.env.DASH_KEY;
+  return !key || url.searchParams.get("key") === key;
+}
 
 createServer((req, res) => {
   const url = new URL(req.url ?? "/", "http://x");
@@ -91,14 +106,28 @@ createServer((req, res) => {
   const gsv = googleVerification();
   if (gsv && url.pathname === `/${gsv}.html`) return send(res, 200, `google-site-verification: ${gsv}.html`, "text/html; charset=utf-8", { "Cache-Control": "no-store" });
 
+  // Pageview beacon sent by the page's own script. Only browsers run it, so it counts people.
+  if (url.pathname === "/_/hit" && req.method === "POST") {
+    readBody(req).then((raw) => {
+      let b = {}; try { b = JSON.parse(raw || "{}"); } catch {}
+      record({ req, host, path: typeof b.p === "string" ? b.p : "/", kind: "beacon", ref: typeof b.r === "string" ? b.r : "" });
+      res.writeHead(204, { "Cache-Control": "no-store" }); res.end();
+    });
+    return;
+  }
+
   if (existsSync(siteDir) && host.includes(".")) {
     const file = routeFile(url.pathname);
-    if (file && serveFile(res, siteDir, file)) return;
+    if (file && serveFile(res, siteDir, file)) {
+      record({ req, host, path: url.pathname === "/index.html" ? "/" : url.pathname, kind: file === "index.html" ? "page" : "file", ref: req.headers.referer ?? "" });
+      return;
+    }
     return send(res, 404, "Not found", "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
   }
 
   // A registered domain whose page is not built yet: a holding page that search engines are told to skip.
   if (registered().has(host)) {
+    record({ req, host, path: url.pathname, kind: "holding" });
     if (url.pathname === "/robots.txt") return send(res, 200, "User-agent: *\nDisallow: /\n", "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
     const name = host.replace(/^best/, "best ").replace(/\.com$/, "");
     return send(res, 503, `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>${name}</title><style>body{font:16px/1.6 system-ui;max-width:560px;margin:80px auto;padding:0 20px;color:#17212b}</style><h1>${name}</h1><p>This guide is being written and will be published shortly.</p>`, "text/html; charset=utf-8", { "Cache-Control": "no-store", "Retry-After": "86400" });
@@ -107,6 +136,15 @@ createServer((req, res) => {
   // Fallback host: index of all sites, previews, and the IndexNow trigger.
   if (url.pathname === "/_/indexnow") {
     submitIndexNow({ force: url.searchParams.has("force") }).then((r) => send(res, 200, JSON.stringify(r, null, 2), "application/json; charset=utf-8", { "Cache-Control": "no-store" }));
+    return;
+  }
+  if (url.pathname === "/_/dashboard" || url.pathname === "/_/stats.json") {
+    if (!dashAllowed(url)) return send(res, 401, "Add ?key=", "text/plain; charset=utf-8", { "Cache-Control": "no-store" });
+    const days = Math.min(365, Math.max(1, Number(url.searchParams.get("days")) || 30));
+    stats({ days, domains: manifest().map((s) => s.domain) }).then((s) => {
+      if (url.pathname === "/_/stats.json") return send(res, 200, JSON.stringify(s, null, 2), "application/json; charset=utf-8", { "Cache-Control": "no-store" });
+      send(res, 200, renderDashboard(s, { key: url.searchParams.get("key") ?? "", path: "/_/dashboard" }), "text/html; charset=utf-8", { "Cache-Control": "no-store" });
+    }).catch((e) => send(res, 500, `stats failed: ${e.message}`, "text/plain; charset=utf-8", { "Cache-Control": "no-store" }));
     return;
   }
   const m = /^\/_\/([a-z0-9.-]+)\/?(.*)$/.exec(url.pathname);
@@ -118,11 +156,12 @@ createServer((req, res) => {
   }
   if (url.pathname === "/") {
     const rows = manifest().map((s) => `<li><a href="/_/${s.domain}/">${s.domain}</a> <small>${s.template}, ~${s.words} words</small> · <a href="https://${s.domain}/">live</a></li>`).join("\n");
-    return send(res, 200, `<!doctype html><meta charset="utf-8"><title>Sites</title><style>body{font:15px/1.6 system-ui;max-width:720px;margin:40px auto;padding:0 20px}small{color:#666}</style><h1>${manifest().length} sites</h1><ul>${rows}</ul>`, "text/html; charset=utf-8", { "Cache-Control": "no-store" });
+    return send(res, 200, `<!doctype html><meta charset="utf-8"><title>Sites</title><style>body{font:15px/1.6 system-ui;max-width:720px;margin:40px auto;padding:0 20px}small{color:#666}</style><h1>${manifest().length} sites</h1><p><a href="/_/dashboard">Traffic dashboard</a></p><ul>${rows}</ul>`, "text/html; charset=utf-8", { "Cache-Control": "no-store" });
   }
   send(res, 404, "Not found");
 }).listen(PORT, "0.0.0.0", () => {
   console.log(`serving ${manifest().length} sites on :${PORT}`);
+  initAnalytics().catch((e) => console.error("analytics init", e.message));
   if (process.env.INDEXNOW !== "off") {
     setTimeout(() => submitIndexNow().catch(() => {}), 90 * 1000);
     setInterval(() => submitIndexNow().catch(() => {}), 24 * 60 * 60 * 1000).unref?.();

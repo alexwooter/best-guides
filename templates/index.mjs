@@ -3,6 +3,8 @@
 
 const month = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
+// Pageview beacon. Runs only in real browsers, so the server can tell people from crawlers.
+const BEACON = `<script>(function(){try{var d=JSON.stringify({p:location.pathname,r:document.referrer||""});if(navigator.sendBeacon){navigator.sendBeacon("/_/hit",new Blob([d],{type:"application/json"}))}else{fetch("/_/hit",{method:"POST",body:d,keepalive:true,headers:{"Content-Type":"application/json"}})}}catch(e){}})();</script>`;
 function head(ctx, css) {
   const { site, esc, jsonLd } = ctx;
   const desc = site.verdict[0].length > 155 ? site.verdict[0].slice(0, 152).replace(/\s+\S*$/, "") + "..." : site.verdict[0];
@@ -122,7 +124,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-</body></html>`;
+${BEACON}</body></html>`;
 }
 
 /* ---------- Terminal: dark, monospace numbers, dense ---------- */
@@ -174,7 +176,7 @@ ${s.footer}
 </div>
 <aside class="side"><div class="panel"><h4>At a glance</h4><ol>${toc}</ol><h4 style="margin-top:16px">Our pick</h4><p style="margin:0;font-size:14px">${ctx.esc(ctx.products.terminalup.custody)}</p></div></aside>
 </div></main>
-</body></html>`;
+${BEACON}</body></html>`;
 }
 
 /* ---------- Paper: warm, big type, card grid ---------- */
@@ -221,7 +223,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-</body></html>`;
+${BEACON}</body></html>`;
 }
 
 /* ---------- Brief: white, compact, summary box first ---------- */
@@ -266,7 +268,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-</body></html>`;
+${BEACON}</body></html>`;
 }
 
 export const templates = {
