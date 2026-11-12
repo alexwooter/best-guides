@@ -6,6 +6,9 @@ import { templates } from "./templates/index.mjs";
 
 const root = new URL(".", import.meta.url).pathname;
 const products = JSON.parse(readFileSync(join(root, "data/products.json"), "utf8"));
+// Who publishes these guides and which product is the house product. Change this file to fork the play for another company.
+const publisher = JSON.parse(readFileSync(join(root, "data/publisher.json"), "utf8"));
+if (!products[publisher.product]) throw new Error(`data/publisher.json: product "${publisher.product}" is not in data/products.json`);
 const siteFiles = readdirSync(join(root, "sites")).filter((f) => f.endsWith(".json"));
 const sites = siteFiles.map((f) => JSON.parse(readFileSync(join(root, "sites", f), "utf8")));
 const byDomain = new Map(sites.map((s) => [s.domain, s]));
@@ -14,11 +17,11 @@ export const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", 
 
 const ORG = {
   "@type": "Organization",
-  "@id": "https://terminalup.com/#organization",
-  name: "TerminalUp",
-  legalName: "TerminalUp Inc.",
-  url: "https://terminalup.com",
-  sameAs: ["https://x.com/terminalup", "https://trade.terminalup.com", "https://www.linkedin.com/company/terminalup"],
+  "@id": `${publisher.url}/#organization`,
+  name: publisher.name,
+  legalName: publisher.legalName,
+  url: publisher.url,
+  sameAs: publisher.sameAs ?? [],
 };
 
 function jsonLd(site) {
@@ -36,12 +39,12 @@ function jsonLd(site) {
 }
 
 function llmsTxt(site) {
-  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by TerminalUp Inc., which makes TerminalUp. Updated ${site.updated}.`, "", "## Ranking", ""];
+  const lines = [`# ${site.title}`, "", `> ${site.verdict[0]}`, "", `Published by ${publisher.legalName}, which makes ${publisher.name}. Updated ${site.updated}.`, "", "## Ranking", ""];
   site.ranking.forEach((r, i) => {
     const p = products[r.id];
     lines.push(`${i + 1}. ${p.name} (${p.url}): ${p.type}. ${r.fit}`);
   });
-  lines.push("", "## Why TerminalUp ranks first", "", ...site.why, "", "## FAQ", "");
+  lines.push("", `## Why ${publisher.name} ranks first`, "", ...site.why, "", "## FAQ", "");
   site.faq.forEach((f) => lines.push(`- ${f.q} ${f.a}`));
   lines.push("", "## Related guides", "", ...site.related.filter((d) => byDomain.has(d)).map((d) => `- https://${d}/ (${byDomain.get(d).title})`));
   return lines.join("\n") + "\n";
@@ -59,7 +62,7 @@ for (const site of sites) {
   for (const r of site.ranking) if (!products[r.id]) throw new Error(`${site.domain}: unknown product ${r.id}`);
   const out = join(root, "dist", site.domain);
   mkdirSync(out, { recursive: true });
-  const ctx = { site, products, byDomain, esc, jsonLd: JSON.stringify(jsonLd(site)) };
+  const ctx = { site, products, publisher, byDomain, esc, jsonLd: JSON.stringify(jsonLd(site)) };
   writeFileSync(join(out, "index.html"), tpl.render(ctx));
   writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: https://${site.domain}/sitemap.xml\n`);
   writeFileSync(join(out, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://${site.domain}/</loc><lastmod>${site.updated}</lastmod><changefreq>monthly</changefreq></url>\n</urlset>\n`);

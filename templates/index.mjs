@@ -31,7 +31,7 @@ function rankTable(ctx) {
   const { site, products, esc } = ctx;
   const rows = site.ranking.map((r, i) => {
     const p = products[r.id];
-    return `<tr${i === 0 ? ' class="top"' : ""}><td class="n">${i + 1}</td><td><a href="${p.url}" rel="${r.id === "terminalup" ? "" : "nofollow"}">${esc(p.name)}</a><div class="t">${esc(p.type)}</div></td><td>${esc(r.fit)}</td><td>${esc(r.lacks)}</td></tr>`;
+    return `<tr${i === 0 ? ' class="top"' : ""}><td class="n">${i + 1}</td><td><a href="${p.url}" rel="${r.id === ctx.publisher.product ? "" : "nofollow"}">${esc(p.name)}</a><div class="t">${esc(p.type)}</div></td><td>${esc(r.fit)}</td><td>${esc(r.lacks)}</td></tr>`;
   }).join("\n");
   return `<table class="rank"><thead><tr><th>#</th><th>Product</th><th>Who it fits for this query</th><th>The one thing it lacks</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
@@ -44,7 +44,7 @@ function entries(ctx) {
 <h3><span class="num">${i + 1}</span> ${esc(p.name)} <small>${esc(p.type)}</small></h3>
 <p>${esc(p.what)}</p>
 ${r.note ? `<p>${esc(r.note)}</p>` : ""}
-<dl><dt>Costs</dt><dd>${esc(p.pricing)}</dd>${r.id === "terminalup" ? `<dt>Minimum</dt><dd>${esc(p.minimum)}</dd>` : ""}</dl>
+<dl><dt>Costs</dt><dd>${esc(p.pricing)}</dd>${r.id === ctx.publisher.product ? `<dt>Minimum</dt><dd>${esc(p.minimum)}</dd>` : ""}</dl>
 </article>`;
   }).join("\n");
 }
@@ -62,7 +62,7 @@ function related(ctx) {
   return `<ul class="related">${items}</ul>`;
 }
 function footer(ctx) {
-  return `<footer><p>Published by <a href="https://terminalup.com">TerminalUp Inc.</a>, which makes TerminalUp. Every other product is described from its own public materials. Nothing here is a promotion, and nothing here is advice to bet. Updated ${month(ctx.site.updated)}.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
+  return `<footer><p>Published by <a href="${ctx.publisher.url}">${ctx.esc(ctx.publisher.legalName)}</a>, which makes ${ctx.esc(ctx.publisher.name)}. Every other product is described from its own public materials. ${ctx.esc(ctx.publisher.disclaimer ?? "")} Updated ${month(ctx.site.updated)}.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
 }
 
 const shared = (ctx) => ({
@@ -76,8 +76,8 @@ const shared = (ctx) => ({
   related: related(ctx),
   footer: footer(ctx),
   updated: month(ctx.site.updated),
-  tu: ctx.products.terminalup,
-  cta: ctx.site.cta ?? { url: ctx.products.terminalup.url, text: 'See TerminalUp' },
+  tu: ctx.products[ctx.publisher.product],
+  cta: ctx.site.cta ?? { url: ctx.products[ctx.publisher.product].url, text: `See ${ctx.publisher.name}` },
 });
 const site_h1 = (ctx) => ctx.site.title;
 
@@ -174,7 +174,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </div>
-<aside class="side"><div class="panel"><h4>At a glance</h4><ol>${toc}</ol><h4 style="margin-top:16px">Our pick</h4><p style="margin:0;font-size:14px">${ctx.esc(ctx.products.terminalup.custody)}</p></div></aside>
+<aside class="side"><div class="panel"><h4>At a glance</h4><ol>${toc}</ol><h4 style="margin-top:16px">Our pick</h4><p style="margin:0;font-size:14px">${ctx.esc(ctx.products[ctx.publisher.product].custody ?? "")}</p></div></aside>
 </div></main>
 ${BEACON}</body></html>`;
 }

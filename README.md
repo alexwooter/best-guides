@@ -3,6 +3,7 @@
 One codebase that serves a separate ranked buyer's guide on each of the 51 exact-match domains in `data/domains.txt`. The server reads the request's hostname and serves `dist/<domain>/`. Adding a domain is adding a JSON file.
 
 ```
+data/publisher.json     who publishes the guides and which product is the house product (change this to fork the play)
 sites/<domain>.json     one per domain: query, verdict, ranking, why, criteria, faq, related, template
 data/products.json      the shared fact sheet for every product that appears in a ranking
 data/domains.txt        the 51 registered domains
@@ -43,6 +44,10 @@ Rules the pages follow:
 - The footer discloses the publisher on every page.
 - No bonus or deposit language. TerminalUp venue count: 19 live, 16 pending (November 2026). Commission 0.5%, 0.35% at highest volume. Minimum $10,000. Custody line: "You fund one TerminalUp account. Orders route to venues from it."
 - Related guides link only to domains that have a page built, so there are never dead links.
+
+## Running this for another company
+
+See PLAYBOOK.md: fork, change `data/publisher.json`, `data/products.json`, `data/domains.txt`, write `sites/*.json`, deploy.
 
 ## Facts to refresh
 
