@@ -110,7 +110,12 @@ createServer((req, res) => {
   if (url.pathname === "/_/hit" && req.method === "POST") {
     readBody(req).then((raw) => {
       let b = {}; try { b = JSON.parse(raw || "{}"); } catch {}
-      record({ req, host, path: typeof b.p === "string" ? b.p : "/", kind: "beacon", ref: typeof b.r === "string" ? b.r : "" });
+      if (b.t === "click" && typeof b.u === "string") {
+        let target = ""; try { const t = new URL(b.u); target = t.hostname.replace(/^www\./, "") + t.pathname; } catch {}
+        if (target) record({ req, host, path: target, kind: "click" });
+      } else {
+        record({ req, host, path: typeof b.p === "string" ? b.p : "/", kind: "beacon", ref: typeof b.r === "string" ? b.r : "" });
+      }
       res.writeHead(204, { "Cache-Control": "no-store" }); res.end();
     });
     return;

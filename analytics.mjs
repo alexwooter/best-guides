@@ -2,6 +2,14 @@
 // Rows go to Postgres when DATABASE_URL is set, otherwise to memory (dev only).
 // No cookies: a visitor is sha256(daily salt + ip + user agent), truncated.
 import { createHash, randomBytes } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+
+const ROOT = new URL(".", import.meta.url).pathname;
+function publisherHost() {
+  try { return new URL(JSON.parse(readFileSync(join(ROOT, "data/publisher.json"), "utf8")).url).hostname.replace(/^www\./, ""); } catch { return ""; }
+}
+export const HOME = publisherHost();
 
 // [user-agent fragment, category, vendor, live]. "live" marks fetchers that fire while an
 // assistant answers a person (ChatGPT-User, Perplexity-User, Claude-User): a page being cited now.
@@ -182,13 +190,14 @@ export function dayOf(ts) { return dayFmt.format(ts); }
 
 function blank() {
   return { pageviews: 0, visitors: new Set(), ai: 0, aiLive: 0, search: 0, otherBots: 0, llms: 0, pages: 0,
-    src: { search: 0, ai: 0, social: 0, owned: 0, direct: 0, other: 0 } };
+    clicksHome: 0, clicksOut: 0, src: { search: 0, ai: 0, social: 0, owned: 0, direct: 0, other: 0 } };
 }
 function bump(agg, r) {
   if (r.kind === "beacon" && !r.bot) {
     agg.pageviews++; agg.visitors.add(r.visitor);
     const g = sourceOf(r.ref_host).group; agg.src[g] = (agg.src[g] ?? 0) + 1;
   }
+  if (r.kind === "click" && !r.bot) { if (HOME && r.path.startsWith(HOME)) agg.clicksHome++; else agg.clicksOut++; }
   if (r.bot_cat === "ai") { agg.ai++; if (classify(r.bot).live) agg.aiLive++; }
   else if (r.bot_cat === "search") agg.search++;
   else if (r.bot_cat === "other") agg.otherBots++;
@@ -202,7 +211,7 @@ export async function stats({ days = 30, domains = [] } = {}) {
   const since = new Date(Date.now() - days * 86400000);
   const rows = await rowsSince(since);
   const byDay = new Map(), byHost = new Map(), today = new Map();
-  const people = new Map(), refs = new Map(), aiVendors = new Map(), engines = new Map(), others = new Map();
+  const people = new Map(), refs = new Map(), aiVendors = new Map(), engines = new Map(), others = new Map(), outbound = new Map();
   const todayKey = dayOf(new Date());
   for (const d of domains) byHost.set(d, blank());
   for (let i = days - 1; i >= 0; i--) byDay.set(dayOf(new Date(Date.now() - i * 86400000)), blank());
@@ -217,6 +226,10 @@ export async function stats({ days = 30, domains = [] } = {}) {
       const { source, group } = sourceOf(r.ref_host);
       tally(people, source, () => ({ source, group, visits: 0, visitors: new Set() }), (a) => { a.visits++; a.visitors.add(r.visitor); });
       if (r.ref_host) refs.set(r.ref_host, (refs.get(r.ref_host) ?? 0) + 1);
+    }
+    if (r.kind === "click" && !r.bot) {
+      const dest = r.path.split("/")[0];
+      tally(outbound, dest, () => ({ host: dest, clicks: 0, home: HOME && dest === HOME }), (a) => { a.clicks++; });
     }
     if (r.bot_cat === "ai") {
       const c = classify(r.bot);
@@ -233,7 +246,7 @@ export async function stats({ days = 30, domains = [] } = {}) {
   }
   const groupOrder = { search: 0, ai: 1, social: 2, owned: 3, direct: 4, other: 5 };
   return {
-    days, since: since.toISOString(), tz: TZ, rows: rows.length, storage: pool ? "postgres" : "memory",
+    days, since: since.toISOString(), tz: TZ, rows: rows.length, storage: pool ? "postgres" : "memory", home: HOME,
     totals: finish(total),
     daily: [...byDay.entries()].map(([day, a]) => ({ day, ...finish(a) })),
     domains: [...byHost.entries()].map(([host, a]) => ({ host, ...finish(a), today: finish(today.get(host) ?? blank()) }))
@@ -243,6 +256,7 @@ export async function stats({ days = 30, domains = [] } = {}) {
     aiVendors: [...aiVendors.values()].map((v) => ({ ...v, bots: [...v.bots.entries()].map(([bot, hits]) => ({ bot, hits })).sort((a, b) => b.hits - a.hits) }))
       .sort((a, b) => b.hits - a.hits),
     engines: [...engines.values()].sort((a, b) => b.hits - a.hits),
+    outbound: [...outbound.values()].sort((a, b) => (b.home - a.home) || b.clicks - a.clicks),
     otherBots: [...others.values()].sort((a, b) => b.hits - a.hits),
     referrers: [...refs.entries()].map(([host, hits]) => ({ host, hits, ...sourceOf(host) })).sort((a, b) => b.hits - a.hits).slice(0, 25),
   };

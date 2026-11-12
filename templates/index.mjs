@@ -3,8 +3,17 @@
 
 const month = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
-// Pageview beacon. Runs only in real browsers, so the server can tell people from crawlers.
-const BEACON = `<script>(function(){try{var d=JSON.stringify({p:location.pathname,r:document.referrer||""});if(navigator.sendBeacon){navigator.sendBeacon("/_/hit",new Blob([d],{type:"application/json"}))}else{fetch("/_/hit",{method:"POST",body:d,keepalive:true,headers:{"Content-Type":"application/json"}})}}catch(e){}})();</script>`;
+// Pageview + outbound click beacon. Runs only in real browsers, so the server can tell people
+// from crawlers. Clicks to the publisher's site get utm_source=<guide domain> so the publisher's
+// own analytics can attribute them.
+function beacon(ctx) {
+  const home = new URL(ctx.publisher.url).hostname.replace(/^www\./, "");
+  return `<script>(function(){function s(o){try{var d=JSON.stringify(o);if(navigator.sendBeacon){navigator.sendBeacon("/_/hit",new Blob([d],{type:"application/json"}))}else{fetch("/_/hit",{method:"POST",body:d,keepalive:true,headers:{"Content-Type":"application/json"}})}}catch(e){}}
+s({p:location.pathname,r:document.referrer||""});
+document.addEventListener("click",function(e){var a=e.target&&e.target.closest?e.target.closest("a[href]"):null;if(!a)return;var h=a.href;if(!/^https?:/.test(h)||a.host===location.host)return;
+if(a.hostname.replace(/^www\./,"")==="${home}"&&h.indexOf("utm_")<0){a.href=h+(h.indexOf("?")<0?"?":"&")+"utm_source="+encodeURIComponent(location.hostname)+"&utm_medium=guide&utm_campaign=best-guides";}
+s({t:"click",u:a.href,p:location.pathname});},true);})();</script>`;
+}
 function head(ctx, css) {
   const { site, esc, jsonLd } = ctx;
   const desc = site.verdict[0].length > 155 ? site.verdict[0].slice(0, 152).replace(/\s+\S*$/, "") + "..." : site.verdict[0];
@@ -124,7 +133,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-${BEACON}</body></html>`;
+${beacon(ctx)}</body></html>`;
 }
 
 /* ---------- Terminal: dark, monospace numbers, dense ---------- */
@@ -176,7 +185,7 @@ ${s.footer}
 </div>
 <aside class="side"><div class="panel"><h4>At a glance</h4><ol>${toc}</ol><h4 style="margin-top:16px">Our pick</h4><p style="margin:0;font-size:14px">${ctx.esc(ctx.products[ctx.publisher.product].custody ?? "")}</p></div></aside>
 </div></main>
-${BEACON}</body></html>`;
+${beacon(ctx)}</body></html>`;
 }
 
 /* ---------- Paper: warm, big type, card grid ---------- */
@@ -223,7 +232,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-${BEACON}</body></html>`;
+${beacon(ctx)}</body></html>`;
 }
 
 /* ---------- Brief: white, compact, summary box first ---------- */
@@ -268,7 +277,7 @@ ${s.faq}
 ${s.related}
 ${s.footer}
 </main>
-${BEACON}</body></html>`;
+${beacon(ctx)}</body></html>`;
 }
 
 export const templates = {
