@@ -49,9 +49,43 @@ const BOTS = [
   ["python-requests", "other", "Scripts", false], ["Python/", "other", "Scripts", false], ["Go-http-client", "other", "Scripts", false],
   ["axios/", "other", "Scripts", false], ["node-fetch", "other", "Scripts", false], ["undici", "other", "Scripts", false],
   ["okhttp", "other", "Scripts", false], ["Java/", "other", "Scripts", false], ["libwww", "other", "Scripts", false],
+  ["Dalvik/", "other", "Scripts", false], ["CMS-Checker", "other", "Scripts", false],
+  // Names this module assigns itself (see fakeBrowser and the scanner pass in stats)
+  ["Headless browser", "other", "Headless browsers", false], ["Site scanner", "other", "Site scanners", false],
+  ["Referrer spam", "other", "Referrer spam", false],
   ["bot", "other", "Unnamed bots", false], ["crawler", "other", "Unnamed bots", false], ["spider", "other", "Unnamed bots", false],
-  ["scraper", "other", "Unnamed bots", false], ["fetcher", "other", "Unnamed bots", false],
+  ["scraper", "other", "Unnamed bots", false], ["fetcher", "other", "Unnamed bots", false], ["checker", "other", "Unnamed bots", false],
 ];
+
+// Browsers that claim to be a person but are not. Scanners run real browser engines (so they
+// fire the pageview beacon) behind copied user-agent strings that give them away: truncated
+// strings, impossible versions, the DevTools default device, or a browser version nobody still
+// runs. Browsers auto-update, so a Chrome more than eight releases (or a Firefox more than twenty, for ESR) behind the one
+// current at the time of the request is a script. Search referrals are exempt from the version
+// rule, since a person arriving from Google on an old browser is still a person.
+const CHROME_BASE = { ver: 131, t: Date.UTC(2024, 10, 12) };   // Chrome 131 stable, Nov 12 2024
+const FIREFOX_BASE = { ver: 132, t: Date.UTC(2024, 9, 29) };   // Firefox 132, Oct 29 2024
+const RELEASE = 28 * 86400000;                                  // both ship every four weeks
+const current = (base, at) => base.ver + Math.floor((at - base.t) / RELEASE);
+const SPAM_REFS = [/^(aimanhunt\.online|dataindex\.pro|gipkd\.com)$/, /\.(icu|top|xyz|online|sbs|cfd|buzz)$/];
+export const isSpamRef = (h = "") => !!h && SPAM_REFS.some((re) => re.test(h));
+
+export function fakeBrowser(ua = "", { at = Date.now(), ref = "" } = {}) {
+  if (ua.length < 40) return "bare user agent";
+  if (/Safari\/537\.3$/.test(ua)) return "truncated user agent";
+  if (/Edge\/12\.246/.test(ua)) return "fake Edge version";
+  if (/Nexus 5 Build\/MRA58N/.test(ua)) return "DevTools device emulation";
+  if (/iPhone OS 13_2_3/.test(ua)) return "scanner iOS 13 string";
+  if (sourceOf(ref).group === "search") return null;
+  const t = at instanceof Date ? at.getTime() : Number(at);
+  const chrome = ua.match(/\b(?:Chrome|CriOS)\/(\d+)/);
+  if (chrome && Number(chrome[1]) < current(CHROME_BASE, t) - 8) return `outdated Chrome ${chrome[1]}`;
+  const firefox = ua.match(/\bFirefox\/(\d+)/);
+  if (firefox && Number(firefox[1]) < current(FIREFOX_BASE, t) - 20) return `outdated Firefox ${firefox[1]}`;
+  const ios = ua.match(/\biPhone OS (\d+)_/);
+  if (ios && Number(ios[1]) < 16) return `outdated iOS ${ios[1]}`;
+  return null;
+}
 
 // Where a person came from, by referrer host.
 const SOURCES = [
@@ -77,12 +111,14 @@ export function sourceOf(refHost = "") {
   return { source: refHost, group: "other" };
 }
 
-export function classify(ua = "") {
-  if (!ua) return { bot: "no-ua", cat: "other", vendor: "Unnamed bots", live: false };
+export function classify(ua = "", opts = {}) {
+  if (!ua || ua === "no-ua") return { bot: "no-ua", cat: "other", vendor: "Unnamed bots", live: false };
   const lower = ua.toLowerCase();
   for (const [name, cat, vendor, live] of BOTS) {
     if (lower.includes(name.toLowerCase())) return { bot: name, cat, vendor, live };
   }
+  const fake = fakeBrowser(ua, opts);
+  if (fake) return { bot: `Headless browser: ${fake}`, cat: "other", vendor: "Headless browsers", live: false };
   return { bot: null, cat: null, vendor: null, live: false };
 }
 
@@ -149,10 +185,11 @@ export async function initAnalytics() {
 export function record({ req, host, path, kind, ref = "" }) {
   if (!host || !host.includes(".")) return;
   const ua = (req.headers["user-agent"] ?? "").toString().slice(0, 300);
-  const { bot, cat } = classify(ua);
+  const ref_host = refHost(ref).slice(0, 120);
+  const { bot, cat } = classify(ua, { ref: ref_host });
   queue.push({
     ts: new Date(), host, path: String(path).slice(0, 200), kind, bot, bot_cat: cat,
-    visitor: visitorId(req), ref_host: refHost(ref).slice(0, 120), ua,
+    visitor: visitorId(req), ref_host, ua,
   });
   if (queue.length >= 100) flush().catch(() => {});
 }
@@ -178,7 +215,7 @@ async function rowsSince(since) {
   await flush().catch(() => {});
   if (!pool) return mem.filter((r) => r.ts >= since);
   const { rows } = await pool.query(
-    `SELECT ts, host, path, kind, bot, bot_cat, visitor, ref_host FROM hits WHERE ts >= $1 ORDER BY ts`, [since],
+    `SELECT ts, host, path, kind, bot, bot_cat, visitor, ref_host, ua FROM hits WHERE ts >= $1 ORDER BY ts`, [since],
   );
   return rows;
 }
@@ -189,14 +226,16 @@ const dayFmt = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric",
 export function dayOf(ts) { return dayFmt.format(ts); }
 
 function blank() {
-  return { pageviews: 0, visitors: new Set(), ai: 0, aiLive: 0, search: 0, otherBots: 0, llms: 0, pages: 0,
+  return { pageviews: 0, visitors: new Set(), filtered: 0, ai: 0, aiLive: 0, search: 0, otherBots: 0, llms: 0, pages: 0,
     clicksHome: 0, clicksOut: 0, src: { search: 0, ai: 0, social: 0, owned: 0, direct: 0, other: 0 } };
 }
+const FILTERED = /^(Headless browser|Site scanner|Referrer spam)/;
 function bump(agg, r) {
   if (r.kind === "beacon" && !r.bot) {
     agg.pageviews++; agg.visitors.add(r.visitor);
     const g = sourceOf(r.ref_host).group; agg.src[g] = (agg.src[g] ?? 0) + 1;
   }
+  if (r.kind === "beacon" && r.bot && FILTERED.test(r.bot)) agg.filtered++;
   if (r.kind === "click" && !r.bot) { if (HOME && r.path.startsWith(HOME)) agg.clicksHome++; else agg.clicksOut++; }
   if (r.bot_cat === "ai") { agg.ai++; if (classify(r.bot).live) agg.aiLive++; }
   else if (r.bot_cat === "search") agg.search++;
@@ -216,6 +255,24 @@ export async function stats({ days = 30, domains = [] } = {}) {
   for (const d of domains) byHost.set(d, blank());
   for (let i = days - 1; i >= 0; i--) byDay.set(dayOf(new Date(Date.now() - i * 86400000)), blank());
   const total = blank();
+  // Rows were classified when written; classify again with today's rules so history is judged the
+  // same way as new traffic. Then catch what no user agent can: one visitor (one ip, browser and
+  // day) loading guides on four or more of these one-page sites, or twenty or more pages, is a
+  // scanner working through the list, not a person.
+  const seen = new Map();
+  for (const r of rows) {
+    if (r.bot) continue;
+    const c = classify(r.ua, { at: new Date(r.ts), ref: r.ref_host });
+    if (c.bot) { r.bot = c.bot; r.bot_cat = c.cat; continue; }
+    if (r.kind === "beacon") tally(seen, r.visitor, () => ({ hosts: new Set(), beacons: 0 }), (v) => { v.hosts.add(r.host); v.beacons++; });
+  }
+  const scanners = new Map();
+  for (const [v, s] of seen) if (s.hosts.size >= 4 || s.beacons >= 20) scanners.set(v, `Site scanner: ${s.hosts.size} sites, ${s.beacons} pageviews`);
+  for (const r of rows) {
+    if (r.bot) continue;
+    if (scanners.has(r.visitor)) { r.bot = scanners.get(r.visitor); r.bot_cat = "other"; }
+    else if (r.kind === "beacon" && isSpamRef(r.ref_host)) { r.bot = `Referrer spam: ${r.ref_host}`; r.bot_cat = "other"; }
+  }
   for (const r of rows) {
     const day = dayOf(new Date(r.ts));
     tally(byDay, day, blank, (a) => bump(a, r));

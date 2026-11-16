@@ -88,6 +88,7 @@ td a{color:var(--fg);text-decoration:none}td a:hover{text-decoration:underline}
 <div class="tile"><b class="ai">${n(t.aiLive)}</b><span>AI live fetches (cited now)</span></div>
 <div class="tile"><b>${n(t.search)}</b><span>Search bot hits</span></div>
 <div class="tile"><b>${n(t.llms)}</b><span>llms.txt fetches</span></div>
+<div class="tile"><b class="muted">${n(t.filtered)}</b><span>Fake visitors filtered out</span></div>
 </div>
 ${chart(s.daily)}
 <div class="cols">
@@ -105,6 +106,6 @@ ${chart(s.daily)}
 <tr><th></th><th class="grp" colspan="6">People</th><th class="grp" colspan="2">To ${esc(s.home || "home")}</th><th class="grp" colspan="4">Crawlers</th><th></th></tr>
 <tr><th>Domain</th><th class="num">Visitors</th><th class="num">Search</th><th class="num">AI</th><th class="num">Social</th><th class="num">Direct</th><th class="num">Other</th><th class="num">Clicks</th><th class="num">Rate</th><th class="num">AI hits</th><th class="num">AI live</th><th class="num">Search</th><th class="num">llms.txt</th><th class="num">Today vis / AI</th></tr>
 </thead><tbody>${domRows}</tbody></table></div>
-<p class="muted small" style="margin-top:24px">People are counted without cookies: one visitor is one hash of IP, browser and day. "Search", "AI", "Social" and "Direct" under People are visits by referrer. Clicks are outbound clicks from a guide to the home site, with the rate as clicks per visitor. AI crawler hits are requests from the AI companies' own bots; "Live" are the fetchers that fire while an assistant answers someone (ChatGPT-User, Perplexity-User, Claude-User, Gemini Deep Research), which means the page is being read for an answer right then. JSON: <code>${esc(path.replace("dashboard", "stats.json"))}?days=${s.days}</code>.</p>
+<p class="muted small" style="margin-top:24px">People are counted without cookies: one visitor is one hash of IP, browser and day. "Search", "AI", "Social" and "Direct" under People are visits by referrer. "Fake visitors filtered out" are pageviews from scripted browsers that would otherwise count as people: copied or outdated user-agent strings, one visitor loading four or more of these sites in a day, or referrer spam. They are listed under Other bots as Headless browsers, Site scanners and Referrer spam. Visits from search are the most reliable sign of a real person. Clicks are outbound clicks from a guide to the home site, with the rate as clicks per visitor. AI crawler hits are requests from the AI companies' own bots; "Live" are the fetchers that fire while an assistant answers someone (ChatGPT-User, Perplexity-User, Claude-User, Gemini Deep Research), which means the page is being read for an answer right then. JSON: <code>${esc(path.replace("dashboard", "stats.json"))}?days=${s.days}</code>.</p>
 </main></body></html>`;
 }
