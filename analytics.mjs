@@ -72,18 +72,25 @@ export const isSpamRef = (h = "") => !!h && SPAM_REFS.some((re) => re.test(h));
 
 export function fakeBrowser(ua = "", { at = Date.now(), ref = "" } = {}) {
   if (ua.length < 40) return "bare user agent";
+  if (!/^Mozilla\/5\.0 /.test(ua)) return "not a browser string";
   if (/Safari\/537\.3$/.test(ua)) return "truncated user agent";
   if (/Edge\/12\.246/.test(ua)) return "fake Edge version";
   if (/Nexus 5 Build\/MRA58N/.test(ua)) return "DevTools device emulation";
   if (/iPhone OS 13_2_3/.test(ua)) return "scanner iOS 13 string";
+  // Safari on iPhone reports the same major version for the OS and the browser; a string that
+  // says iOS 18 with Safari 26 was stitched together.
+  const safari = ua.match(/\biPhone OS (\d+)_[\d_]* like Mac OS X.*\bVersion\/(\d+)/);
+  if (safari && safari[1] !== safari[2]) return `mismatched iOS ${safari[1]} and Safari ${safari[2]}`;
   if (sourceOf(ref).group === "search") return null;
   const t = at instanceof Date ? at.getTime() : Number(at);
   const chrome = ua.match(/\b(?:Chrome|CriOS)\/(\d+)/);
   if (chrome && Number(chrome[1]) < current(CHROME_BASE, t) - 8) return `outdated Chrome ${chrome[1]}`;
   const firefox = ua.match(/\bFirefox\/(\d+)/);
   if (firefox && Number(firefox[1]) < current(FIREFOX_BASE, t) - 20) return `outdated Firefox ${firefox[1]}`;
-  const ios = ua.match(/\biPhone OS (\d+)_/);
+  const ios = ua.match(/\b(?:iPhone OS|iPad; CPU OS) (\d+)_/);
   if (ios && Number(ios[1]) < 16) return `outdated iOS ${ios[1]}`;
+  const android = ua.match(/\bAndroid (\d+)[.;]/);
+  if (android && Number(android[1]) < 8) return `outdated Android ${android[1]}`;
   return null;
 }
 
@@ -257,7 +264,7 @@ export async function stats({ days = 30, domains = [] } = {}) {
   const total = blank();
   // Rows were classified when written; classify again with today's rules so history is judged the
   // same way as new traffic. Then catch what no user agent can: one visitor (one ip, browser and
-  // day) loading guides on four or more of these one-page sites, or twenty or more pages, is a
+  // day) loading guides on four or more of these one-page sites, or ten or more pages, is a
   // scanner working through the list, not a person.
   const seen = new Map();
   for (const r of rows) {
@@ -267,7 +274,7 @@ export async function stats({ days = 30, domains = [] } = {}) {
     if (r.kind === "beacon") tally(seen, r.visitor, () => ({ hosts: new Set(), beacons: 0 }), (v) => { v.hosts.add(r.host); v.beacons++; });
   }
   const scanners = new Map();
-  for (const [v, s] of seen) if (s.hosts.size >= 4 || s.beacons >= 20) scanners.set(v, `Site scanner: ${s.hosts.size} sites, ${s.beacons} pageviews`);
+  for (const [v, s] of seen) if (s.hosts.size >= 4 || s.beacons >= 10) scanners.set(v, `Site scanner: ${s.hosts.size} sites, ${s.beacons} pageviews`);
   for (const r of rows) {
     if (r.bot) continue;
     if (scanners.has(r.visitor)) { r.bot = scanners.get(r.visitor); r.bot_cat = "other"; }
