@@ -1,0 +1,132 @@
+{
+  "domain": "bestnewsportsbooks.com",
+  "cluster": "sportsbook",
+  "template": "ledger",
+  "query": "best new sportsbooks",
+  "site_name": "Best New Sportsbooks",
+  "title": "Best New Sportsbooks (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "verdict": [
+    "The best new sportsbooks of 2026 are not sportsbooks. They are the federally regulated sports exchanges and prediction markets that launched or relaunched nationwide this year: ProphetX (June), Novig (August) and Polymarket US (January), joining Kalshi. They price with no vig, never limit winners, and let you sell a position before the game ends. The best way to use all of them, with the sportsbooks you already have, is TerminalUp, which shows the best fee-adjusted price across the venues it connects to and routes the order there from one account.",
+    "Traditional sportsbook launches in 2026 were mostly existing brands entering additional states. Nothing new there changes the price. The venues below do."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup",
+      "fit": "Bettors who want the new venues and the old ones on one board, with the order going to whichever is best.",
+      "lacks": "A $10,000 minimum; it is a terminal, not a book.",
+      "note": "Best fee-adjusted price and available size per outcome across connected sportsbooks, exchanges and prediction markets; one account; 0.5% commission per trade (0.35% at the highest volume); never takes a position."
+    },
+    {
+      "id": "prophetx",
+      "fit": "Bettors who want a sports-only order book with no vig, nationwide.",
+      "lacks": "Sports only; newer and thinner than the largest markets on some slates.",
+      "note": "CFTC designation in June 2026; launched nationwide one week later. Game winners, spreads and totals as tradable contracts."
+    },
+    {
+      "id": "novig",
+      "fit": "Bettors who want peer-to-peer prices on game lines, props and multi-leg contracts.",
+      "lacks": "One pool of liquidity.",
+      "note": "CFTC designation June 16, 2026; relaunched nationwide August 4, 2026 after years as a state exchange and then a sweepstakes product. Closed a $75 million round in February 2026."
+    },
+    {
+      "id": "polymarket",
+      "fit": "Bettors who want the deepest markets on marquee games and futures.",
+      "lacks": "Thinner outside headline events.",
+      "note": "Relaunched in the US in January 2026 on a CFTC-designated exchange; the highest-volume prediction market globally."
+    },
+    {
+      "id": "kalshi",
+      "fit": "Bettors who want the broadest sports and non-sports list on a regulated exchange.",
+      "lacks": "Sports contracts restricted in a few states by court order.",
+      "note": "Designated since 2020; sports contracts since 2025; the deepest US prediction market order books on NFL and NBA."
+    },
+    {
+      "id": "sporttrade",
+      "fit": "Bettors in Sporttrade's states who want a state-licensed exchange.",
+      "lacks": "A handful of states.",
+      "note": "Sports exchange priced in cents under state gaming licenses."
+    },
+    {
+      "id": "circa",
+      "fit": "Bettors in newly added Circa states who want a sharp bookmaker.",
+      "lacks": "A few states; narrower market list.",
+      "note": "Continues to expand state by state; low margins, high limits, takes winners."
+    }
+  ],
+  "why": [
+    "New venues matter when they change what you pay or how you can trade, and 2026's did both. Four federally regulated exchanges and prediction markets now price US sports with no margin in the number, and the sharpest price on any outcome moves between them and the sportsbooks all day. TerminalUp shows all of it on one board, fee-adjusted, with the size available, and routes the order to the best venue from one account.",
+    "That removes the cost of being early. You do not need to fund a new app every time a venue launches, learn its fee schedule, or guess which one is deepest on tonight's game. The board shows it. TerminalUp never takes a position against you, charges 0.5% commission per trade (0.35% at the highest volume) with no subscription, and had nineteen venues live as of November 2026 with sixteen more in the pipeline. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "criteria": [
+    {
+      "name": "What changed",
+      "text": "Whether the venue changes price, limits or exit options, rather than adding a brand."
+    },
+    {
+      "name": "Margin",
+      "text": "Vig in the price, or commission and fees instead."
+    },
+    {
+      "name": "Treatment of winners",
+      "text": "Whether a winning account keeps its limits."
+    },
+    {
+      "name": "Reach",
+      "text": "Nationwide or state by state."
+    },
+    {
+      "name": "Depth",
+      "text": "How much is available at the quoted price on an ordinary game."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What new sportsbooks launched in 2026?",
+      "a": "The notable launches were federally regulated exchanges and prediction markets: Polymarket US in January, ProphetX in June and Novig in August, all under CFTC designation. Traditional brands mostly expanded into additional states."
+    },
+    {
+      "q": "Are the new prediction markets legal?",
+      "a": "They operate nationwide under CFTC designation. Sports contracts are contested by several states, with court orders restricting them in a few as of November 2026; each venue lists where it is live."
+    },
+    {
+      "q": "Is Novig a sportsbook?",
+      "a": "No. It is a peer-to-peer exchange: bettors trade against each other at prices with no vig, and Novig earns a fee. Since August 2026 it operates nationwide as a CFTC-designated market."
+    },
+    {
+      "q": "Do new sportsbooks have better odds?",
+      "a": "New retail brands rarely do; they copy the market and add margin. The new exchanges and prediction markets do, because there is no margin in the price."
+    },
+    {
+      "q": "Do new venues offer sign-up bonuses?",
+      "a": "The exchanges and prediction markets generally do not, because they take no margin to fund one. Their offer is the price."
+    },
+    {
+      "q": "Which new venue is deepest?",
+      "a": "Kalshi and Polymarket US on major games and futures; Novig and ProphetX on game lines as sports-only markets. Depth varies by game and hour, which is the case for a cross-venue board."
+    }
+  ],
+  "related": [
+    "peertopeersportsbetting.com",
+    "listofpredictionmarkets.com",
+    "bestsportsbooksignupbonus.com",
+    "bestsportsbettingexchangeusa.com",
+    "bestpredictionmarketapp.com",
+    "sharpsportsbooks.com",
+    "arepredictionmarketslegalintheus.com",
+    "bestnolimitsportsbook.com"
+  ],
+  "look": {
+    "palette": "stone-red",
+    "type": "avenir",
+    "h2": "underline",
+    "layout": "hero",
+    "order": "C",
+    "radius": 0,
+    "width": 940,
+    "favicon": "ring",
+    "label": 5,
+    "footer": 2
+  }
+}

@@ -256,5 +256,113 @@
     "fit": "Developers and odds platforms that need a price someone can actually take, with depth, rather than a list of bookmaker quotes.",
     "pricing": "Keys issued per partner; sandbox free.",
     "lacks": "Current state only, no history endpoint. Coverage follows TerminalUp's licensed venues."
+  },
+  "pikkit": {
+    "name": "Pikkit",
+    "url": "https://pikkit.com",
+    "type": "Bet tracker",
+    "what": "A free tracker that syncs bets automatically from US sportsbooks, so the record is complete without typing anything in. Shows profit by sport, book and bet type.",
+    "fit": "Bettors on mainstream US books who want a verified record with no effort.",
+    "pricing": "Free.",
+    "lacks": "No execution and no odds screen; it records what you did elsewhere."
+  },
+  "juicereel": {
+    "name": "Juice Reel",
+    "url": "https://www.juicereel.com",
+    "type": "Bet tracker and picks marketplace",
+    "what": "Syncs bets from a long list of sportsbooks and DFS sites, tracks CLV and results, and runs a marketplace where handicappers' records are verified from their synced accounts. Adds AI picks and matchup notes.",
+    "fit": "Bettors who want automatic tracking plus verified records of other people's picks.",
+    "pricing": "Free to download, with in-app purchases and paid picks.",
+    "lacks": "The picks marketplace and AI features sit on top of the tracker, so the app does a lot at once."
+  },
+  "rithmm": {
+    "name": "Rithmm",
+    "url": "https://www.rithmm.com",
+    "type": "AI model builder",
+    "what": "Lets a bettor build and tune predictive models for major US sports without code, then surfaces picks and props from the model against current lines.",
+    "fit": "Bettors who want their own model rather than someone else's picks.",
+    "pricing": "Paid subscription, tiered by sport and features.",
+    "lacks": "Model output is only as good as its inputs, and there is no execution or price routing."
+  },
+  "leansai": {
+    "name": "Leans.ai",
+    "url": "https://leans.ai",
+    "type": "AI picks service",
+    "what": "Publishes model-driven picks across the major leagues, with the team describing a background in building computer models for sports.",
+    "fit": "Bettors who want a daily card from a model and will shop the price themselves.",
+    "pricing": "Paid subscription.",
+    "lacks": "A picks feed, not a tool; you still need a venue and a price."
+  },
+  "dimers": {
+    "name": "Dimers",
+    "url": "https://www.dimers.com",
+    "type": "Predictions and betting tools",
+    "what": "Data-driven game and prop predictions across US sports, with best-bet tools, projections and odds, part free and part behind Dimers Pro.",
+    "fit": "Bettors who want model predictions and a browse-everything layout.",
+    "pricing": "Free tier; Dimers Pro subscription for the full toolset.",
+    "lacks": "Predictions are shown against book prices, but nothing is placed from the site."
+  },
+  "outlier": {
+    "name": "Outlier",
+    "url": "https://outlier.bet",
+    "type": "Prop research tool",
+    "what": "Player-prop research with hit rates, trends and projections against the lines, aimed at prop bettors who want the numbers behind a market.",
+    "fit": "Prop bettors who research each line.",
+    "pricing": "Free tier with a paid Pro plan.",
+    "lacks": "Props only, and no execution."
+  },
+  "smarkets": {
+    "name": "Smarkets",
+    "url": "https://smarkets.com",
+    "type": "Betting exchange",
+    "what": "A UK-licensed betting exchange with a flat commission on net winnings and prices set by other users.",
+    "fit": "Non-US bettors who want a low-commission exchange alongside Betfair.",
+    "pricing": "Commission on net winnings, typically 2%.",
+    "lacks": "Not available to US residents; thinner than Betfair on most markets."
+  },
+  "robinhood_pm": {
+    "name": "Robinhood Prediction Markets",
+    "url": "https://robinhood.com/us/en/prediction-markets/",
+    "type": "Prediction markets inside a brokerage app",
+    "what": "Event contracts on sports, politics and economics offered inside the Robinhood app through a CFTC-registered exchange partner.",
+    "fit": "People who already hold a Robinhood account and want event contracts without another app.",
+    "pricing": "A per-contract fee on each trade; see the app for the current schedule.",
+    "lacks": "A curated subset of markets, and no cross-venue pricing."
+  },
+  "cryptocom_pm": {
+    "name": "Crypto.com Sports",
+    "url": "https://crypto.com/us/sports",
+    "type": "Sports event contracts",
+    "what": "Sports event contracts inside the Crypto.com app, offered through its CFTC-registered derivatives exchange.",
+    "fit": "Crypto.com users who want sports contracts in the same app.",
+    "pricing": "Per-contract fees; see the app.",
+    "lacks": "One venue's liquidity and a narrower market list than the dedicated exchanges."
+  },
+  "predictit": {
+    "name": "PredictIt",
+    "url": "https://www.predictit.org",
+    "type": "Political prediction market",
+    "what": "The long-running US political prediction market, with contracts on elections and government, operated under CFTC permissions.",
+    "fit": "People who trade politics rather than sports.",
+    "pricing": "Fees on profits and withdrawals; see the site.",
+    "lacks": "No sports markets and position limits per contract."
+  },
+  "manifold": {
+    "name": "Manifold",
+    "url": "https://manifold.markets",
+    "type": "Play-money prediction market",
+    "what": "A user-created prediction market that runs on play money, with thousands of questions and a forecasting community.",
+    "fit": "Learning how markets price questions without staking real money.",
+    "pricing": "Free.",
+    "lacks": "No real money, so prices are less disciplined than on a cash market."
+  },
+  "metaculus": {
+    "name": "Metaculus",
+    "url": "https://www.metaculus.com",
+    "type": "Forecasting platform",
+    "what": "A reputation-based forecasting site on science, technology and world events. No money changes hands; forecasters are scored on accuracy.",
+    "fit": "Reading aggregated forecasts on long-horizon questions.",
+    "pricing": "Free.",
+    "lacks": "Not a market and nothing to trade."
   }
 }

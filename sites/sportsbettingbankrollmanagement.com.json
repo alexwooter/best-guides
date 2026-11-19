@@ -1,0 +1,184 @@
+{
+  "domain": "sportsbettingbankrollmanagement.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "ev",
+  "query": "sports betting bankroll management",
+  "site_name": "Sports Betting Bankroll Management",
+  "title": "Sports Betting Bankroll Management (2026): Unit Sizing, Kelly and Drawdowns",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "units",
+  "calculator_position": "bottom",
+  "calculator_name": "Bankroll and unit size calculator",
+  "answer": "Bankroll management is deciding how much to risk per bet so that a normal losing run cannot end you. The working rule is a bankroll you can afford to lose, flat stakes of 1% to 2% of it per bet, sized up only for bets with a measured edge, and never chased after losses. A 1% unit survives a 20-bet losing streak with 82% of the bankroll intact; a 10% unit leaves 12%.",
+  "intro": [
+    "Edges in sports betting are small, a few percent at best, and variance is large. Bankroll management is the only thing standing between a real edge and ruin on the way to realizing it."
+  ],
+  "sections": [
+    {
+      "h2": "Set the bankroll first",
+      "blocks": [
+        {
+          "p": "The bankroll is money set aside for betting that you can lose entirely without changing your life. It is not your checking account and it is not whatever is in your sportsbook wallet. Decide the number, fund it, and treat it as a separate business. Everything else is sized from it."
+        }
+      ]
+    },
+    {
+      "h2": "Flat staking: the default",
+      "blocks": [
+        {
+          "p": "A unit is a fixed percentage of the bankroll, recalculated as the bankroll changes. Most professionals use 1% to 2%. Recreational bettors who want to last a season should not go above 3%. The table shows why."
+        },
+        {
+          "table": {
+            "head": [
+              "Unit size",
+              "Bankroll after 10 straight losses",
+              "After 20 straight losses",
+              "Losses to halve the bankroll"
+            ],
+            "rows": [
+              [
+                "1%",
+                "90%",
+                "82%",
+                "69"
+              ],
+              [
+                "2%",
+                "82%",
+                "67%",
+                "35"
+              ],
+              [
+                "3%",
+                "74%",
+                "54%",
+                "23"
+              ],
+              [
+                "5%",
+                "60%",
+                "36%",
+                "14"
+              ],
+              [
+                "10%",
+                "35%",
+                "12%",
+                "7"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Ten straight losses happen to everyone. For a 55% bettor they arrive roughly once every 3,000 bets; for a 50% bettor, once every 1,000. A 20-bet run is rarer but not exotic over a long career. Size so that neither one matters."
+        }
+      ]
+    },
+    {
+      "h2": "Kelly staking: sizing to the edge",
+      "blocks": [
+        {
+          "p": "The Kelly criterion sets the stake that maximizes long-run growth: fraction of bankroll = (b x p - q) / b, where b is decimal odds minus 1, p is your win probability and q is 1 - p. For a 55% bet at -110, b = 0.909 and the Kelly fraction is 5.5% of bankroll."
+        },
+        {
+          "p": "Nobody should bet full Kelly. It assumes your probability is exactly right, and it is not; it also produces drawdowns of 50% or more as a matter of routine. Half Kelly keeps three quarters of the growth with far less pain; quarter Kelly is the common professional setting. A quarter-Kelly stake on that 55% bet is about 1.4% of bankroll, which is why the flat 1% to 2% rule and the Kelly rule end up in the same place for realistic edges."
+        },
+        {
+          "callout": "If your Kelly calculation says 8% of bankroll, the honest conclusion is not that you should bet 8%. It is that your probability estimate is probably wrong."
+        }
+      ]
+    },
+    {
+      "h2": "Rules that keep the bankroll alive",
+      "blocks": [
+        {
+          "list": [
+            "Recalculate units as the bankroll moves, weekly or monthly, not after every bet. Shrinking units in a drawdown is what makes the drawdown survivable.",
+            "Never chase. A loss does not change the probability of the next bet. Doubling after losses turns a 2% edge into a coin flip with the whole bankroll.",
+            "Size parlays and long shots smaller. Higher variance per dollar means a smaller Kelly fraction, even at the same edge.",
+            "Keep execution costs in the model. A 2% edge at a -110 book is a 2% edge; the same bet at -115 is close to zero. Price is part of bankroll management.",
+            "Separate the bankroll from withdrawals. Take profit out on a schedule, not when you feel rich or scared.",
+            "Keep records. Stake, price, closing price, result. Without them you cannot tell an edge from a hot streak, and you cannot size properly."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "What a realistic season looks like",
+      "blocks": [
+        {
+          "p": "A bettor with a 2% edge, 1.5% units and 1,500 bets a year expects to make about 45% on the bankroll, with a standard deviation of roughly 55%. That means a losing year is entirely possible with a real edge, and a 30% drawdown at some point during the year is likely. Anyone promising smooth 10% months is describing either a much bigger edge than exists in liquid markets or a short sample."
+        }
+      ]
+    },
+    {
+      "h2": "Bankroll across many venues",
+      "blocks": [
+        {
+          "p": "Bettors who shop prices end up with money spread across sportsbooks, exchanges and prediction markets. That creates its own problem: the bankroll is fragmented, idle balances sit where there is no good price, and the unit you can actually place is limited by whichever account the best price happens to be in. Consolidating funds, whether by moving money deliberately or by using a venue that routes from one balance, is a bankroll decision as much as a convenience."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Bankroll is money you can lose. Size every bet from it, not from your mood.",
+    "Flat 1% to 2% units survive the losing runs every bettor hits.",
+    "Kelly sizes to the edge; bet a quarter to a half of it, never the full amount.",
+    "Recalculate units as the bankroll moves, never chase, and keep records.",
+    "Price is part of bankroll management: the same bet at a worse number has a smaller edge and deserves a smaller stake."
+  ],
+  "terminalup": [
+    "TerminalUp solves the fragmented-bankroll problem directly. You fund one TerminalUp account and orders route from it to whichever of the connected sportsbooks, betting exchanges and prediction markets has the best fee-adjusted price, with the size available shown on the board, so the whole bankroll is behind every bet instead of being split across a dozen wallets. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000."
+  ],
+  "faq": [
+    {
+      "q": "What percentage of my bankroll should I bet?",
+      "a": "1% to 2% per bet as a flat unit is the professional norm. Go above 3% only for bets with a measured edge and a Kelly calculation that supports it, and even then bet a fraction of Kelly."
+    },
+    {
+      "q": "What is a unit in sports betting?",
+      "a": "A fixed fraction of your bankroll, typically 1% to 2%, used as the standard stake. On a $10,000 bankroll a 1% unit is $100. Recalculate it as the bankroll changes."
+    },
+    {
+      "q": "What is the Kelly criterion?",
+      "a": "A formula for the stake that maximizes long-run growth: (b x p - q) / b, with b the decimal odds minus 1, p the win probability and q = 1 - p. Most bettors use a quarter or half of the result."
+    },
+    {
+      "q": "How big a losing streak should I plan for?",
+      "a": "Ten in a row happens to every bettor; twenty is possible over a long career. Size units so both are survivable: at 2% units, twenty straight losses leaves 67% of the bankroll."
+    },
+    {
+      "q": "Should I bet more after a win?",
+      "a": "Only because the bankroll is larger and the unit recalculates with it. Not because of the win itself; the next bet's probability has not changed."
+    },
+    {
+      "q": "How do I manage a bankroll across several sportsbooks?",
+      "a": "Treat the total as one bankroll and size units from it. Move money toward where the prices are good, or use a venue that routes from a single balance so no part of the bankroll is stranded."
+    }
+  ],
+  "related": [
+    "whatisevinbetting.com",
+    "positiveevbetting.com",
+    "whatisclosinglinevalue.com",
+    "bestbettrackingapp.com",
+    "impliedprobabilitycalculator.com",
+    "whatisvig.com",
+    "bestsportsbookforbigbettors.com",
+    "whatisasharpbettor.com"
+  ],
+  "look": {
+    "palette": "ivory-green",
+    "type": "georgia",
+    "h2": "plain",
+    "layout": "column",
+    "order": "A",
+    "radius": 4,
+    "width": 820,
+    "favicon": "ring",
+    "label": 3,
+    "footer": 2
+  }
+}

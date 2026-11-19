@@ -1,5 +1,8 @@
-// Four layouts over one content model. Each returns a full HTML document.
-// Shared pieces build the sections; each template orders and styles them differently.
+// Layouts over two content models. Guides rank products (ledger, terminal, paper, brief);
+// articles explain a question (article, in three themes) with optional calculators, steps and
+// venue tables. Each returns a full HTML document.
+import { calculator, CALC_CSS } from "./calculators.mjs";
+import { lookCss } from "./looks.mjs";
 
 const month = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 
@@ -16,7 +19,8 @@ s({t:"click",u:a.href,p:location.pathname});},true);})();</script>`;
 }
 function head(ctx, css) {
   const { site, esc, jsonLd } = ctx;
-  const desc = site.verdict[0].length > 155 ? site.verdict[0].slice(0, 152).replace(/\s+\S*$/, "") + "..." : site.verdict[0];
+  const lead = site.description ?? (site.verdict ? site.verdict[0] : site.answer);
+  const desc = lead.length > 155 ? lead.slice(0, 152).replace(/\s+\S*$/, "") + "..." : lead;
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -32,7 +36,9 @@ function head(ctx, css) {
 <meta property="og:url" content="https://${site.domain}/">
 <meta name="robots" content="index,follow,max-snippet:-1">
 <script type="application/ld+json">${jsonLd}</script>
-<style>${css}</style>
+<style>${css}
+${lookCss(ctx.look)}
+.wrap{max-width:var(--w)}</style>
 </head>`;
 }
 
@@ -71,7 +77,13 @@ function related(ctx) {
   return `<ul class="related">${items}</ul>`;
 }
 function footer(ctx) {
-  return `<footer><p>Published by <a href="${ctx.publisher.url}">${ctx.esc(ctx.publisher.legalName)}</a>, which makes ${ctx.esc(ctx.publisher.name)}. Every other product is described from its own public materials. ${ctx.esc(ctx.publisher.disclaimer ?? "")} Updated ${month(ctx.site.updated)}.</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
+  const t = ctx.labels.footer
+    .replace(/\{legal\}/g, `<a href="${ctx.publisher.url}">${ctx.esc(ctx.publisher.legalName)}</a>`)
+    .replace(/\{name\}/g, ctx.esc(ctx.publisher.name))
+    .replace(/\{site\}/g, ctx.esc(ctx.site.site_name))
+    .replace(/\{disc\}/g, ctx.esc(ctx.publisher.disclaimer ?? ""))
+    .replace(/\{date\}/g, month(ctx.site.updated));
+  return `<footer><p>${t}</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
 }
 
 const shared = (ctx) => ({
@@ -116,7 +128,7 @@ function ledger(ctx) {
   const s = shared(ctx);
   return `${head(ctx, ledgerCss)}
 <body>
-<header class="mast"><div class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)} · A buyer's guide</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated} · Written for people who trade sports with real size</div></div></header>
+<header class="mast"><div class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)} · ${ctx.esc(ctx.labels.kicker)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated} · Written for people who trade sports with real size</div></div></header>
 <main class="wrap">
 <section class="verdict">${s.verdict}</section>
 <h2 id="ranking">The ranking</h2>
@@ -127,9 +139,9 @@ ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
-<h2 id="faq">Questions people ask</h2>
+<h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
 ${s.faq}
-<h2 id="related">Related guides</h2>
+<h2 id="related">${ctx.esc(ctx.labels.related)}</h2>
 ${s.related}
 ${s.footer}
 </main>
@@ -177,9 +189,9 @@ ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">Criteria</h2>
 ${s.criteria}
-<h2 id="faq">FAQ</h2>
+<h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
 ${s.faq}
-<h2 id="related">Related</h2>
+<h2 id="related">${ctx.esc(ctx.labels.related)}</h2>
 ${s.related}
 ${s.footer}
 </div>
@@ -214,7 +226,7 @@ function paper(ctx) {
   const s = shared(ctx);
   return `${head(ctx, paperCss)}
 <body>
-<header class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated}</div></header>
+<header class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)} · ${ctx.esc(ctx.labels.kicker)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated}</div></header>
 <main class="wrap">
 <section class="verdict">${s.verdict}</section>
 <h2 id="ranking">The shortlist</h2>
@@ -226,9 +238,9 @@ ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How this list was made</h2>
 ${s.criteria}
-<h2 id="faq">Common questions</h2>
+<h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
 ${s.faq}
-<h2 id="related">More guides</h2>
+<h2 id="related">${ctx.esc(ctx.labels.related)}</h2>
 ${s.related}
 ${s.footer}
 </main>
@@ -271,12 +283,129 @@ ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
-<h2 id="faq">FAQ</h2>
+<h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
 ${s.faq}
-<h2 id="related">Related guides</h2>
+<h2 id="related">${ctx.esc(ctx.labels.related)}</h2>
 ${s.related}
 ${s.footer}
 </main>
+${beacon(ctx)}</body></html>`;
+}
+
+/* ---------- Article: explainers, how-tos, calculators. Five layouts, three section orders. ---------- */
+const articleBase = `
+*{box-sizing:border-box}body{margin:0;line-height:1.65}
+.wrap{margin:0 auto;padding:0 22px}
+header{padding:34px 0 10px}.kicker{font:600 12px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
+h1{line-height:1.12;margin:10px 0 8px;letter-spacing:-.015em;font-size:2.3em}h2{margin:40px 0 12px;font-size:1.45em}h3{margin:24px 0 8px;font-size:1.15em}
+.meta{font:14px system-ui,sans-serif;color:var(--muted)}
+.answer{border-left:4px solid var(--acc);background:var(--panel);padding:16px 20px;margin:22px 0;border-radius:0 var(--r) var(--r) 0}.answer h4{margin:0 0 6px;font:700 12px/1 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.answer p{margin:0;font-size:1.08em}
+.answer.boxed{border:1px solid var(--line);border-left:1px solid var(--line);border-radius:var(--r)}.answer.lead{border:0;background:none;padding:0;margin:18px 0}.answer.lead p{font-size:1.18em;font-weight:500}
+.toc{font:14px/1.7 system-ui,sans-serif;color:var(--muted);margin:14px 0 0}.toc a{color:var(--muted)}.toc a:hover{color:var(--ink)}.toc.list{columns:2}.toc.list a{display:block}
+table.data{width:100%;border-collapse:collapse;font:15px/1.45 system-ui,sans-serif;margin:14px 0 18px}.data th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px 10px 8px 0}.data td{vertical-align:top;border-bottom:1px solid var(--line);padding:10px 10px 10px 0}.data td:first-child{font-weight:600}
+.data.cards th{border-bottom-color:var(--line)}.data.cards{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}.data.cards th,.data.cards td{padding-left:12px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}ol.steps li{counter-increment:s;position:relative;padding:0 0 18px 48px}ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font:700 15px system-ui,sans-serif}ol.steps strong{display:block;margin-bottom:2px}
+ul.takeaways{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 16px 36px;margin:14px 0}ul.takeaways li{margin:6px 0}
+.callout{border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;margin:16px 0;background:var(--panel);font-size:.97em}
+.tu{border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;margin:28px 0;background:var(--panel)}.tu h2{margin-top:0}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{font:700 16px system-ui,sans-serif;cursor:pointer}details p{margin:8px 0 0}
+details.card{border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;margin:8px 0;background:var(--panel)}
+ul.related{columns:2;padding-left:20px;font:15px system-ui,sans-serif}ul.related li{margin:3px 0}
+footer{margin:56px 0 40px;padding-top:18px;border-top:1px solid var(--line);font:14px/1.6 system-ui,sans-serif;color:var(--muted)}footer a{color:var(--muted)}
+.cta{display:inline-block;margin:12px 0;padding:11px 18px;background:var(--acc);color:var(--onacc);text-decoration:none;font:700 15px system-ui,sans-serif}
+a{color:var(--acc)}.verdict p:first-child{font-size:1.1em}
+.hero{background:var(--panel);border-bottom:1px solid var(--line);padding:46px 0 30px;margin-bottom:10px}.hero h1{font-size:2.7em}.hero .answer{background:var(--bg);margin:22px 0 0}
+.grid{display:grid;grid-template-columns:1fr 280px;gap:36px;align-items:start}.side{position:sticky;top:16px;font:14px/1.6 system-ui,sans-serif}.side h4{margin:0 0 8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.side ol,.side ul{margin:0 0 18px;padding-left:18px}.side li{margin:4px 0}.side a{color:var(--ink);text-decoration:none}.side a:hover{text-decoration:underline}.side .cta{font-size:14px;padding:9px 14px}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:end;padding:40px 22px 10px}.split .answer{margin:0}
+body.layout-compact h1{font-size:1.9em}body.layout-compact h2{font-size:1.25em;margin-top:30px}body.layout-compact{line-height:1.55}
+@media(max-width:860px){.grid,.split{grid-template-columns:1fr}.side{position:static}}
+@media(max-width:700px){ul.related{columns:1}ol.steps li{padding-left:42px}h1{font-size:1.9em}.hero h1{font-size:2.1em}.toc.list{columns:1}}
+`;
+function tableHtml(t, esc, cls = "") {
+  return `<table class="data${cls}"><thead><tr>${t.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+}
+function venuesTable(ctx, cls) {
+  const { site, products, esc } = ctx;
+  const rows = site.venues.map((v) => {
+    const p = products[v.id];
+    return `<tr><td><a href="${p.url}" rel="${v.id === ctx.publisher.product ? "" : "nofollow"}">${esc(p.name)}</a><div class="meta">${esc(p.type)}</div></td><td>${esc(v.note)}</td><td>${esc(v.access ?? "")}</td></tr>`;
+  }).join("");
+  return `<table class="data${cls}"><thead><tr><th>Venue</th><th>${esc(site.venues_label ?? "What it offers")}</th><th>${esc(site.venues_col ?? "Access")}</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+function sectionHtml(sec, esc, cls) {
+  let h = `<h2 id="${esc(sec.id ?? slug(sec.h2))}">${esc(sec.h2)}</h2>`;
+  for (const block of sec.blocks ?? []) {
+    if (block.p) h += `<p>${esc(block.p)}</p>`;
+    else if (block.h3) h += `<h3>${esc(block.h3)}</h3>`;
+    else if (block.list) h += `<ul>${block.list.map((i) => `<li>${esc(i)}</li>`).join("")}</ul>`;
+    else if (block.ol) h += `<ol>${block.ol.map((i) => `<li>${esc(i)}</li>`).join("")}</ol>`;
+    else if (block.table) h += tableHtml(block.table, esc, cls);
+    else if (block.callout) h += `<div class="callout">${esc(block.callout)}</div>`;
+  }
+  return h;
+}
+const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+export function articleWords(site) {
+  const text = [site.answer, ...(site.intro ?? []), ...(site.sections ?? []).flatMap((s) => [s.h2, ...(s.blocks ?? []).flatMap((b) => [b.p, b.h3, b.callout, ...(b.list ?? []), ...(b.ol ?? []), ...(b.table ? b.table.rows.flat() : [])])]),
+    ...(site.steps ?? []).flatMap((s) => [s.name, s.text]), ...(site.takeaways ?? []), ...(site.terminalup ?? []), ...site.faq.flatMap((f) => [f.q, f.a])].filter(Boolean).join(" ");
+  return text.split(/\s+/).length;
+}
+function article(ctx) {
+  const { site, esc, look, labels: L } = ctx;
+  const calc = site.calculator ? calculator(site.calculator) : null;
+  const css = articleBase + (calc ? CALC_CSS : "");
+  const words = articleWords(site);
+  const layout = site.layout ?? look.layout;
+  const order = site.order ?? look.order;
+  const tableCls = look.radius >= 8 ? " cards" : "";
+  const faqCls = look.radius >= 8 && layout !== "compact" ? ' class="card"' : "";
+  const label = site.label ?? (calc && site.calculator_position !== "bottom" ? "Calculator" : site.steps ? "How-to" : L.kicker);
+  const tocLinks = (site.sections ?? []).map((s) => `<a href="#${esc(s.id ?? slug(s.h2))}">${esc(s.h2)}</a>`);
+  const toc = tocLinks.length ? (layout === "compact" ? `<nav class="toc list">${tocLinks.join("")}</nav>` : `<nav class="toc">${tocLinks.join(" · ")}</nav>`) : "";
+  const answerCls = layout === "compact" ? "answer lead" : look.radius >= 8 ? "answer boxed" : "answer";
+  const answer = `<div class="${answerCls}"><h4>${esc(site.answer_label ?? L.answer)}</h4><p>${esc(site.answer)}</p></div>`;
+  const calcTop = calc && site.calculator_position !== "bottom" ? calc.html : "";
+  const calcBottom = calc && site.calculator_position === "bottom" ? calc.html : "";
+  const intro = site.intro ? `<section class="verdict">${paras(site.intro, esc)}</section>` : "";
+  const sections = (site.sections ?? []).map((s) => sectionHtml(s, esc, tableCls));
+  const steps = site.steps ? `<h2 id="steps">${esc(site.steps_title ?? "Step by step")}</h2><ol class="steps">${site.steps.map((s) => `<li><strong>${esc(s.name)}</strong>${esc(s.text)}</li>`).join("")}</ol>` : "";
+  const venues = site.venues ? `<h2 id="venues">${esc(site.venues_title ?? "Where to do it")}</h2>${site.venues_intro ? `<p>${esc(site.venues_intro)}</p>` : ""}${venuesTable(ctx, tableCls)}` : "";
+  const takeTitle = esc(site.takeaways_title ?? L.takeaways);
+  const takeaways = site.takeaways ? `<h2 id="takeaways">${takeTitle}</h2><ul class="takeaways">${site.takeaways.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
+  const tu = ctx.products[ctx.publisher.product];
+  const cta = site.cta ?? { url: tu.url, text: `See ${ctx.publisher.name}` };
+  const tuTitle = esc(site.terminalup_title ?? L.tu);
+  const tuBlock = site.terminalup ? (order === "C"
+    ? `<aside class="tu"><h2 id="terminalup">${tuTitle}</h2>${paras(site.terminalup, esc)}<a class="cta" href="${cta.url}">${esc(cta.text)}</a></aside>`
+    : `<h2 id="terminalup">${tuTitle}</h2>${paras(site.terminalup, esc)}<a class="cta" href="${cta.url}">${esc(cta.text)}</a>`) : "";
+  const faqBlock = `<h2 id="faq">${esc(site.faq_title ?? L.faq)}</h2>${site.faq.map((f) => `<details${faqCls} open><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("\n")}`;
+  const relatedBlock = `<h2 id="related">${esc(L.related)}</h2>${related(ctx)}`;
+
+  // Section order. A: takeaways near the end. B: takeaways up top as a summary. C: product note in the middle, takeaways after FAQ.
+  let body;
+  const mid = Math.min(2, sections.length);
+  if (order === "B") body = [answer, takeaways, calcTop, intro, ...sections, steps, venues, calcBottom, tuBlock, faqBlock, relatedBlock];
+  else if (order === "C") body = [answer, calcTop, intro, ...sections.slice(0, mid), tuBlock, ...sections.slice(mid), steps, venues, calcBottom, faqBlock, takeaways, relatedBlock];
+  else body = [answer, calcTop, intro, ...sections, steps, venues, calcBottom, takeaways, tuBlock, faqBlock, relatedBlock];
+  const main = body.filter(Boolean).join("\n");
+
+  const meta = `<div class="meta">Updated ${month(site.updated)} · ${Math.max(1, Math.round(words / 230))} min read · Published by ${esc(ctx.publisher.legalName)}</div>`;
+  const kicker = `<div class="kicker">${esc(site.site_name)} · ${esc(label)}</div>`;
+  let page;
+  if (layout === "hero") {
+    page = `<div class="hero"><div class="wrap">${kicker}<h1>${esc(site.title)}</h1>${meta}${answer}</div></div><main class="wrap">${toc}${main.replace(answer, "")}${footer(ctx)}</main>`;
+  } else if (layout === "sidebar") {
+    const side = `<aside class="side"><h4>On this page</h4><ol>${tocLinks.map((l) => `<li>${l}</li>`).join("")}</ol>${site.takeaways ? `<h4>${takeTitle}</h4><ul>${site.takeaways.slice(0, 4).map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}<a class="cta" href="${cta.url}">${esc(cta.text)}</a></aside>`;
+    page = `<header class="wrap">${kicker}<h1>${esc(site.title)}</h1>${meta}</header><main class="wrap"><div class="grid"><div>${main}${footer(ctx)}</div>${side}</div></main>`;
+  } else if (layout === "split") {
+    page = `<header class="wrap split"><div>${kicker}<h1>${esc(site.title)}</h1>${meta}</div>${answer}</header><main class="wrap">${toc}${main.replace(answer, "")}${footer(ctx)}</main>`;
+  } else {
+    page = `<header class="wrap">${kicker}<h1>${esc(site.title)}</h1>${meta}${toc}</header><main class="wrap">${main}${footer(ctx)}</main>`;
+  }
+  return `${head(ctx, css)}
+<body class="layout-${layout}">
+${page}
+${calc ? calc.script : ""}
 ${beacon(ctx)}</body></html>`;
 }
 
@@ -285,4 +414,5 @@ export const templates = {
   terminal: { render: terminal, accent: "#3BD324" },
   paper: { render: paper, accent: "#b5471b" },
   brief: { render: brief, accent: "#1d4ed8" },
+  article: { render: article, accent: "#1d4ed8" },
 };

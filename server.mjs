@@ -15,6 +15,13 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".txt": "text/plain; charse
 function manifest() {
   try { return JSON.parse(readFileSync(join(dist, "manifest.json"), "utf8")); } catch { return []; }
 }
+// Domains that 301 to another guide (singular/plural twins and the like), written by build.mjs.
+let redirectCache = null;
+function redirects() {
+  if (redirectCache) return redirectCache;
+  try { redirectCache = JSON.parse(readFileSync(join(dist, "redirects.json"), "utf8")); } catch { redirectCache = {}; }
+  return redirectCache;
+}
 let registeredCache = null;
 function registered() {
   if (registeredCache) return registeredCache;
@@ -119,6 +126,12 @@ createServer((req, res) => {
       res.writeHead(204, { "Cache-Control": "no-store" }); res.end();
     });
     return;
+  }
+
+  const to = redirects()[host];
+  if (to) {
+    record({ req, host, path: url.pathname, kind: "redirect", ref: req.headers.referer ?? "" });
+    return send(res, 301, `Moved to https://${to}${url.pathname}`, "text/plain; charset=utf-8", { Location: `https://${to}${url.pathname === "/index.html" ? "/" : url.pathname}${url.search}`, "Cache-Control": "public, max-age=86400" });
   }
 
   if (existsSync(siteDir) && host.includes(".")) {

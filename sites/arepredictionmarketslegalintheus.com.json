@@ -1,0 +1,177 @@
+{
+  "domain": "arepredictionmarketslegalintheus.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "query": "are prediction markets legal in the us",
+  "site_name": "Are Prediction Markets Legal in the US",
+  "title": "Are Prediction Markets Legal in the US? (November 2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "Yes, with one live dispute. Prediction markets that operate as exchanges registered with the Commodity Futures Trading Commission (Kalshi, Polymarket US, Novig, ProphetX and others) are legal to run nationwide under federal law, and their contracts on economics, politics, weather and most other topics are not seriously contested. Sports contracts are the exception: several states say they are sports betting under state law, federal appeals courts have split, the CFTC is suing states to assert exclusive jurisdiction, and petitions are pending at the Supreme Court. A few states have court orders restricting sports contracts for their residents.",
+  "intro": [
+    "This page describes the position as of November 18, 2026. It changes by the week. It is general information, not legal advice; the venue you use publishes its own list of where each contract is available."
+  ],
+  "sections": [
+    {
+      "h2": "The federal framework",
+      "blocks": [
+        {
+          "p": "The Commodity Exchange Act gives the CFTC exclusive jurisdiction over swaps traded on designated contract markets. Kalshi became a designated contract market in November 2020. A 2024 federal court ruling allowed it to list election contracts over the CFTC's objection at the time. Polymarket, which had been barred from US customers since a 2022 settlement, acquired a designated exchange and relaunched in the US in January 2026. ProphetX and Novig, both sports-only, received designations in June 2026 and launched nationwide in June and August 2026 respectively."
+        },
+        {
+          "p": "Under this framework a contract listed by a designated market is a federally regulated derivative, and the venues' position is that states cannot regulate it as gambling, in the same way states cannot regulate corn futures."
+        }
+      ]
+    },
+    {
+      "h2": "The dispute over sports contracts",
+      "blocks": [
+        {
+          "p": "In 2025 sports contracts became the largest part of prediction market volume, and state gaming regulators responded with cease-and-desist letters, lawsuits and, in some cases, new laws classifying sports event contracts as sports wagering. The venues sued for injunctions; the states counter-sued; the CFTC, under Chairman Michael Selig, sued the states directly."
+        },
+        {
+          "table": {
+            "head": [
+              "Court or body",
+              "Date",
+              "Holding",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "Third Circuit (New Jersey)",
+                "2025",
+                "Sided with Kalshi; state gambling law preempted for its contracts",
+                "Sports contracts protected in the Third Circuit's states pending further review"
+              ],
+              [
+                "Ninth Circuit (Nevada)",
+                "2026",
+                "Sports event contracts are not swaps; the state may regulate",
+                "Restrictions in Nevada; injunction covering two tribal lands"
+              ],
+              [
+                "Sixth Circuit (Ohio, Tennessee)",
+                "September 25, 2026",
+                "Kalshi had not shown its sports contracts are swaps within exclusive CFTC jurisdiction",
+                "Ohio announced enforcement; Tennessee protection lifted"
+              ],
+              [
+                "Fourth Circuit",
+                "November 17, 2026",
+                "States may target prediction market event contracts",
+                "Opens enforcement against Kalshi and other venues in those states"
+              ],
+              [
+                "CFTC",
+                "November 5, 2026",
+                "Gave exchanges 30 days to drop state geoblocks or explain why they cannot",
+                "Pressure in the opposite direction, toward national availability"
+              ],
+              [
+                "Supreme Court",
+                "Pending",
+                "Petitions filed; Kalshi's response due December 7, 2026",
+                "No decision on whether to hear the cases expected before December"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The appeals courts therefore disagree on the central question, whether a sports event contract is a swap. That split is why the Supreme Court is being asked to decide."
+        }
+      ]
+    },
+    {
+      "h2": "State by state, in practice",
+      "blocks": [
+        {
+          "p": "For most residents, in most states, Kalshi and Polymarket US sports markets are available today. The exceptions as of mid-November 2026 are states with court orders or settlements restricting sports contracts, including Massachusetts (a January 2026 injunction), Michigan (a September 2026 order requiring geofencing), Nevada and Washington, plus tribal lands covered by the Ninth Circuit's ruling. Several other states, among them New York, Illinois, Kentucky and Maryland, have active litigation or new statutes, with availability subject to change. Illinois's SB 3019, signed in June 2026, classifies sports exchange wagers as sports wagering legal only through state-licensed operators; Kentucky has a tax on operator transaction fees starting in January."
+        },
+        {
+          "callout": "The reliable source is the venue itself. Each regulated exchange publishes which contracts are available to which states and updates the list when a court order lands. If a market is hidden in your app, that is why."
+        }
+      ]
+    },
+    {
+      "h2": "Non-sports contracts",
+      "blocks": [
+        {
+          "p": "Contracts on economic data, elections, legislation, weather and culture are available in all 50 states and the District of Columbia on CFTC-designated venues. No state has succeeded in restricting them, and the federal courts have treated them as within the CFTC's jurisdiction. Offshore and crypto-native markets that serve US customers without a designation are a different matter and operate outside this framework."
+        }
+      ]
+    },
+    {
+      "h2": "What this means if you trade",
+      "blocks": [
+        {
+          "list": [
+            "Trading on a CFTC-designated venue, where it offers you the contract, is lawful for you as a customer. Enforcement actions to date target operators, not users.",
+            "Markets can disappear from your app with little notice after a state ruling. Open positions have generally been allowed to settle or have been closed out under the venue's rules.",
+            "Gains are taxable. Venues issue tax forms; the characterization of event contract profits is its own question for an accountant.",
+            "Using a VPN or a false address to reach a geoblocked market breaches the venue's terms and may be illegal in the state concerned."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "CFTC-designated prediction markets are legal to operate nationwide; non-sports contracts are available in all 50 states.",
+    "Sports contracts are contested: the Third Circuit sided with the venues, the Ninth, Sixth and Fourth Circuits with the states.",
+    "The CFTC is suing states and pushing exchanges to drop geoblocks; the Supreme Court has petitions pending.",
+    "A few states currently restrict sports contracts by court order; the venue's own availability list is the source of truth.",
+    "Customers have not been the target of enforcement; operators have."
+  ],
+  "terminalup": [
+    "TerminalUp connects prediction markets alongside betting exchanges and sportsbooks and shows the best fee-adjusted price for each outcome across the venues available to the account, with the size behind it, routing the order to that venue from one TerminalUp account. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is Kalshi legal?",
+      "a": "Kalshi is a CFTC-designated contract market and legal to operate nationwide. Its sports contracts are restricted in a few states by court order while the question of state authority is litigated."
+    },
+    {
+      "q": "Is Polymarket legal in the US?",
+      "a": "Polymarket US relaunched in January 2026 under a CFTC designation and is legal in the same way Kalshi is. Its international, crypto-settled market is separate and not offered to US customers."
+    },
+    {
+      "q": "Which states restrict prediction markets?",
+      "a": "As of mid-November 2026, court orders restrict sports contracts in states including Massachusetts, Michigan, Nevada and Washington, with litigation or new statutes in several others. Non-sports contracts are available everywhere. Check the venue's state list."
+    },
+    {
+      "q": "Can I get in trouble for using a prediction market?",
+      "a": "Enforcement so far has been against operators, not customers, and trading on a designated exchange where it serves you is lawful. Circumventing a geoblock is the way a customer creates a problem."
+    },
+    {
+      "q": "What is the Supreme Court case about?",
+      "a": "Whether sports event contracts listed on CFTC-designated exchanges are swaps under exclusive federal jurisdiction or sports bets subject to state law. Appeals courts have split; petitions are pending with Kalshi's response due December 7, 2026."
+    },
+    {
+      "q": "Are prediction markets taxed?",
+      "a": "Yes. Gains are taxable income; venues issue tax forms. Whether profits are treated as gambling winnings or trading gains can depend on the contract and venue."
+    }
+  ],
+  "related": [
+    "howdopredictionmarketswork.com",
+    "whatisaneventcontract.com",
+    "listofpredictionmarkets.com",
+    "predictionmarketsvssportsbetting.com",
+    "isarbitragebettinglegal.com",
+    "bestpredictionmarketapp.com",
+    "nflpredictionmarket.com",
+    "bestsportsbettingexchangeusa.com"
+  ],
+  "look": {
+    "palette": "white-blue",
+    "type": "monohead",
+    "h2": "rule-top",
+    "layout": "column",
+    "order": "A",
+    "radius": 0,
+    "width": 880,
+    "favicon": "tri",
+    "label": 0,
+    "footer": 4
+  }
+}

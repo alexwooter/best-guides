@@ -1,0 +1,180 @@
+{
+  "domain": "howtoarbitragebet.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "arbitrage",
+  "query": "how to arbitrage bet",
+  "site_name": "How to Arbitrage Bet",
+  "title": "How to Arbitrage Bet: A Step-by-Step Guide (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "steps_title": "How to place an arbitrage bet",
+  "answer": "To arbitrage bet, find an event where the best price on each outcome, taken from different venues, adds up to less than 100% implied probability. Split your total stake across the outcomes in proportion to each one's implied probability so every payout is equal, place the harder-to-fill leg first (usually the exchange or prediction market order book), then the sportsbook leg, and confirm both filled. The locked profit is the gap under 100%.",
+  "steps": [
+    {
+      "name": "Get accounts and balances at venues that take arb action.",
+      "text": "You need at least one venue on each side of every arb, funded in advance. Exchanges, prediction markets and sharp books do not limit winners; retail books do, so treat them as the leg that will eventually disappear."
+    },
+    {
+      "name": "Find a market where the best prices add to under 100%.",
+      "text": "Convert each venue's best price on each outcome to implied probability (for -110, 110 / 210 = 52.4%; for +120, 100 / 220 = 45.5%). If the lowest implied probability for each outcome sums to less than 100%, it is an arb. A scanner does this across hundreds of markets; a cross-venue board does it on one screen."
+    },
+    {
+      "name": "Check the rules match.",
+      "text": "Overtime, pushes, player scratches and void rules differ between venues. A two-way market at one venue and a three-way at another is not an arb. A player prop that voids on a scratch at one book and settles as a loss at another is a trap."
+    },
+    {
+      "name": "Size the stakes so the payouts are equal.",
+      "text": "Stake on outcome i = total stake x (implied probability of i / sum of implied probabilities). For 47.6% and 50.5% on $1,000: $485 and $515. Round to amounts each venue accepts and check the maximum bet on the smaller venue first."
+    },
+    {
+      "name": "Place the leg most likely to move first.",
+      "text": "Usually the order book leg: the exchange or prediction market price can move while you type. Once it fills, place the sportsbook leg, which holds its price for a few seconds longer."
+    },
+    {
+      "name": "Confirm both fills and record the position.",
+      "text": "If the second leg did not fill at the expected price, you now hold a single bet. Decide immediately whether to take a worse price to close it or hold the position as a +EV bet."
+    },
+    {
+      "name": "Watch for voids until settlement.",
+      "text": "If one venue voids its leg, hedge the other side straight away at the best price available rather than hoping."
+    }
+  ],
+  "sections": [
+    {
+      "h2": "The stake formula with three outcomes",
+      "blocks": [
+        {
+          "p": "Soccer, and any market with a draw, needs three legs. The method is the same: sum the three implied probabilities, and stake each leg in proportion."
+        },
+        {
+          "table": {
+            "head": [
+              "Outcome",
+              "Best price",
+              "Implied probability",
+              "Share of $1,000"
+            ],
+            "rows": [
+              [
+                "Home win",
+                "+150 (2.50)",
+                "40.0%",
+                "$412"
+              ],
+              [
+                "Draw",
+                "+240 (3.40)",
+                "29.4%",
+                "$303"
+              ],
+              [
+                "Away win",
+                "+260 (3.60)",
+                "27.8%",
+                "$286"
+              ],
+              [
+                "Total",
+                "",
+                "97.2%",
+                "Payout about $1,029 each way: +2.9%"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Where arbs show up most",
+      "blocks": [
+        {
+          "list": [
+            "Between a slow retail book and a fast exchange or prediction market in the minutes after news or a sharp move.",
+            "Player props and alternate lines, where books set numbers independently and update them slowly.",
+            "Smaller leagues and early-week lines.",
+            "Around promotions, odds boosts and price-boosted markets.",
+            "Between US prediction markets and sportsbooks on the same game, because the two kinds of venue attract different money."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Execution is the whole game",
+      "blocks": [
+        {
+          "p": "An arb is a race against every other person who can see it. Scanners that alert you by push notification are usually late: by the time you have opened two apps and typed two stakes, the gap has closed or one leg has moved. The people who make money at this are either automated, or working from a single board where both legs are visible and both orders go out from one balance."
+        },
+        {
+          "callout": "Rule of thumb: if you cannot place both legs within about fifteen seconds, you will miss most of the arbs you find and keep the ones that were already stale. Fix the workflow before scaling the stakes."
+        }
+      ]
+    },
+    {
+      "h2": "Keeping accounts alive",
+      "blocks": [
+        {
+          "p": "Retail sportsbooks flag arb patterns: round stakes, bets at the exact moment a line is off-market, and heavy action on boosted prices. Bettors try to delay limits by rounding stakes to natural numbers, mixing in ordinary bets, and avoiding bets on obvious errors. It buys weeks, not years. The durable approach is to route as much of the volume as possible through venues that want it: exchanges, prediction markets and sharp books, which earn their commission on both sides and have no reason to turn anyone away."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "An arb exists when the best prices across venues for all outcomes total under 100%.",
+    "Stake each leg in proportion to its implied probability so every payout matches.",
+    "Place the order-book leg first, then the sportsbook leg, and confirm both fills.",
+    "Match the rules on voids, overtime and pushes before you bet.",
+    "Speed and venue access decide who profits; the math is the easy part."
+  ],
+  "terminalup": [
+    "TerminalUp puts both legs on one screen. Its board shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available at that price, and routes each order to its venue from one account, so there is no switching between apps and no second balance to fund. TerminalUp never takes a position against you. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "How do I calculate an arbitrage bet?",
+      "a": "Convert each outcome's best price to implied probability and add them. Under 100% is an arb. Stake each leg as total stake x (its implied probability / the sum), which makes every payout equal."
+    },
+    {
+      "q": "Which leg should I place first?",
+      "a": "The one most likely to move: the exchange or prediction market order book. Sportsbook prices hold a few seconds longer."
+    },
+    {
+      "q": "What if one leg gets voided?",
+      "a": "You are left with a normal bet on the other side. Hedge it immediately at the best price available, or hold it if the price makes it a positive expected value bet on its own."
+    },
+    {
+      "q": "Do I need arbitrage software?",
+      "a": "A scanner finds more arbs than you can by hand. It does not place them, and placing them fast is where most of the edge is lost. A cross-venue board that shows and places both legs is the bigger upgrade."
+    },
+    {
+      "q": "How much money do I need?",
+      "a": "Enough to fund both venues with balances that cover your stakes, plus a buffer for a leg that does not fill. Returns of 1% to 2% per arb only matter at meaningful turnover."
+    },
+    {
+      "q": "Can you arbitrage on prediction markets?",
+      "a": "Yes, and they are good for it: no overround in the price, no limits on winners, and the ability to sell a contract rather than bet the other side if you need to exit."
+    }
+  ],
+  "related": [
+    "whatisarbitragebetting.com",
+    "sportsarbitragebetting.com",
+    "isarbitragebettinglegal.com",
+    "bestarbitragebettingsites.com",
+    "bestarbitragebettingsoftware.com",
+    "howtohedgeabet.com",
+    "whatisabettingexchange.com",
+    "impliedprobabilitycalculator.com"
+  ],
+  "look": {
+    "palette": "gray-violet",
+    "type": "inter",
+    "h2": "left-bar",
+    "layout": "compact",
+    "order": "C",
+    "radius": 14,
+    "width": 880,
+    "favicon": "ring",
+    "label": 0,
+    "footer": 1
+  }
+}

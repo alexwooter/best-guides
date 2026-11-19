@@ -1,0 +1,237 @@
+{
+  "domain": "whatisvig.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "odds",
+  "query": "what is vig",
+  "site_name": "What Is Vig",
+  "title": "What Is Vig in Sports Betting? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "vig",
+  "calculator_position": "bottom",
+  "calculator_name": "Vig calculator",
+  "answer": "Vig, short for vigorish and also called juice or the hold, is the margin a sportsbook builds into its odds. On a standard -110 / -110 line, the two sides add up to 104.8% implied probability; that extra 4.8% is the vig. Betting exchanges and prediction markets replace it with a commission on winnings, usually 1% to 2%.",
+  "intro": [
+    "Every sportsbook price contains two things: the bookmaker's opinion of how likely the outcome is, and a fee for taking the bet. The fee is the vig. It is not listed anywhere. It is hidden inside the number, which is why most bettors underestimate what they pay.",
+    "This page shows how to find it, how much it costs over a season, and where it is lowest."
+  ],
+  "sections": [
+    {
+      "h2": "How the vig works",
+      "blocks": [
+        {
+          "p": "Convert both sides of a market into implied probabilities and add them up. On a fair market the total is exactly 100%. On a sportsbook market it is more than 100%, and the excess is the vig."
+        },
+        {
+          "p": "The standard point spread or total is priced at -110 on each side. Each -110 converts to 52.38% (110 divided by 210). Two sides together make 104.76%. The 4.76% over 100% is the overround, which is what most people mean by vig. Expressed as the book's expected margin on balanced action, it is 4.76 divided by 104.76, or 4.55%. That second figure is the hold."
+        },
+        {
+          "table": {
+            "head": [
+              "Line",
+              "Implied probability each side",
+              "Total",
+              "Overround",
+              "Hold"
+            ],
+            "rows": [
+              [
+                "-105 / -105",
+                "51.22%",
+                "102.44%",
+                "2.44%",
+                "2.38%"
+              ],
+              [
+                "-110 / -110",
+                "52.38%",
+                "104.76%",
+                "4.76%",
+                "4.55%"
+              ],
+              [
+                "-115 / -115",
+                "53.49%",
+                "106.98%",
+                "6.98%",
+                "6.52%"
+              ],
+              [
+                "-120 / -120",
+                "54.55%",
+                "109.09%",
+                "9.09%",
+                "8.33%"
+              ],
+              [
+                "Exchange, 2% commission",
+                "50% / 50%",
+                "100%",
+                "0%",
+                "about 1% of turnover"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Moneylines hide the vig better than spreads because the two prices look different. A -150 favorite against a +130 underdog is 60.00% plus 43.48%, which is 103.48%. The vig is 3.48%, less than a -110 spread, but it is still there."
+        }
+      ]
+    },
+    {
+      "h2": "What vig costs you over a season",
+      "blocks": [
+        {
+          "p": "At -110 you must win 52.38% of your bets just to break even. A bettor who picks winners at exactly 50% loses 4.55% of everything they stake. On $1,000 a week across an NFL season that is roughly $800 given to the book for nothing but access."
+        },
+        {
+          "p": "The same bettor at -105 needs 51.22% to break even and loses 2.38% of turnover at a 50% hit rate. That is the whole argument for shopping lines: a nickel of price is worth more than most handicapping."
+        },
+        {
+          "table": {
+            "head": [
+              "Price you bet",
+              "Break-even win rate",
+              "Loss per $100 staked at a 50% win rate",
+              "Loss on $20,000 of turnover"
+            ],
+            "rows": [
+              [
+                "-120",
+                "54.55%",
+                "$8.33",
+                "$1,667"
+              ],
+              [
+                "-115",
+                "53.49%",
+                "$6.52",
+                "$1,304"
+              ],
+              [
+                "-110",
+                "52.38%",
+                "$4.55",
+                "$909"
+              ],
+              [
+                "-105",
+                "51.22%",
+                "$2.38",
+                "$476"
+              ],
+              [
+                "+100 on an exchange, 2% commission on wins",
+                "50.51%",
+                "$1.00",
+                "$200"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Where the vig is lowest",
+      "blocks": [
+        {
+          "p": "Three kinds of venues price with less margin than a retail sportsbook."
+        },
+        {
+          "list": [
+            "Sharp sportsbooks. Pinnacle prices most major markets at -104 to -107 each side and Circa works in a similar range. They make it up on volume and by using winning bettors to shape the line rather than banning them.",
+            "Betting exchanges. Betfair, Matchbook and the US exchanges match one bettor against another, so there is no overround in the price at all. The venue charges a commission on net winnings, typically 2% to 5% abroad and 1% to 2% in the US exchanges and prediction markets.",
+            "Prediction markets. Kalshi, Polymarket and the new sports-only markets such as Novig and ProphetX trade contracts priced from 1 to 99 cents. The spread between the best bid and best offer is the only cost, plus a small fee per contract on some venues."
+          ]
+        },
+        {
+          "p": "The catch is that the lowest-margin price moves between venues all day. The sharpest number on a Sunday game might be at Pinnacle at 9 a.m., on Kalshi at noon and at a betting exchange ten minutes before kickoff. Getting it means holding every account and checking every screen, or using something that checks them for you."
+        }
+      ]
+    },
+    {
+      "h2": "Removing the vig to find the fair price",
+      "blocks": [
+        {
+          "p": "To see what a market thinks without the fee, scale each side's implied probability by the same factor until they add to 100%. This is the multiplicative method and it is what the calculator below uses. For -110 / -110 the fair price is 50% each side, or +100. For -150 / +130 the fair prices are 57.98% and 42.02%, which is about -138 and +138."
+        },
+        {
+          "p": "Serious bettors use the no-vig price from a sharp book as their estimate of the true probability, then look for other venues offering better than that. That is the entire basis of positive expected value betting and of closing line value."
+        },
+        {
+          "callout": "Two prices that look the same can carry different vig. -110 against -110 is 4.76% overround. -110 against -105 is 3.6%. The second book is cheaper even though your side costs the same, because its number is closer to the truth."
+        }
+      ]
+    },
+    {
+      "h2": "Vig on parlays, props and futures",
+      "blocks": [
+        {
+          "p": "The 4.76% figure is the best case. Vig compounds in a parlay: two -110 legs carry 9.7% combined overround, three legs 14.9%, and books add their own correlation haircut on same-game parlays. Player props commonly run at -115 / -115 or worse, about 7% overround. Futures markets with twenty outcomes often total 130% to 160% implied probability, which is the most expensive price in the book."
+        },
+        {
+          "p": "If you want to know what you are paying, add up the implied probabilities of every outcome in the market. Anything over 100% is the house's share."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Vig is the margin hidden in the odds. On -110 / -110 it is 4.76% overround, or a 4.55% hold.",
+    "At -110 you break even at 52.38%; at -105 it is 51.22%. The difference is worth about $430 a season per $20,000 staked.",
+    "Exchanges and prediction markets have no overround; they charge 1% to 2% commission on winnings instead.",
+    "Remove the vig from a sharp line to get the fair probability, then only bet prices better than that.",
+    "Parlays, props and futures carry far more vig than sides and totals."
+  ],
+  "terminalup": [
+    "TerminalUp is a cross-venue sports trading terminal. It shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available at that price, and routes the order to that venue. In practice that means the low-vig price is the default rather than something to hunt for. The cost is 0.5% commission per trade (0.35% at the highest volume), no subscription, and the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is vig the same as juice?",
+      "a": "Yes. Vig, vigorish, juice and hold all describe the sportsbook's margin. Overround is the technical term for the implied probabilities summing to more than 100%; hold is that margin expressed as a share of the money bet."
+    },
+    {
+      "q": "What is the standard vig?",
+      "a": "Ten cents, written -110 / -110, is standard on point spreads and totals in the US. That is 4.76% overround. Reduced-juice books price at -105 or -107 and sharp books such as Pinnacle are often -104 to -106."
+    },
+    {
+      "q": "Do betting exchanges charge vig?",
+      "a": "Not in the price. Exchanges match bettors against each other at prices with no built-in margin, then charge a commission on net winnings, typically 1% to 5% depending on the venue."
+    },
+    {
+      "q": "How do I calculate vig?",
+      "a": "Convert each side to implied probability (for negative American odds, odds divided by odds plus 100; for positive odds, 100 divided by odds plus 100), add the sides, and subtract 100%. Use the calculator on this page to do it for two or three outcomes."
+    },
+    {
+      "q": "Can you avoid vig completely?",
+      "a": "No venue is free. You can get it close to zero by betting on exchanges and prediction markets where the price has no margin and the commission is 1% to 2% of winnings, which works out to well under 1% of turnover."
+    },
+    {
+      "q": "Why does the vig matter if I pick winners?",
+      "a": "Because it sets the bar you must clear. A 54% handicapper is profitable at -105 and barely above water at -115. Most long-term winners win by paying less, not by picking better."
+    }
+  ],
+  "related": [
+    "howtoreadbettingodds.com",
+    "impliedprobabilitycalculator.com",
+    "whatisevinbetting.com",
+    "whatisabettingexchange.com",
+    "bestlineshoppingtool.com",
+    "bestoddscomparisonsite.com",
+    "sharpsportsbooks.com",
+    "whatisclosinglinevalue.com"
+  ],
+  "look": {
+    "palette": "charcoal-orange",
+    "type": "palatino",
+    "h2": "left-bar",
+    "layout": "column",
+    "order": "A",
+    "radius": 8,
+    "width": 820,
+    "favicon": "tri",
+    "label": 2,
+    "footer": 1
+  }
+}

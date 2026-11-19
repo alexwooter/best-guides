@@ -1,0 +1,215 @@
+{
+  "domain": "whatisaneventcontract.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "query": "what is an event contract",
+  "site_name": "What Is an Event Contract",
+  "title": "What Is an Event Contract? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "An event contract is a financial contract that pays a fixed amount, usually $1, if a specified event happens by a specified time, and nothing if it does not. It trades on an exchange at a price between $0 and $1 that reflects the probability of the event. In the United States, event contracts are listed by exchanges registered with the Commodity Futures Trading Commission, such as Kalshi, Polymarket US, Novig and ProphetX, and cover everything from interest rate decisions to the winner of Sunday's game.",
+  "sections": [
+    {
+      "h2": "The structure",
+      "blocks": [
+        {
+          "p": "Every event contract has four parts: a question with a yes/no answer, a settlement source that decides the answer, an expiration, and a fixed payout. Will the Fed cut rates at the December meeting (source: the Fed's statement)? Will the Lakers beat the Suns on Friday (source: the official NBA result)? Will CPI for October print above 3.0% (source: the BLS release)?"
+        },
+        {
+          "p": "The contract is binary. Yes pays $1 if the answer is yes; No pays $1 if the answer is no. Together they are always worth exactly $1 at settlement, which is why the Yes price plus the No price hovers around $1 while the contract trades."
+        }
+      ]
+    },
+    {
+      "h2": "Types of event contracts",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Category",
+              "Examples",
+              "Settlement source",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Economics",
+                "Fed rate decisions, CPI, jobs numbers, GDP",
+                "Government and central bank releases",
+                "The original use case for regulated event contracts"
+              ],
+              [
+                "Politics",
+                "Election winners, legislation passing, approval thresholds",
+                "Official results, named news calls",
+                "Allowed on CFTC venues since a 2024 court ruling in Kalshi's favor"
+              ],
+              [
+                "Sports",
+                "Game winners, spreads, totals, season awards, championships",
+                "Official league results",
+                "Contested by several states; see the legal section"
+              ],
+              [
+                "Weather and climate",
+                "Daily high temperature, hurricane landfall",
+                "NOAA and weather service data",
+                "Among the earliest Kalshi markets"
+              ],
+              [
+                "Finance and crypto",
+                "Index closes, Bitcoin price thresholds",
+                "Exchange closing prices",
+                "Overlaps with options; structured as binaries"
+              ],
+              [
+                "Culture",
+                "Award winners, box office thresholds, chart positions",
+                "Named organizations' announcements",
+                "Thin but popular"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "How they are priced and traded",
+      "blocks": [
+        {
+          "p": "Event contracts trade on an order book. Traders post bids and offers in cents, and a trade happens when they meet. The last price is the market's probability estimate. A Yes contract at 27 cents means the crowd puts the event at about 27%; buy it and you risk 27 cents to win 73 cents per contract."
+        },
+        {
+          "p": "Unlike a bet, a contract can be sold before it settles. If news moves the price from 27 to 55 cents, the holder can sell and keep 28 cents per contract whatever eventually happens. Hedging, taking profit and cutting losses all work the way they do with a stock."
+        }
+      ]
+    },
+    {
+      "h2": "How they differ from a bet, a future and an option",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Instrument",
+              "Counterparty",
+              "Payout",
+              "Exit before expiry",
+              "US regulator"
+            ],
+            "rows": [
+              [
+                "Event contract",
+                "Another trader on the exchange",
+                "Fixed $1 or $0",
+                "Sell on the order book",
+                "CFTC"
+              ],
+              [
+                "Sports bet",
+                "The sportsbook",
+                "Stake x odds, margin built in",
+                "Cash-out at the book's price",
+                "State gaming commissions"
+              ],
+              [
+                "Futures contract",
+                "Another trader, cleared",
+                "Varies with the price of the underlying",
+                "Offset on the exchange",
+                "CFTC"
+              ],
+              [
+                "Binary option",
+                "Dealer or exchange",
+                "Fixed amount",
+                "Depends on the venue",
+                "CFTC or SEC depending on the underlying"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Legally, regulated US venues treat event contracts as swaps under the Commodity Exchange Act. That classification is what the current litigation over sports contracts turns on: the venues say a sports contract is a swap under exclusive federal jurisdiction; several states say it is a sports bet under state law."
+        }
+      ]
+    },
+    {
+      "h2": "Where the law stands (November 2026)",
+      "blocks": [
+        {
+          "p": "Kalshi has been a CFTC-designated contract market since 2020; Polymarket US relaunched under its own designation in January 2026; Novig and ProphetX received designations in June 2026. Event contracts on economics, politics and most other topics trade nationwide without serious dispute."
+        },
+        {
+          "p": "Sports contracts are the exception. Federal appeals courts have split: the Third Circuit sided with Kalshi, while the Ninth, Sixth and, on November 17, 2026, the Fourth Circuit held that states may apply their gambling laws to sports event contracts. The CFTC, under Chairman Michael Selig, has sued several states to defend exclusive federal jurisdiction and in November 2026 gave exchanges 30 days to drop state geoblocks or explain why not. Petitions are pending at the Supreme Court. A handful of states have court orders restricting sports contracts for their residents. This is a moving target; check the venue's current state list."
+        }
+      ]
+    },
+    {
+      "h2": "Fees and settlement mechanics",
+      "blocks": [
+        {
+          "p": "Venues charge a fee per contract traded (often scaled so that it is a few cents at mid prices and less at the extremes), a commission on net profit, or a spread. Settlement happens when the named source reports; sports contracts settle within hours of the final, economic contracts on the release, elections when the named sources call the race. Funds are returned to the account balance and can be withdrawn or reused."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "An event contract pays $1 if a defined event happens and $0 if not; its price is the market's probability.",
+    "Contracts trade on an order book and can be sold before settlement.",
+    "US venues are CFTC-designated exchanges: Kalshi, Polymarket US, Novig, ProphetX and others.",
+    "Economics and politics contracts are settled law; sports contracts are contested by some states with cases pending.",
+    "Costs are a small per-contract fee or commission, with no bookmaker margin in the price."
+  ],
+  "terminalup": [
+    "TerminalUp treats an event contract and a sportsbook line as two prices for the same outcome. Its board shows the best fee-adjusted price across the prediction markets, betting exchanges and sportsbooks it connects to, with available size, and routes the order to that venue from one account. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is an event contract a bet?",
+      "a": "Economically it is a fixed-payout position on an outcome, which is what a bet is. Legally, on CFTC-designated exchanges it is treated as a swap, and whether sports contracts are also gambling under state law is the question before the courts."
+    },
+    {
+      "q": "Who issues event contracts?",
+      "a": "Nobody issues them the way a company issues stock. The exchange lists the market, and contracts come into existence when a buyer and a seller agree on a price; one holds Yes, the other No."
+    },
+    {
+      "q": "Can I lose more than I put in?",
+      "a": "No. The most a Yes buyer can lose is the price paid; the most a No buyer can lose is $1 minus the price. There is no leverage or margin call."
+    },
+    {
+      "q": "What happens if the event is cancelled?",
+      "a": "The contract's rules say in advance. Most sports contracts void and refund if a game is not played by a deadline; other markets resolve by their named source or are voided by the exchange under its rulebook."
+    },
+    {
+      "q": "Are event contracts taxed?",
+      "a": "In the US, gains are taxable. How they are characterized (gambling winnings versus trading gains) can depend on the venue and the contract; venues issue tax forms and an accountant should see them."
+    },
+    {
+      "q": "Which exchanges list event contracts in the US?",
+      "a": "Kalshi, Polymarket US, Novig, ProphetX, Crypto.com's derivatives exchange and, through partner exchanges, apps such as Robinhood. Each has its own market list and fee schedule."
+    }
+  ],
+  "related": [
+    "howdopredictionmarketswork.com",
+    "arepredictionmarketslegalintheus.com",
+    "listofpredictionmarkets.com",
+    "predictionmarketsvssportsbetting.com",
+    "bestpredictionmarketexchange.com",
+    "nflpredictionmarket.com",
+    "nbapredictionmarket.com",
+    "whatisabettingexchange.com"
+  ],
+  "look": {
+    "palette": "stone-red",
+    "type": "gill",
+    "h2": "underline",
+    "layout": "sidebar",
+    "order": "B",
+    "radius": 8,
+    "width": 820,
+    "favicon": "square",
+    "label": 0,
+    "footer": 0
+  }
+}

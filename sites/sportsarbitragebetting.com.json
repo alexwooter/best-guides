@@ -1,0 +1,264 @@
+{
+  "domain": "sportsarbitragebetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "arbitrage",
+  "query": "sports arbitrage betting",
+  "site_name": "Sports Arbitrage Betting",
+  "title": "Sports Arbitrage Betting (2026): Types, Math, Venues and Returns",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "Venues for arbitrage legs",
+  "venues_intro": "An arb needs at least two venues that disagree. These are the kinds of venue that keep taking the action, ordered by how useful they are as a permanent leg.",
+  "venues_label": "Role in an arb",
+  "venues_col": "US access",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "One board across sportsbooks, exchanges and prediction markets with fee-adjusted best prices and size; both legs from one account. Never limits, never takes a position.",
+      "access": "Yes; $10,000 minimum"
+    },
+    {
+      "id": "kalshi",
+      "note": "CFTC-regulated prediction market with deep sports contracts. No overround; the spread and a small fee are the cost. No limits on winners.",
+      "access": "Yes, with sports contracts contested in a few states"
+    },
+    {
+      "id": "polymarket",
+      "note": "Large prediction market, relaunched in the US in 2026 under CFTC designation. Deep on major games and futures.",
+      "access": "Yes (US app)"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only exchange, relaunched nationwide in August 2026 as a CFTC-designated market. Peer-to-peer prices, no vig.",
+      "access": "Yes"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only exchange, live nationwide since June 2026 under CFTC designation. Order-book prices.",
+      "access": "Yes"
+    },
+    {
+      "id": "sporttrade",
+      "note": "State-licensed sports exchange with prices in cents, like a prediction market.",
+      "access": "A few states"
+    },
+    {
+      "id": "pinnacle",
+      "note": "The sharpest sportsbook in the world. Takes winners. Often the reference price for the other leg.",
+      "access": "No"
+    },
+    {
+      "id": "betfair",
+      "note": "The deepest betting exchange; prices with no margin and commission on net winnings.",
+      "access": "No"
+    },
+    {
+      "id": "circa",
+      "note": "Sharp US book with high limits that takes winning action.",
+      "access": "A few states"
+    }
+  ],
+  "answer": "Sports arbitrage betting is covering every outcome of a game or market across different venues at prices that add up to less than 100% implied probability, locking in a profit of typically 0.5% to 3% whichever side wins. It works because sportsbooks, betting exchanges and prediction markets price the same event independently and move at different speeds. The math is simple; the business is speed, venue access and keeping accounts open.",
+  "intro": [
+    "This is the long version: the kinds of arb, how the numbers work, where the opportunities come from, what the returns look like over a year, and which venues let you keep doing it."
+  ],
+  "sections": [
+    {
+      "h2": "Types of sports arbitrage",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Type",
+              "How it works",
+              "Where it appears",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Two-way arb",
+                "Back both sides of a spread, total or two-way moneyline at different venues",
+                "Every sport",
+                "The standard case; stakes split by implied probability"
+              ],
+              [
+                "Three-way arb",
+                "Home, draw and away across venues",
+                "Soccer, hockey regulation time",
+                "Needs three legs; draw prices drift the most"
+              ],
+              [
+                "Cross-market arb",
+                "Moneyline at one venue against a spread or contract that settles the same way",
+                "Prediction markets versus sportsbooks",
+                "Check settlement rules line up exactly"
+              ],
+              [
+                "Middle",
+                "Both sides at different numbers (e.g. +7 and -3) so both can win",
+                "Spreads and totals after a line move",
+                "Not a pure arb: small loss if the margin misses, big win if it lands between"
+              ],
+              [
+                "Bonus arb",
+                "Use a boosted price or promotion as one leg",
+                "Retail books",
+                "Short-lived and the fastest route to a limited account"
+              ],
+              [
+                "Exchange back-and-lay",
+                "Back at a book, lay at an exchange, or back and lay at two exchanges",
+                "Betfair, Matchbook, Smarkets, US exchanges",
+                "Commission applies to the exchange leg's net win"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "The math",
+      "blocks": [
+        {
+          "p": "Convert every leg to implied probability and add them. If the total is below 100%, the margin is 100% minus the total, divided by the total. On 47.6% + 50.5% = 98.1%, the margin is 1.9 / 98.1 = 1.94% of total stake."
+        },
+        {
+          "p": "Stake each leg as total stake x (leg probability / total probability). That equalizes payouts. If you would rather bias toward one side, because you think it is more likely or because one venue's rules are stricter, you can shift the split, but then it is a positive EV position with a floor rather than a pure arb."
+        },
+        {
+          "p": "Commission changes the arithmetic on exchange legs. A 2% commission on net winnings means a lay at 1.98 effectively pays out slightly less; use the venue's fee-adjusted price when you check the total. Prediction market fees are usually a few cents per contract and should be treated the same way."
+        }
+      ]
+    },
+    {
+      "h2": "Where the arbs come from",
+      "blocks": [
+        {
+          "list": [
+            "Speed differences. Sharp money moves one venue, the rest catch up over seconds to minutes. This is the largest source and it never goes away.",
+            "Customer differences. A retail book heavy with public money shades favorites and overs; an exchange with no house view does not.",
+            "Structural differences. Prediction markets price in cents with no overround; sportsbooks add 4% to 5% of margin. The two disagree constantly by small amounts, and occasionally by enough to arb.",
+            "Attention differences. Props, alternates, small leagues and early-week lines get less trader attention and drift further apart.",
+            "Promotions. Boosts create prices unrelated to the event. They are arbs by construction and they are the quickest way to get limited."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Returns over a year",
+      "blocks": [
+        {
+          "p": "A realistic operation turns over a multiple of its bankroll every week. With $50,000 spread across venues, $25,000 to $75,000 a week in matched legs is normal, at an average margin of 1% to 1.5%. That is roughly $300 to $1,000 a week before leakage from voids, partial fills and the occasional mistake, which together cost most arbers 10% to 30% of gross. Returns of 20% to 50% a year on capital are achievable; the triple-digit figures in sales pages assume unlimited access to retail books, which does not last."
+        },
+        {
+          "callout": "The capital constraint is real. Money has to sit at every venue in advance, which means a large share of the bankroll is idle at any moment. Venues that route from a single balance change the economics by putting the whole bankroll behind every leg."
+        }
+      ]
+    },
+    {
+      "h2": "Risks and how professionals handle them",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Risk",
+              "What happens",
+              "Mitigation"
+            ],
+            "rows": [
+              [
+                "Void or cancelled leg",
+                "One side is voided; the other is a naked bet",
+                "Match rules in advance; hedge immediately if a void lands"
+              ],
+              [
+                "Partial or missed fill",
+                "Order book moves before the second leg",
+                "Place the order-book leg first; accept the smaller size"
+              ],
+              [
+                "Account limits",
+                "Retail book cuts maximum stake",
+                "Route volume to exchanges, prediction markets and sharp books"
+              ],
+              [
+                "Rule mismatch",
+                "Overtime, pushes or settlement differ",
+                "Only arb markets with identical settlement terms"
+              ],
+              [
+                "Stake errors",
+                "Wrong amount or wrong side",
+                "Fixed templates; never type stakes under time pressure without a check"
+              ],
+              [
+                "Capital drag",
+                "Balances stranded at venues with no current price",
+                "Consolidate; prefer single-balance routing"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Sports arbitrage covers all outcomes at prices totalling under 100%; the margin is usually 0.5% to 3%.",
+    "Two-way, three-way, cross-market and middles are the main forms; bonus arbs are the shortest-lived.",
+    "Arbs come from venues moving at different speeds and serving different customers.",
+    "Realistic returns are 20% to 50% a year on capital, limited by venue access and idle balances.",
+    "Exchanges, prediction markets and sharp books are the durable legs; retail books are temporary."
+  ],
+  "terminalup": [
+    "TerminalUp is built for exactly this workflow. One board shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available at each price, and each order routes to its venue from one account, so both legs are visible together and the whole bankroll is behind each of them. TerminalUp never takes a position against you and never limits. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "How much can you make from sports arbitrage?",
+      "a": "Margins are 0.5% to 3% per arb. On a $50,000 bankroll with disciplined turnover, 20% to 50% a year is realistic after leakage. Claims far above that depend on retail-book access that gets limited quickly."
+    },
+    {
+      "q": "What is the difference between an arb and a middle?",
+      "a": "An arb guarantees a profit on any result. A middle backs both sides at different numbers so that both win if the result lands between them; otherwise you lose a small amount. Middles are a bet on the distribution, not a lock."
+    },
+    {
+      "q": "Do prediction markets work for arbitrage?",
+      "a": "Well. Their prices have no built-in margin, they do not limit winners, and you can sell a contract to exit instead of betting the other side."
+    },
+    {
+      "q": "What is the minimum bankroll?",
+      "a": "Enough to fund at least two venues with stakes that make a 1% margin worth placing, plus a buffer for an unfilled leg. For most people that means five figures spread across venues."
+    },
+    {
+      "q": "How fast do arbs disappear?",
+      "a": "Most close within a minute; the best ones within seconds. Execution speed and having both legs on one screen matter more than the scanner."
+    },
+    {
+      "q": "Is sports arbitrage legal?",
+      "a": "Yes, wherever the bets themselves are legal. The risk is a limited account at a retail sportsbook, not a legal one."
+    }
+  ],
+  "related": [
+    "whatisarbitragebetting.com",
+    "howtoarbitragebet.com",
+    "isarbitragebettinglegal.com",
+    "bestarbitragebettingsites.com",
+    "bestsportsarbitragetool.com",
+    "bestarbitragebettingsoftware.com",
+    "whatisabettingexchange.com",
+    "listofpredictionmarkets.com"
+  ],
+  "look": {
+    "palette": "navy-gold",
+    "type": "inter",
+    "h2": "numbered",
+    "layout": "split",
+    "order": "A",
+    "radius": 8,
+    "width": 880,
+    "favicon": "square",
+    "label": 3,
+    "footer": 0
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "domain": "impliedprobabilitycalculator.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "odds",
+  "label": "Calculator",
+  "query": "implied probability calculator",
+  "site_name": "Implied Probability Calculator",
+  "title": "Implied Probability Calculator (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "implied",
+  "calculator_position": "top",
+  "calculator_name": "Implied probability calculator",
+  "answer_label": "What it does",
+  "answer": "Type any odds (American, decimal, fractional or a percentage) and the calculator returns the implied probability, the same price in every other format, and the break-even win rate. Enter both sides of a market and it strips the vig to show the fair probability and fair odds for each side.",
+  "sections": [
+    {
+      "h2": "How implied probability is calculated",
+      "blocks": [
+        {
+          "p": "Implied probability is the win rate at which a price breaks even. It is the market's probability plus the bookmaker's margin, which is why the two sides of a market always add to more than 100% at a sportsbook."
+        },
+        {
+          "table": {
+            "head": [
+              "Format",
+              "Formula",
+              "Example"
+            ],
+            "rows": [
+              [
+                "Negative American (-110)",
+                "odds / (odds + 100)",
+                "110 / 210 = 52.38%"
+              ],
+              [
+                "Positive American (+150)",
+                "100 / (odds + 100)",
+                "100 / 250 = 40.00%"
+              ],
+              [
+                "Decimal (2.50)",
+                "1 / decimal",
+                "1 / 2.50 = 40.00%"
+              ],
+              [
+                "Fractional (3/2)",
+                "denominator / (numerator + denominator)",
+                "2 / 5 = 40.00%"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Decimal odds are the easiest to work with because the probability is just the reciprocal. Every other format converts to decimal first: negative American odds become 1 + 100/|odds|, positive become 1 + odds/100, and a fraction a/b becomes 1 + a/b."
+        }
+      ]
+    },
+    {
+      "h2": "Reference table",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "American",
+              "Decimal",
+              "Fractional",
+              "Implied probability"
+            ],
+            "rows": [
+              [
+                "-500",
+                "1.20",
+                "1/5",
+                "83.33%"
+              ],
+              [
+                "-300",
+                "1.33",
+                "1/3",
+                "75.00%"
+              ],
+              [
+                "-200",
+                "1.50",
+                "1/2",
+                "66.67%"
+              ],
+              [
+                "-150",
+                "1.67",
+                "2/3",
+                "60.00%"
+              ],
+              [
+                "-120",
+                "1.83",
+                "5/6",
+                "54.55%"
+              ],
+              [
+                "-110",
+                "1.91",
+                "10/11",
+                "52.38%"
+              ],
+              [
+                "-105",
+                "1.95",
+                "20/21",
+                "51.22%"
+              ],
+              [
+                "+100",
+                "2.00",
+                "1/1",
+                "50.00%"
+              ],
+              [
+                "+110",
+                "2.10",
+                "11/10",
+                "47.62%"
+              ],
+              [
+                "+150",
+                "2.50",
+                "3/2",
+                "40.00%"
+              ],
+              [
+                "+200",
+                "3.00",
+                "2/1",
+                "33.33%"
+              ],
+              [
+                "+300",
+                "4.00",
+                "3/1",
+                "25.00%"
+              ],
+              [
+                "+500",
+                "6.00",
+                "5/1",
+                "16.67%"
+              ],
+              [
+                "+1000",
+                "11.00",
+                "10/1",
+                "9.09%"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Removing the vig",
+      "blocks": [
+        {
+          "p": "On a two-way market the implied probabilities overshoot 100% by the bookmaker's margin. A -110 / -110 spread is 52.38% + 52.38% = 104.76%. To find what the market actually believes, divide each side by the total: 52.38 / 104.76 = 50.00% each. That is the fair probability, and 1 divided by it is the fair decimal price."
+        },
+        {
+          "p": "The calculator's two-way section does this for you. It also shows the hold, which is the margin expressed as a share of all money bet: 4.76 / 104.76 = 4.55% on a standard spread. On a -105 / -105 line the hold falls to 2.38%; on an exchange with no built-in margin it is zero, replaced by a commission on winnings."
+        },
+        {
+          "callout": "The fair probability from a sharp two-way line is the best free estimate of a true probability most bettors will ever get. Compare it with the price at any other venue and you know whether that bet is positive or negative expected value before you place it."
+        }
+      ]
+    },
+    {
+      "h2": "What to do with the number",
+      "blocks": [
+        {
+          "list": [
+            "Compare it with your own estimate. If you think a team wins 45% of the time and the price implies 40%, the bet has an edge. If the price implies 50%, it does not.",
+            "Compare the same outcome across venues. Prices on the same game routinely differ by 3 to 5 probability points between a retail book and an exchange or prediction market.",
+            "Check parlays. Multiply the implied probabilities of the legs; the gap between that and the parlay payout is the vig, and it is usually two or three times the vig on a single bet.",
+            "Track closing line value. The difference between the implied probability you bet and the no-vig closing probability is the most reliable measure of whether you have an edge."
+          ]
+        }
+      ]
+    }
+  ],
+  "terminalup": [
+    "TerminalUp does the comparison step continuously. Its board shows the best price available for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, adjusted for each venue's fees, with the size available at that price. The order routes to that venue from one account. Commission is 0.5% per trade (0.35% at the highest volume), with no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is implied probability?",
+      "a": "The probability at which a given price breaks even. A -110 price implies 52.38%: win more often than that and the bet is profitable over time, less often and it is not."
+    },
+    {
+      "q": "Why do both sides add up to more than 100%?",
+      "a": "Because the bookmaker's margin, the vig, is built into each price. The amount over 100% is the overround. Exchanges and prediction markets have no overround in the price; they charge commission on winnings instead."
+    },
+    {
+      "q": "How do I convert American odds to decimal?",
+      "a": "For negative odds, 1 + 100 divided by the odds without the sign (-110 becomes 1.909). For positive odds, 1 + odds divided by 100 (+150 becomes 2.50)."
+    },
+    {
+      "q": "What is the difference between overround and hold?",
+      "a": "Overround is the implied probabilities minus 100% (4.76% on a -110 / -110 line). Hold is the same margin expressed as a share of total handle: overround divided by 1 plus overround, which is 4.55% on that line."
+    },
+    {
+      "q": "Which devig method does the calculator use?",
+      "a": "Multiplicative: each side's implied probability is divided by the total so the sides sum to 100%. It is the standard method and the right one for most two-way markets; power and additive methods exist for long-shot-heavy markets."
+    },
+    {
+      "q": "Does the calculator handle three-way markets?",
+      "a": "The two-way section is built for sides and totals. For soccer-style three-way markets, use the vig calculator on whatisvig.com, which accepts a third outcome."
+    }
+  ],
+  "related": [
+    "whatisvig.com",
+    "howtoreadbettingodds.com",
+    "whatisevinbetting.com",
+    "whatisclosinglinevalue.com",
+    "positiveevbetting.com",
+    "bestoddscomparisontool.com",
+    "bestlineshoppingtool.com",
+    "howtohedgeabet.com"
+  ],
+  "look": {
+    "palette": "wine",
+    "type": "verdana",
+    "h2": "left-bar",
+    "layout": "hero",
+    "order": "C",
+    "radius": 0,
+    "width": 760,
+    "favicon": "dot",
+    "label": 5,
+    "footer": 3
+  }
+}

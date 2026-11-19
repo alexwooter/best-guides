@@ -1,0 +1,222 @@
+{
+  "domain": "nflpredictionmarket.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "query": "nfl prediction market",
+  "site_name": "NFL Prediction Market",
+  "title": "NFL Prediction Markets (2026): Where to Trade, What's Listed, How Prices Compare",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "Where NFL contracts trade",
+  "venues_intro": "Every venue below lists NFL game winners; the rest of the market list varies.",
+  "venues_label": "NFL markets and depth",
+  "venues_col": "Access",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Best fee-adjusted NFL price across the prediction markets, exchanges and sportsbooks it connects to, with size shown; one account routes to the venue with the best number.",
+      "access": "US; $10,000 minimum"
+    },
+    {
+      "id": "kalshi",
+      "note": "Game winners, spreads, totals, player and team props on primetime games, division and Super Bowl futures. The deepest NFL order books on a prediction market.",
+      "access": "Nationwide; restricted in a few states by court order"
+    },
+    {
+      "id": "polymarket",
+      "note": "Game winners, spreads and totals plus Super Bowl, MVP and award futures. Very deep on the biggest games.",
+      "access": "Nationwide (US app)"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only; game lines, props and multi-leg combination contracts with no vig in the price.",
+      "access": "Nationwide"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only order books on game winners, spreads and totals.",
+      "access": "Nationwide"
+    },
+    {
+      "id": "sporttrade",
+      "note": "NFL sides, totals and futures priced in cents on a state-licensed exchange.",
+      "access": "A few states"
+    },
+    {
+      "id": "robinhood_pm",
+      "note": "NFL game and season contracts inside the brokerage app via a partner exchange.",
+      "access": "Most states"
+    }
+  ],
+  "answer": "An NFL prediction market lets you buy and sell contracts on NFL outcomes (game winners, spreads, totals, props, division and Super Bowl futures) at prices in cents that equal the market's probability, with no bookmaker margin and the ability to sell before kickoff or at halftime. The main US venues are Kalshi, Polymarket US, Novig and ProphetX, all regulated by the CFTC. NFL contracts carry the deepest liquidity of any sport on these venues, and their prices routinely differ from sportsbook lines by one to three points.",
+  "sections": [
+    {
+      "h2": "What is listed",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Market",
+              "How it trades",
+              "Typical depth",
+              "Sportsbook equivalent"
+            ],
+            "rows": [
+              [
+                "Game winner",
+                "Yes/No contract per team, 1 to 99 cents",
+                "Deepest; six figures available near kickoff on big games",
+                "Moneyline"
+              ],
+              [
+                "Spread",
+                "Contract on team to cover a stated number",
+                "Deep on primetime, thinner midweek",
+                "Point spread at -110"
+              ],
+              [
+                "Total",
+                "Over or under a stated number",
+                "Moderate",
+                "Game total"
+              ],
+              [
+                "Player props",
+                "Yards, touchdowns, receptions thresholds on featured games",
+                "Thin outside primetime",
+                "Props at -115 or worse"
+              ],
+              [
+                "Division and conference winners",
+                "Season-long contracts",
+                "Deep and continuous",
+                "Futures"
+              ],
+              [
+                "Super Bowl winner",
+                "One contract per team all season",
+                "The deepest futures market in US sports",
+                "Super Bowl futures"
+              ],
+              [
+                "Awards (MVP, OPOY, Coach)",
+                "Contract per candidate",
+                "Moderate",
+                "Futures"
+              ],
+              [
+                "In-game",
+                "Same contracts trade through the game",
+                "Good on big games; gaps at other times",
+                "Live betting"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "How NFL prices compare with sportsbooks",
+      "blocks": [
+        {
+          "p": "On a standard spread a sportsbook charges -110 each side, a 4.76% overround. On a prediction market the same spread trades at, say, 50 cents bid, 51 offered, with a fee of a cent or two per contract. The round-trip cost is roughly 2% to 3% against 4.8%, and the break-even win rate falls from 52.4% to around 51%."
+        },
+        {
+          "p": "Prices also differ in direction. Sportsbooks shade popular favorites and overs because the public bets them; prediction markets have no house position and move on whoever trades last. The result is that public teams are often a point or two cheaper on the markets, and sharp sides a point or two cheaper at a sharp book. Watching both is how line shoppers find the gaps."
+        },
+        {
+          "callout": "Example from a 2026 Sunday: a road favorite at -3 was -112 at the two largest sportsbooks and 49 cents (about -104) on a prediction market an hour before kickoff. Same bet, 8 cents of price."
+        }
+      ]
+    },
+    {
+      "h2": "The NFL calendar and liquidity",
+      "blocks": [
+        {
+          "list": [
+            "Lines open on Sunday night or Monday for the following week. Early markets are thin; spreads of three or four cents are common until Wednesday.",
+            "Depth builds Thursday through Saturday as injury reports land. By Sunday morning the main markets are tight.",
+            "The hour before kickoff is the deepest and the most volatile. Large orders move the price a cent or two and the gap to sportsbook lines opens and closes repeatedly.",
+            "Primetime games (Thursday, Sunday night, Monday) carry the most props and the deepest in-game trading.",
+            "Super Bowl futures trade all year, with the biggest volume in the two weeks before the game."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Selling before the game",
+      "blocks": [
+        {
+          "p": "The feature NFL bettors notice first is the exit. A contract bought on a Tuesday at 44 cents that trades at 52 on Sunday after a favorable injury report can be sold for 8 cents of profit per contract without the game being played. Season-long futures work the same way: a Super Bowl contract bought at 6 cents in September and trading at 15 in December can be sold or partially sold, which is cheaper than hedging at a sportsbook's cash-out price."
+        }
+      ]
+    },
+    {
+      "h2": "Legal status for NFL contracts",
+      "blocks": [
+        {
+          "p": "The venues are CFTC-designated and operate nationwide, but sports contracts are the subject of an active fight between the venues and several states. Appeals courts have split, the CFTC is suing states, and petitions are pending at the Supreme Court as of November 2026. A few states have court orders restricting sports contracts for their residents; the venue hides those markets in affected states. Non-sports markets are unaffected."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "NFL contracts are the deepest sports markets on US prediction markets; Kalshi, Polymarket US, Novig and ProphetX are the main venues.",
+    "Round-trip cost is about half a sportsbook's -110 margin, and prices differ from books by one to three points in both directions.",
+    "Liquidity builds through the week and peaks in the hour before kickoff.",
+    "Contracts can be sold before or during the game, which replaces cash-out.",
+    "Sports contracts are legally contested in some states; check availability by venue."
+  ],
+  "terminalup": [
+    "TerminalUp shows NFL prices from the prediction markets, betting exchanges and sportsbooks it connects to on one board, converted to the same basis after fees, with the best price for each outcome and the size behind it. The order routes to that venue from one account. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Which prediction market is best for NFL?",
+      "a": "Kalshi has the deepest NFL order books across game lines, props and futures; Polymarket US is very deep on the biggest games and Super Bowl futures; Novig and ProphetX are sports-only and competitive on game lines. The best price moves between them."
+    },
+    {
+      "q": "Can you bet NFL point spreads on a prediction market?",
+      "a": "Yes. Spread contracts trade as Yes/No on a team covering a stated number, priced in cents, with the total of both sides at about $1 rather than $1.05."
+    },
+    {
+      "q": "Are NFL prediction markets legal?",
+      "a": "The venues are CFTC-regulated and operate nationwide. Sports contracts are contested by some states, and a few restrict them by court order as of November 2026. Each venue lists where its NFL markets are available."
+    },
+    {
+      "q": "Can I sell an NFL contract before the game?",
+      "a": "Yes, at any time there is a buyer. That is how traders take profit after line moves or hedge season-long futures."
+    },
+    {
+      "q": "Are NFL prices better on prediction markets than sportsbooks?",
+      "a": "Often by one to three points, because there is no margin in the price. Not always: a thin midweek market can have a wider spread than a book's -108 line. Compare before trading."
+    },
+    {
+      "q": "Do prediction markets have NFL player props?",
+      "a": "On featured games, yes, with growing lists; outside primetime the props are thin or absent. Sportsbooks still have far more prop depth."
+    }
+  ],
+  "related": [
+    "nbapredictionmarket.com",
+    "howdopredictionmarketswork.com",
+    "arepredictionmarketslegalintheus.com",
+    "listofpredictionmarkets.com",
+    "bestsportspredictionmarket.com",
+    "bestpredictionmarketforsports.com",
+    "nflsharpmoney.com",
+    "predictionmarketsvssportsbetting.com"
+  ],
+  "look": {
+    "palette": "wine",
+    "type": "charter-sans",
+    "h2": "left-bar",
+    "layout": "compact",
+    "order": "B",
+    "radius": 0,
+    "width": 940,
+    "favicon": "dot",
+    "label": 5,
+    "footer": 0
+  }
+}

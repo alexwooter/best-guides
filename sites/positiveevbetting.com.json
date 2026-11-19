@@ -1,0 +1,172 @@
+{
+  "domain": "positiveevbetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "ev",
+  "query": "positive ev betting",
+  "site_name": "Positive EV Betting",
+  "title": "Positive EV Betting: How It Works and How to Do It (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "ev",
+  "calculator_position": "bottom",
+  "calculator_name": "Expected value calculator",
+  "answer": "Positive EV betting means only placing bets whose price is better than the true probability of the outcome, measured against the no-vig line at the sharpest venues. You find the fair price, look for any venue paying more than it, bet there, and size the bet to the edge. Done at volume, it is the most reliable way to profit from sports betting, and the main risk is not losing bets but getting limited by the books that keep giving you good prices.",
+  "intro": [
+    "Most sports betting content is about picking winners. Positive EV betting is about picking prices. You do not need an opinion on the game; you need the market's opinion and a venue that disagrees with it in your favor."
+  ],
+  "sections": [
+    {
+      "h2": "The method in five steps",
+      "blocks": [
+        {
+          "ol": [
+            "Pick a reference market. Pinnacle, Circa, a deep betting exchange or a liquid prediction market all work. The deeper and faster the market, the better its price as an estimate of truth.",
+            "Remove the vig from the reference line. Convert both sides to implied probability and divide each by the total. On -104 / -106 that gives 49.5% and 50.5%; that is your fair probability.",
+            "Scan every other venue for the same outcome. Any price paying more than the fair probability implies is +EV. A side worth 50.5% is fair at about -102; if a retail book still has it at +105, that bet has an edge of roughly 3.5%.",
+            "Bet it, and size it to the edge. Quarter Kelly is the common professional choice: edge divided by (decimal odds minus 1), divided by four, as a share of bankroll.",
+            "Record the closing price. If your bets beat the close on average, your edge is real. If they do not, your reference market or your execution is wrong, whatever the results say."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where +EV prices come from",
+      "blocks": [
+        {
+          "p": "Retail sportsbooks are slow to move on some markets, shade lines toward public money, and carry stale numbers on props and smaller leagues. Each of those creates prices that disagree with the sharp market. Promotions create them too, though the books that run promotions are also the quickest to limit anyone who uses them well."
+        },
+        {
+          "p": "Exchanges and prediction markets create +EV in a different way. Their prices are set by other users, so when a large order moves one venue and the others have not caught up, the gap is real money for whoever is watching all of them. The gap closes in seconds to minutes."
+        },
+        {
+          "table": {
+            "head": [
+              "Source of edge",
+              "Typical size",
+              "How long it lasts",
+              "Where it shows up"
+            ],
+            "rows": [
+              [
+                "Slow line moves at retail books",
+                "1% to 4%",
+                "Seconds to minutes",
+                "Sides and totals after news or sharp action"
+              ],
+              [
+                "Shaded lines toward public teams",
+                "1% to 2%",
+                "Hours",
+                "Primetime games, popular favorites"
+              ],
+              [
+                "Stale props and derivatives",
+                "2% to 6%",
+                "Minutes to hours",
+                "Player props, alternate lines, small leagues"
+              ],
+              [
+                "Cross-venue dislocation",
+                "1% to 3%",
+                "Seconds to minutes",
+                "Exchanges and prediction markets versus books"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "What it earns, honestly",
+      "blocks": [
+        {
+          "p": "A disciplined +EV bettor averages an edge of around 2% to 3% on turnover. On $5,000 a week that is $100 to $150 a week in expectation, with wide swings around it: a 2% edge needs several thousand bets before the results reliably show it. The people who make a living at it bet large volume across many markets and treat any single week as noise."
+        },
+        {
+          "p": "The real constraint is access. Retail books limit accounts that consistently take good prices, sometimes within weeks. The venues that never limit are the exchanges, the sharp books and the prediction markets, which is why serious +EV bettors migrate there even though the edges per bet are smaller: the volume is unlimited."
+        }
+      ]
+    },
+    {
+      "h2": "Mistakes that turn +EV into -EV",
+      "blocks": [
+        {
+          "list": [
+            "Using a soft book as the reference. If your fair price comes from a slow book, you are measuring edge against the wrong number.",
+            "Ignoring correlation in the devig. Three-way markets, player props and alternate lines need care; the simple multiplicative method can misprice long shots.",
+            "Betting into a line that has already moved. A +EV alert from a screen is worth nothing if the price is gone by the time you place it. Speed of execution is part of the edge.",
+            "Oversizing. A 3% edge with 5% of bankroll per bet is a fast way to go broke from a run of ordinary variance.",
+            "Counting promotions as skill. Boosts and free bets are +EV, but they end, and the account usually ends with them."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "+EV versus arbitrage",
+      "blocks": [
+        {
+          "p": "Arbitrage locks in a profit by betting both sides at prices that add to less than 100%. +EV betting takes one side at a good price and accepts variance. Arbitrage edges are smaller and rarer; +EV opportunities are everywhere but each one can lose. Most professionals do both: arb when the numbers line up, +EV the rest of the time, and track CLV on all of it."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Positive EV is about the price, not the pick: bet when a venue pays more than the fair probability.",
+    "The no-vig line from the sharpest market is the reference. Everything is measured against it.",
+    "Realistic edges are 2% to 3%; results need thousands of bets to show it. Judge yourself on closing line value.",
+    "Retail books limit winners. Exchanges, sharp books and prediction markets do not.",
+    "Speed matters. A good price that is gone before you click is not an edge."
+  ],
+  "terminalup": [
+    "The hard part of +EV betting at volume is seeing every venue's price at once and getting the order in before it moves. TerminalUp is built for that: one board showing the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available, and an order that routes to that venue from one account. It never takes a position against you, so there is nothing to limit. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is positive EV betting profitable?",
+      "a": "Yes, at volume and with discipline. Edges of 2% to 3% on turnover are typical for people who do it well. The profit shows up over thousands of bets, not dozens."
+    },
+    {
+      "q": "Do I need a model?",
+      "a": "No. The no-vig price from a sharp market is a better probability estimate than most private models. A model becomes useful once it beats the closing line on its own."
+    },
+    {
+      "q": "Will sportsbooks limit me?",
+      "a": "Retail books usually do, once they notice you consistently take their best prices. Exchanges, prediction markets and sharp books do not limit winners; they want the volume."
+    },
+    {
+      "q": "How is +EV different from arbitrage?",
+      "a": "Arbitrage bets both sides for a guaranteed small profit. +EV bets one side at a good price and accepts that it will lose some of the time. +EV opportunities are far more common."
+    },
+    {
+      "q": "What is closing line value and why does it matter?",
+      "a": "CLV compares the price you bet with the price at close. Consistently beating the close is the strongest evidence that your bets had positive expected value, long before the results prove it."
+    },
+    {
+      "q": "How much should I bet on a +EV play?",
+      "a": "A fraction of Kelly. Full Kelly is edge divided by (decimal odds minus 1) as a share of bankroll; most professionals use a quarter to a half of that to survive variance."
+    }
+  ],
+  "related": [
+    "whatisevinbetting.com",
+    "whatisclosinglinevalue.com",
+    "bestevbettingtool.com",
+    "whatisarbitragebetting.com",
+    "sportsbettingbankrollmanagement.com",
+    "whatisvig.com",
+    "sharpsportsbooks.com",
+    "bestsharpbettingtools.com"
+  ],
+  "look": {
+    "palette": "ice-indigo",
+    "type": "palatino",
+    "h2": "plain",
+    "layout": "sidebar",
+    "order": "C",
+    "radius": 8,
+    "width": 880,
+    "favicon": "ring",
+    "label": 1,
+    "footer": 4
+  }
+}

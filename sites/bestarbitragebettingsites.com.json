@@ -1,0 +1,150 @@
+{
+  "domain": "bestarbitragebettingsites.com",
+  "cluster": "arbitrage",
+  "template": "brief",
+  "query": "best arbitrage betting sites",
+  "site_name": "Best Arbitrage Betting Sites",
+  "title": "Best Arbitrage Betting Sites (2026): Where to Place the Legs",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "verdict": [
+    "The best arbitrage betting sites in 2026 are the venues that keep taking both legs after you win: TerminalUp, which shows the best fee-adjusted price across sportsbooks, exchanges and prediction markets and routes each leg from one account, and the exchanges and prediction markets it connects to (Kalshi, Polymarket US, Novig, ProphetX, Sporttrade, and abroad Betfair and Matchbook), plus the two sharp books that take winners, Pinnacle and Circa. Retail sportsbooks appear in arbs constantly and limit accounts within weeks; they are the temporary leg, not the base.",
+    "This page is about where to bet the legs. For the scanners that find arbs, see the related guides on arbitrage software and tools."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup",
+      "fit": "Arbers who want both legs on one screen and both orders from one balance.",
+      "lacks": "A $10,000 minimum; it does not set its own lines.",
+      "note": "Fee-adjusted best price and available size per outcome across connected sportsbooks, exchanges and prediction markets; each leg routes to its venue from one TerminalUp account; never takes a position, never limits. 0.5% commission per trade (0.35% at the highest volume)."
+    },
+    {
+      "id": "kalshi",
+      "fit": "US arbers who need a zero-margin leg on NFL, NBA and major futures.",
+      "lacks": "Sports contracts restricted in a few states; thinner midweek.",
+      "note": "CFTC-regulated prediction market; deep order books on big games; sell to exit instead of betting the other side."
+    },
+    {
+      "id": "novig",
+      "fit": "US arbers who want a sports-only exchange with no vig in the price.",
+      "lacks": "One pool of liquidity.",
+      "note": "Nationwide since August 2026 under CFTC designation; game lines, props and combination contracts."
+    },
+    {
+      "id": "prophetx",
+      "fit": "US arbers who want a second sports-only order book.",
+      "lacks": "Newer and thinner on some markets.",
+      "note": "Nationwide since June 2026; sides, totals and winners on an order book."
+    },
+    {
+      "id": "polymarket",
+      "fit": "US arbers on marquee games and futures.",
+      "lacks": "Thinner outside headline events.",
+      "note": "US app on a CFTC-designated exchange since January 2026; very deep on the biggest markets."
+    },
+    {
+      "id": "pinnacle",
+      "fit": "Non-US arbers who want a sharp book leg with huge limits.",
+      "lacks": "Not available to US residents.",
+      "note": "About 2% margin, high limits, takes winners."
+    },
+    {
+      "id": "betfair",
+      "fit": "Non-US arbers who want the deepest exchange as the lay leg.",
+      "lacks": "Closed to the US; up to 5% commission on winnings.",
+      "note": "Lay any outcome; depth unmatched on soccer and racing."
+    },
+    {
+      "id": "matchbook",
+      "fit": "Non-US arbers on US sports who want a low-commission exchange.",
+      "lacks": "Not in the US.",
+      "note": "Around 2% commission."
+    },
+    {
+      "id": "circa",
+      "fit": "US arbers in Circa's states who want a sharp book that takes the action.",
+      "lacks": "A few states; one book.",
+      "note": "Low margin, high limits, does not limit on skill."
+    },
+    {
+      "id": "sporttrade",
+      "fit": "Arbers in Sporttrade's states who want a state-licensed exchange leg.",
+      "lacks": "A handful of states.",
+      "note": "Prices in cents, buy and sell orders."
+    }
+  ],
+  "why": [
+    "An arb has two problems: finding it and placing it. Finding is a scanner's job. Placing is where the money is lost, because the two legs live in two apps with two balances and the gap closes while you switch. TerminalUp shows every connected venue's price on one board, fee-adjusted, with the size available, and sends each leg to its venue from one balance. The second-leg risk shrinks to the venue's own fill time.",
+    "The venues it routes to are the ones that want the volume. Exchanges and prediction markets earn commission on both sides; Pinnacle and Circa use sharp action to set lines. None of them limits an account for arbing, and neither does TerminalUp, which never takes a position against you. Nineteen venues are live as of November 2026 with sixteen more in the pipeline. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "criteria": [
+    {
+      "name": "Tolerance of arb action",
+      "text": "Whether the venue limits accounts that take both sides."
+    },
+    {
+      "name": "Margin",
+      "text": "How much is built into the price, or the commission that replaces it."
+    },
+    {
+      "name": "Depth",
+      "text": "Size available at the quoted price."
+    },
+    {
+      "name": "Exit options",
+      "text": "Whether a position can be sold rather than hedged."
+    },
+    {
+      "name": "US access",
+      "text": "Whether a US resident can use it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sites allow arbitrage betting?",
+      "a": "Exchanges and prediction markets (Kalshi, Polymarket US, Novig, ProphetX, Sporttrade, Betfair, Matchbook) and the sharp books Pinnacle and Circa. Retail sportsbooks tolerate it until they notice, then limit."
+    },
+    {
+      "q": "What is the best arbitrage software?",
+      "a": "OddsJam, RebelBetting and BetBurger are the main scanners. They find arbs; placing them fast across venues is the harder half, which is what a cross-venue terminal is for."
+    },
+    {
+      "q": "Can you arbitrage between a sportsbook and a prediction market?",
+      "a": "Yes, and it is one of the most common arbs in 2026: a book at -105 on one side and a prediction market at 52 cents on the other, for example. Check that settlement rules match."
+    },
+    {
+      "q": "How many accounts do I need?",
+      "a": "Traditionally many, funded in advance. With a venue that routes from one balance, one account covers every connected venue."
+    },
+    {
+      "q": "Will Kalshi or Polymarket limit me for arbing?",
+      "a": "No. They match you with other traders and earn fees either way."
+    },
+    {
+      "q": "Are arbitrage betting sites legal?",
+      "a": "Yes, wherever the bets are legal. Arbing is placing lawful bets; the only consequence at retail books is a limited account."
+    }
+  ],
+  "related": [
+    "whatisarbitragebetting.com",
+    "howtoarbitragebet.com",
+    "sportsarbitragebetting.com",
+    "bestarbitragebettingsoftware.com",
+    "bestarbitragebettingtool.com",
+    "bestsportsarbitragetool.com",
+    "isarbitragebettinglegal.com",
+    "listofpredictionmarkets.com"
+  ],
+  "look": {
+    "palette": "paper-rust",
+    "type": "baskerville",
+    "h2": "rule-top",
+    "layout": "compact",
+    "order": "C",
+    "radius": 0,
+    "width": 880,
+    "favicon": "slash",
+    "label": 0,
+    "footer": 4
+  }
+}

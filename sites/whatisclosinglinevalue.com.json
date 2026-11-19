@@ -1,0 +1,177 @@
+{
+  "domain": "whatisclosinglinevalue.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "ev",
+  "query": "what is closing line value",
+  "site_name": "What Is Closing Line Value",
+  "title": "What Is Closing Line Value (CLV) in Sports Betting? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "clv",
+  "calculator_position": "top",
+  "calculator_name": "Closing line value calculator",
+  "answer": "Closing line value is the difference between the price you bet and the price the market closed at. If you bet a side at -105 and it closes at -120, you beat the close by about 2.4 probability points. Because the closing line at a sharp market is the most accurate price of the event, beating it consistently is the strongest evidence that a bettor has an edge, and it shows up long before results do.",
+  "sections": [
+    {
+      "h2": "Why the closing line is the benchmark",
+      "blocks": [
+        {
+          "p": "By kickoff, a liquid market has absorbed every piece of public information and the money of every informed bettor. The closing price at a venue like Pinnacle, a deep exchange or a liquid prediction market is as close to the true probability as anyone gets. Academic studies of sports markets and the internal numbers of sportsbooks agree on this: bettors who beat the close win over time, and bettors who do not, do not, regardless of what their last fifty results say."
+        },
+        {
+          "p": "That makes CLV a leading indicator. Results take thousands of bets to separate skill from variance. CLV separates them in a few hundred."
+        }
+      ]
+    },
+    {
+      "h2": "How to calculate it",
+      "blocks": [
+        {
+          "ol": [
+            "Convert the price you bet to implied probability. -105 is 51.2%.",
+            "Convert the closing price on the same side to implied probability. -120 is 54.5%.",
+            "Better still, remove the vig from the closing line using both sides. If the close was -120 / +100, the fair probability of your side is 54.5 / (54.5 + 50.0) = 52.2%.",
+            "Subtract. 52.2% minus 51.2% is +1.0 probability point of CLV, vig removed. Against the raw closing price it is +3.3 points.",
+            "Average it over every bet. The average matters; any single bet is noise."
+          ]
+        },
+        {
+          "table": {
+            "head": [
+              "Bet price",
+              "Closing price",
+              "CLV (raw)",
+              "What it means"
+            ],
+            "rows": [
+              [
+                "-105",
+                "-120",
+                "+3.3 pts",
+                "Market moved your way; you got a better number than close"
+              ],
+              [
+                "-110",
+                "-110",
+                "0.0 pts",
+                "You bet the closing price"
+              ],
+              [
+                "+150",
+                "+130",
+                "+3.5 pts",
+                "Underdog shortened after you bet it"
+              ],
+              [
+                "-110",
+                "-102",
+                "-1.9 pts",
+                "You bet into the wrong side of a move"
+              ],
+              [
+                "+200",
+                "+250",
+                "-4.8 pts",
+                "The dog drifted; you overpaid"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "How much CLV is good",
+      "blocks": [
+        {
+          "p": "Against a sharp closing line with the vig removed, a sustained average of +1% is a real edge and +2% is professional territory. Against the raw closing price at the same book, you need to beat it by more than the vig, roughly 2 to 2.5 points on a -110 market, before you are ahead."
+        },
+        {
+          "p": "The benchmark depends on the market. Beating the close of an NFL side by 1% is hard, because the market is deep and efficient. Beating the close of a tennis prop by 3% is easier and worth less, because the closing price there is itself noisy."
+        }
+      ]
+    },
+    {
+      "h2": "Where CLV misleads",
+      "blocks": [
+        {
+          "list": [
+            "Closing price at a soft book is not the benchmark. A retail book that closes slow and shaded will flatter you. Use the sharpest venue you can see.",
+            "In thin markets the close is a weak estimate. Small leagues, early-season lines and most props have closing prices that carry their own error.",
+            "Steam you chased is not CLV you earned. If you bet after a move because you saw it, you may still have CLV but your price is usually near the new close.",
+            "Limits change the picture. A bettor with +3% CLV who is capped at $50 a bet earns less than one with +1% CLV and no limits."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Using CLV to run a betting operation",
+      "blocks": [
+        {
+          "p": "Professional bettors track CLV per market, per venue and per source of bets, and cut whatever does not beat the close. A model whose picks have negative CLV is wrong, however good the recent record. A tout service whose picks have zero CLV is selling noise. A venue where your fills consistently come in after the move is costing you edge in execution, not in handicapping."
+        },
+        {
+          "callout": "The question is never \"did it win\". The question is \"would the market, at close, have paid me less for this than I paid\". If yes, you did your job."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "CLV compares your price with the closing price at a sharp venue; positive CLV means you beat the market's best estimate.",
+    "It is the earliest reliable sign of an edge, visible in hundreds of bets rather than thousands.",
+    "Remove the vig from the closing line for a fair comparison; +1% sustained is good, +2% is excellent.",
+    "Measure against the sharpest close available, not a soft book's.",
+    "Cut any source of bets that does not beat the close, whatever its record."
+  ],
+  "terminalup": [
+    "CLV is earned at the moment of execution: the best price available across venues, filled before it moves. TerminalUp's board shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size behind it, and routes the order to that venue from one account, so the price you take is the best one on the screen rather than the one at the book you happened to open. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is a good closing line value?",
+      "a": "Against a sharp, no-vig closing line, a sustained average of +1% is a genuine edge and +2% is excellent. Against a raw closing price you need to beat it by more than the vig."
+    },
+    {
+      "q": "Does positive CLV guarantee profit?",
+      "a": "Not on any sample you would call short. It guarantees positive expectation; realized profit follows over enough bets, and the variance along the way is large."
+    },
+    {
+      "q": "Which closing line should I use?",
+      "a": "The sharpest market you can see: Pinnacle, a deep exchange, or a liquid prediction market. A retail book's close is shaded and slow and will overstate your CLV."
+    },
+    {
+      "q": "Can I have negative CLV and still win?",
+      "a": "For a while, yes, by luck. Over a large sample, negative CLV against a sharp close means the bets were -EV and the results will follow."
+    },
+    {
+      "q": "How do I track CLV?",
+      "a": "Record the price you bet and the closing price on the same side, convert both to implied probability, and keep the running average. Some tracking apps do it automatically for synced bets."
+    },
+    {
+      "q": "Is CLV the same as beating the line?",
+      "a": "Beating the line usually means getting a better number than other books offer right now. CLV compares your number with where the market finishes, which is the stricter test."
+    }
+  ],
+  "related": [
+    "whatisevinbetting.com",
+    "positiveevbetting.com",
+    "impliedprobabilitycalculator.com",
+    "whatisvig.com",
+    "linemovementtracker.com",
+    "bestbettrackingapp.com",
+    "sharpsportsbooks.com",
+    "whatisasharpbettor.com"
+  ],
+  "look": {
+    "palette": "stone-red",
+    "type": "palatino-sans",
+    "h2": "underline",
+    "layout": "column",
+    "order": "C",
+    "radius": 4,
+    "width": 940,
+    "favicon": "tri",
+    "label": 5,
+    "footer": 4
+  }
+}

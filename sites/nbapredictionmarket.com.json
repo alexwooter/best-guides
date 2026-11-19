@@ -1,0 +1,218 @@
+{
+  "domain": "nbapredictionmarket.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "query": "nba prediction market",
+  "site_name": "NBA Prediction Market",
+  "title": "NBA Prediction Markets (2026): Venues, Markets and How the Prices Behave",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "Where NBA contracts trade",
+  "venues_intro": "All of these list NBA game winners; props, series and futures depth vary.",
+  "venues_label": "NBA markets and depth",
+  "venues_col": "Access",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Best fee-adjusted NBA price across connected prediction markets, exchanges and sportsbooks, with size; one account, order routed to the best venue.",
+      "access": "US; $10,000 minimum"
+    },
+    {
+      "id": "kalshi",
+      "note": "Game winners, spreads and totals every night, player props on national TV games, series contracts in the playoffs, championship and award futures.",
+      "access": "Nationwide; restricted in a few states by court order"
+    },
+    {
+      "id": "polymarket",
+      "note": "Game winners, spreads and totals plus Finals, MVP and award futures; deepest on marquee games and the playoffs.",
+      "access": "Nationwide (US app)"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only; nightly game lines and props with no vig in the price, plus combination contracts.",
+      "access": "Nationwide"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only order books on NBA sides and totals.",
+      "access": "Nationwide"
+    },
+    {
+      "id": "sporttrade",
+      "note": "NBA sides, totals and futures in cents on a state-licensed exchange.",
+      "access": "A few states"
+    },
+    {
+      "id": "robinhood_pm",
+      "note": "NBA game and season contracts via a partner exchange inside the brokerage app.",
+      "access": "Most states"
+    }
+  ],
+  "answer": "An NBA prediction market trades contracts on NBA outcomes (game winners, spreads, totals, player props, series, championship and award futures) at prices in cents that equal the probability, with no bookmaker margin, on venues regulated by the CFTC: Kalshi, Polymarket US, Novig and ProphetX chiefly. The NBA's nightly schedule means more markets and more price movement than any other US sport, with liquidity concentrated in national TV games and the playoffs, and prices that drift from sportsbook lines by a point or two on most slates.",
+  "sections": [
+    {
+      "h2": "What is listed",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Market",
+              "Depth on a normal night",
+              "Depth on national TV and playoffs",
+              "Note"
+            ],
+            "rows": [
+              [
+                "Game winner",
+                "Good",
+                "Very deep",
+                "The core market; tight spreads an hour before tip"
+              ],
+              [
+                "Spread",
+                "Moderate",
+                "Deep",
+                "Contract on a team to cover a stated number"
+              ],
+              [
+                "Total",
+                "Moderate",
+                "Deep",
+                "Over/under a stated number"
+              ],
+              [
+                "Player props (points, rebounds, assists)",
+                "Thin",
+                "Moderate",
+                "Listed on featured games; sportsbooks have more"
+              ],
+              [
+                "Series winner",
+                "n/a",
+                "Deep",
+                "Playoffs only; trades through the series"
+              ],
+              [
+                "Championship",
+                "Continuous",
+                "Peaks in the playoffs",
+                "All-season contract per team"
+              ],
+              [
+                "MVP and awards",
+                "Moderate",
+                "Moderate",
+                "Moves on narrative as much as numbers"
+              ],
+              [
+                "In-game",
+                "Thin",
+                "Good",
+                "Same contracts trade through the game"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Why the NBA behaves differently",
+      "blocks": [
+        {
+          "list": [
+            "Volume of games. Up to 15 a night means attention is spread thin; the 7 p.m. slate on a Tuesday has wider spreads than any NFL Sunday.",
+            "Late injury news. Starters are ruled out an hour before tip. Prediction market prices move three to ten cents in minutes, and sportsbooks often pull their lines; the exchange keeps trading, which is where the biggest gaps between venues appear.",
+            "Rest and back-to-backs. Resting stars are priced in gradually across the day as reports leak; traders who follow beat reporters move the market before the book does.",
+            "The playoffs change everything. Series contracts, deep in-game markets and heavy national attention make May and June the deepest NBA trading of the year."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Prices versus sportsbooks",
+      "blocks": [
+        {
+          "p": "On a sportsbook an NBA side costs -110 each way, a 4.76% overround; totals and props often -112 or -115. A liquid prediction market trades the same side at a one- to two-cent spread with a small fee, roughly half the cost. On thin slates the market's spread can widen to four or five cents, at which point the sportsbook's -108 line is cheaper. The honest summary is that neither is always better and the gap changes with the clock."
+        },
+        {
+          "callout": "The sharpest NBA moments are the fifteen minutes after an injury report. Books pull lines; markets keep trading; whoever is watching both gets the number before everyone agrees on it."
+        }
+      ]
+    },
+    {
+      "h2": "Selling positions mid-season",
+      "blocks": [
+        {
+          "p": "Championship and award contracts are where selling earns its keep in the NBA. A title contract bought at 4 cents in October that trades at 12 cents in January after a hot start can be sold for triple the stake without waiting for June, or trimmed to lock the gain and keep some upside. Series contracts in the playoffs move 20 or 30 cents between games and can be traded accordingly."
+        }
+      ]
+    },
+    {
+      "h2": "Legal status",
+      "blocks": [
+        {
+          "p": "The venues are CFTC-designated and operate nationwide. Sports contracts specifically are contested by several states; federal appeals courts have split; the CFTC is suing states to assert exclusive jurisdiction; and petitions are pending at the Supreme Court as of November 2026. A few states restrict sports contracts by court order and the venues hide those markets there. Check the venue's own state list."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Kalshi, Polymarket US, Novig and ProphetX are the main NBA prediction markets; all are CFTC-regulated.",
+    "Nightly volume spreads liquidity thin on ordinary slates and concentrates it on national TV games and the playoffs.",
+    "Late injury news moves market prices fast while books pull lines; that is where the biggest cross-venue gaps appear.",
+    "Round-trip cost is about half a sportsbook's margin on liquid markets, but thin markets can be more expensive.",
+    "Futures and series contracts can be sold mid-season, which replaces cash-out."
+  ],
+  "terminalup": [
+    "TerminalUp puts the NBA prices from the prediction markets, betting exchanges and sportsbooks it connects to on one board, converted to the same basis after fees, with the best price for each outcome and the size behind it, and routes the order to that venue from one account. On a night with twelve games and four injury reports in the last hour, that is the difference between seeing the gap and reading about it. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Which prediction market is best for NBA?",
+      "a": "Kalshi for the broadest nightly list and props, Polymarket US for depth on marquee games and futures, Novig and ProphetX for no-vig game lines. The best price moves between them, especially after injury news."
+    },
+    {
+      "q": "Can you trade NBA player props on a prediction market?",
+      "a": "On featured games, yes, with points, rebounds and assists thresholds. Depth is well below a sportsbook's and most non-TV games have few or no props."
+    },
+    {
+      "q": "What happens to my contract if a star is ruled out?",
+      "a": "The price moves immediately; nothing voids. If you hold the side that got worse you can sell at the new price or hold. Sportsbooks sometimes void certain props on a scratch; prediction market game contracts do not."
+    },
+    {
+      "q": "Are NBA prediction markets legal?",
+      "a": "The venues are CFTC-regulated and nationwide. Sports contracts are contested by some states, and a few restrict them by court order as of November 2026. Availability is listed by venue."
+    },
+    {
+      "q": "Can I sell an NBA futures contract before the playoffs?",
+      "a": "Yes, at any time there is a buyer. Title and award contracts trade all season, which lets you take profit or trim without waiting for June."
+    },
+    {
+      "q": "Is an NBA prediction market cheaper than a sportsbook?",
+      "a": "On liquid games, usually, by one to three points. On thin midweek slates a market's spread can widen past the book's margin. Compare the two before trading."
+    }
+  ],
+  "related": [
+    "nflpredictionmarket.com",
+    "howdopredictionmarketswork.com",
+    "listofpredictionmarkets.com",
+    "arepredictionmarketslegalintheus.com",
+    "bestsportspredictionmarket.com",
+    "bestpredictionmarketterminal.com",
+    "predictionmarketsvssportsbetting.com",
+    "linemovementtracker.com"
+  ],
+  "look": {
+    "palette": "ivory-green",
+    "type": "gill",
+    "h2": "plain",
+    "layout": "compact",
+    "order": "C",
+    "radius": 4,
+    "width": 880,
+    "favicon": "square",
+    "label": 2,
+    "footer": 3
+  }
+}

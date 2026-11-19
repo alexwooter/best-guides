@@ -1,0 +1,200 @@
+{
+  "domain": "peertopeersportsbetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "exchange",
+  "query": "peer to peer sports betting",
+  "site_name": "Peer to Peer Sports Betting",
+  "title": "Peer-to-Peer Sports Betting (2026): How It Works and Where to Do It in the US",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "Peer-to-peer venues open to US bettors",
+  "venues_label": "What it is",
+  "venues_col": "Access and regulator",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Routes to the peer-to-peer venues below and to sportsbooks from one account, showing the best fee-adjusted price and available size for each outcome.",
+      "access": "US; $10,000 minimum"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only exchange, no vig in the price, relaunched nationwide August 2026. Game lines, props, combination contracts.",
+      "access": "Nationwide; CFTC"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only order-book exchange, nationwide since June 2026.",
+      "access": "Nationwide; CFTC"
+    },
+    {
+      "id": "kalshi",
+      "note": "Prediction market with deep sports contracts; peer-to-peer in cents.",
+      "access": "Nationwide, sports restricted in a few states; CFTC"
+    },
+    {
+      "id": "polymarket",
+      "note": "Prediction market with major-game and futures depth; US app since January 2026.",
+      "access": "Nationwide (US app); CFTC"
+    },
+    {
+      "id": "sporttrade",
+      "note": "State-licensed sports exchange with buy and sell orders in cents.",
+      "access": "A few states; state gaming regulators"
+    }
+  ],
+  "answer": "Peer-to-peer sports betting means betting against other people rather than against a bookmaker. Your bet is matched with someone taking the opposite view at a price you both accept, and the platform charges a small commission instead of building a margin into the odds. In the US it happens on sports exchanges and prediction markets (Novig, ProphetX, Kalshi, Polymarket US, Sporttrade), which quote prices with no vig, never limit winners, and let you sell a position before the game ends.",
+  "sections": [
+    {
+      "h2": "How a peer-to-peer bet is matched",
+      "blocks": [
+        {
+          "p": "You post what you want: the Lakers to win at a price of 55 cents (or 1.82 decimal, or -122). If someone has posted the opposite side at a compatible price, the venue matches you instantly. If not, your order sits on the book until someone takes it or you cancel it. The venue holds both stakes, settles the market when the game ends, and pays the winner."
+        },
+        {
+          "ol": [
+            "Choose the market and the side.",
+            "Take the best price on offer, or post your own and wait.",
+            "Once matched, the position is live. You can sell it (or lay it off) at any time there is a buyer.",
+            "At settlement the winner receives $1 per contract, or the backer's and layer's stakes net out, minus the venue's commission."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Why the price is better",
+      "blocks": [
+        {
+          "p": "A sportsbook line is -110 on both sides because the book builds in about 4.8% for itself. Two bettors matching each other directly have no reason to leave that money on the table: one takes 50 cents, the other takes 50 cents, and the venue collects a cent or two. On a liquid market the all-in cost of a peer-to-peer bet is a third to a half of the sportsbook's margin."
+        },
+        {
+          "table": {
+            "head": [
+              "",
+              "Peer-to-peer",
+              "Sportsbook"
+            ],
+            "rows": [
+              [
+                "Standard price on a coin flip",
+                "50 / 50 cents, one- or two-cent spread",
+                "-110 / -110"
+              ],
+              [
+                "Break-even win rate",
+                "About 51%",
+                "52.4%"
+              ],
+              [
+                "Cost on $20,000 of turnover at 50% hit rate",
+                "About $200 to $400",
+                "About $900"
+              ],
+              [
+                "Who sets the price",
+                "The two bettors",
+                "The bookmaker"
+              ],
+              [
+                "Winning customers",
+                "Welcome",
+                "Often limited"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "What is different in practice",
+      "blocks": [
+        {
+          "list": [
+            "Liquidity is not guaranteed. A sportsbook always quotes; a peer-to-peer market only has a price if someone is on the other side. Big games are deep, Tuesday night minor markets are not.",
+            "You can be the bookmaker. Laying, or selling a Yes contract, lets you bet against an outcome at your own price.",
+            "Positions trade. A bet made on Monday can be sold on Saturday after the line moves, which replaces the sportsbook's cash-out at a better price.",
+            "Limits do not exist. The venue earns the same commission whether you win or lose.",
+            "Settlement rules are published per market and can differ from sportsbook house rules on pushes, overtime and voids."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "The US venues in 2026",
+      "blocks": [
+        {
+          "p": "The breakthrough year was 2026. Polymarket relaunched in the US in January under a CFTC designation. ProphetX and Novig, which had both run peer-to-peer sports exchanges under sweepstakes models, received CFTC designations in June; ProphetX launched nationwide within a week and Novig followed on August 4. Kalshi had carried sports contracts since 2025. Sporttrade continues as a state-licensed exchange in a handful of states. Robinhood and Crypto.com offer event contracts inside their apps through regulated partner exchanges."
+        },
+        {
+          "p": "The federal framework is contested for sports contracts specifically: several states argue they are sports wagering under state law, appeals courts have split, and petitions are pending at the Supreme Court as of November 2026. A few states restrict sports contracts by court order. Each venue publishes where it is live."
+        }
+      ]
+    },
+    {
+      "h2": "Peer-to-peer versus a betting exchange versus a prediction market",
+      "blocks": [
+        {
+          "p": "Three names for the same mechanism. \"Betting exchange\" is the gaming-industry term (Betfair, Matchbook, Smarkets abroad; Sporttrade in the US). \"Prediction market\" is the CFTC-regulated version quoting contracts in cents (Kalshi, Polymarket US). \"Peer-to-peer sports betting\" is the plain description of both. Novig and ProphetX started as the first and became the second. The practical differences are liquidity, fee structure, market lists and regulator, not how the bet works."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Peer-to-peer betting matches you with another bettor; the venue charges a commission rather than a margin.",
+    "Prices on liquid markets cost a third to a half of a sportsbook's vig.",
+    "US venues in 2026: Novig, ProphetX, Kalshi, Polymarket US and Sporttrade, plus in-app offerings from Robinhood and Crypto.com.",
+    "You can lay, sell and trade positions; winners are not limited.",
+    "Liquidity is the constraint, and the sports-contract legal fight is ongoing in some states."
+  ],
+  "terminalup": [
+    "The peer-to-peer venues disagree with each other and with sportsbooks all day. TerminalUp shows all of them on one board, converted to the same basis after fees, with the best price for each outcome and the size behind it, and routes the order to that venue from one account. When the peer-to-peer price is best, that is where the order goes; when a sportsbook is better on a thin market, it goes there. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is peer-to-peer sports betting legal in the US?",
+      "a": "Yes, through state-licensed exchanges in their states and CFTC-designated exchanges nationwide. Sports contracts on the federal venues are contested by some states, with restrictions in a few by court order as of November 2026."
+    },
+    {
+      "q": "What is the best peer-to-peer betting app?",
+      "a": "Novig and ProphetX are sports-only exchanges with no vig in the price; Kalshi and Polymarket US are the deepest on major games and futures. The best price moves between them."
+    },
+    {
+      "q": "How do peer-to-peer platforms make money?",
+      "a": "Commission: a few cents per contract or a percentage of net winnings. They have no stake in who wins."
+    },
+    {
+      "q": "What happens if nobody takes my bet?",
+      "a": "It sits on the order book until matched or cancelled. You can improve your price to get matched faster."
+    },
+    {
+      "q": "Can I bet against a team?",
+      "a": "Yes. Laying an outcome, or buying the No contract, is betting that it will not happen at your own price. That is the feature sportsbooks do not offer."
+    },
+    {
+      "q": "Is Novig peer-to-peer?",
+      "a": "Yes. Novig matches bettors against each other with no vig in the price, and since August 2026 operates nationwide as a CFTC-designated exchange."
+    }
+  ],
+  "related": [
+    "whatisabettingexchange.com",
+    "howdopredictionmarketswork.com",
+    "bestsportsbettingexchangeusa.com",
+    "bestbettingexchangeusa.com",
+    "bestnewsportsbooks.com",
+    "predictionmarketsvssportsbetting.com",
+    "arepredictionmarketslegalintheus.com",
+    "listofpredictionmarkets.com"
+  ],
+  "look": {
+    "palette": "charcoal-orange",
+    "type": "sans-serifhead",
+    "h2": "rule-top",
+    "layout": "hero",
+    "order": "C",
+    "radius": 4,
+    "width": 940,
+    "favicon": "square",
+    "label": 4,
+    "footer": 0
+  }
+}

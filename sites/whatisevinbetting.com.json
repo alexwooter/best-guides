@@ -1,0 +1,188 @@
+{
+  "domain": "whatisevinbetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "ev",
+  "query": "what is ev in betting",
+  "site_name": "What Is EV in Betting",
+  "title": "What Is EV in Betting? Expected Value Explained (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "ev",
+  "calculator_position": "top",
+  "calculator_name": "Expected value calculator",
+  "answer": "EV is expected value: the average amount a bet wins or loses per attempt if you could place it thousands of times. It equals (win probability x profit if it wins) minus (loss probability x stake). A bet at +110 that wins 50% of the time has an EV of +$5 per $100 staked. A bet at -110 that wins 50% of the time has an EV of -$4.76. Positive EV (+EV) means the price is better than the true chance; it says nothing about any one result.",
+  "sections": [
+    {
+      "h2": "The formula, with a worked example",
+      "blocks": [
+        {
+          "p": "EV = p x W minus (1 minus p) x S, where p is the probability of winning, W is the profit if the bet wins and S is the stake."
+        },
+        {
+          "p": "Say a team is +105 at your book, and the no-vig price at a sharp book makes it a 52.4% chance. A $100 bet wins $105 at 52.4% and loses $100 at 47.6%. EV = 0.524 x 105 minus 0.476 x 100 = 55.02 minus 47.60 = +$7.42. That is a 7.4% edge, which is enormous; most real edges are 1% to 3%."
+        },
+        {
+          "table": {
+            "head": [
+              "Price you bet",
+              "True probability",
+              "EV per $100",
+              "Edge"
+            ],
+            "rows": [
+              [
+                "-110",
+                "50.0%",
+                "-$4.76",
+                "-4.8%"
+              ],
+              [
+                "-110",
+                "52.4%",
+                "$0.00",
+                "0.0%"
+              ],
+              [
+                "-110",
+                "54.0%",
+                "+$3.05",
+                "+3.1%"
+              ],
+              [
+                "+100",
+                "50.0%",
+                "$0.00",
+                "0.0%"
+              ],
+              [
+                "+105",
+                "52.4%",
+                "+$7.42",
+                "+7.4%"
+              ],
+              [
+                "+150",
+                "40.0%",
+                "$0.00",
+                "0.0%"
+              ],
+              [
+                "+150",
+                "42.0%",
+                "+$5.00",
+                "+5.0%"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Where the probability comes from",
+      "blocks": [
+        {
+          "p": "The formula is trivial. The hard part is p. Nobody knows the true probability of a sporting event, so bettors use a proxy, and the standard proxy is the no-vig price from the sharpest market available."
+        },
+        {
+          "list": [
+            "Take a two-way line from a sharp venue: Pinnacle, Circa, a deep betting exchange, or a liquid prediction market.",
+            "Convert each side to implied probability and divide by the total so they sum to 100%. That removes the margin.",
+            "Use that fair probability as p and compare it with the price at every other venue. Anything paying more than the fair price is +EV; anything paying less is -EV."
+          ]
+        },
+        {
+          "p": "A model of your own can replace the market as the source of p, but it has to beat the closing line consistently before it deserves to. Until then the market's number is the better estimate."
+        }
+      ]
+    },
+    {
+      "h2": "EV is not a prediction",
+      "blocks": [
+        {
+          "p": "A +EV bet loses as often as its probability says it will. A +150 bet at a true 42% loses 58% of the time and is still a good bet. Over a season of a few hundred bets, variance swamps a 2% edge; over several thousand it does not. This is why people who bet EV track closing line value: if you consistently beat the closing price, the edge is real even when the results have not caught up."
+        },
+        {
+          "callout": "Expected value is about the price, not the pick. Two bettors can back the same team and one has a +EV bet and the other a -EV bet, purely because of where they placed it."
+        }
+      ]
+    },
+    {
+      "h2": "Why most bets are negative EV",
+      "blocks": [
+        {
+          "p": "A sportsbook price carries the vig. At -110 on both sides you break even at 52.4%, so a coin-flip bet has an EV of -4.76 cents on the dollar. Parlays multiply the margin. Props and futures carry more. The only way a bet at a retail book is +EV is when the book is slow, wrong, or shading the other side."
+        },
+        {
+          "p": "Exchanges and prediction markets price without an overround, so a bet at the mid-price is roughly zero EV before commission. Beating them requires information or speed. Beating a retail book usually just requires the sharper venue's number and a faster click."
+        }
+      ]
+    },
+    {
+      "h2": "EV and bet sizing",
+      "blocks": [
+        {
+          "p": "Once you know the edge, the Kelly criterion converts it into a stake: fraction of bankroll = edge divided by (decimal odds minus 1). A 3% edge at +100 is a 3% Kelly stake; most professionals bet a quarter to a half of that. The point is that a bigger edge earns a bigger stake, and no edge earns nothing."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "EV = (win probability x profit) minus (loss probability x stake). Positive means the price beats the true chance.",
+    "The no-vig price from a sharp venue is the standard estimate of true probability.",
+    "A +EV bet still loses often. Judge the process by closing line value, not by this week's results.",
+    "Most sportsbook prices are -EV by the size of the vig. Edges come from price differences between venues.",
+    "Size bets to the edge with fractional Kelly."
+  ],
+  "terminalup": [
+    "Finding +EV means knowing the best price across venues at the moment you bet. TerminalUp's board shows the best fee-adjusted price per outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with available size, and routes the order to that venue from one account. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What does +EV mean?",
+      "a": "Positive expected value: the price you are getting pays more than the true probability justifies, so the bet makes money on average even though it loses some of the time."
+    },
+    {
+      "q": "How do I calculate EV on a bet?",
+      "a": "Multiply your win probability by the profit if it wins, then subtract the loss probability multiplied by the stake. The calculator on this page does it, and can take the probability from a sharp two-way line with the vig removed."
+    },
+    {
+      "q": "What is a good EV percentage?",
+      "a": "Edges of 1% to 3% are realistic and valuable at volume. Anything above 5% against a liquid market is rare and usually means a stale line that will be gone in seconds."
+    },
+    {
+      "q": "Is EV the same as ROI?",
+      "a": "EV is the expected return before the bet; ROI is the realized return after. Over a large sample they converge. Over a small one, ROI is mostly luck."
+    },
+    {
+      "q": "Can a bet be +EV and still lose?",
+      "a": "Yes, and it will, as often as its probability implies. A +EV underdog at 40% loses six times in ten. The edge shows up in the long-run average, not in any single result."
+    },
+    {
+      "q": "What is the difference between EV and closing line value?",
+      "a": "EV is the edge at the time of the bet, estimated from a probability. CLV compares your price with the closing price and is the best after-the-fact check that your EV estimates were right."
+    }
+  ],
+  "related": [
+    "positiveevbetting.com",
+    "whatisclosinglinevalue.com",
+    "impliedprobabilitycalculator.com",
+    "whatisvig.com",
+    "bestevbettingtool.com",
+    "sportsbettingbankrollmanagement.com",
+    "whatisarbitragebetting.com",
+    "bestsharpbettingtools.com"
+  ],
+  "look": {
+    "palette": "navy-gold",
+    "type": "charter-sans",
+    "h2": "numbered",
+    "layout": "compact",
+    "order": "A",
+    "radius": 8,
+    "width": 760,
+    "favicon": "bars",
+    "label": 2,
+    "footer": 1
+  }
+}

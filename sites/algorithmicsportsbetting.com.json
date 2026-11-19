@@ -1,0 +1,180 @@
+{
+  "domain": "algorithmicsportsbetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "api",
+  "query": "algorithmic sports betting",
+  "site_name": "Algorithmic Sports Betting",
+  "title": "Algorithmic Sports Betting (2026): Data, Models, Execution and What Actually Works",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "Algorithmic sports betting is placing bets from code: a program pulls prices and data, decides when a price is better than a fair estimate, sizes the bet, and sends the order, usually in seconds and across many venues. The edge rarely comes from a brilliant model. It comes from execution: reading every venue's price at once, reacting to moves before the slower books do, and sizing correctly. The parts that matter are a clean price feed, a fair-line source, an execution API and strict risk limits.",
+  "intro": [
+    "Most writing on this subject is about predicting games. Most of the money in it is made by not predicting games at all, and instead trading the differences between venues faster than a person can. This page covers both, honestly."
+  ],
+  "sections": [
+    {
+      "h2": "The four components",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Component",
+              "What it does",
+              "Common sources",
+              "Where people go wrong"
+            ],
+            "rows": [
+              [
+                "Price feed",
+                "Live odds from every venue you can bet",
+                "Odds APIs; venue APIs; a cross-venue terminal's feed",
+                "Delayed or sampled data: a 10-second-old price is not a price"
+              ],
+              [
+                "Fair line",
+                "An estimate of the true probability",
+                "No-vig price from a sharp market; your own model",
+                "Trusting a model that has not beaten the closing line"
+              ],
+              [
+                "Decision and sizing",
+                "When to bet and how much",
+                "EV threshold; fractional Kelly; exposure caps",
+                "Full Kelly; ignoring correlation between bets"
+              ],
+              [
+                "Execution",
+                "Sending the order and confirming the fill",
+                "Venue APIs; a trading API that routes across venues",
+                "Scraping apps that break weekly; no handling of partial fills"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Strategy one: market-relative (the one that works)",
+      "blocks": [
+        {
+          "p": "Use the sharpest market as the fair line and bet any venue that disagrees with it by more than your threshold after fees. No sports knowledge required. The algorithm watches a reference (Pinnacle, a deep exchange, a liquid prediction market), removes the vig, and compares every other venue's price. When a retail book is slow after a move, or two exchanges briefly disagree, it fires."
+        },
+        {
+          "list": [
+            "Edge per bet: typically 1% to 4% at the moment of detection, decaying within seconds to minutes.",
+            "What decides profit: latency from price change to order, and how many venues you can see and hit.",
+            "Failure mode: the price is gone before the order lands, and you keep only the bets that were already stale (adverse selection). Measure fills, not signals.",
+            "Variants: pure arbitrage when both sides are available under 100%; positive EV when only one side is mispriced; middles after a line move."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Strategy two: predictive models (the one people want to work)",
+      "blocks": [
+        {
+          "p": "Build a model from team and player data, project outcomes, convert to probabilities and bet where the market disagrees. It is harder than it looks, because the market already contains most public data and a lot of private data. A model earns the right to be the fair line only when its picks beat the closing line over a large sample; until then, the market's number is better than yours."
+        },
+        {
+          "list": [
+            "Where models still find edges: markets with less trader attention (props, lower leagues, early lines), structural effects the books handle lazily (rest, travel, weather), and news integration faster than the market.",
+            "What good practice looks like: out-of-sample testing on data the model never saw; betting only where model and market disagree by more than the noise; tracking CLV per market and cutting what does not beat the close.",
+            "Red flag: backtests that bet at opening or average prices. Real bets are filled at the price available when the signal fires, which is usually worse."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Data and APIs",
+      "blocks": [
+        {
+          "p": "Odds data comes from aggregator APIs (The Odds API, OpticOdds, Sportradar and others), from venue APIs where they exist (betting exchanges and prediction markets expose order books directly), and from cross-venue terminals that already normalize everything to one basis after fees. For execution, exchanges and prediction markets have trading APIs; most retail sportsbooks do not, which pushes algorithmic volume toward the venues that do."
+        },
+        {
+          "callout": "The practical architecture in 2026: a normalized price feed across venues, a fair line derived from the sharpest of them, a rules engine with hard exposure limits, and an execution layer that routes each order to the venue with the best price. The model, if there is one, is a plug-in to that, not the foundation."
+        }
+      ]
+    },
+    {
+      "h2": "Risk controls that keep an algorithm alive",
+      "blocks": [
+        {
+          "list": [
+            "Maximum stake per bet, per market and per day, enforced in code before the order is sent.",
+            "A kill switch that halts on anomalies: a fill far from the expected price, a feed that stops updating, a losing streak beyond the modelled range.",
+            "Correlation limits: ten bets on the same game's derivatives are one bet.",
+            "Reconciliation: every fill matched to an order, every settlement matched to a fill, daily.",
+            "Latency monitoring: if time from signal to fill drifts up, the edge is leaking before you see it in results."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where AI agents fit",
+      "blocks": [
+        {
+          "p": "Large language models are not pricing engines, but they are becoming the interface. An agent connected to a live odds feed through an MCP server can answer \"where is the best price on this outcome right now and how much is there\" and hand the decision to a rules engine. The useful pattern is the agent as analyst and operator, with the actual bet logic deterministic and audited."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Algorithmic betting is code that reads prices, compares them with a fair line, sizes and executes.",
+    "The reliable edge is market-relative: trade disagreements between venues faster than people can.",
+    "A predictive model earns trust only by beating the closing line out of sample.",
+    "Execution APIs exist at exchanges and prediction markets, not at most retail books.",
+    "Hard risk limits and reconciliation matter more than model sophistication."
+  ],
+  "terminalup": [
+    "TerminalUp provides two of the four components directly. Its board and odds feed normalize prices across the sportsbooks, betting exchanges and prediction markets it connects to, fee-adjusted, with the best price and available size per outcome; its trading API places orders from code and routes each to the venue with the best price from one account. An MCP server (mcp.terminalup.com) exposes the same prices to AI agents, and the odds API is published as an npm package for developers. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is algorithmic sports betting profitable?",
+      "a": "Market-relative strategies with fast execution across venues are, at edges of 1% to 3% of turnover. Purely predictive models are profitable far less often than their backtests suggest."
+    },
+    {
+      "q": "What programming language do people use?",
+      "a": "Python dominates for research and most production bots; some latency-sensitive systems use Go, Rust or Node. The language matters less than the data quality and the execution path."
+    },
+    {
+      "q": "Do sportsbooks allow bots?",
+      "a": "Retail books generally prohibit automated betting in their terms and limit accounts that look automated. Exchanges and prediction markets publish APIs and expect it."
+    },
+    {
+      "q": "Where do I get live odds data?",
+      "a": "Aggregator APIs such as The Odds API, OpticOdds and Sportradar; venue APIs at exchanges and prediction markets; or a cross-venue terminal that normalizes everything after fees."
+    },
+    {
+      "q": "How do I know if my model has an edge?",
+      "a": "Track closing line value on real bets. If your picks consistently beat the no-vig close over a few hundred bets, the edge is real; if not, results are luck."
+    },
+    {
+      "q": "Can an AI like ChatGPT pick winners?",
+      "a": "Not reliably, and it should not be asked to. Where it helps is as an interface to live prices and tools, with the betting logic in deterministic code."
+    }
+  ],
+  "related": [
+    "bestsportsbettingapi.com",
+    "bestbettingoddsapi.com",
+    "bestrealtimeoddsapi.com",
+    "whatisclosinglinevalue.com",
+    "positiveevbetting.com",
+    "bestaiforsportsbetting.com",
+    "sportsarbitragebetting.com",
+    "whatisevinbetting.com"
+  ],
+  "look": {
+    "palette": "ice-indigo",
+    "type": "inter",
+    "h2": "left-bar",
+    "layout": "sidebar",
+    "order": "A",
+    "radius": 14,
+    "width": 940,
+    "favicon": "square",
+    "label": 1,
+    "footer": 1
+  }
+}

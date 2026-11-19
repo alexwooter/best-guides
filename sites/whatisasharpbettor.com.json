@@ -1,0 +1,178 @@
+{
+  "domain": "whatisasharpbettor.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "sharp",
+  "query": "what is a sharp bettor",
+  "site_name": "What Is a Sharp Bettor",
+  "title": "What Is a Sharp Bettor? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "A sharp bettor is someone whose bets move the market and beat the closing line. Sharps bet on price rather than on teams, shop every venue for the best number, size bets to a measured edge, and judge themselves by closing line value instead of by wins and losses. Sportsbooks identify them by that behavior and either limit them (retail books) or use their bets to set lines (sharp books such as Pinnacle and Circa). Exchanges and prediction markets welcome them, because the venue earns commission either way.",
+  "sections": [
+    {
+      "h2": "Sharp versus square",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "",
+              "Sharp",
+              "Square (recreational)"
+            ],
+            "rows": [
+              [
+                "Picks based on",
+                "Price relative to a fair line",
+                "Teams, narratives, recent results"
+              ],
+              [
+                "Shops lines?",
+                "Every bet, across venues",
+                "Bets at one book"
+              ],
+              [
+                "Bet sizing",
+                "Fixed units or fractional Kelly",
+                "Varies with confidence and mood"
+              ],
+              [
+                "Favorite bet types",
+                "Sides, totals, derivatives where the book is slow",
+                "Parlays, primetime favorites, overs"
+              ],
+              [
+                "Measures success by",
+                "Closing line value, long-run ROI",
+                "This week's record"
+              ],
+              [
+                "Relationship with retail books",
+                "Limited within weeks",
+                "Welcome indefinitely"
+              ],
+              [
+                "Typical venues",
+                "Pinnacle, Circa, exchanges, prediction markets",
+                "Whichever app has the best promotion"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "What sharps actually do",
+      "blocks": [
+        {
+          "list": [
+            "Treat the sharpest available price as the truth. The no-vig line at Pinnacle, a deep exchange or a liquid prediction market is their estimate of probability; a bet is only interesting when another venue disagrees with it.",
+            "Bet early or bet late, rarely in between. Early, to get the opening number before the market corrects it; late, when the closing line is set and the last mispricings appear.",
+            "Hit stale lines. When news breaks or a sharp venue moves, the retail books that have not followed are the target for the next few minutes.",
+            "Keep records on everything: price taken, closing price, venue, size. They cut whatever does not beat the close.",
+            "Manage access. A sharp with twenty accounts is not greedy; he expects to lose most of them and keeps the exchanges and sharp books as the permanent base."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "How sportsbooks spot them",
+      "blocks": [
+        {
+          "p": "Books do not need to know whether you win. They watch whether you consistently take prices that then move against them: positive closing line value is the signature. Other signals are stakes at or near the maximum, bets within seconds of a line going off-market elsewhere, heavy action on boosted prices, and a bet mix with few parlays. Once flagged, a retail account's maximum stake can drop from thousands to tens of dollars overnight. This is why the question \"what is a sharp bettor\" has a second answer: someone the retail books no longer want."
+        }
+      ]
+    },
+    {
+      "h2": "Where sharps bet",
+      "blocks": [
+        {
+          "p": "Sharp sportsbooks such as Pinnacle (outside the US) and Circa (in a few states) take winning action and use it to shape their lines; they offer low margins and high limits instead of promotions. Betting exchanges and prediction markets match bettors against each other, charge commission on both sides, and have no reason to turn anyone away. In 2026 the US venues in that second group (Kalshi, Polymarket US, Novig, ProphetX, Sporttrade) are where most domestic sharp volume has moved, because the prices have no vig and the accounts do not get cut."
+        },
+        {
+          "callout": "The sharpest price on any given outcome rotates between those venues through the day. The edge that separates a professional from a good amateur is increasingly about seeing all of them at once and executing before the gap closes."
+        }
+      ]
+    },
+    {
+      "h2": "What sharps are not",
+      "blocks": [
+        {
+          "p": "They are not tipsters, and most do not sell picks; selling a pick moves the price against the seller. They are not high-rollers by definition; a sharp betting $200 a game with consistent closing line value is sharper than a whale betting $20,000 on Monday night favorites. And they are not infallible: a sharp with a 3% edge has losing months as a matter of arithmetic. What makes them sharp is the process, measured against the closing line, not the results of any sample you could watch."
+        }
+      ]
+    },
+    {
+      "h2": "Becoming one, in order",
+      "blocks": [
+        {
+          "ol": [
+            "Learn to convert odds and remove the vig, so you can compare any two prices.",
+            "Pick a reference market and start comparing every price you see with it.",
+            "Bet only when the price beats the reference, size flat at 1% to 2% of bankroll, and record the closing line on every bet.",
+            "After a few hundred bets, look at the average closing line value. If it is positive, keep going; if not, change the reference or the markets.",
+            "Move the bulk of your volume to venues that do not limit, before the retail books do it for you."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "A sharp bettor bets on price, shops every venue, sizes to an edge and is judged by closing line value.",
+    "Retail sportsbooks identify sharps by positive CLV and limit them; sharp books and exchanges want them.",
+    "Sharps are defined by process, not by bankroll or by any short-run record.",
+    "In 2026 US sharp volume is concentrating on exchanges and prediction markets where prices have no vig and accounts are not cut.",
+    "The remaining edge is in seeing every venue at once and executing first."
+  ],
+  "terminalup": [
+    "TerminalUp is built for the sharp workflow: one board with the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, the size available at that price, and an order that routes to that venue from one account. It never takes a position against you, so there is nothing to limit. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What does sharp mean in betting?",
+      "a": "Informed and price-sensitive. A sharp bettor beats the closing line consistently; a sharp sportsbook is one whose lines are hard to beat and that takes winning action."
+    },
+    {
+      "q": "How do you know if you are a sharp bettor?",
+      "a": "Track the closing price on every bet. If you beat the no-vig close by a sustained average of 1% or more over a few hundred bets, you are sharp by the only definition that matters to a book."
+    },
+    {
+      "q": "Why do sportsbooks limit sharp bettors?",
+      "a": "Retail books take the other side of your bet and lose when you win. Limiting the accounts with positive closing line value protects their margin. Sharp books, exchanges and prediction markets do not limit."
+    },
+    {
+      "q": "What is sharp money?",
+      "a": "Bets from sharp bettors, usually large and well-timed. Books move lines in response to it; recreational bettors try to follow it through reverse line movement and steam."
+    },
+    {
+      "q": "Do sharp bettors bet parlays?",
+      "a": "Rarely, because the margin compounds. They bet sides, totals and derivatives at the best available price, and occasionally correlated parlays where a book has mispriced the correlation."
+    },
+    {
+      "q": "Where do sharp bettors bet in the US?",
+      "a": "Circa in its states, the CFTC-designated exchanges and prediction markets (Kalshi, Polymarket US, Novig, ProphetX), Sporttrade where licensed, and retail books until they are limited."
+    }
+  ],
+  "related": [
+    "sharpsportsbooks.com",
+    "whatisclosinglinevalue.com",
+    "bestsharpsportsbook.com",
+    "bestsportsbookforsharps.com",
+    "nflsharpmoney.com",
+    "sharpmoneytracker.com",
+    "positiveevbetting.com",
+    "bestsharpbettingtools.com"
+  ],
+  "look": {
+    "palette": "wine",
+    "type": "gill",
+    "h2": "numbered",
+    "layout": "column",
+    "order": "C",
+    "radius": 0,
+    "width": 760,
+    "favicon": "tri",
+    "label": 4,
+    "footer": 4
+  }
+}

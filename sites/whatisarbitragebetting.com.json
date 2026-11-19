@@ -1,0 +1,199 @@
+{
+  "domain": "whatisarbitragebetting.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "arbitrage",
+  "query": "what is arbitrage betting",
+  "site_name": "What Is Arbitrage Betting",
+  "title": "What Is Arbitrage Betting? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "Arbitrage betting is betting every outcome of an event at different venues whose prices, taken together, add up to less than 100% implied probability, so that you profit whichever outcome wins. It happens because venues disagree: one book has a team at +110 while an exchange has the other side at -102, and a bettor who takes both locks in about 1.9% before any result. The profit is small, the work is in finding it fast, and the main risk is a limited account rather than a lost bet.",
+  "sections": [
+    {
+      "h2": "A worked example",
+      "blocks": [
+        {
+          "p": "Book A prices the Celtics at +110 against the Knicks. Exchange B has the Knicks at -102 (decimal 1.98). Convert both: +110 is 47.6% and -102 is 50.5%, a total of 98.1%. Anything under 100% is an arb, and the 1.9% gap is the margin."
+        },
+        {
+          "table": {
+            "head": [
+              "Leg",
+              "Venue",
+              "Price",
+              "Stake",
+              "Payout if it wins"
+            ],
+            "rows": [
+              [
+                "Celtics",
+                "Book A",
+                "+110 (2.10)",
+                "$485",
+                "$1,018.50"
+              ],
+              [
+                "Knicks",
+                "Exchange B",
+                "-102 (1.98)",
+                "$515",
+                "$1,019.70"
+              ],
+              [
+                "Total",
+                "",
+                "",
+                "$1,000",
+                "about $1,019 either way: +1.9%"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The stakes are set so the payouts match: stake on each side = total stake x (that side's implied probability / the sum of implied probabilities). In this case 47.6 / 98.1 and 50.5 / 98.1 of the $1,000."
+        }
+      ]
+    },
+    {
+      "h2": "Why arbs exist",
+      "blocks": [
+        {
+          "list": [
+            "Venues move at different speeds. When sharp money hits one book, the others lag for seconds to minutes.",
+            "Venues see different customers. A book with heavy public money on a favorite shades that side; an exchange with no house opinion does not.",
+            "Promotions and boosts create artificial prices that have nothing to do with the game.",
+            "Thin markets are mispriced more often. Props, small leagues and early lines drift apart between venues far more than an NFL side does."
+          ]
+        },
+        {
+          "p": "The spread of prediction markets and sports exchanges in the US has made arbs more common, not less. There are more venues setting prices independently, and the exchanges do not limit winners, which means the other half of an arb can always be placed there."
+        }
+      ]
+    },
+    {
+      "h2": "What it actually earns",
+      "blocks": [
+        {
+          "p": "Typical arbs run 0.5% to 3% of the total stake. A bettor turning over $20,000 a week in arbs at an average 1.5% earns about $300 a week before accounting for the occasional leg that gets voided, a limit that stops the second leg, or a fat-fingered stake. The returns scale with turnover and with speed, not with sports knowledge, which is why serious arbers automate the scanning and keep large balances at the venues that let them."
+        },
+        {
+          "callout": "An arb is a price error, and price errors get corrected. Most last under a minute. The bettor who sees every venue on one screen, and can place at both from one place, gets them; the one switching between apps mostly watches them close."
+        }
+      ]
+    },
+    {
+      "h2": "The risks, since it is not free money",
+      "blocks": [
+        {
+          "list": [
+            "One leg gets cancelled or voided (a line was posted in error, a player is scratched, the book changes the rules) and you are left with a naked bet on the other side.",
+            "One leg does not fill. Exchanges and prediction markets are order books; the price can move while you are placing the second leg.",
+            "Retail sportsbooks limit or close accounts that arb. Many do within weeks. Exchanges, prediction markets and sharp books do not.",
+            "Stake rounding and maximum bet sizes make the math uneven; a $485 leg capped at $250 is not an arb any more.",
+            "Different rules on pushes, overtime and voids between venues can turn a locked profit into a loss on an edge case."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Arbitrage versus the other ways to use price gaps",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Approach",
+              "What you do",
+              "Risk per bet",
+              "Typical edge"
+            ],
+            "rows": [
+              [
+                "Arbitrage",
+                "Bet all outcomes across venues under 100% total",
+                "None if both legs fill",
+                "0.5% to 3%"
+              ],
+              [
+                "Positive EV",
+                "Bet one side at a price better than the fair line",
+                "Full variance of the bet",
+                "1% to 5%"
+              ],
+              [
+                "Middling",
+                "Bet both sides at different numbers so both can win",
+                "Small loss if the margin misses",
+                "Occasional large wins"
+              ],
+              [
+                "Hedging",
+                "Bet the other side of a position you already hold",
+                "None if fully hedged",
+                "Depends on the move since the original bet"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Arbitrage betting covers every outcome at prices that total under 100%, locking a profit whichever side wins.",
+    "The margin is usually 0.5% to 3%. Returns come from turnover and speed.",
+    "Arbs come from venues disagreeing; more independent venues means more arbs.",
+    "The real risks are a voided leg, an unfilled leg and a limited account.",
+    "Exchanges, prediction markets and sharp books take arb action without limiting; retail books do not."
+  ],
+  "terminalup": [
+    "TerminalUp shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to on one board, with the size available at each price, and routes each order to its venue from one account. When two venues' prices on opposite sides add to less than 100%, both legs are on the same screen and both are placed from the same balance. TerminalUp never takes a position against you, so there is nothing to limit. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Is arbitrage betting legal?",
+      "a": "In the US and most countries, yes: it is placing legal bets at legal venues. Sportsbooks may limit or close accounts under their terms of service, which is a commercial decision, not a legal one."
+    },
+    {
+      "q": "How much can you make arbitrage betting?",
+      "a": "Around 0.5% to 3% per arb. Income scales with how much you can turn over at venues that keep taking the bets, which in practice means exchanges, prediction markets and sharp books."
+    },
+    {
+      "q": "What is a sure bet?",
+      "a": "Another name for an arbitrage bet, common in Europe. The prices on all outcomes add to less than 100%, so the result is certain if every leg fills."
+    },
+    {
+      "q": "Why would a sportsbook allow it?",
+      "a": "Retail books mostly do not; they limit arbers. Exchanges and prediction markets are indifferent because they match bettors against each other and earn commission on both sides."
+    },
+    {
+      "q": "Do I need software?",
+      "a": "Scanners help find arbs across many venues faster than a person can. The bigger advantage is being able to place both legs quickly from one place before the gap closes."
+    },
+    {
+      "q": "How do you calculate the stakes?",
+      "a": "Each leg's stake is the total stake multiplied by that leg's implied probability divided by the sum of all legs' implied probabilities. That equalizes the payouts."
+    }
+  ],
+  "related": [
+    "howtoarbitragebet.com",
+    "isarbitragebettinglegal.com",
+    "sportsarbitragebetting.com",
+    "bestarbitragebettingsites.com",
+    "bestarbitragebettingtool.com",
+    "whatisevinbetting.com",
+    "whatisabettingexchange.com",
+    "impliedprobabilitycalculator.com"
+  ],
+  "look": {
+    "palette": "gray-violet",
+    "type": "monohead",
+    "h2": "underline",
+    "layout": "compact",
+    "order": "C",
+    "radius": 8,
+    "width": 820,
+    "favicon": "slash",
+    "label": 7,
+    "footer": 0
+  }
+}

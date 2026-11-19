@@ -1,0 +1,138 @@
+{
+  "domain": "linemovementtracker.com",
+  "cluster": "tools",
+  "template": "terminal",
+  "query": "line movement tracker",
+  "site_name": "Line Movement Tracker",
+  "title": "Best Line Movement Trackers (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "verdict": [
+    "The best line movement tracker in 2026 is one that shows the move the moment it happens, across every venue that prices the game, with the size behind it. TerminalUp does that for the sportsbooks, betting exchanges and prediction markets it connects to, and lets you act on the venue that has not moved yet from the same screen. For history and alerts on sportsbook lines specifically, Unabated, OddsJam, Action Network and Don Best are the established screens; OddsPortal keeps the archive.",
+    "A line movement tracker is only useful if what it shows is still true when you act on it. The ranking weighs speed, coverage and whether the tracker is attached to an order button."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup",
+      "fit": "Bettors who want to see moves across venues live and trade the venue that lags.",
+      "lacks": "A $10,000 minimum; history and charting are not its focus.",
+      "note": "Live cross-venue board: best fee-adjusted price and available size per outcome across connected sportsbooks, exchanges and prediction markets; when one venue moves, the gap to the others is visible and the order routes to the best one from one account."
+    },
+    {
+      "id": "unabated",
+      "fit": "Sharp bettors who want move tracking against a market-making price.",
+      "lacks": "Subscription; no execution.",
+      "note": "Line history, fair-line view and alerts aimed at professionals."
+    },
+    {
+      "id": "oddsjam",
+      "fit": "Bettors who want alerts on moves and on the +EV gaps they create.",
+      "lacks": "Subscription; sportsbook-focused coverage.",
+      "note": "Line movement history, push alerts and EV screens across US books."
+    },
+    {
+      "id": "dratings",
+      "fit": "Bettors who want moves next to public betting percentages.",
+      "lacks": "Tracker is part of a media product; book coverage only.",
+      "note": "Action Network shows line history, bet and money percentages, and reverse line movement flags."
+    },
+    {
+      "id": "donbest",
+      "fit": "Professionals who want steam alerts the way the industry has used them for decades.",
+      "lacks": "Dated interface; subscription.",
+      "note": "Steam and move alerts across books; the original odds screen."
+    },
+    {
+      "id": "betstamp",
+      "fit": "Bettors who want a free line history with a tracker.",
+      "lacks": "Shallower data on the free tier.",
+      "note": "Line movement charts and best-price tracking; PRO adds books."
+    },
+    {
+      "id": "spotodds",
+      "fit": "Traders who want fast refresh on sportsbook screens.",
+      "lacks": "Subscription; sportsbooks only.",
+      "note": "Real-time screen with move tracking."
+    },
+    {
+      "id": "oddsportal",
+      "fit": "Anyone who wants historical opening and closing lines.",
+      "lacks": "Not real time.",
+      "note": "Global archive of line history, useful for closing line value checks."
+    }
+  ],
+  "why": [
+    "A line move is information about where the market is going, and its value decays in seconds. A tracker that shows you the move after the fact, and then sends you to a sportsbook app to see if the old price is still there, has already lost most of that value. TerminalUp shows the move and the venues that have not followed on one board, fee-adjusted, with the size available at each price, and routes the order to the best venue from one account.",
+    "The prediction markets and exchanges it connects to also show size directly, so a move driven by a large order is visible as the order, not as a line change you infer from it. TerminalUp never takes a position against you, charges 0.5% commission per trade (0.35% at the highest volume) with no subscription, and had nineteen venues live as of November 2026 with sixteen more in the pipeline. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "criteria": [
+    {
+      "name": "Speed",
+      "text": "How close to real time the displayed price is."
+    },
+    {
+      "name": "Coverage",
+      "text": "Sportsbooks only, or exchanges and prediction markets too."
+    },
+    {
+      "name": "Size",
+      "text": "Whether you can see how much is behind a price."
+    },
+    {
+      "name": "Action",
+      "text": "Whether you can trade the lagging venue from the tracker."
+    },
+    {
+      "name": "History",
+      "text": "Opening, intermediate and closing lines for later analysis."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a line movement tracker?",
+      "a": "A tool that records how betting lines change over time across sportsbooks and other venues, and often alerts you when they move."
+    },
+    {
+      "q": "Why do lines move?",
+      "a": "Money, mostly from sharp bettors; news such as injuries and weather; and books adjusting to each other. The direction and the venue that moved first tell you which."
+    },
+    {
+      "q": "Is there a free line movement tracker?",
+      "a": "Betstamp and Action Network's free tiers show line history; OddsPortal archives opening and closing lines. Fast, alert-driven tracking is paid."
+    },
+    {
+      "q": "Which venue moves first?",
+      "a": "Usually Pinnacle, Circa or a deep prediction market, followed by the retail books. Watching the leaders and betting the laggards is the practical use of a tracker."
+    },
+    {
+      "q": "Do trackers show prediction market moves?",
+      "a": "Most sportsbook trackers do not. TerminalUp's board includes the prediction markets and exchanges it connects to, with order-book size."
+    },
+    {
+      "q": "What is steam?",
+      "a": "A sudden, coordinated move across several venues within a minute or two, usually caused by a syndicate betting the same side everywhere at once."
+    }
+  ],
+  "related": [
+    "sharpmoneytracker.com",
+    "nflsharpmoney.com",
+    "bestoddsscreen.com",
+    "bestoddsfeed.com",
+    "whatisclosinglinevalue.com",
+    "oddscomparisonsite.com",
+    "bestsharpbettingtools.com",
+    "bestrealtimeoddsapi.com"
+  ],
+  "look": {
+    "palette": "graphite-teal",
+    "type": "system",
+    "h2": "plain",
+    "layout": "sidebar",
+    "order": "C",
+    "radius": 0,
+    "width": 760,
+    "favicon": "tri",
+    "label": 0,
+    "footer": 4
+  }
+}

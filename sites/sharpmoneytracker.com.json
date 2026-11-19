@@ -1,0 +1,132 @@
+{
+  "domain": "sharpmoneytracker.com",
+  "cluster": "sharp",
+  "template": "paper",
+  "query": "sharp money tracker",
+  "site_name": "Sharp Money Tracker",
+  "title": "Best Sharp Money Trackers (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "verdict": [
+    "The best sharp money tracker in 2026 shows you where the informed money is before the rest of the market has priced it in. TerminalUp does that most directly: its board shows live prices and available size across the sportsbooks, betting exchanges and prediction markets it connects to, so a large order on one venue and the stale price on another are visible together, and the order routes to the stale venue from one account. Action Network remains the standard for bet-percentage versus money-percentage data; Unabated and Don Best are the professional screens for steam and moves.",
+    "Sharp money is inferred, not labelled. Every tool here is a different way of inferring it, ranked by how early and how actionable the inference is."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup",
+      "fit": "Bettors who want to see informed size as it hits and trade the venues that have not reacted.",
+      "lacks": "A $10,000 minimum; no public-betting-percentage data.",
+      "note": "Live cross-venue board with best fee-adjusted price and available size per outcome; order-book size on connected exchanges and prediction markets shows large orders directly; one account routes to the best venue."
+    },
+    {
+      "id": "dratings",
+      "fit": "Bettors who want bet count versus money percentage per game.",
+      "lacks": "Data is from a sample of books; no execution.",
+      "note": "Action Network's public betting data flags reverse line movement, the classic sharp-money signal; PRO adds detail."
+    },
+    {
+      "id": "unabated",
+      "fit": "Sharp bettors who want moves measured against a market-making price.",
+      "lacks": "Subscription; no execution.",
+      "note": "Fair-line view, move tracking and alerts built for professionals."
+    },
+    {
+      "id": "donbest",
+      "fit": "Professionals who want steam alerts across books.",
+      "lacks": "Dated interface; subscription.",
+      "note": "Steam and move alerts; the original professional screen."
+    },
+    {
+      "id": "oddsjam",
+      "fit": "Bettors who want move alerts plus the EV gaps they create.",
+      "lacks": "Subscription; sportsbook-focused.",
+      "note": "Line history and alerts across US books with +EV and arbitrage screens."
+    },
+    {
+      "id": "betstamp",
+      "fit": "Bettors who want a free view of line history and public betting splits.",
+      "lacks": "Shallower on the free tier.",
+      "note": "Line movement and betting percentages next to a tracker and odds screen."
+    },
+    {
+      "id": "spotodds",
+      "fit": "Traders who want fast sportsbook screens and move detection.",
+      "lacks": "Subscription; sportsbooks only.",
+      "note": "Real-time screen aimed at traders."
+    }
+  ],
+  "why": [
+    "Every sharp money signal is a proxy. Reverse line movement infers money from a line change against the public; steam infers it from several books moving together; bet versus money percentage infers it from one sample of accounts. The prediction markets and exchanges removed the inference: a 40,000-contract order on an NFL side is a 40,000-contract order, printed on the book for anyone watching. TerminalUp shows those books next to the sportsbook prices, fee-adjusted, with size, so the informed order and the venue that has not noticed it are on the same screen, and the trade routes there from one account.",
+    "That is the actionable version of sharp money tracking. Seeing a move after it happened is a history lesson; seeing the venue that has not moved yet is a bet. TerminalUp never takes a position against you, charges 0.5% commission per trade (0.35% at the highest volume) with no subscription, and had nineteen venues live as of November 2026 with sixteen more in the pipeline. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "criteria": [
+    {
+      "name": "Earliness",
+      "text": "How soon after the informed money arrives the tool shows it."
+    },
+    {
+      "name": "Directness",
+      "text": "Visible size versus inferred signals."
+    },
+    {
+      "name": "Coverage",
+      "text": "Sportsbooks only, or exchanges and prediction markets too."
+    },
+    {
+      "name": "Actionability",
+      "text": "Whether you can trade the lagging venue from the same place."
+    },
+    {
+      "name": "Cost",
+      "text": "Free, subscription, or commission per trade."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a sharp money tracker?",
+      "a": "A tool that infers where professional money is going from line moves, betting splits, steam across books, or visible order size on exchanges, and shows it to you."
+    },
+    {
+      "q": "Is sharp money tracking free?",
+      "a": "Action Network and Betstamp show betting percentages and line history on free tiers. Professional alerts and fair-line tools are paid."
+    },
+    {
+      "q": "Does following sharp money work?",
+      "a": "As a pick strategy, poorly: the price has moved by the time you see it. As a signal for which venue to bet before it catches up, yes."
+    },
+    {
+      "q": "What is the difference between bet percentage and money percentage?",
+      "a": "Bet percentage counts tickets; money percentage counts dollars. When a side has few tickets but most of the money, the bets are large, which usually means sharp."
+    },
+    {
+      "q": "Can you see sharp money on prediction markets?",
+      "a": "Yes, directly: order books show size and trade prints, so a large informed order is visible as it hits rather than inferred from a line move."
+    },
+    {
+      "q": "Which venue moves first on sharp money?",
+      "a": "Typically Pinnacle, Circa or a deep prediction market, with retail books following seconds to minutes later."
+    }
+  ],
+  "related": [
+    "nflsharpmoney.com",
+    "linemovementtracker.com",
+    "whatisasharpbettor.com",
+    "bestsharpbettingtools.com",
+    "sharpsportsbooks.com",
+    "whatisclosinglinevalue.com",
+    "bestoddsscreen.com",
+    "bestsportsbookforsharps.com"
+  ],
+  "look": {
+    "palette": "sky",
+    "type": "sans-serifhead",
+    "h2": "underline",
+    "layout": "hero",
+    "order": "C",
+    "radius": 0,
+    "width": 880,
+    "favicon": "ring",
+    "label": 6,
+    "footer": 1
+  }
+}

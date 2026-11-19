@@ -1,0 +1,218 @@
+{
+  "domain": "listofpredictionmarkets.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "label": "Directory",
+  "query": "list of prediction markets",
+  "site_name": "List of Prediction Markets",
+  "title": "List of Prediction Markets (2026): Every Major Venue, Compared",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "The list",
+  "venues_intro": "Ordered by relevance to a US trader. Regulated US venues first, then venues inside other apps, then non-US and play-money markets.",
+  "venues_label": "What it is",
+  "venues_col": "US access and regulator",
+  "venues": [
+    {
+      "id": "kalshi",
+      "note": "The largest CFTC-designated event contract exchange. Economics, politics, weather, culture and a deep sports book. Order-book prices in cents.",
+      "access": "All 50 states; sports contracts restricted in a few by court order. CFTC."
+    },
+    {
+      "id": "polymarket",
+      "note": "The highest-volume prediction market globally. The US app runs on a CFTC-designated exchange since January 2026; the international market settles in crypto.",
+      "access": "US app: nationwide, CFTC. International market: not for US customers."
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only peer-to-peer exchange, relaunched nationwide in August 2026 under CFTC designation. No vig in the price; multi-leg contracts.",
+      "access": "Nationwide. CFTC."
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only exchange, live nationwide since June 2026 under CFTC designation, one week after approval. Game, spread and total contracts.",
+      "access": "Nationwide. CFTC."
+    },
+    {
+      "id": "sporttrade",
+      "note": "A state-licensed sports exchange that quotes prices in cents like a prediction market, with buy and sell orders.",
+      "access": "A handful of states. State gaming regulators."
+    },
+    {
+      "id": "robinhood_pm",
+      "note": "Event contracts on sports, politics and economics inside the Robinhood brokerage app, provided through a CFTC-designated partner exchange.",
+      "access": "Most states; some sports markets closed in states with court orders. CFTC via partner."
+    },
+    {
+      "id": "cryptocom_pm",
+      "note": "Sports event contracts inside the Crypto.com app via its own CFTC-registered derivatives exchange.",
+      "access": "Most states. CFTC."
+    },
+    {
+      "id": "predictit",
+      "note": "The long-running political market, operating under CFTC permissions with position limits per contract.",
+      "access": "Nationwide, politics only."
+    },
+    {
+      "id": "sxbet",
+      "note": "On-chain sports exchange with order-book trading, settled in crypto.",
+      "access": "Not for US customers."
+    },
+    {
+      "id": "predictfun",
+      "note": "Crypto-native prediction market with sports and event contracts.",
+      "access": "Not for US customers."
+    },
+    {
+      "id": "manifold",
+      "note": "Play-money market with thousands of user-created questions. Useful for learning how prices form.",
+      "access": "Anyone; no real money."
+    },
+    {
+      "id": "metaculus",
+      "note": "Reputation-scored forecasting platform on science and world events. Not a market; nothing trades.",
+      "access": "Anyone; no money."
+    }
+  ],
+  "answer": "The prediction markets that matter to a US trader in 2026 are the CFTC-designated exchanges: Kalshi, Polymarket US, Novig and ProphetX, plus event contracts offered inside Robinhood and Crypto.com through regulated exchanges. Sporttrade is a state-licensed sports exchange that works the same way. PredictIt covers politics. Outside the US, Polymarket's international market, SX Bet and predict.fun trade in crypto. Manifold and Metaculus are play-money or no-money forecasting sites. The table below compares all of them.",
+  "sections": [
+    {
+      "h2": "How to choose between them",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "If you want",
+              "Look at",
+              "Why"
+            ],
+            "rows": [
+              [
+                "The deepest sports markets",
+                "Kalshi, Polymarket US, Novig, ProphetX",
+                "Highest volume on game lines and futures; prices in cents with no vig"
+              ],
+              [
+                "Economics and politics",
+                "Kalshi, Polymarket US, PredictIt",
+                "Broadest non-sports lists; PredictIt is politics only with position limits"
+              ],
+              [
+                "Everything in one brokerage app",
+                "Robinhood",
+                "Convenient; smaller market list and a per-contract fee"
+              ],
+              [
+                "A state-licensed exchange with sportsbook-style markets",
+                "Sporttrade",
+                "Regulated by state gaming authorities rather than the CFTC"
+              ],
+              [
+                "To learn without money",
+                "Manifold, Metaculus",
+                "Play money and forecasting scores"
+              ],
+              [
+                "Crypto settlement",
+                "Polymarket (international), SX Bet, predict.fun",
+                "Not available to US customers"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "What they have in common",
+      "blocks": [
+        {
+          "list": [
+            "Contracts pay $1 if the event happens and $0 if not; the price in cents is the probability.",
+            "Prices form on an order book between traders. The venue does not take the other side.",
+            "You can sell a position before settlement.",
+            "Fees are a few cents per contract or a commission on net winnings, with no overround in the price.",
+            "Winning customers are not limited; the venue earns on volume."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Where they differ",
+      "blocks": [
+        {
+          "p": "Liquidity is the big one. Kalshi and Polymarket US are deep on major games and headline events; the sports-only exchanges are deep on what they specialize in; the in-app offerings are thinner. Fee schedules differ in structure (per contract versus commission versus spread) and the difference on a given trade can be a percent or more. Market lists differ: some venues carry player props and multi-leg contracts, others only game outcomes. And state availability differs by venue, because each has its own history of court orders."
+        },
+        {
+          "callout": "The same game routinely trades at different prices on different venues. A Chiefs contract at 61 cents on one exchange and 58 cents on another is a three-point gap, which is more than most people's handicapping edge."
+        }
+      ]
+    },
+    {
+      "h2": "Legal status in one paragraph",
+      "blocks": [
+        {
+          "p": "CFTC-designated venues are legal to operate nationwide and their non-sports contracts are available in all 50 states. Sports contracts are contested by several states; federal appeals courts have split, the CFTC is suing states to assert exclusive jurisdiction, and petitions are pending at the Supreme Court as of November 2026. A few states have court orders restricting sports contracts. Each venue publishes its current state availability."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "For US traders the list is Kalshi, Polymarket US, Novig and ProphetX, plus event contracts inside Robinhood and Crypto.com.",
+    "Sporttrade is a state-licensed exchange with the same mechanics; PredictIt covers politics.",
+    "Polymarket international, SX Bet and predict.fun settle in crypto and exclude US customers.",
+    "Liquidity, fees, market lists and state availability differ venue by venue.",
+    "The same outcome trades at different prices across them, often by several cents."
+  ],
+  "terminalup": [
+    "TerminalUp connects prediction markets alongside betting exchanges and sportsbooks and shows one board with the best fee-adjusted price for each outcome and the size available, routing the order to that venue from one account. The list above becomes one screen. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is the biggest prediction market?",
+      "a": "Polymarket by global volume, with its international market included. Kalshi is the largest CFTC-designated exchange by US activity. Both are deep on major sports and headline events."
+    },
+    {
+      "q": "Which prediction markets are legal in the US?",
+      "a": "Kalshi, Polymarket US, Novig, ProphetX and the exchanges behind Robinhood's and Crypto.com's contracts are CFTC-designated. Sporttrade is state-licensed. Sports contracts are restricted in a few states by court order as of November 2026."
+    },
+    {
+      "q": "Which prediction market is best for sports?",
+      "a": "Kalshi and Polymarket US have the deepest general sports markets; Novig and ProphetX are sports-only and competitive on game lines. The best price moves between them."
+    },
+    {
+      "q": "Can I use Polymarket in the US?",
+      "a": "Yes, through the Polymarket US app, which runs on a CFTC-designated exchange since January 2026. The international crypto-settled market is not open to US customers."
+    },
+    {
+      "q": "Are there prediction markets without real money?",
+      "a": "Manifold runs on play money and Metaculus scores forecasts without any money. Both are good for learning how prices behave."
+    },
+    {
+      "q": "Do prediction markets charge fees?",
+      "a": "Yes, but not in the price. Expect a few cents per contract, a commission on net winnings, or a spread, depending on the venue; usually under 2% of stake for a round trip."
+    }
+  ],
+  "related": [
+    "howdopredictionmarketswork.com",
+    "arepredictionmarketslegalintheus.com",
+    "bestpredictionmarketapp.com",
+    "bestsportspredictionmarket.com",
+    "bestpredictionmarketaggregator.com",
+    "predictionmarketsvssportsbetting.com",
+    "nflpredictionmarket.com",
+    "nbapredictionmarket.com"
+  ],
+  "look": {
+    "palette": "mint",
+    "type": "baskerville",
+    "h2": "underline",
+    "layout": "sidebar",
+    "order": "A",
+    "radius": 4,
+    "width": 940,
+    "favicon": "dot",
+    "label": 6,
+    "footer": 2
+  }
+}

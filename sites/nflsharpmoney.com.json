@@ -1,0 +1,222 @@
+{
+  "domain": "nflsharpmoney.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "sharp",
+  "query": "nfl sharp money",
+  "site_name": "NFL Sharp Money",
+  "title": "NFL Sharp Money (2026): How to Read It, Where to See It, What It Is Worth",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "Where NFL sharp money shows up",
+  "venues_label": "What you can see there",
+  "venues_col": "Cost",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Live prices and available size across sportsbooks, exchanges and prediction markets on one board; when one venue moves first, the gap to the others is visible and tradable from one account.",
+      "access": "0.5% commission; $10,000 minimum"
+    },
+    {
+      "id": "circa",
+      "note": "The US book whose openers and moves are most watched; its line changes are themselves a sharp-money signal.",
+      "access": "Free to view in its states"
+    },
+    {
+      "id": "pinnacle",
+      "note": "The global reference line. Where Pinnacle moves, the market follows.",
+      "access": "Free to view; not bettable from the US"
+    },
+    {
+      "id": "kalshi",
+      "note": "Order-book depth and trade prints on NFL contracts; large orders are visible as they hit.",
+      "access": "Free to view"
+    },
+    {
+      "id": "dratings",
+      "note": "Action Network: public bet percentage versus money percentage per game, the classic reverse-line-movement tool.",
+      "access": "Free tier; PRO for full data"
+    },
+    {
+      "id": "unabated",
+      "note": "Market-making prices and move tracking aimed at sharp bettors.",
+      "access": "Subscription"
+    },
+    {
+      "id": "donbest",
+      "note": "Steam and move alerts across books, the original professional screen.",
+      "access": "Subscription"
+    },
+    {
+      "id": "betstamp",
+      "note": "Line movement history and best-price tracking across books.",
+      "access": "Free; PRO"
+    }
+  ],
+  "answer": "NFL sharp money is the betting volume from professional and syndicate bettors, recognizable by what it does to the line rather than by how much of it there is. The signatures are a line moving against the public betting percentage (reverse line movement), simultaneous moves across sharp books (steam), early-week action on openers, and large orders hitting the exchanges and prediction markets. Following it blindly does not work, because by the time you see the move the price has adjusted; what works is seeing which venues have not moved yet.",
+  "sections": [
+    {
+      "h2": "What sharp money looks like",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Signal",
+              "What you see",
+              "What it usually means",
+              "How reliable"
+            ],
+            "rows": [
+              [
+                "Reverse line movement",
+                "75% of bets on the Cowboys, line moves from -3 to -2.5",
+                "Large money on the other side outweighs many small bets",
+                "Moderate; books also move lines for their own reasons"
+              ],
+              [
+                "Steam",
+                "Pinnacle, Circa and the exchanges all move within a minute",
+                "A syndicate hit several venues at once",
+                "High for the direction; the price is already gone"
+              ],
+              [
+                "Opener action",
+                "Circa's Sunday-night opener moves two points by Monday morning",
+                "Sharps bet openers before the market firms",
+                "High; this is where most pro volume goes"
+              ],
+              [
+                "Key-number resistance",
+                "Line sits at -3 or -7 while money keeps coming",
+                "Books protect key numbers; the price (vig) moves instead",
+                "Watch the price, not the number"
+              ],
+              [
+                "Order-book prints",
+                "A 50,000-contract buy on a prediction market",
+                "Visible size, unlike at a book",
+                "High for that venue; watch whether others follow"
+              ],
+              [
+                "Late sharp move",
+                "Line moves in the final hour against the public",
+                "Information (injuries, weather) or sharps waiting for max limits",
+                "High"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "How the NFL market is structured",
+      "blocks": [
+        {
+          "p": "The NFL week is a repeating cycle. Lines open Sunday night, with Circa's openers the most watched in the US and Pinnacle's offshore. Sharp bettors hit the openers on Sunday night and Monday, when limits are low but numbers are soft. Lines firm through midweek as injury reports land. Limits rise toward Sunday and the biggest sharp bets wait for the highest limits, which is why late moves against the public are often the most informed."
+        },
+        {
+          "p": "Key numbers matter more in the NFL than in any other sport. Games land on a margin of 3 about 15% of the time and on 7 about 9%, so books resist moving through those numbers and adjust the price (-105 to -120) instead. A line stuck at -3 with the vig climbing on one side is sharp money you will not see in the number."
+        }
+      ]
+    },
+    {
+      "h2": "Why following sharp money usually fails",
+      "blocks": [
+        {
+          "list": [
+            "You are late. The move is the market absorbing the information. Betting after it means betting at the new, correct price.",
+            "Bet percentage versus money percentage is noisy. A single large recreational bet looks like sharp money in the data.",
+            "Books move for their own reasons: balancing liability, copying a competitor, or shading for an expected public rush.",
+            "Sharps disagree with each other. Steam on one side at noon and the other side at three is common."
+          ]
+        },
+        {
+          "callout": "Sharp money is a reason to look, not a reason to bet. The bet is the venue that has not moved yet."
+        }
+      ]
+    },
+    {
+      "h2": "What actually works: trading the lag",
+      "blocks": [
+        {
+          "p": "When Pinnacle, Circa or a prediction market moves, retail books and thinner venues take seconds to minutes to follow. In that window the old price is still available somewhere. The practical use of sharp money is therefore not prediction but execution: watch the venues that lead, and bet the venues that lag, before they catch up. That requires seeing every venue at once and being able to place at any of them immediately."
+        },
+        {
+          "p": "The prediction markets have made this easier in 2026. Order books show size and trade prints directly, so a large informed order is visible as it hits rather than inferred from a line move. The gap between a market that just absorbed a big order and a sportsbook that has not noticed is the cleanest sharp-money trade there is."
+        }
+      ]
+    },
+    {
+      "h2": "Reading the week, in practice",
+      "blocks": [
+        {
+          "ol": [
+            "Sunday night: note Circa's and Pinnacle's openers and where they are by Monday morning. Early moves are the sharpest of the week.",
+            "Tuesday to Thursday: track the no-vig line at the sharp venues; ignore bet percentages until the volume is real.",
+            "Friday and Saturday: injury reports. Watch which venues move first on each report.",
+            "Sunday morning: compare every venue's price against the sharp consensus; bet the ones that disagree in your favor.",
+            "Final hour: late moves against the public, and the deepest prediction market books of the week. Watch for size."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Sharp money shows as reverse line movement, steam, opener action and visible size on exchanges and prediction markets.",
+    "Key numbers (3 and 7) mean NFL sharp money often moves the price, not the line.",
+    "Following a move after it happens means betting the corrected price; the value is in the venues that have not moved yet.",
+    "Prediction market order books make large informed orders visible directly.",
+    "The useful workflow is watching the leaders and betting the laggards, fast."
+  ],
+  "terminalup": [
+    "TerminalUp shows NFL prices across the sportsbooks, betting exchanges and prediction markets it connects to on one board, with the best fee-adjusted price and the size available for each outcome. When a sharp venue moves and another has not followed, both numbers are on the same screen and the order routes to the lagging venue from one account. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is sharp money in NFL betting?",
+      "a": "Bets from professional and syndicate bettors, identified by their effect on the line: moves against public betting percentages, simultaneous moves across sharp venues, and large visible orders on exchanges."
+    },
+    {
+      "q": "How do you track NFL sharp money?",
+      "a": "Watch the lines at Circa, Pinnacle and the prediction markets, compare bet percentage with money percentage on tools such as Action Network, and look for steam alerts across books. Order-book depth on prediction markets shows size directly."
+    },
+    {
+      "q": "Does following sharp money work?",
+      "a": "Not as a pick strategy; the price has already moved. It works as a signal of where the market is going, which is valuable if you can bet the venues that have not moved yet."
+    },
+    {
+      "q": "What is reverse line movement?",
+      "a": "The line moving against the majority of bets, for example 75% of tickets on one side while the line moves toward the other. It implies the minority side carries more money."
+    },
+    {
+      "q": "Why do NFL lines stick at 3 and 7?",
+      "a": "Because games land on those margins far more often than others, so moving through them changes the value of the bet a lot. Books adjust the price instead of the number."
+    },
+    {
+      "q": "Where is NFL sharp money going in 2026?",
+      "a": "Increasingly to prediction markets and exchanges, where limits are set by liquidity rather than by the book and where large orders can be placed without an account being cut."
+    }
+  ],
+  "related": [
+    "sharpmoneytracker.com",
+    "linemovementtracker.com",
+    "whatisasharpbettor.com",
+    "nflpredictionmarket.com",
+    "sharpsportsbooks.com",
+    "whatisclosinglinevalue.com",
+    "bestsharpbettingtools.com",
+    "bestoddsscreen.com"
+  ],
+  "look": {
+    "palette": "ivory-green",
+    "type": "charter-sans",
+    "h2": "smallcaps",
+    "layout": "hero",
+    "order": "C",
+    "radius": 0,
+    "width": 880,
+    "favicon": "dot",
+    "label": 3,
+    "footer": 0
+  }
+}

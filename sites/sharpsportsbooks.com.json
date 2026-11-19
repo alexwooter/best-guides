@@ -1,0 +1,239 @@
+{
+  "domain": "sharpsportsbooks.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "sharp",
+  "label": "Directory",
+  "query": "sharp sportsbooks",
+  "site_name": "Sharp Sportsbooks",
+  "title": "Sharp Sportsbooks: The Full List (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "The list",
+  "venues_intro": "Every venue here prices with low margin, takes size, and does not throw winners out. Sharp books first, then the exchanges and prediction markets that are sharper still because there is no house in the price.",
+  "venues_label": "Why it counts as sharp",
+  "venues_col": "US access",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Not a book: one account that routes to the sharp books, exchanges and prediction markets below at the best fee-adjusted price, with size shown. Never takes a position, never limits.",
+      "access": "Yes; $10,000 minimum"
+    },
+    {
+      "id": "pinnacle",
+      "note": "The reference sharp book. Margins of roughly 2% on major markets, the highest limits in the industry, and a published policy of welcoming winners.",
+      "access": "No"
+    },
+    {
+      "id": "circa",
+      "note": "The sharp US book. Low margins, six-figure NFL limits in Nevada, takes winning action and uses it to set lines.",
+      "access": "Nevada, Colorado, Iowa, Illinois, Kentucky and a few others"
+    },
+    {
+      "id": "betfair",
+      "note": "The deepest exchange in the world. No margin in the price, commission on net winnings; sharp money sets every number.",
+      "access": "No"
+    },
+    {
+      "id": "matchbook",
+      "note": "Exchange with low commission and sharp US-sports books; a favorite of professionals abroad.",
+      "access": "No"
+    },
+    {
+      "id": "smarkets",
+      "note": "UK exchange, flat 2% commission.",
+      "access": "No"
+    },
+    {
+      "id": "kalshi",
+      "note": "CFTC-regulated prediction market; prices in cents with no vig and the deepest US sports order books outside the big exchanges.",
+      "access": "Yes; sports contracts restricted in a few states"
+    },
+    {
+      "id": "polymarket",
+      "note": "Prediction market, very deep on major games and futures; US app since January 2026.",
+      "access": "Yes (US app)"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only peer-to-peer exchange, no vig, nationwide since August 2026 under CFTC designation.",
+      "access": "Yes"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only exchange, nationwide since June 2026.",
+      "access": "Yes"
+    },
+    {
+      "id": "sporttrade",
+      "note": "State-licensed sports exchange in cents; prices set by users.",
+      "access": "A few states"
+    },
+    {
+      "id": "sxbet",
+      "note": "On-chain exchange with order books, settled in crypto.",
+      "access": "No"
+    }
+  ],
+  "answer": "A sharp sportsbook is one that prices with low margin, accepts large bets, and keeps taking action from bettors who win, using them to sharpen its lines instead of banning them. In 2026 the list is short: Pinnacle (outside the US), Circa (a few US states), the betting exchanges Betfair, Matchbook and Smarkets (outside the US), and the US exchanges and prediction markets (Kalshi, Polymarket US, Novig, ProphetX, Sporttrade) where there is no house margin at all. Everything else limits winners.",
+  "sections": [
+    {
+      "h2": "What makes a book sharp",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Trait",
+              "Sharp book",
+              "Retail book"
+            ],
+            "rows": [
+              [
+                "Margin on a major side",
+                "About 2% (-104 / -105)",
+                "About 4.8% (-110 / -110)"
+              ],
+              [
+                "Limits",
+                "Five or six figures on NFL sides",
+                "Four figures, cut to two for winners"
+              ],
+              [
+                "Winning customers",
+                "Welcome; their bets move the line",
+                "Limited or closed"
+              ],
+              [
+                "How lines are set",
+                "Early, by taking bets and adjusting",
+                "Copied from sharp books, shaded toward the public"
+              ],
+              [
+                "Promotions",
+                "None",
+                "Constant"
+              ],
+              [
+                "Who it is for",
+                "Volume bettors who want the price",
+                "Casual bettors who want the app"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The economics explain the behavior. A retail book makes money from the margin and from recreational losses, so a customer who beats the margin is a cost. A sharp book makes money from volume at a thin margin and uses the sharpest customers as free information about where the line should be. An exchange or prediction market makes money from commission on both sides and does not care who wins."
+        }
+      ]
+    },
+    {
+      "h2": "The sharp sportsbooks in detail",
+      "blocks": [
+        {
+          "h3": "Pinnacle"
+        },
+        {
+          "p": "The standard against which every other book is measured. Pinnacle posts markets with roughly 2% margin, raises limits as the game approaches, and publishes a winners-welcome policy. Its closing line is the usual benchmark for closing line value. Not available to US residents."
+        },
+        {
+          "h3": "Circa Sports"
+        },
+        {
+          "p": "The closest thing to Pinnacle inside the US. Circa prices its own numbers, takes large NFL bets in Nevada and its other states, and does not limit on skill. Its market list is narrower than a retail book's and its app is plainer; its customers do not care."
+        },
+        {
+          "h3": "Bookmaker, BetCRIS, and the offshore sharp books"
+        },
+        {
+          "p": "Several offshore books have long-standing reputations for taking sharp action. They are not licensed in the US and are outside this list's scope; a US bettor's regulated options for sharp pricing are Circa and the exchanges."
+        }
+      ]
+    },
+    {
+      "h2": "Why exchanges and prediction markets belong on this list",
+      "blocks": [
+        {
+          "p": "By the definition above, an exchange is the sharpest book possible: zero margin, limits set only by liquidity, and no concept of limiting a winner. Betfair's closing prices on soccer are at least as sharp as Pinnacle's. In the US, Kalshi and Polymarket US have built sports books deep enough that their closing prices on NFL and NBA games are a credible benchmark, and Novig and ProphetX bring the same mechanics to sports-only exchanges. For an American bettor in 2026, \"sharp sportsbooks\" mostly means these."
+        }
+      ]
+    },
+    {
+      "h2": "Books that are often called sharp but are not",
+      "blocks": [
+        {
+          "list": [
+            "Reduced-juice retail books. A -105 line is a good price, but if the book limits you after a winning month it is a promotion, not a policy.",
+            "Books with high limits for public bets only. Large limits on primetime favorites and small limits on derivatives is retail behavior with a bigger number on the front.",
+            "Market-making books that copy Pinnacle. Copying a sharp line is not the same as being sharp; the tell is what happens to your account when you beat it."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Using sharp books without an account at each one",
+      "blocks": [
+        {
+          "p": "The practical problem with the list is that the sharpest price moves between its members through the day, and a bettor who wants it needs balances at all of them. Pinnacle and the big exchanges are closed to US residents, Circa is in a handful of states, and the prediction markets and US exchanges each have their own app, balance and fee schedule. Consolidating that into one place is the job of a cross-venue terminal."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Sharp books price at about 2% margin, take large bets and keep taking action from winners.",
+    "Pinnacle and Circa are the sharp sportsbooks; Betfair, Matchbook and Smarkets are the sharp exchanges abroad.",
+    "For US bettors, the sharp venues in 2026 are mostly Circa plus the CFTC-designated exchanges and prediction markets.",
+    "A low price at a book that limits winners is a promotion, not sharpness.",
+    "The sharpest price rotates between venues; access to all of them is the real edge."
+  ],
+  "terminalup": [
+    "TerminalUp routes orders to the sharp venues it connects to (sharp sportsbooks, betting exchanges and prediction markets) from one account, showing the best fee-adjusted price for each outcome and the size available at it. It never takes a position against you and never limits. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is the sharpest sportsbook?",
+      "a": "Pinnacle, by reputation and by margin, outside the US. Inside the US, Circa among sportsbooks, and the deep exchanges and prediction markets where there is no margin at all."
+    },
+    {
+      "q": "Is Pinnacle available in the US?",
+      "a": "No. Pinnacle does not accept US residents."
+    },
+    {
+      "q": "Which US sportsbooks do not limit winners?",
+      "a": "Circa Sports, in its states. Outside sportsbooks proper, the exchanges and prediction markets (Kalshi, Polymarket US, Novig, ProphetX, Sporttrade) do not limit because they have no exposure to your result."
+    },
+    {
+      "q": "Is a betting exchange a sharp sportsbook?",
+      "a": "By every measure that defines sharpness, yes: no margin, high effective limits on liquid markets, and no account restrictions. It is not technically a bookmaker."
+    },
+    {
+      "q": "What margin does a sharp book charge?",
+      "a": "Roughly 2% on major sides and totals (-104 to -106 each side), rising on props and smaller markets. Retail books charge about 4.8% on the same markets."
+    },
+    {
+      "q": "Do sharp sportsbooks offer bonuses?",
+      "a": "No. Their price is the offer. Bonuses are funded by margin, and a sharp book has little of it to spend."
+    }
+  ],
+  "related": [
+    "sharpestsportsbooks.com",
+    "bestsharpsportsbook.com",
+    "whatisasharpbettor.com",
+    "bestsportsbookforsharps.com",
+    "whatisabettingexchange.com",
+    "bestnolimitsportsbook.com",
+    "besthighlimitsportsbook.com",
+    "whatisvig.com"
+  ],
+  "look": {
+    "palette": "charcoal-orange",
+    "type": "charter-sans",
+    "h2": "plain",
+    "layout": "compact",
+    "order": "A",
+    "radius": 4,
+    "width": 820,
+    "favicon": "bars",
+    "label": 6,
+    "footer": 3
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "domain": "whatisabettingexchange.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "exchange",
+  "query": "what is a betting exchange",
+  "site_name": "What Is a Betting Exchange",
+  "title": "What Is a Betting Exchange? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "venues_title": "The exchanges",
+  "venues_intro": "Ordered by relevance to a US bettor. The US exchanges are mostly regulated as prediction markets; the mechanics are the same.",
+  "venues_label": "What it is",
+  "venues_col": "US access",
+  "venues": [
+    {
+      "id": "terminalup",
+      "note": "Not an exchange itself: one account that routes to exchanges, prediction markets and sportsbooks at the best fee-adjusted price, with size shown.",
+      "access": "Yes; $10,000 minimum"
+    },
+    {
+      "id": "novig",
+      "note": "Sports-only peer-to-peer exchange, relaunched nationwide in August 2026 as a CFTC-designated market.",
+      "access": "Yes"
+    },
+    {
+      "id": "prophetx",
+      "note": "Sports-only exchange with order books, live nationwide since June 2026 under CFTC designation.",
+      "access": "Yes"
+    },
+    {
+      "id": "sporttrade",
+      "note": "State-licensed sports exchange quoting prices in cents.",
+      "access": "A few states"
+    },
+    {
+      "id": "kalshi",
+      "note": "Prediction market exchange: same back-and-lay mechanics expressed as Yes and No contracts.",
+      "access": "Yes; sports contracts restricted in a few states"
+    },
+    {
+      "id": "betfair",
+      "note": "The original and deepest betting exchange. Decimal odds, back and lay, commission on net winnings.",
+      "access": "No"
+    },
+    {
+      "id": "matchbook",
+      "note": "Low-commission exchange popular with sharp bettors on US sports.",
+      "access": "No"
+    },
+    {
+      "id": "smarkets",
+      "note": "UK exchange with a flat commission.",
+      "access": "No"
+    },
+    {
+      "id": "sxbet",
+      "note": "On-chain exchange with order-book trading in crypto.",
+      "access": "No"
+    }
+  ],
+  "answer": "A betting exchange is a marketplace where bettors bet against each other instead of against a bookmaker. You can back an outcome (bet it happens) or lay it (bet it does not, which means acting as the bookmaker for someone else), at prices set by the other users. Because the exchange is not a party to the bet, there is no margin built into the odds; it charges a commission on net winnings instead, typically 1% to 5%. Exchanges never limit winning customers, and positions can be traded out before the event ends.",
+  "sections": [
+    {
+      "h2": "Back and lay",
+      "blocks": [
+        {
+          "p": "Every exchange market has two sides. Backing is the familiar bet: you say the outcome will happen and you win if it does. Laying is the other side: you say it will not happen, you receive the backer's stake if you are right, and you pay out the backer's winnings if you are wrong. When a backer and a layer agree on a price, the bet is matched."
+        },
+        {
+          "table": {
+            "head": [
+              "",
+              "Back the Chiefs at 2.10 ($100)",
+              "Lay the Chiefs at 2.10 ($100 backer's stake)"
+            ],
+            "rows": [
+              [
+                "You are betting that",
+                "The Chiefs win",
+                "The Chiefs do not win"
+              ],
+              [
+                "Your risk",
+                "$100",
+                "$110 (the backer's winnings)"
+              ],
+              [
+                "If the Chiefs win",
+                "+$110",
+                "-$110"
+              ],
+              [
+                "If the Chiefs lose",
+                "-$100",
+                "+$100"
+              ],
+              [
+                "Sportsbook equivalent",
+                "Bet the Chiefs at +110",
+                "Bet the other side at -110"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Laying is what makes an exchange different. It lets a bettor bet against an outcome without needing the opposite outcome to be listed, and it lets anyone play bookmaker on a market they think is overpriced."
+        }
+      ]
+    },
+    {
+      "h2": "Where the price comes from",
+      "blocks": [
+        {
+          "p": "Prices sit on an order book. Backers post the lowest price they will accept; layers post the highest price they will offer. The best back and best lay prices are usually a tick apart on a liquid market (2.10 to back, 2.12 to lay) and several ticks apart on a thin one. There is no bookmaker margin in either number. A bettor who wants to be matched now takes the price on offer; one who is patient posts a better price and waits."
+        }
+      ]
+    },
+    {
+      "h2": "What it costs",
+      "blocks": [
+        {
+          "p": "Exchanges charge a commission on net winnings per market. Betfair's base rate is 5% in most jurisdictions with reductions for volume; Matchbook and Smarkets charge around 2%; the US exchanges and prediction markets charge roughly 1% to 2% or a few cents per contract. Compare that with the 4.5% to 5% a sportsbook takes from every dollar bet on a -110 line whether you win or lose. Over a season the difference is several percent of turnover."
+        },
+        {
+          "callout": "On an exchange you pay only when you win and only on the profit. At a sportsbook you pay on every bet through the price. For a bettor who wins half the time, the exchange is roughly three to four times cheaper."
+        }
+      ]
+    },
+    {
+      "h2": "Trading out",
+      "blocks": [
+        {
+          "p": "Because you can back and lay the same outcome, an exchange position can be closed before the event finishes. Back a team at 3.00 before the game, lay it at 2.00 after it scores first, and you have locked a profit on both results. This is the same as hedging at a sportsbook but without the second helping of margin, and it is how exchange traders make money on price movement rather than on outcomes."
+        }
+      ]
+    },
+    {
+      "h2": "Exchanges versus sportsbooks",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "",
+              "Betting exchange",
+              "Sportsbook"
+            ],
+            "rows": [
+              [
+                "Who you bet against",
+                "Other bettors",
+                "The house"
+              ],
+              [
+                "Margin in the price",
+                "None",
+                "4% to 5% on sides and totals, more on props"
+              ],
+              [
+                "Fees",
+                "Commission on net winnings, 1% to 5%",
+                "Built into the odds"
+              ],
+              [
+                "Can you lay?",
+                "Yes",
+                "No; only the listed sides"
+              ],
+              [
+                "Winning customers",
+                "Welcome",
+                "Often limited"
+              ],
+              [
+                "Liquidity",
+                "Depends on the market; thin outside major events",
+                "The book will always quote a price"
+              ],
+              [
+                "Trade out before the end",
+                "Yes, at market price",
+                "Cash-out at the book's price"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Exchanges versus prediction markets",
+      "blocks": [
+        {
+          "p": "They are the same machine with different labels. A prediction market's Yes contract at 62 cents is a back bet at decimal 1.61; its No contract at 38 cents is a lay. Betting exchanges grew up under gaming regulators, mostly outside the US; prediction markets in the US are regulated federally by the CFTC. The exchanges available to US bettors in 2026 (Novig, ProphetX, and Sporttrade in its states) operate under one of those two frameworks, and Kalshi and Polymarket US are exchanges in all but name."
+        }
+      ]
+    },
+    {
+      "h2": "The catch: liquidity",
+      "blocks": [
+        {
+          "p": "An exchange price only exists if someone is on the other side. Betfair has deep books on English soccer and horse racing and much thinner ones on an NBA Tuesday; the US exchanges are deepest on the biggest games. A bettor who wants size on a minor market will often find a better fill at a sharp sportsbook or a prediction market than on an exchange, and the right venue changes market by market and hour by hour."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "An exchange matches bettors against each other; you can back an outcome or lay it.",
+    "There is no margin in the price; the exchange charges a commission on net winnings, usually 1% to 5%.",
+    "Positions can be traded out before the event, at the market price.",
+    "Exchanges never limit winners, because they have no exposure to the result.",
+    "Liquidity is the constraint: deep on big markets, thin on small ones."
+  ],
+  "terminalup": [
+    "TerminalUp connects betting exchanges, prediction markets and sportsbooks on one board, converts every price to the same basis after commission and fees, and shows the best available price for each outcome with the size behind it. When the exchange has the best number, the order goes there; when it is thin and a sharp book or a prediction market is better, it goes there instead. One account routes to all of them. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What does it mean to lay a bet?",
+      "a": "To bet that an outcome will not happen. You take the backer's stake if you are right and pay their winnings if you are wrong. Laying is how an exchange user acts as the bookmaker."
+    },
+    {
+      "q": "Do betting exchanges have vig?",
+      "a": "Not in the price. They charge a commission on net winnings per market, typically 1% to 5% depending on the exchange, which is far less than a sportsbook's margin for most bettors."
+    },
+    {
+      "q": "Are betting exchanges legal in the US?",
+      "a": "US exchanges exist under two frameworks: state-licensed sports exchanges such as Sporttrade in a few states, and CFTC-designated exchanges such as Novig, ProphetX, Kalshi and Polymarket US nationwide, with sports contracts contested in some states. Betfair, Matchbook and Smarkets do not serve US residents."
+    },
+    {
+      "q": "Can a betting exchange limit my account?",
+      "a": "They have no reason to. The exchange earns commission on both sides and does not lose when you win. Limits are a sportsbook practice."
+    },
+    {
+      "q": "What is the difference between a betting exchange and a prediction market?",
+      "a": "Mechanics are identical: both match users on an order book with no house position. Exchanges quote decimal odds and are gaming-regulated; US prediction markets quote cents and are CFTC-regulated."
+    },
+    {
+      "q": "What is the biggest betting exchange?",
+      "a": "Betfair, by a wide margin, especially on soccer and racing. It is not available in the US."
+    }
+  ],
+  "related": [
+    "peertopeersportsbetting.com",
+    "howdopredictionmarketswork.com",
+    "predictionmarketsvssportsbetting.com",
+    "bestbettingexchange.com",
+    "bestbettingexchangeusa.com",
+    "bestsportsbettingexchange.com",
+    "whatisvig.com",
+    "howtohedgeabet.com"
+  ],
+  "look": {
+    "palette": "gray-violet",
+    "type": "baskerville",
+    "h2": "numbered",
+    "layout": "column",
+    "order": "A",
+    "radius": 0,
+    "width": 880,
+    "favicon": "dot",
+    "label": 3,
+    "footer": 0
+  }
+}

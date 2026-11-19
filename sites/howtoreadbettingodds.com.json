@@ -1,0 +1,234 @@
+{
+  "domain": "howtoreadbettingodds.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "odds",
+  "query": "how to read betting odds",
+  "site_name": "How to Read Betting Odds",
+  "title": "How to Read Betting Odds (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "converter",
+  "calculator_position": "bottom",
+  "calculator_name": "Odds converter",
+  "answer": "Betting odds tell you two things: how much a bet pays and how likely the market thinks the outcome is. American odds show profit relative to $100 (-110 risks $110 to win $100; +150 wins $150 on $100). Decimal odds show total return per unit staked (2.50 returns $2.50 per $1). Every price converts to an implied probability, and the two sides of a market add to a little over 100% at a sportsbook; the excess is the bookmaker's margin.",
+  "intro": [
+    "Odds look like three different languages, but they say the same thing. Once you can turn any price into a probability, you can compare a sportsbook with an exchange with a prediction market, and see which one is paying you more for the same opinion."
+  ],
+  "sections": [
+    {
+      "h2": "American odds",
+      "blocks": [
+        {
+          "p": "American odds are built around $100. A negative number is the amount you risk to win $100. A positive number is the amount you win on a $100 risk. Favorites are negative, underdogs positive, and a pick'em is written +100 or EVEN."
+        },
+        {
+          "table": {
+            "head": [
+              "Price",
+              "Risk",
+              "To win",
+              "Total return",
+              "Implied probability"
+            ],
+            "rows": [
+              [
+                "-200",
+                "$200",
+                "$100",
+                "$300",
+                "66.7%"
+              ],
+              [
+                "-110",
+                "$110",
+                "$100",
+                "$210",
+                "52.4%"
+              ],
+              [
+                "+100",
+                "$100",
+                "$100",
+                "$200",
+                "50.0%"
+              ],
+              [
+                "+150",
+                "$100",
+                "$150",
+                "$250",
+                "40.0%"
+              ],
+              [
+                "+300",
+                "$100",
+                "$300",
+                "$400",
+                "25.0%"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The $100 is a convention, not a minimum. A $25 bet at -110 risks $25 to win $22.73. A $25 bet at +150 wins $37.50."
+        }
+      ]
+    },
+    {
+      "h2": "Decimal odds",
+      "blocks": [
+        {
+          "p": "Decimal odds are the total return per unit staked, stake included. At 2.50, a $100 bet returns $250, which is $150 profit plus the $100 back. At 1.91 (the decimal version of -110) a $100 bet returns $191. Anything below 2.00 is a favorite; above 2.00 is an underdog."
+        },
+        {
+          "p": "Decimal is the format used on betting exchanges and most of the world outside the US, and it is the easiest to do math with: implied probability is 1 divided by the decimal price, and a parlay is the product of the legs."
+        }
+      ]
+    },
+    {
+      "h2": "Fractional odds",
+      "blocks": [
+        {
+          "p": "Fractional odds, common in UK horse racing, show profit relative to stake. 3/1 (said \"three to one\") wins $3 for every $1 staked. 10/11 wins $10 for every $11, which is -110. 1/2 wins $1 for every $2, which is -200. To convert to decimal, divide and add 1."
+        }
+      ]
+    },
+    {
+      "h2": "Prediction market prices",
+      "blocks": [
+        {
+          "p": "Prediction markets such as Kalshi and Polymarket quote a contract price between 1 and 99 cents that pays $1 if the outcome happens. The price is the implied probability. A contract at 62 cents is a 62% implied chance; buy it and your profit if it wins is 38 cents per contract, which is +61 in American odds. The other side of the same market trades at roughly 38 cents, and the two add to about $1 because there is no bookmaker margin, only the spread between bid and offer and the venue's fee."
+        }
+      ]
+    },
+    {
+      "h2": "Converting between formats",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "From",
+              "To decimal",
+              "To implied probability"
+            ],
+            "rows": [
+              [
+                "Negative American (-X)",
+                "1 + 100 / X",
+                "X / (X + 100)"
+              ],
+              [
+                "Positive American (+X)",
+                "1 + X / 100",
+                "100 / (X + 100)"
+              ],
+              [
+                "Fractional a/b",
+                "1 + a / b",
+                "b / (a + b)"
+              ],
+              [
+                "Decimal d",
+                "d",
+                "1 / d"
+              ],
+              [
+                "Contract price c cents",
+                "100 / c",
+                "c%"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The converter below does all of it. Type a price in any format and read the others."
+        }
+      ]
+    },
+    {
+      "h2": "The part most people miss: the margin",
+      "blocks": [
+        {
+          "p": "Add up the implied probabilities on both sides of a sportsbook market and you get more than 100%. On a -110 / -110 point spread the total is 104.8%. That 4.8% is the vig, the book's fee, hidden in the number. It means you need to win 52.4% of your -110 bets just to break even."
+        },
+        {
+          "p": "This is why reading odds across venues matters more than reading them at one. The same game might be -110 at a retail book, -105 at a sharp book, and 50 cents (that is, +100) on an exchange or prediction market. Those are three different prices for the same opinion, and the difference compounds over a season."
+        }
+      ]
+    },
+    {
+      "h2": "Reading a full line",
+      "blocks": [
+        {
+          "p": "A typical NFL line reads: Chiefs -3.5 (-110), Bills +3.5 (-110), total 47.5 (over -105 / under -115), moneyline Chiefs -180 / Bills +155."
+        },
+        {
+          "list": [
+            "The spread (-3.5) is the handicap; the Chiefs must win by 4 or more. The price in brackets (-110) is what you pay for either side.",
+            "The total (47.5) is the combined score line; the uneven prices (-105 / -115) tell you the book is shading toward the under being more likely, or is trying to attract over money.",
+            "The moneyline (-180 / +155) is the straight win price. Convert both: 64.3% + 39.2% = 103.5%, so the fair prices are about 62.1% and 37.9%, roughly -164 and +164."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "American odds: negative is what you risk to win $100, positive is what you win on $100.",
+    "Decimal odds are total return per unit; implied probability is 1 divided by the price.",
+    "Prediction market contracts trade in cents and the price is the probability.",
+    "Both sides of a sportsbook market add to more than 100%; the excess is the vig.",
+    "The same outcome is priced differently at different venues. Reading odds is really comparing them."
+  ],
+  "terminalup": [
+    "TerminalUp shows one board across the sportsbooks, betting exchanges and prediction markets it connects to, with every price converted to the same basis and adjusted for each venue's fees, so the best available number for each outcome is the one you see. Orders route to that venue from one account. Commission is 0.5% per trade (0.35% at the highest volume); the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What does -110 mean?",
+      "a": "You risk $110 to win $100 (or $11 to win $10). It is the standard price on point spreads and totals and implies a 52.4% probability, which includes the bookmaker's margin."
+    },
+    {
+      "q": "What does +200 mean?",
+      "a": "A $100 bet wins $200 profit, for a total return of $300. The implied probability is 33.3%."
+    },
+    {
+      "q": "Which odds format is best?",
+      "a": "Decimal, for doing math. Implied probability is the reciprocal and parlays multiply. American odds are only a US convention."
+    },
+    {
+      "q": "What is a pick'em?",
+      "a": "A game with no spread, priced at +100 (EVEN) or close to it on both sides, often -110 / -110 once the margin is added."
+    },
+    {
+      "q": "How do I read prediction market odds?",
+      "a": "The contract price in cents is the implied probability. A 62-cent contract pays $1 if it wins, so the profit is 38 cents per contract, equivalent to +61."
+    },
+    {
+      "q": "Why are the two sides not equal?",
+      "a": "The book adds margin to both sides and shades toward whichever side it expects the public to bet. Convert both to implied probability, add them, and divide each by the total to see the fair split."
+    }
+  ],
+  "related": [
+    "impliedprobabilitycalculator.com",
+    "whatisvig.com",
+    "whatisevinbetting.com",
+    "howdopredictionmarketswork.com",
+    "whatisabettingexchange.com",
+    "bestoddscomparisonsite.com",
+    "bestlineshoppingapp.com",
+    "howtohedgeabet.com"
+  ],
+  "look": {
+    "palette": "forest",
+    "type": "verdana",
+    "h2": "smallcaps",
+    "layout": "split",
+    "order": "B",
+    "radius": 8,
+    "width": 880,
+    "favicon": "square",
+    "label": 0,
+    "footer": 4
+  }
+}

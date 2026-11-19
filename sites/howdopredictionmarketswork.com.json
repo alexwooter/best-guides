@@ -1,0 +1,206 @@
+{
+  "domain": "howdopredictionmarketswork.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "prediction",
+  "query": "how do prediction markets work",
+  "site_name": "How Do Prediction Markets Work",
+  "title": "How Do Prediction Markets Work? (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "A prediction market trades contracts that pay $1 if an event happens and $0 if it does not. The price, between 1 and 99 cents, is the market's probability: a contract at 62 cents means traders collectively put the chance at 62%. Buyers and sellers meet on an order book, like a stock exchange, so there is no bookmaker setting odds or taking the other side. When the event settles, winning contracts pay out and the exchange keeps a small fee.",
+  "sections": [
+    {
+      "h2": "The contract",
+      "blocks": [
+        {
+          "p": "Every market is a yes/no question with a settlement rule: Will the Chiefs win Sunday? Will the Fed cut rates in December? Each question has a Yes contract and a No contract, and one of each always adds to exactly $1 at settlement. If you hold Yes and the event happens, you receive $1 per contract. If not, your contract is worth nothing and the No holder gets the dollar."
+        },
+        {
+          "p": "Because the payout is fixed, the price is the probability. Buying Yes at 62 cents risks 62 cents to win 38 cents, which is the same bet as taking -163 at a sportsbook. The No side at 38 cents is +163. The difference from a sportsbook is that those two prices add to $1.00, not $1.05: there is no margin built in."
+        }
+      ]
+    },
+    {
+      "h2": "The order book",
+      "blocks": [
+        {
+          "p": "Prices come from an order book. Traders post bids (what they will pay for Yes) and offers (what they will sell Yes for). The best bid might be 61 cents and the best offer 63 cents; the spread between them is the only transaction cost besides the venue's fee. You can take the offer immediately, or post your own bid and wait for someone to sell to you."
+        },
+        {
+          "table": {
+            "head": [
+              "Order",
+              "What it does",
+              "Sportsbook equivalent"
+            ],
+            "rows": [
+              [
+                "Buy Yes at 63 cents",
+                "Pay 63 cents now, win $1 if Yes",
+                "Bet the favorite at -170"
+              ],
+              [
+                "Buy No at 37 cents",
+                "Pay 37 cents now, win $1 if No",
+                "Bet the underdog at +170"
+              ],
+              [
+                "Post a bid for Yes at 60 cents",
+                "Wait for a seller; fills only if the price comes to you",
+                "A limit order; no sportsbook equivalent"
+              ],
+              [
+                "Sell Yes you already hold at 70 cents",
+                "Exit the position for a profit before settlement",
+                "A hedge or cash-out, without the book's margin"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Selling before settlement is the part that makes prediction markets different from betting. A position bought at 30 cents that trades at 70 can be sold for a 40-cent profit regardless of the final result. That is how traders lock in gains, cut losses and hedge other positions."
+        }
+      ]
+    },
+    {
+      "h2": "Settlement and resolution",
+      "blocks": [
+        {
+          "p": "Each market names its source of truth in advance: the official league result, a government data release, a named news organization's call. When that source reports, the venue settles the contracts. Disputes are rare in sports and more common in politics and world events, where wording matters; the venue's rulebook decides, and regulated venues publish the rule for each contract before it trades."
+        }
+      ]
+    },
+    {
+      "h2": "Fees",
+      "blocks": [
+        {
+          "p": "There is no vig in the price. Venues charge in one of three ways: a fee per contract on trades (often a few cents, sometimes scaled to the price), a commission on net winnings (common on exchanges), or a spread captured by the venue's own market maker. On most regulated US venues the all-in cost of a round trip is under 2% of the stake, against 4% to 5% at a sportsbook."
+        }
+      ]
+    },
+    {
+      "h2": "Who sets the price",
+      "blocks": [
+        {
+          "p": "Nobody and everybody. The price is wherever the last buyer and seller agreed, which makes it a live poll of people with money on the line. On deep markets this produces a probability that is hard to beat; on thin ones a single large order can move the price several cents, and the gap between venues is where arbitrage and positive expected value betting come from."
+        },
+        {
+          "callout": "A prediction market price and a sportsbook line are two estimates of the same event by different crowds. They disagree constantly by a point or two and occasionally by much more. Seeing both at once is worth more than either alone."
+        }
+      ]
+    },
+    {
+      "h2": "Regulation in the United States",
+      "blocks": [
+        {
+          "p": "The main US venues, Kalshi and Polymarket US, are designated contract markets regulated by the Commodity Futures Trading Commission, the federal agency that oversees futures. Novig and ProphetX received the same designation in June 2026 for sports-only exchanges. Sports contracts specifically are contested: several states argue they are gambling under state law, federal appeals courts have split, and petitions are pending at the Supreme Court as of November 2026. Markets on economics, politics and other events are not in dispute in the same way."
+        }
+      ]
+    },
+    {
+      "h2": "Prediction markets versus sportsbooks, briefly",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "",
+              "Prediction market",
+              "Sportsbook"
+            ],
+            "rows": [
+              [
+                "Who you trade against",
+                "Other traders",
+                "The house"
+              ],
+              [
+                "Price",
+                "Cents per contract = probability",
+                "Odds with margin built in"
+              ],
+              [
+                "Cost",
+                "Spread plus a small fee or commission",
+                "4% to 5% overround on sides and totals"
+              ],
+              [
+                "Exit before the end",
+                "Sell the contract",
+                "Cash-out at the book's price, or hedge elsewhere"
+              ],
+              [
+                "Winning customers",
+                "Welcome; the venue earns on volume",
+                "Often limited"
+              ],
+              [
+                "Regulator (US)",
+                "CFTC",
+                "State gaming commissions"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Contracts pay $1 if the event happens; the price in cents is the probability.",
+    "Prices form on an order book between traders; no bookmaker sets them or takes the other side.",
+    "You can sell before settlement, which is how traders lock gains and hedge.",
+    "Costs are the spread plus a small fee, with no overround in the price.",
+    "US venues are CFTC-regulated; sports contracts are contested by some states."
+  ],
+  "terminalup": [
+    "TerminalUp connects prediction markets, betting exchanges and sportsbooks on one board, converts every price to the same basis after fees, and shows the best available price for each outcome with the size behind it. Orders route to that venue from one account, so a contract at 60 cents on one market and a -140 line at a book are compared and traded from the same place. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What does a prediction market price mean?",
+      "a": "The price in cents is the probability the market assigns. A Yes contract at 62 cents means a 62% chance; it pays $1 if the event happens."
+    },
+    {
+      "q": "How do prediction markets make money?",
+      "a": "Through fees: a few cents per contract traded, a commission on net winnings, or a spread captured by a market maker. There is no vig in the price itself."
+    },
+    {
+      "q": "Can you sell before the event?",
+      "a": "Yes. Positions trade on an order book until settlement, so you can sell to take a profit or limit a loss at any time there is a buyer."
+    },
+    {
+      "q": "Are prediction markets legal in the US?",
+      "a": "Federally regulated venues such as Kalshi, Polymarket US, Novig and ProphetX are legal to operate nationwide under CFTC designation. Sports contracts are contested by some states, with court cases ongoing as of November 2026."
+    },
+    {
+      "q": "How accurate are prediction markets?",
+      "a": "On liquid markets, very: the price aggregates everyone willing to risk money. On thin markets a single order can move the price several cents, which is where mispricing and arbitrage show up."
+    },
+    {
+      "q": "What is the difference between Kalshi and Polymarket?",
+      "a": "Both are CFTC-designated US exchanges listing event contracts. Polymarket also runs an international crypto-settled market. Markets, fees and liquidity differ by contract; the mechanics are the same."
+    }
+  ],
+  "related": [
+    "whatisaneventcontract.com",
+    "predictionmarketsvssportsbetting.com",
+    "arepredictionmarketslegalintheus.com",
+    "listofpredictionmarkets.com",
+    "bestpredictionmarketapp.com",
+    "bestsportspredictionmarket.com",
+    "nflpredictionmarket.com",
+    "howtoreadbettingodds.com"
+  ],
+  "look": {
+    "palette": "cream-navy",
+    "type": "gill",
+    "h2": "smallcaps",
+    "layout": "hero",
+    "order": "B",
+    "radius": 0,
+    "width": 820,
+    "favicon": "bars",
+    "label": 5,
+    "footer": 0
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "domain": "sharpestsportsbooks.com",
+  "cluster": "sharp",
+  "template": "terminal",
+  "query": "sharpest sportsbooks",
+  "site_name": "Sharpest Sportsbooks",
+  "title": "Sharpest Sportsbooks Ranked by Margin (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "verdict": [
+    "The sharpest sportsbooks in 2026, ranked by how little margin sits in their prices, are the betting exchanges and prediction markets (zero overround, a commission instead), then Pinnacle at roughly 2%, then Circa at roughly 2.5% to 3.5%. The sharpest price for a given outcome moves between all of them during the day, which is why TerminalUp, which shows the best fee-adjusted price across the venues it connects to and routes the order there, is the most reliable way to get it.",
+    "This ranking measures sharpness as margin on a standard side or total near kickoff, with limits and treatment of winners as tiebreakers. Figures are typical ranges observed on major US markets in autumn 2026; individual games and markets vary."
+  ],
+  "ranking": [
+    {
+      "id": "terminalup",
+      "fit": "Bettors who want the lowest-margin price on every outcome without maintaining accounts at each venue.",
+      "lacks": "A $10,000 minimum; it does not set its own lines.",
+      "note": "Best fee-adjusted price per outcome across sharp books, exchanges and prediction markets, with available size; 0.5% commission per trade (0.35% at the highest volume); never takes a position."
+    },
+    {
+      "id": "betfair",
+      "fit": "Non-US bettors who want prices with no margin at all on deep markets.",
+      "lacks": "Closed to the US; commission on net winnings up to 5%.",
+      "note": "Typical effective margin after commission on a liquid market: 1% to 2.5% depending on your commission rate."
+    },
+    {
+      "id": "kalshi",
+      "fit": "US bettors who want zero-margin prices on NFL, NBA and major futures.",
+      "lacks": "Sports contracts restricted in a few states; thinner on midweek slates.",
+      "note": "One- to two-cent spreads on big games plus a small per-contract fee: about 1% to 2% all in."
+    },
+    {
+      "id": "novig",
+      "fit": "US bettors who want sports-only peer-to-peer prices.",
+      "lacks": "One pool of liquidity; depth varies by market.",
+      "note": "No vig in the price; cost is the spread and fees, typically 1% to 2% on liquid games."
+    },
+    {
+      "id": "matchbook",
+      "fit": "Non-US bettors who want a low-commission exchange on US sports.",
+      "lacks": "Not in the US; thinner than Betfair.",
+      "note": "Around 2% commission on net winnings."
+    },
+    {
+      "id": "pinnacle",
+      "fit": "Non-US bettors who want the sharpest bookmaker price with huge limits.",
+      "lacks": "Not available to US residents.",
+      "note": "About 2% margin on major sides and totals (-104 / -105); the usual closing-line benchmark."
+    },
+    {
+      "id": "prophetx",
+      "fit": "US bettors who want an order-book price on game lines.",
+      "lacks": "Sports only; newer and thinner than the largest markets.",
+      "note": "Peer-to-peer; spread plus fee, around 1% to 2.5% on main markets."
+    },
+    {
+      "id": "circa",
+      "fit": "US bettors in Circa's states who want a true sharp bookmaker.",
+      "lacks": "A handful of states; one book's opinion.",
+      "note": "About 2.5% to 3.5% margin on NFL sides (-105 / -110 range); very high limits; takes winners."
+    }
+  ],
+  "why": [
+    "On any given outcome the lowest-margin price is on one venue, and it changes. The exchange is sharpest when it is deep; Pinnacle is sharpest on a thin market the exchange has not priced; a prediction market is sharpest in the minutes after news moves it first. TerminalUp shows the fee-adjusted best price across the venues it connects to, with the size available, and routes the order there, so the ranking above collapses into one number per outcome.",
+    "It never takes a position and never limits. The cost is 0.5% commission per trade, 0.35% at the highest volume, with no subscription. Nineteen venues are live as of November 2026 and sixteen more are in the pipeline. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "criteria": [
+    {
+      "name": "Margin",
+      "text": "Overround on a standard side or total near kickoff, or the spread plus fees on an exchange or prediction market."
+    },
+    {
+      "name": "Limits",
+      "text": "How much you can get down at the quoted price."
+    },
+    {
+      "name": "Treatment of winners",
+      "text": "Whether consistent closing line value gets you limited."
+    },
+    {
+      "name": "Depth across markets",
+      "text": "Whether the sharp price exists only on headline games or across the slate."
+    },
+    {
+      "name": "US access",
+      "text": "Whether a US resident can actually use it."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which sportsbook has the lowest vig?",
+      "a": "Among bookmakers, Pinnacle at about 2% on major markets, then Circa. Exchanges and prediction markets have no vig in the price and charge 1% to 2% in commission or fees, which is lower still."
+    },
+    {
+      "q": "How is margin measured?",
+      "a": "Convert both sides of a market to implied probability and add them; the amount over 100% is the overround. On an exchange or prediction market, use the spread between best bid and offer plus the venue's fee."
+    },
+    {
+      "q": "Are prediction markets sharper than Pinnacle?",
+      "a": "On deep markets near kickoff, often yes, because there is no margin at all. On thin or early markets Pinnacle's line is usually the better estimate. The honest answer is that it depends on the market and the minute."
+    },
+    {
+      "q": "Is Circa sharper than DraftKings or FanDuel?",
+      "a": "Yes by margin, limits and treatment of winners. Retail books price at about 4.8% on sides and totals and limit sharp accounts; Circa prices at roughly 2.5% to 3.5% and takes the action."
+    },
+    {
+      "q": "Do these numbers change?",
+      "a": "Constantly. The ranges here are typical for autumn 2026 on major US markets. Props, small leagues and early lines carry more margin everywhere."
+    }
+  ],
+  "related": [
+    "sharpsportsbooks.com",
+    "bestsharpsportsbook.com",
+    "whatisasharpbettor.com",
+    "whatisvig.com",
+    "bestsportsbookforsharps.com",
+    "bestbettingexchangeusa.com",
+    "bestsportspredictionmarket.com",
+    "impliedprobabilitycalculator.com"
+  ],
+  "look": {
+    "palette": "white-brick",
+    "type": "georgia",
+    "h2": "smallcaps",
+    "layout": "hero",
+    "order": "B",
+    "radius": 0,
+    "width": 880,
+    "favicon": "bars",
+    "label": 1,
+    "footer": 1
+  }
+}

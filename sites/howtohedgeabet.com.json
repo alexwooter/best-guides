@@ -1,0 +1,186 @@
+{
+  "domain": "howtohedgeabet.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "ev",
+  "query": "how to hedge a bet",
+  "site_name": "How to Hedge a Bet",
+  "title": "How to Hedge a Bet (2026): Formula, Calculator and When Not To",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "calculator": "hedge",
+  "calculator_position": "top",
+  "calculator_name": "Hedge calculator",
+  "steps_title": "How to hedge a bet, step by step",
+  "answer": "To hedge a bet, place a second bet on the opposite outcome so that you profit (or lose less) whichever way it lands. The stake that pays the same either way is your original payout divided by the hedge's decimal odds. A $100 bet at +300 pays $400; if the other side is now -150 (1.667), a hedge of $240 locks in $60 no matter who wins. Hedge only when the price on the other side is better than the break-even odds, or when you need the certainty more than the expected value.",
+  "steps": [
+    {
+      "name": "Find your original payout.",
+      "text": "Stake times decimal odds. $100 at +300 (decimal 4.00) pays $400 including the stake."
+    },
+    {
+      "name": "Get the best price on the other side.",
+      "text": "Check every venue, not just the book you bet at. The other side of a futures bet might be -150 at one book and -135 on an exchange; that difference is pure profit on the hedge."
+    },
+    {
+      "name": "Calculate the equal-profit hedge stake.",
+      "text": "Original payout divided by hedge decimal odds. $400 / 1.667 = $240 at -150. At -135 (1.741) it is $230."
+    },
+    {
+      "name": "Check the locked profit.",
+      "text": "Original payout minus original stake minus hedge stake. $400 - $100 - $240 = $60 either way. At -135 it is $70."
+    },
+    {
+      "name": "Decide how much to hedge.",
+      "text": "A full hedge locks the profit. A partial hedge keeps some upside; betting $120 instead of $240 means +$180 if the original wins and -$20 if it loses. Choose the split that matches how much the certainty is worth to you."
+    },
+    {
+      "name": "Place the hedge at the best venue and record both legs.",
+      "text": "The hedge is a bet like any other. Its price, and the vig in it, decide whether the whole position was good."
+    }
+  ],
+  "sections": [
+    {
+      "h2": "When hedging makes sense",
+      "blocks": [
+        {
+          "list": [
+            "Futures and parlays that are one leg from paying. A $50 futures ticket at +4000 that is now a 60% favorite is worth hedging because the bankroll impact of the swing is large relative to your normal stakes.",
+            "Live positions after a big move. If you bet a side at +150 and it is now -200 in-game, a hedge locks the price move itself as profit.",
+            "Anywhere the other side is priced better than your break-even. The calculator shows the break-even hedge odds; a price better than that means the hedge is positive expected value on its own, and the question of whether to hedge answers itself."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "When hedging costs you money",
+      "blocks": [
+        {
+          "p": "Every hedge pays vig twice: once on the original bet and once on the hedge. If the other side is priced worse than your break-even odds, hedging locks in less than the position is worth. Over a career, a bettor who always hedges gives up a few percent of expected value for peace of mind. That can be a reasonable trade for a life-changing ticket; it is a bad trade on a routine $200 bet."
+        },
+        {
+          "table": {
+            "head": [
+              "Situation",
+              "Hedge?",
+              "Why"
+            ],
+            "rows": [
+              [
+                "Last leg of a parlay paying 20x your stake",
+                "Usually yes, at least partly",
+                "Variance is huge relative to bankroll; certainty is worth the vig"
+              ],
+              [
+                "Normal-sized bet, other side at a fair price",
+                "No",
+                "You pay vig twice and lock in less than the bet is worth"
+              ],
+              [
+                "Other side available better than break-even odds",
+                "Yes",
+                "The hedge is +EV by itself"
+              ],
+              [
+                "You have new information that your side is wrong",
+                "Yes, fully",
+                "This is not a hedge, it is closing a bad position"
+              ],
+              [
+                "Futures ticket with months to run",
+                "Consider a partial hedge",
+                "Prices move; you can hedge in pieces as the market firms"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Hedging with an exchange or prediction market",
+      "blocks": [
+        {
+          "p": "Exchanges and prediction markets are the natural place to hedge because there is no overround in the price, only a small commission or spread. On a prediction market you can also close a position directly: if you bought a contract at 30 cents and it trades at 60, you sell it at 60 and bank the 30 cents without a second bet at all. That is cheaper than hedging at a sportsbook, where the vig on the opposite side eats into the profit."
+        },
+        {
+          "p": "The same is true of middles. If you hold a team at +7 and the line has moved to -3, taking the other side at -3 on an exchange wins both if the margin lands between 3 and 7, and costs you only the commission if it does not."
+        }
+      ]
+    },
+    {
+      "h2": "The math, written out",
+      "blocks": [
+        {
+          "p": "Let S be the original stake, O the original decimal odds, and H the decimal odds now available on the other side."
+        },
+        {
+          "list": [
+            "Original payout: P = S x O.",
+            "Equal-profit hedge stake: h = P / H.",
+            "Locked profit: P - S - h.",
+            "Break-even hedge odds: H* = P / (P - S). If the available H is higher than H*, the hedge locks a profit; if lower, it locks a loss.",
+            "Partial hedge of fraction f: stake f x h; outcomes are (P - S - f x h) if the original wins and (f x h x (H - 1) - S) if the hedge wins."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Hedge stake for equal profit = original payout / hedge decimal odds.",
+    "Only hedge when the certainty is worth more to you than the vig you pay twice, or when the other side is priced better than break-even.",
+    "Shop the hedge across venues; the difference between -150 and -135 is real money.",
+    "On a prediction market, selling your contract is a cheaper hedge than a second bet.",
+    "Partial hedges are fine. The split is a personal risk decision, not a math error."
+  ],
+  "terminalup": [
+    "A hedge is only as good as the price on the other side, and that price lives on whichever venue happens to be best at that moment. TerminalUp shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, and routes the order there from one account, so the hedge gets filled at the best number on the board. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "What is the formula to hedge a bet?",
+      "a": "Hedge stake = (original stake x original decimal odds) / hedge decimal odds. That stake pays the same profit whichever side wins. The calculator on this page does it."
+    },
+    {
+      "q": "Should I always hedge a parlay on the last leg?",
+      "a": "Not always. If the hedge price is worse than your break-even odds you lock in less than the ticket is worth. Hedge when the swing is large relative to your bankroll or when the other side is priced well."
+    },
+    {
+      "q": "Can I hedge at a different sportsbook?",
+      "a": "Yes, and you should. The other side is often cheaper at a sharp book, an exchange or a prediction market than at the book where you placed the original bet."
+    },
+    {
+      "q": "What is a partial hedge?",
+      "a": "Betting less than the equal-profit stake on the other side, so you keep some upside if the original wins while reducing the loss if it does not."
+    },
+    {
+      "q": "Is hedging the same as cashing out?",
+      "a": "Cash-out is a hedge the sportsbook prices for you, usually with extra margin built in. Hedging yourself at the best available price is almost always worth more."
+    },
+    {
+      "q": "How do I hedge on a prediction market?",
+      "a": "Sell the contract you hold. If you bought at 30 cents and it now trades at 60, selling locks 30 cents per contract with no second bet and no extra vig."
+    }
+  ],
+  "related": [
+    "whatisevinbetting.com",
+    "howtoarbitragebet.com",
+    "impliedprobabilitycalculator.com",
+    "whatisabettingexchange.com",
+    "howdopredictionmarketswork.com",
+    "bestbettingexchange.com",
+    "whatisvig.com",
+    "sportsbettingbankrollmanagement.com"
+  ],
+  "look": {
+    "palette": "ice-indigo",
+    "type": "palatino-sans",
+    "h2": "smallcaps",
+    "layout": "compact",
+    "order": "B",
+    "radius": 0,
+    "width": 760,
+    "favicon": "bars",
+    "label": 0,
+    "footer": 0
+  }
+}

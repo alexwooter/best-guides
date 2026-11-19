@@ -1,0 +1,213 @@
+{
+  "domain": "bestsportsbooksignupbonus.com",
+  "kind": "article",
+  "template": "article",
+  "cluster": "sportsbook",
+  "query": "best sportsbook sign up bonus",
+  "site_name": "Best Sportsbook Sign Up Bonus",
+  "title": "The Best Sportsbook Sign-Up Bonus Is a Better Price (2026)",
+  "updated": "2026-11-18",
+  "published": "2026-11-18",
+  "answer": "Sign-up bonuses are paid for out of the sportsbook's margin, so the books with the largest offers are usually the ones charging the most on every bet afterwards. A $1,000 bonus with rollover conditions is worth a fraction of its face value, and the account is often limited once the bonus is used well. The offer that beats all of them over a season is a lower price: betting at -105 instead of -110, or on an exchange with no vig, saves more than any promotion pays, and keeps paying. This page shows the math and names the venues that compete on price instead.",
+  "intro": [
+    "This is not a list of bonus codes. It is an explanation of what a bonus is worth, why the biggest ones are a warning sign, and what the alternative is."
+  ],
+  "sections": [
+    {
+      "h2": "What a bonus is actually worth",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Offer type",
+              "Headline",
+              "Realistic value to a disciplined bettor",
+              "Why"
+            ],
+            "rows": [
+              [
+                "Bonus bet (stake not returned)",
+                "$200 in bonus bets",
+                "About $120 to $140",
+                "The stake is never yours; you only keep winnings, so a $200 bonus bet on +100 is worth $100 expected, more with careful odds selection"
+              ],
+              [
+                "Deposit match with rollover",
+                "100% match up to $1,000",
+                "Often $100 to $300",
+                "Rollover of 5x to 20x at -110 costs 4.5% of every dollar wagered; many bettors lose the match before clearing it"
+              ],
+              [
+                "Odds boost",
+                "+100 boosted to +150 on a favorite",
+                "Face value of the boost, capped",
+                "The best kind, but capped at small stakes"
+              ],
+              [
+                "First-bet insurance",
+                "Up to $1,000 back as bonus bets",
+                "A fraction of face value",
+                "Paid in bonus bets, which are worth 60% to 70% of cash"
+              ],
+              [
+                "Referral and reload offers",
+                "$50 to $100",
+                "Near face value",
+                "Small and one-off"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Even taken at full realistic value, the total a new customer can extract from sign-up offers is a few hundred dollars per book, once. The books know this and price it in."
+        }
+      ]
+    },
+    {
+      "h2": "Why the biggest bonuses come from the most expensive books",
+      "blocks": [
+        {
+          "p": "A bonus is a customer-acquisition cost. The book recovers it through margin: -110 on every side and total, -115 and worse on props, 20% and up on same-game parlays. A book that charges 2% margin cannot afford to give away $1,000 a head; a book that charges 5% to 30% can. The size of the welcome offer is a reasonable proxy for how much the book expects to take back."
+        },
+        {
+          "callout": "Pinnacle, the sharpest bookmaker in the world, has never offered a sign-up bonus. Its offer is -104. Over a year of betting that is worth more than every promotion in the US market combined."
+        }
+      ]
+    },
+    {
+      "h2": "The price comparison",
+      "blocks": [
+        {
+          "p": "Take a bettor who stakes $2,000 a week on sides and totals, 30 weeks a year, and wins at exactly 50%."
+        },
+        {
+          "table": {
+            "head": [
+              "Where they bet",
+              "Price",
+              "Break-even win rate",
+              "Expected loss per year at 50%"
+            ],
+            "rows": [
+              [
+                "Retail book with a big bonus",
+                "-110 (sometimes -115)",
+                "52.4% to 53.5%",
+                "$2,700 to $3,900"
+              ],
+              [
+                "Reduced-juice book",
+                "-105",
+                "51.2%",
+                "$1,430"
+              ],
+              [
+                "Sharp book",
+                "-104",
+                "51.0%",
+                "$1,180"
+              ],
+              [
+                "Exchange or prediction market",
+                "No vig; about 1.5% all in",
+                "About 50.8%",
+                "About $900"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The gap between the first row and the last is around $2,000 to $3,000 a year, every year. A $1,000 bonus worth $250 does not close it. The bonus is also one-time, and the account that used it efficiently is often limited within weeks, after which the bettor is back at -110 with a smaller maximum."
+        }
+      ]
+    },
+    {
+      "h2": "Venues that compete on price instead of bonuses",
+      "blocks": [
+        {
+          "list": [
+            "Circa Sports: no promotions, margins of roughly 2.5% to 3.5%, high limits, takes winners. In a handful of US states.",
+            "Pinnacle: no promotions, about 2% margin, the highest limits in the industry. Not available to US residents.",
+            "Kalshi, Polymarket US, Novig, ProphetX: prediction markets and sports exchanges with no vig in the price and fees of roughly 1% to 2%. Nationwide, with sports contracts restricted in a few states.",
+            "Sporttrade: a state-licensed sports exchange, prices in cents, in a few states.",
+            "Betfair, Matchbook, Smarkets: exchanges with no margin and 2% to 5% commission on net winnings. Not available in the US."
+          ]
+        },
+        {
+          "p": "None of these will give you $1,000 to sign up. All of them will charge you less on every bet for as long as you bet."
+        }
+      ]
+    },
+    {
+      "h2": "If you take bonuses anyway",
+      "blocks": [
+        {
+          "ol": [
+            "Read the rollover and the odds restrictions before depositing. A 10x rollover at -110 costs about 45% of the match in expected margin.",
+            "Use bonus bets on longer odds; a bonus bet at +300 converts far more of its face value to cash than one at -200.",
+            "Treat the account as temporary. Limits follow efficient bonus use. Do not plan a season around it.",
+            "Move the volume to low-margin venues once the offer is used. The bonus was the free sample; the price is the product."
+          ]
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    "Bonuses are funded by margin; the biggest offers come from the most expensive books.",
+    "A $1,000 headline offer is typically worth $100 to $300 to a disciplined bettor, once.",
+    "A better price saves $2,000 to $3,000 a year for a $2,000-a-week bettor, every year.",
+    "Circa, the exchanges and the prediction markets compete on price and do not limit winners.",
+    "If you use bonuses, plan for the account to be limited and move the volume afterwards."
+  ],
+  "terminalup": [
+    "TerminalUp has no bonuses either. Its offer is the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available, and an order that routes to that venue from one account. It never takes a position against you, so it has no margin to give back and no reason to limit anyone. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
+  ],
+  "faq": [
+    {
+      "q": "Which sportsbook has the best sign-up bonus?",
+      "a": "The headline offers change monthly and are largest at the books with the highest margins. Measured over a season, the best offer is a lower price at a venue that does not limit winners."
+    },
+    {
+      "q": "How much is a $1,000 sportsbook bonus really worth?",
+      "a": "Usually $100 to $300 after rollover requirements and bonus-bet conversion, for a bettor who uses it carefully. Less for most people."
+    },
+    {
+      "q": "Do sharp sportsbooks offer bonuses?",
+      "a": "No. Pinnacle and Circa compete on price and limits. Exchanges and prediction markets have nothing to fund a bonus from because they take no margin."
+    },
+    {
+      "q": "Is it worth signing up for bonuses at multiple books?",
+      "a": "Once, for a few hundred dollars each, if you accept that the accounts will probably be limited afterward. It is not a strategy; it is a free sample."
+    },
+    {
+      "q": "What is a bonus bet?",
+      "a": "A wager whose stake is not returned if it wins. A $100 bonus bet at +100 pays $100, not $200, so it is worth about half to two thirds of cash depending on the odds you use it at."
+    },
+    {
+      "q": "What beats a sign-up bonus?",
+      "a": "Price. Moving from -110 to -105 saves about 2.3% of turnover; moving to a no-vig exchange saves more. Over a season that exceeds any welcome offer."
+    }
+  ],
+  "related": [
+    "whatisvig.com",
+    "sharpsportsbooks.com",
+    "bestnewsportsbooks.com",
+    "bestsportsbookforsharps.com",
+    "whatisabettingexchange.com",
+    "bestbettingexchangeusa.com",
+    "bestnolimitsportsbook.com",
+    "impliedprobabilitycalculator.com"
+  ],
+  "look": {
+    "palette": "sand-black",
+    "type": "verdana",
+    "h2": "numbered",
+    "layout": "hero",
+    "order": "A",
+    "radius": 0,
+    "width": 760,
+    "favicon": "ring",
+    "label": 3,
+    "footer": 2
+  }
+}
