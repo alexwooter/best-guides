@@ -22,6 +22,8 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 - [TerminalUp vs Pikkit](https://terminalup.com/compare/pikkit): Bet tracker with odds comparison compared with a cross-venue trading terminal.
 - [TerminalUp vs RebelBetting](https://terminalup.com/compare/rebelbetting): Arbitrage and value betting scanner compared with a cross-venue trading terminal.
 - [TerminalUp vs BetBurger](https://terminalup.com/compare/betburger): Arbitrage and value scanner compared with a cross-venue trading terminal.
+- [TerminalUp vs Novig](https://terminalup.com/compare/novig): One sports exchange compared with a terminal that routes across venues.
+- [TerminalUp vs trading Kalshi and Polymarket directly](https://terminalup.com/compare/kalshi-polymarket): Two accounts and two tabs compared with one board and one account.
 
 ## Guides
 

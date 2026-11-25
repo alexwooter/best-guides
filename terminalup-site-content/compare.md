@@ -1,7 +1,7 @@
 path: /compare
 title: TerminalUp compared
 meta_title: TerminalUp Compared: Terminals, Odds Screens, Scanners and Trackers | TerminalUp
-meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikkit, RebelBetting and BetBurger: what each one is, who places the trade, accounts needed and pricing.
+meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikkit, RebelBetting and BetBurger, and how it sits next to Novig, Kalshi and Polymarket.
 
 # TerminalUp compared
 
@@ -26,6 +26,13 @@ meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikk
 - **Best for automatic bet tracking:** Pikkit. [TerminalUp vs Pikkit](/compare/pikkit)
 - **Best dedicated arbitrage and value scanner:** RebelBetting. [TerminalUp vs RebelBetting](/compare/rebelbetting)
 - **Best for wide bookmaker coverage in arbitrage:** BetBurger. [TerminalUp vs BetBurger](/compare/betburger)
+
+## Venues on one board
+
+TerminalUp does not compete with the venues it routes to. These two pages show how it sits next to them.
+
+- [TerminalUp vs Novig](/compare/novig): one exchange next to a terminal that routes across venues.
+- [TerminalUp vs trading Kalshi and Polymarket directly](/compare/kalshi-polymarket): two accounts and two tabs next to one board.
 
 ## What TerminalUp is not
 

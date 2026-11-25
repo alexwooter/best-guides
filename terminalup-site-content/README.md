@@ -26,6 +26,8 @@ Files:
 | compare-pikkit.md | /compare/pikkit |
 | compare-rebelbetting.md | /compare/rebelbetting |
 | compare-betburger.md | /compare/betburger |
+| compare-novig.md | /compare/novig |
+| compare-kalshi-polymarket.md | /compare/kalshi-polymarket |
 | llms-preamble.md | top of /llms.txt |
 
 Each page file starts with a small header block (path, title, meta title, meta description), then the page body. Every "FAQ" section is also the page's FAQPage structured data, with the same questions and answers.
