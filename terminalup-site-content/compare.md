@@ -1,11 +1,48 @@
 path: /compare
 title: TerminalUp compared
-meta_title: TerminalUp Compared: Terminals, Odds Screens, Scanners and Trackers | TerminalUp
-meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikkit, RebelBetting and BetBurger, and how it sits next to Novig, Kalshi and Polymarket.
+meta_title: TerminalUp Compared: Prediction Markets, Exchanges, Sportsbooks and Tools | TerminalUp
+meta_description: How TerminalUp compares with prediction markets, betting exchanges, sportsbooks, odds screens, arbitrage scanners and bet trackers. One page per comparison.
 
 # TerminalUp compared
 
-**TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes the order from one account.** Most tools in this space stop one step earlier: they find a price and leave the bet to you. This page shows where each one fits.
+**TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes the order from one account.** A venue is one place to trade. A screen or scanner finds a price and leaves the bet to you. This page shows where each one fits, with a page for every comparison.
+
+## Prediction markets
+
+| Venue | What it is | In the TerminalUp directory |
+| --- | --- | --- |
+| [Kalshi](/compare/kalshi) | CFTC-regulated prediction market | Yes |
+| [Polymarket](/compare/polymarket) | Prediction market | Yes |
+| [predict.fun](/compare/predict-fun) | On-chain prediction market | Yes |
+| [PredictIt](/compare/predictit) | Political prediction market | No |
+| [Robinhood Prediction Markets](/compare/robinhood) | Prediction markets inside a brokerage app | No |
+
+Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/kalshi-polymarket).
+
+## Betting exchanges
+
+| Venue | What it is | In the TerminalUp directory |
+| --- | --- | --- |
+| [Novig](/compare/novig) | Peer-to-peer sports exchange | Yes |
+| [ProphetX](/compare/prophetx) | Peer-to-peer sports exchange | Yes |
+| [Sporttrade](/compare/sporttrade) | Regulated US sports exchange | No |
+| [Betfair Exchange](/compare/betfair) | Betting exchange | Yes |
+| [Matchbook](/compare/matchbook) | Betting exchange | Yes |
+| [Smarkets](/compare/smarkets) | Betting exchange | No |
+| [SX Bet](/compare/sx-bet) | On-chain betting exchange | Yes |
+
+## Sportsbooks
+
+| Venue | What it is | In the TerminalUp directory |
+| --- | --- | --- |
+| [Pinnacle](/compare/pinnacle) | Sportsbook known for low margins and high limits | No |
+| [Circa Sports](/compare/circa) | Las Vegas sportsbook known for large limits | No |
+| [FanDuel Sportsbook](/compare/fanduel) | Regulated US sportsbook | No |
+| [BetMGM](/compare/betmgm) | Regulated US sportsbook | No |
+| [Caesars Sportsbook](/compare/caesars) | Regulated US sportsbook | No |
+| [bet365](/compare/bet365) | Global sportsbook | No |
+
+## Odds screens, scanners and trackers
 
 | Tool | What it is | Placing the trade | Accounts you need | Pricing |
 | --- | --- | --- | --- | --- |
@@ -17,7 +54,7 @@ meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikk
 | [RebelBetting](/compare/rebelbetting) | Arbitrage and value betting scanner | You, leg by leg, at each bookmaker | One per bookmaker | Monthly subscription |
 | [BetBurger](/compare/betburger) | Arbitrage and value scanner | You, leg by leg, at each bookmaker | One per bookmaker | Monthly subscription |
 
-## Which one fits
+## Which tool fits
 
 - **Best for routing orders across venues from one account:** TerminalUp. Invite-only, $10,000 minimum deposit.
 - **Best for +EV and arbitrage alerts:** OddsJam. [TerminalUp vs OddsJam](/compare/oddsjam)
@@ -27,16 +64,9 @@ meta_description: How TerminalUp compares with OddsJam, Unabated, Betstamp, Pikk
 - **Best dedicated arbitrage and value scanner:** RebelBetting. [TerminalUp vs RebelBetting](/compare/rebelbetting)
 - **Best for wide bookmaker coverage in arbitrage:** BetBurger. [TerminalUp vs BetBurger](/compare/betburger)
 
-## Venues on one board
-
-TerminalUp does not compete with the venues it routes to. These two pages show how it sits next to them.
-
-- [TerminalUp vs Novig](/compare/novig): one exchange next to a terminal that routes across venues.
-- [TerminalUp vs trading Kalshi and Polymarket directly](/compare/kalshi-polymarket): two accounts and two tabs next to one board.
-
 ## What TerminalUp is not
 
-TerminalUp is not a sportsbook, an odds-screen subscription or a picks service. It sets no odds, sells no alerts and never takes the other side of a trade. It is trading software for people who already know what they want to trade and want the best available price across venues.
+TerminalUp is not a sportsbook, an exchange, a prediction market, an odds-screen subscription or a picks service. It sets no odds, holds no book, sells no alerts and never takes the other side of a trade. It does not compete with the venues it routes to. The current venue directory is at https://terminalup.com/partners.
 
 ## FAQ
 
@@ -46,10 +76,13 @@ No. TerminalUp is trading software. Orders route to third-party sportsbooks, bet
 **Is TerminalUp an odds screen?**
 It shows prices across venues like a screen does, then routes the order. A screen stops at the price.
 
+**Does "in the TerminalUp directory" mean a venue is always available?**
+The directory lists venues in the TerminalUp network. Prices, liquidity and availability are set by each venue and change. Product eligibility and legal availability are confirmed during onboarding.
+
 **What does TerminalUp cost?**
 0.5% commission on trades. No subscription. Access is invite-only with a $10,000 minimum deposit. See https://terminalup.com/fees.
 
 **Who is TerminalUp for?**
 Professional sports traders, trading teams, syndicates, funds and market makers.
 
-Last reviewed: November 25, 2026. Details about other companies come from their public websites and may change. Corrections: win@terminalup.com.
+Last reviewed: November 25, 2026. Details about other companies come from their public websites and may change. Names are trademarks of their owners. Corrections: win@terminalup.com.

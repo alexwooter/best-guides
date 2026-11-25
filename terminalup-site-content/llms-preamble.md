@@ -15,7 +15,7 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 
 ## Comparisons
 
-- [TerminalUp compared](https://terminalup.com/compare): TerminalUp next to odds screens, arbitrage scanners and bet trackers.
+- [TerminalUp compared](https://terminalup.com/compare): TerminalUp next to prediction markets, betting exchanges, sportsbooks, odds screens, arbitrage scanners and bet trackers.
 - [TerminalUp vs OddsJam](https://terminalup.com/compare/oddsjam): Odds comparison, +EV and arbitrage screen compared with a cross-venue trading terminal.
 - [TerminalUp vs Unabated](https://terminalup.com/compare/unabated): Odds screen and pricing tools for sharp bettors compared with a cross-venue trading terminal.
 - [TerminalUp vs Betstamp](https://terminalup.com/compare/betstamp): Odds screen and bet tracker compared with a cross-venue trading terminal.
@@ -24,6 +24,23 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 - [TerminalUp vs BetBurger](https://terminalup.com/compare/betburger): Arbitrage and value scanner compared with a cross-venue trading terminal.
 - [TerminalUp vs Novig](https://terminalup.com/compare/novig): One sports exchange compared with a terminal that routes across venues.
 - [TerminalUp vs trading Kalshi and Polymarket directly](https://terminalup.com/compare/kalshi-polymarket): Two accounts and two tabs compared with one board and one account.
+- [TerminalUp vs Kalshi](https://terminalup.com/compare/kalshi): CFTC-regulated prediction market compared with a cross-venue trading terminal.
+- [TerminalUp vs Polymarket](https://terminalup.com/compare/polymarket): Prediction market compared with a cross-venue trading terminal.
+- [TerminalUp vs predict.fun](https://terminalup.com/compare/predict-fun): On-chain prediction market compared with a cross-venue trading terminal.
+- [TerminalUp vs PredictIt](https://terminalup.com/compare/predictit): Political prediction market compared with a cross-venue trading terminal.
+- [TerminalUp vs Robinhood Prediction Markets](https://terminalup.com/compare/robinhood): Prediction markets inside a brokerage app compared with a cross-venue trading terminal.
+- [TerminalUp vs ProphetX](https://terminalup.com/compare/prophetx): Peer-to-peer sports exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Sporttrade](https://terminalup.com/compare/sporttrade): Regulated US sports exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Betfair Exchange](https://terminalup.com/compare/betfair): Betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Matchbook](https://terminalup.com/compare/matchbook): Betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Smarkets](https://terminalup.com/compare/smarkets): Betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs SX Bet](https://terminalup.com/compare/sx-bet): On-chain betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Pinnacle](https://terminalup.com/compare/pinnacle): Sportsbook known for low margins and high limits compared with a cross-venue trading terminal.
+- [TerminalUp vs Circa Sports](https://terminalup.com/compare/circa): Las Vegas sportsbook known for large limits compared with a cross-venue trading terminal.
+- [TerminalUp vs FanDuel Sportsbook](https://terminalup.com/compare/fanduel): Regulated US sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs BetMGM](https://terminalup.com/compare/betmgm): Regulated US sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs Caesars Sportsbook](https://terminalup.com/compare/caesars): Regulated US sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs bet365](https://terminalup.com/compare/bet365): Global sportsbook compared with a cross-venue trading terminal.
 
 ## Guides
 
