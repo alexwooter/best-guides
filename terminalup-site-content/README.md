@@ -49,6 +49,21 @@ Files:
 | compare-draftkings.md | /compare/draftkings |
 | compare-sbobet.md | /compare/sbobet |
 | compare-mollybet.md | /compare/mollybet |
+| compare-4casters.md | /compare/4casters |
+| compare-betdex.md | /compare/betdex |
+| compare-betopenly.md | /compare/betopenly |
+| compare-pred.md | /compare/pred |
+| compare-limitless.md | /compare/limitless |
+| compare-underdog.md | /compare/underdog |
+| compare-rothera.md | /compare/rothera |
+| compare-singbet.md | /compare/singbet |
+| compare-3et.md | /compare/3et |
+| compare-betwar.md | /compare/betwar |
+| compare-vx.md | /compare/vx |
+| compare-paradisewager.md | /compare/paradisewager |
+| compare-betamapola.md | /compare/betamapola |
+| compare-overtime.md | /compare/overtime |
+| compare-hyperliquid.md | /compare/hyperliquid |
 | llms-preamble.md | top of /llms.txt |
 
 Each page file starts with a small header block (path, title, meta title, meta description), then the page body. Every "FAQ" section is also the page's FAQPage structured data, with the same questions and answers.

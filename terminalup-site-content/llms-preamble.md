@@ -45,6 +45,21 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 - [TerminalUp vs DraftKings](https://terminalup.com/compare/draftkings): Regulated US sportsbook compared with a cross-venue trading terminal.
 - [TerminalUp vs SBOBET](https://terminalup.com/compare/sbobet): Asian sportsbook known for Asian handicap markets compared with a cross-venue trading terminal.
 - [TerminalUp vs MollyBet](https://terminalup.com/compare/mollybet): Bet broker platform compared with a cross-venue trading terminal.
+- [TerminalUp vs 4casters](https://terminalup.com/compare/4casters): Peer-to-peer sports betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs BetDEX](https://terminalup.com/compare/betdex): Betting exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs BetOpenly](https://terminalup.com/compare/betopenly): Peer-to-peer betting platform compared with a cross-venue trading terminal.
+- [TerminalUp vs Pred](https://terminalup.com/compare/pred): Sports prediction exchange compared with a cross-venue trading terminal.
+- [TerminalUp vs Limitless](https://terminalup.com/compare/limitless): Prediction market compared with a cross-venue trading terminal.
+- [TerminalUp vs Underdog](https://terminalup.com/compare/underdog): US sports app with event contracts compared with a cross-venue trading terminal.
+- [TerminalUp vs Rothera](https://terminalup.com/compare/rothera): Exchange and clearing venue for event contracts compared with a cross-venue trading terminal.
+- [TerminalUp vs Singbet](https://terminalup.com/compare/singbet): Asian sportsbook known for sharp lines and high limits compared with a cross-venue trading terminal.
+- [TerminalUp vs 3ET](https://terminalup.com/compare/3et): High-limit, low-margin sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs BetWar](https://terminalup.com/compare/betwar): Sportsbook with live betting compared with a cross-venue trading terminal.
+- [TerminalUp vs Vertex](https://terminalup.com/compare/vx): Bookmaker focused on major sports with high limits compared with a cross-venue trading terminal.
+- [TerminalUp vs ParadiseWager](https://terminalup.com/compare/paradisewager): Sportsbook and racebook compared with a cross-venue trading terminal.
+- [TerminalUp vs BetAmapola](https://terminalup.com/compare/betamapola): Sportsbook backed by a Costa Rica resort compared with a cross-venue trading terminal.
+- [TerminalUp vs Overtime](https://terminalup.com/compare/overtime): On-chain sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs Hyperliquid](https://terminalup.com/compare/hyperliquid): Blockchain with on-chain order books compared with a cross-venue trading terminal.
 
 ## Guides
 

@@ -1,7 +1,7 @@
 path: /compare
 title: TerminalUp compared
 meta_title: TerminalUp Compared: Prediction Markets, Exchanges, Sportsbooks and Tools | TerminalUp
-meta_description: How TerminalUp compares with prediction markets, betting exchanges, sportsbooks, bet brokers, odds screens, arbitrage scanners and bet trackers. One page per comparison.
+meta_description: How TerminalUp compares with prediction markets, betting exchanges, sportsbooks, bet brokers, crypto exchanges, odds screens, arbitrage scanners and bet trackers. One page per comparison.
 
 # TerminalUp compared
 
@@ -19,6 +19,10 @@ Many of the venues below are in the TerminalUp directory, and we think highly of
 | [PredictIt](/compare/predictit) | Political prediction market | No |
 | [Robinhood Prediction Markets](/compare/robinhood) | Prediction markets inside a brokerage app | No |
 | [Crypto.com](/compare/crypto-com) | Sports event contracts inside the Crypto.com app | Yes |
+| [Pred](/compare/pred) | Sports prediction exchange | Yes |
+| [Limitless](/compare/limitless) | Prediction market | Yes |
+| [Underdog](/compare/underdog) | US sports app with event contracts | Yes |
+| [Rothera](/compare/rothera) | Exchange and clearing venue for event contracts | Yes |
 
 Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/kalshi-polymarket).
 
@@ -33,6 +37,9 @@ Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/ka
 | [Matchbook](/compare/matchbook) | Betting exchange | Yes |
 | [Smarkets](/compare/smarkets) | Betting exchange | No |
 | [SX Bet](/compare/sx-bet) | On-chain betting exchange | Yes |
+| [4casters](/compare/4casters) | Peer-to-peer sports betting exchange | Yes |
+| [BetDEX](/compare/betdex) | Betting exchange | Yes |
+| [BetOpenly](/compare/betopenly) | Peer-to-peer betting platform | Yes |
 
 ## Sportsbooks
 
@@ -46,12 +53,25 @@ Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/ka
 | [bet365](/compare/bet365) | Global sportsbook | No |
 | [DraftKings](/compare/draftkings) | Regulated US sportsbook | Yes |
 | [SBOBET](/compare/sbobet) | Asian sportsbook known for Asian handicap markets | Yes |
+| [Singbet](/compare/singbet) | Asian sportsbook known for sharp lines and high limits | Yes |
+| [3ET](/compare/3et) | High-limit, low-margin sportsbook | Yes |
+| [BetWar](/compare/betwar) | Sportsbook with live betting | Yes |
+| [Vertex](/compare/vx) | Bookmaker focused on major sports with high limits | Yes |
+| [ParadiseWager](/compare/paradisewager) | Sportsbook and racebook | Yes |
+| [BetAmapola](/compare/betamapola) | Sportsbook backed by a Costa Rica resort | Yes |
+| [Overtime](/compare/overtime) | On-chain sportsbook | Yes |
 
 ## Bet brokers
 
 | Venue | What it is | In the TerminalUp directory |
 | --- | --- | --- |
 | [MollyBet](/compare/mollybet) | Bet broker platform | Yes |
+
+## Crypto exchanges
+
+| Venue | What it is | In the TerminalUp directory |
+| --- | --- | --- |
+| [Hyperliquid](/compare/hyperliquid) | Blockchain with on-chain order books | Yes |
 
 ## Odds screens, scanners and trackers
 
