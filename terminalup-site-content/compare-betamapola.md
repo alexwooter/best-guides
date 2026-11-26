@@ -9,7 +9,7 @@ meta_description: How TerminalUp and BetAmapola differ: what BetAmapola does wel
 
 ## What BetAmapola does well
 
-BetAmapola is a sportsbook backed by the Amapola Hotel Resort and Casino in Jacó, Costa Rica.
+BetAmapola is a sportsbook backed by the Amapola resort in Jacó, Costa Rica.
 
 - Backed by a resort that has operated for more than two decades.
 - An experienced sports wagering team.
@@ -47,6 +47,6 @@ No. TerminalUp is trading software. It routes orders to sportsbooks, betting exc
 **What does TerminalUp cost?**
 0.5% commission on trades, no subscription, with a $10,000 minimum deposit.
 
-Last reviewed: November 25, 2026. Details about BetAmapola come from its public website (https://betamapola.com) and may change. BetAmapola is a trademark of its owner. Venue directory: https://terminalup.com/partners. Corrections: win@terminalup.com.
+Last reviewed: November 26, 2026. Details about BetAmapola come from its public website (https://betamapola.com) and may change. BetAmapola is a trademark of its owner. Venue directory: https://terminalup.com/partners. Corrections: win@terminalup.com.
 
 See all comparisons: https://terminalup.com/compare

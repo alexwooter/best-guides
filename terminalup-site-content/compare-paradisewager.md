@@ -47,6 +47,6 @@ No. TerminalUp is trading software. It routes orders to sportsbooks, betting exc
 **What does TerminalUp cost?**
 0.5% commission on trades, no subscription, with a $10,000 minimum deposit.
 
-Last reviewed: November 25, 2026. Details about ParadiseWager come from its public website (https://paradisewager.com) and may change. ParadiseWager is a trademark of its owner. Venue directory: https://terminalup.com/partners. Corrections: win@terminalup.com.
+Last reviewed: November 26, 2026. Details about ParadiseWager come from its public website (https://paradisewager.com) and may change. ParadiseWager is a trademark of its owner. Venue directory: https://terminalup.com/partners. Corrections: win@terminalup.com.
 
 See all comparisons: https://terminalup.com/compare
