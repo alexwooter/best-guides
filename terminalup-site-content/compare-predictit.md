@@ -1,11 +1,19 @@
 path: /compare/predictit
 title: TerminalUp vs PredictIt
 meta_title: TerminalUp vs PredictIt | TerminalUp
-meta_description: How TerminalUp and PredictIt differ: one prediction market next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and PredictIt differ: what PredictIt does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs PredictIt
 
-**PredictIt is a prediction market. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** PredictIt is a US prediction market best known for political contracts. PredictIt is not in the TerminalUp venue directory today. The two do different jobs: PredictIt is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**PredictIt is one of the longest-running prediction markets in the US. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** PredictIt is not in the TerminalUp venue directory today. The two do different jobs: PredictIt is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What PredictIt does well
+
+PredictIt is a US prediction market best known for political contracts.
+
+- One of the longest-running prediction markets in the US.
+- For years the reference market for US political contracts.
+- Simple contracts that are easy to read.
 
 | | PredictIt | TerminalUp |
 | --- | --- | --- |

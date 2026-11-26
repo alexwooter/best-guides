@@ -1,16 +1,24 @@
 path: /compare/smarkets
 title: TerminalUp vs Smarkets
 meta_title: TerminalUp vs Smarkets | TerminalUp
-meta_description: How TerminalUp and Smarkets differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Smarkets differ: what Smarkets does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Smarkets
 
-**Smarkets is an exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Smarkets is a UK-licensed betting exchange where prices are set by other users. Smarkets is not in the TerminalUp venue directory today. The two do different jobs: Smarkets is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Smarkets is a clean, low-commission betting exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Smarkets is not in the TerminalUp venue directory today. The two do different jobs: Smarkets is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Smarkets does well
+
+Smarkets is a UK-licensed betting exchange where prices are set by other users.
+
+- Low commission on net winnings.
+- A clean, modern exchange interface.
+- Licensed in the UK.
 
 | | Smarkets | TerminalUp |
 | --- | --- | --- |
 | What it is | Betting exchange | Cross-venue trading terminal with order routing |
-| Prices you see | Smarkets's order book | Prices across the venues in its directory |
+| Prices you see | Smarkets' order book | Prices across the venues in its directory |
 | Where the order goes | Smarkets | The venue with the best available price |
 | Accounts you need | A Smarkets account | One TerminalUp account |
 | Fees | Set by Smarkets | 0.5% commission on trades, no subscription |

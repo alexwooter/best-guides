@@ -1,11 +1,23 @@
 path: /compare/polymarket
 title: TerminalUp vs Polymarket
 meta_title: TerminalUp vs Polymarket | TerminalUp
-meta_description: How TerminalUp and Polymarket differ: one prediction market next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Polymarket differ: what Polymarket does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Polymarket
 
-**Polymarket is one prediction market. TerminalUp is trading software that puts Polymarket on one board with other sportsbooks, betting exchanges and prediction markets and routes each order to the best available price.** Polymarket is a prediction market with deep books on major events and growing sports coverage. Polymarket is live on TerminalUp. When Polymarket has the best price, the order routes there. When another venue has it, the order goes there instead. You fund one TerminalUp account. Orders route to venues from it.
+**Polymarket is one of the deepest prediction markets in the world. TerminalUp is trading software that puts Polymarket on one board with other sportsbooks, betting exchanges and prediction markets and routes each order to the best available price.** Polymarket is live on TerminalUp. When Polymarket has the best price, the order routes there. When another venue has it, the order goes there instead. You fund one TerminalUp account. Orders route to venues from it.
+
+## What Polymarket does well
+
+Polymarket is a prediction market with deep books on major events and growing sports coverage.
+
+- Some of the deepest prediction market liquidity anywhere on major events.
+- Markets open fast on almost anything people want to trade.
+- Transparent on-chain settlement.
+
+## Not either/or
+
+TerminalUp does not compete with Polymarket for your deposit. It sends orders to Polymarket when Polymarket has the price. The only question is whether you check Polymarket against other venues by hand or let routing do it.
 
 | | Polymarket | TerminalUp |
 | --- | --- | --- |

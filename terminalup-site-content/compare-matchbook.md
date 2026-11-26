@@ -1,11 +1,23 @@
 path: /compare/matchbook
 title: TerminalUp vs Matchbook
 meta_title: TerminalUp vs Matchbook | TerminalUp
-meta_description: How TerminalUp and Matchbook differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Matchbook differ: what Matchbook does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Matchbook
 
-**Matchbook is one exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Matchbook is a betting exchange with an order book on major sports. Matchbook is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+**Matchbook is a low-commission betting exchange that exchange traders have trusted for years. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Matchbook is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+
+## What Matchbook does well
+
+Matchbook is a betting exchange with an order book on major sports.
+
+- Low commission.
+- Strong books on US sports.
+- A long-time favorite of exchange traders.
+
+## Not either/or
+
+TerminalUp does not compete with Matchbook. It is software that sits on top of venues and compares their prices. The current directory is at https://terminalup.com/partners.
 
 | | Matchbook | TerminalUp |
 | --- | --- | --- |

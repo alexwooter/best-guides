@@ -1,11 +1,23 @@
 path: /compare/kalshi
 title: TerminalUp vs Kalshi
 meta_title: TerminalUp vs Kalshi | TerminalUp
-meta_description: How TerminalUp and Kalshi differ: one prediction market next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Kalshi differ: what Kalshi does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Kalshi
 
-**Kalshi is one prediction market. TerminalUp is trading software that puts Kalshi on one board with other sportsbooks, betting exchanges and prediction markets and routes each order to the best available price.** Kalshi is a CFTC-regulated exchange for event contracts, including sports outcomes. Kalshi is live on TerminalUp. When Kalshi has the best price, the order routes there. When another venue has it, the order goes there instead. You fund one TerminalUp account. Orders route to venues from it.
+**Kalshi is one of the best places to trade sports event contracts in the US. TerminalUp is trading software that puts Kalshi on one board with other sportsbooks, betting exchanges and prediction markets and routes each order to the best available price.** Kalshi is live on TerminalUp. When Kalshi has the best price, the order routes there. When another venue has it, the order goes there instead. You fund one TerminalUp account. Orders route to venues from it.
+
+## What Kalshi does well
+
+Kalshi is a CFTC-regulated exchange for event contracts, including sports outcomes.
+
+- Regulated by the CFTC, which gives US traders a federally regulated place to trade event contracts.
+- Deep sports markets with real order books and visible liquidity.
+- Simple contracts: each one settles at $1 or $0.
+
+## Not either/or
+
+TerminalUp does not compete with Kalshi for your deposit. It sends orders to Kalshi when Kalshi has the price. The only question is whether you check Kalshi against other venues by hand or let routing do it.
 
 | | Kalshi | TerminalUp |
 | --- | --- | --- |

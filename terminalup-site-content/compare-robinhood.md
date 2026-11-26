@@ -1,11 +1,19 @@
 path: /compare/robinhood
 title: TerminalUp vs Robinhood Prediction Markets
 meta_title: TerminalUp vs Robinhood Prediction Markets | TerminalUp
-meta_description: How TerminalUp and Robinhood Prediction Markets differ: one prediction market next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Robinhood Prediction Markets differ: what Robinhood does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Robinhood Prediction Markets
 
-**Robinhood is a prediction market. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Robinhood offers event contracts on sports, politics and economics inside its brokerage app. Robinhood is not in the TerminalUp venue directory today. The two do different jobs: Robinhood is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Robinhood is the easiest way into event contracts for anyone who already has a Robinhood account. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Robinhood is not in the TerminalUp venue directory today. The two do different jobs: Robinhood is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Robinhood does well
+
+Robinhood offers event contracts on sports, politics and economics inside its brokerage app.
+
+- Event contracts inside an app millions of people already use.
+- Easy onboarding for anyone with a Robinhood account.
+- Sports, politics and economics in one place.
 
 | | Robinhood | TerminalUp |
 | --- | --- | --- |

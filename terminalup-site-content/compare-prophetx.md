@@ -1,11 +1,23 @@
 path: /compare/prophetx
 title: TerminalUp vs ProphetX
 meta_title: TerminalUp vs ProphetX | TerminalUp
-meta_description: How TerminalUp and ProphetX differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and ProphetX differ: what ProphetX does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs ProphetX
 
-**ProphetX is one exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** ProphetX is a US sports exchange with an order book where users post and take prices. ProphetX is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+**ProphetX is a US sports exchange with a real order book. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** ProphetX is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+
+## What ProphetX does well
+
+ProphetX is a US sports exchange with an order book where users post and take prices.
+
+- A real order book where you can post your own price or take one.
+- Built around US sports.
+- A good home for traders who want to make markets as well as take them.
+
+## Not either/or
+
+TerminalUp does not compete with ProphetX. It is software that sits on top of venues and compares their prices. The current directory is at https://terminalup.com/partners.
 
 | | ProphetX | TerminalUp |
 | --- | --- | --- |

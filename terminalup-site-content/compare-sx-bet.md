@@ -1,11 +1,23 @@
 path: /compare/sx-bet
 title: TerminalUp vs SX Bet
 meta_title: TerminalUp vs SX Bet | TerminalUp
-meta_description: How TerminalUp and SX Bet differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and SX Bet differ: what SX Bet does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs SX Bet
 
-**SX Bet is one exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** SX Bet is an on-chain peer-to-peer betting exchange with an order book. SX Bet is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+**SX Bet is a leading on-chain betting exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** SX Bet is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+
+## What SX Bet does well
+
+SX Bet is an on-chain peer-to-peer betting exchange with an order book.
+
+- On-chain and peer-to-peer, with no house.
+- An open order book anyone can read.
+- Popular with crypto-native sports bettors.
+
+## Not either/or
+
+TerminalUp does not compete with SX Bet. It is software that sits on top of venues and compares their prices. The current directory is at https://terminalup.com/partners.
 
 | | SX Bet | TerminalUp |
 | --- | --- | --- |

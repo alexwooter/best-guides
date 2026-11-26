@@ -1,11 +1,19 @@
 path: /compare/betmgm
 title: TerminalUp vs BetMGM
 meta_title: TerminalUp vs BetMGM | TerminalUp
-meta_description: How TerminalUp and BetMGM differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and BetMGM differ: what BetMGM does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs BetMGM
 
-**BetMGM is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** BetMGM is a regulated US sportsbook that sets its own odds. BetMGM is not in the TerminalUp venue directory today. The two do different jobs: BetMGM is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**BetMGM is one of the major sportsbooks in the US. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** BetMGM is not in the TerminalUp venue directory today. The two do different jobs: BetMGM is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What BetMGM does well
+
+BetMGM is a regulated US sportsbook that sets its own odds.
+
+- One of the major sportsbooks in the US.
+- Wide market coverage in a polished app.
+- Regulated in the states where it operates.
 
 | | BetMGM | TerminalUp |
 | --- | --- | --- |

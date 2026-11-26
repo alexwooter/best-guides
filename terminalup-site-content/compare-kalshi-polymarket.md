@@ -22,7 +22,7 @@ One deposit instead of one per venue. One portfolio with profit and loss across 
 
 ## What does not change
 
-The venues are the venues. TerminalUp never takes the other side of a trade and never sets the price.
+Kalshi and Polymarket are two of the best prediction markets there are, and TerminalUp does not replace either one. The venues are the venues. TerminalUp never takes the other side of a trade and never sets the price.
 
 ## FAQ
 

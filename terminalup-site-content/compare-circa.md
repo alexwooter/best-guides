@@ -1,11 +1,19 @@
 path: /compare/circa
 title: TerminalUp vs Circa Sports
 meta_title: TerminalUp vs Circa Sports | TerminalUp
-meta_description: How TerminalUp and Circa Sports differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Circa Sports differ: what Circa does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Circa Sports
 
-**Circa is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Circa Sports is a Las Vegas sportsbook known for taking large bets, with a mobile app in a few US states. Circa is not in the TerminalUp venue directory today. The two do different jobs: Circa is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Circa is a Las Vegas sportsbook respected for taking sharp action at size. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Circa is not in the TerminalUp venue directory today. The two do different jobs: Circa is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Circa does well
+
+Circa Sports is a Las Vegas sportsbook known for taking large bets, with a mobile app in a few US states.
+
+- Takes large bets from sharp players.
+- A strong reputation among professionals.
+- Low-margin pricing.
 
 | | Circa | TerminalUp |
 | --- | --- | --- |

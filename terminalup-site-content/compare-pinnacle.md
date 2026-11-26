@@ -1,11 +1,19 @@
 path: /compare/pinnacle
 title: TerminalUp vs Pinnacle
 meta_title: TerminalUp vs Pinnacle | TerminalUp
-meta_description: How TerminalUp and Pinnacle differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Pinnacle differ: what Pinnacle does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Pinnacle
 
-**Pinnacle is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Pinnacle is a sportsbook known for low margins and high limits. Pinnacle is not in the TerminalUp venue directory today. The two do different jobs: Pinnacle is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Pinnacle is the sportsbook many professionals treat as the reference price. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Pinnacle is not in the TerminalUp venue directory today. The two do different jobs: Pinnacle is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Pinnacle does well
+
+Pinnacle is a sportsbook known for low margins and high limits.
+
+- Low margins that many bettors treat as the market's reference price.
+- High limits.
+- A long-standing reputation for welcoming winning players.
 
 | | Pinnacle | TerminalUp |
 | --- | --- | --- |

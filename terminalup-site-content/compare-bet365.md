@@ -1,11 +1,19 @@
 path: /compare/bet365
 title: TerminalUp vs bet365
 meta_title: TerminalUp vs bet365 | TerminalUp
-meta_description: How TerminalUp and bet365 differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and bet365 differ: what bet365 does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs bet365
 
-**bet365 is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** bet365 is a global sportsbook that sets its own odds. bet365 is not in the TerminalUp venue directory today. The two do different jobs: bet365 is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**bet365 is one of the largest sportsbooks in the world. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** bet365 is not in the TerminalUp venue directory today. The two do different jobs: bet365 is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What bet365 does well
+
+bet365 is a global sportsbook that sets its own odds.
+
+- One of the largest sportsbooks in the world.
+- Very wide market coverage.
+- Strong in-play betting.
 
 | | bet365 | TerminalUp |
 | --- | --- | --- |

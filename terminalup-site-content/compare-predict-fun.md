@@ -1,11 +1,23 @@
 path: /compare/predict-fun
 title: TerminalUp vs predict.fun
 meta_title: TerminalUp vs predict.fun | TerminalUp
-meta_description: How TerminalUp and predict.fun differ: one prediction market next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and predict.fun differ: what predict.fun does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs predict.fun
 
-**predict.fun is one prediction market. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** predict.fun is an on-chain prediction market with sports and event contracts. predict.fun is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+**predict.fun is a fast on-chain prediction market built for crypto-native traders. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** predict.fun is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+
+## What predict.fun does well
+
+predict.fun is an on-chain prediction market with sports and event contracts.
+
+- Built on-chain for crypto-native traders.
+- A growing list of sports and event markets.
+- Fast trading straight from a wallet.
+
+## Not either/or
+
+TerminalUp does not compete with predict.fun. It is software that sits on top of venues and compares their prices. The current directory is at https://terminalup.com/partners.
 
 | | predict.fun | TerminalUp |
 | --- | --- | --- |

@@ -15,7 +15,7 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 
 ## Comparisons
 
-- [TerminalUp compared](https://terminalup.com/compare): TerminalUp next to prediction markets, betting exchanges, sportsbooks, odds screens, arbitrage scanners and bet trackers.
+- [TerminalUp compared](https://terminalup.com/compare): TerminalUp next to prediction markets, betting exchanges, sportsbooks, bet brokers, odds screens, arbitrage scanners and bet trackers.
 - [TerminalUp vs OddsJam](https://terminalup.com/compare/oddsjam): Odds comparison, +EV and arbitrage screen compared with a cross-venue trading terminal.
 - [TerminalUp vs Unabated](https://terminalup.com/compare/unabated): Odds screen and pricing tools for sharp bettors compared with a cross-venue trading terminal.
 - [TerminalUp vs Betstamp](https://terminalup.com/compare/betstamp): Odds screen and bet tracker compared with a cross-venue trading terminal.
@@ -41,6 +41,10 @@ Public marketing information for TerminalUp Inc. This directory does not grant a
 - [TerminalUp vs BetMGM](https://terminalup.com/compare/betmgm): Regulated US sportsbook compared with a cross-venue trading terminal.
 - [TerminalUp vs Caesars Sportsbook](https://terminalup.com/compare/caesars): Regulated US sportsbook compared with a cross-venue trading terminal.
 - [TerminalUp vs bet365](https://terminalup.com/compare/bet365): Global sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs Crypto.com](https://terminalup.com/compare/crypto-com): Sports event contracts inside the Crypto.com app compared with a cross-venue trading terminal.
+- [TerminalUp vs DraftKings](https://terminalup.com/compare/draftkings): Regulated US sportsbook compared with a cross-venue trading terminal.
+- [TerminalUp vs SBOBET](https://terminalup.com/compare/sbobet): Asian sportsbook known for Asian handicap markets compared with a cross-venue trading terminal.
+- [TerminalUp vs MollyBet](https://terminalup.com/compare/mollybet): Bet broker platform compared with a cross-venue trading terminal.
 
 ## Guides
 

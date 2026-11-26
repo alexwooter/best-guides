@@ -1,11 +1,19 @@
 path: /compare/fanduel
 title: TerminalUp vs FanDuel Sportsbook
 meta_title: TerminalUp vs FanDuel Sportsbook | TerminalUp
-meta_description: How TerminalUp and FanDuel Sportsbook differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and FanDuel Sportsbook differ: what FanDuel does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs FanDuel Sportsbook
 
-**FanDuel is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** FanDuel Sportsbook is a regulated US sportsbook that sets its own odds. FanDuel is not in the TerminalUp venue directory today. The two do different jobs: FanDuel is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**FanDuel is one of the largest sportsbooks in the US. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** FanDuel is not in the TerminalUp venue directory today. The two do different jobs: FanDuel is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What FanDuel does well
+
+FanDuel Sportsbook is a regulated US sportsbook that sets its own odds.
+
+- One of the largest sportsbooks in the US.
+- A polished app with a wide range of markets.
+- Regulated in the states where it operates.
 
 | | FanDuel | TerminalUp |
 | --- | --- | --- |

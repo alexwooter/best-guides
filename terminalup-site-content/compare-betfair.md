@@ -1,11 +1,23 @@
 path: /compare/betfair
 title: TerminalUp vs Betfair Exchange
 meta_title: TerminalUp vs Betfair Exchange | TerminalUp
-meta_description: How TerminalUp and Betfair Exchange differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Betfair Exchange differ: what Betfair does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Betfair Exchange
 
-**Betfair is one exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Betfair Exchange is a betting exchange where backers and layers trade against each other. Betfair is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+**Betfair is the original betting exchange, with the deepest exchange liquidity on major sports. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Betfair is listed as a confirmed venue in the TerminalUp directory. You fund one TerminalUp account. Orders route to venues from it.
+
+## What Betfair does well
+
+Betfair Exchange is a betting exchange where backers and layers trade against each other.
+
+- The original betting exchange, with the deepest exchange liquidity on major sports and racing.
+- Back and lay on the same market.
+- More than two decades of exchange infrastructure.
+
+## Not either/or
+
+TerminalUp does not compete with Betfair. It is software that sits on top of venues and compares their prices. The current directory is at https://terminalup.com/partners.
 
 | | Betfair | TerminalUp |
 | --- | --- | --- |

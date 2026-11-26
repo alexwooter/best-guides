@@ -1,11 +1,19 @@
 path: /compare/sporttrade
 title: TerminalUp vs Sporttrade
 meta_title: TerminalUp vs Sporttrade | TerminalUp
-meta_description: How TerminalUp and Sporttrade differ: one exchange next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Sporttrade differ: what Sporttrade does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Sporttrade
 
-**Sporttrade is an exchange. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Sporttrade is a regulated US sports exchange where outcomes trade as contracts priced from 0 to 100. Sporttrade is not in the TerminalUp venue directory today. The two do different jobs: Sporttrade is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Sporttrade is a regulated US exchange that makes sports trade like a market. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Sporttrade is not in the TerminalUp venue directory today. The two do different jobs: Sporttrade is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Sporttrade does well
+
+Sporttrade is a regulated US sports exchange where outcomes trade as contracts priced from 0 to 100.
+
+- Regulated in the US states where it operates.
+- Prices from 0 to 100 that make sports trade like a market.
+- You can sell a position before the game ends.
 
 | | Sporttrade | TerminalUp |
 | --- | --- | --- |

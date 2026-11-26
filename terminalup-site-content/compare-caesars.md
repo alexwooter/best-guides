@@ -1,16 +1,24 @@
 path: /compare/caesars
 title: TerminalUp vs Caesars Sportsbook
 meta_title: TerminalUp vs Caesars Sportsbook | TerminalUp
-meta_description: How TerminalUp and Caesars Sportsbook differ: one sportsbook next to trading software that compares prices across venues and routes each order from one account.
+meta_description: How TerminalUp and Caesars Sportsbook differ: what Caesars does well, and where trading software that compares prices across venues and routes each order fits next to it.
 
 # TerminalUp vs Caesars Sportsbook
 
-**Caesars is a sportsbook. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Caesars Sportsbook is a regulated US sportsbook that sets its own odds. Caesars is not in the TerminalUp venue directory today. The two do different jobs: Caesars is a place to trade, and TerminalUp is the software that compares places and routes the order.
+**Caesars is one of the major sportsbooks in the US. TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes each order to the best available price from one account.** Caesars is not in the TerminalUp venue directory today. The two do different jobs: Caesars is a place to trade, and TerminalUp is the software that compares places and routes the order.
+
+## What Caesars does well
+
+Caesars Sportsbook is a regulated US sportsbook that sets its own odds.
+
+- One of the major sportsbooks in the US, part of Caesars Entertainment.
+- Wide market coverage in a polished app.
+- Regulated in the states where it operates.
 
 | | Caesars | TerminalUp |
 | --- | --- | --- |
 | What it is | Regulated US sportsbook | Cross-venue trading terminal with order routing |
-| Prices you see | Caesars's own odds | Prices across the venues in its directory |
+| Prices you see | Caesars' own odds | Prices across the venues in its directory |
 | Where the order goes | Caesars | The venue with the best available price |
 | Accounts you need | A Caesars account | One TerminalUp account |
 | Fees | Built into the odds Caesars sets | 0.5% commission on trades, no subscription |

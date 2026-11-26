@@ -1,11 +1,13 @@
 path: /compare
 title: TerminalUp compared
 meta_title: TerminalUp Compared: Prediction Markets, Exchanges, Sportsbooks and Tools | TerminalUp
-meta_description: How TerminalUp compares with prediction markets, betting exchanges, sportsbooks, odds screens, arbitrage scanners and bet trackers. One page per comparison.
+meta_description: How TerminalUp compares with prediction markets, betting exchanges, sportsbooks, bet brokers, odds screens, arbitrage scanners and bet trackers. One page per comparison.
 
 # TerminalUp compared
 
 **TerminalUp is trading software that compares prices across sportsbooks, betting exchanges and prediction markets and routes the order from one account.** A venue is one place to trade. A screen or scanner finds a price and leaves the bet to you. This page shows where each one fits, with a page for every comparison.
+
+Many of the venues below are in the TerminalUp directory, and we think highly of them. The comparison is never venue against venue. It is one venue next to software that works across venues.
 
 ## Prediction markets
 
@@ -16,6 +18,7 @@ meta_description: How TerminalUp compares with prediction markets, betting excha
 | [predict.fun](/compare/predict-fun) | On-chain prediction market | Yes |
 | [PredictIt](/compare/predictit) | Political prediction market | No |
 | [Robinhood Prediction Markets](/compare/robinhood) | Prediction markets inside a brokerage app | No |
+| [Crypto.com](/compare/crypto-com) | Sports event contracts inside the Crypto.com app | Yes |
 
 Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/kalshi-polymarket).
 
@@ -41,6 +44,14 @@ Both at once: [TerminalUp vs trading Kalshi and Polymarket directly](/compare/ka
 | [BetMGM](/compare/betmgm) | Regulated US sportsbook | No |
 | [Caesars Sportsbook](/compare/caesars) | Regulated US sportsbook | No |
 | [bet365](/compare/bet365) | Global sportsbook | No |
+| [DraftKings](/compare/draftkings) | Regulated US sportsbook | Yes |
+| [SBOBET](/compare/sbobet) | Asian sportsbook known for Asian handicap markets | Yes |
+
+## Bet brokers
+
+| Venue | What it is | In the TerminalUp directory |
+| --- | --- | --- |
+| [MollyBet](/compare/mollybet) | Bet broker platform | Yes |
 
 ## Odds screens, scanners and trackers
 
