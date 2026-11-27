@@ -117,7 +117,7 @@
     "name": "Polymarket",
     "url": "https://polymarket.com",
     "type": "Prediction market",
-    "what": "The largest prediction market by volume, on-chain, with deep books on big events and growing sports coverage.",
+    "what": "One of the two largest prediction markets, with a CFTC-regulated US app and an international on-chain market. Deep books on big events and growing sports coverage.",
     "fit": "Traders comfortable with crypto rails who want the deepest prediction-market liquidity.",
     "pricing": "Low or no trading fees on most markets.",
     "lacks": "US access has been restricted historically, and sports books are thinner than its political markets."
@@ -364,5 +364,41 @@
     "fit": "Reading aggregated forecasts on long-horizon questions.",
     "pricing": "Free.",
     "lacks": "Not a market and nothing to trade."
+  },
+  "underdog": {
+    "name": "Underdog",
+    "url": "https://www.underdogsports.com",
+    "type": "US sports app with event contracts",
+    "what": "A US sports app offering predictions, pick'em and season-long fantasy, with event contracts traded on Underdog Exchange.",
+    "fit": "People who want a consumer sports app for predictions and fantasy.",
+    "pricing": "See the app.",
+    "lacks": "One venue's markets and liquidity."
+  },
+  "rothera": {
+    "name": "Rothera",
+    "url": "https://www.rothera.io",
+    "type": "Exchange and clearing venue for event contracts",
+    "what": "An exchange and clearing venue for event contracts, built for institutions and intermediaries.",
+    "fit": "Institutions that need a venue and clearing partner for event contracts.",
+    "pricing": "See the venue.",
+    "lacks": "Not a retail app."
+  },
+  "pred": {
+    "name": "Pred",
+    "url": "https://www.pred.app",
+    "type": "Sports prediction exchange",
+    "what": "A sports prediction exchange where outcomes trade as contracts priced in cents.",
+    "fit": "Traders who want sports contracts on one exchange.",
+    "pricing": "See the venue.",
+    "lacks": "One venue's markets and liquidity."
+  },
+  "limitless": {
+    "name": "Limitless",
+    "url": "https://limitless.exchange",
+    "type": "Prediction market",
+    "what": "A prediction market covering crypto, sports, esports, finance and politics.",
+    "fit": "Traders who want its markets on their own.",
+    "pricing": "See the venue.",
+    "lacks": "One venue's markets and liquidity."
   }
 }

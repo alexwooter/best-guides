@@ -5,8 +5,8 @@
   "cluster": "sharp",
   "query": "what is a sharp bettor",
   "site_name": "What Is a Sharp Bettor",
-  "title": "What Is a Sharp Bettor? (2026)",
-  "updated": "2026-11-18",
+  "title": "What Is a Sharp Bettor? (2026): Definition, Habits and the Math of Price",
+  "updated": "2026-11-27",
   "published": "2026-11-18",
   "answer": "A sharp bettor is someone whose bets move the market and beat the closing line. Sharps bet on price rather than on teams, shop every venue for the best number, size bets to a measured edge, and judge themselves by closing line value instead of by wins and losses. Sportsbooks identify them by that behavior and either limit them (retail books) or use their bets to set lines (sharp books such as Pinnacle and Circa). Exchanges and prediction markets welcome them, because the venue earns commission either way.",
   "sections": [
@@ -76,6 +76,145 @@
       ]
     },
     {
+      "h2": "What price does to an edge",
+      "blocks": [
+        {
+          "p": "Sharps talk about price before picks because of arithmetic. The price sets the win rate a bettor needs just to break even."
+        },
+        {
+          "table": {
+            "head": [
+              "Price",
+              "Break-even win rate",
+              "Result at a 52% win rate, per $100 staked"
+            ],
+            "rows": [
+              [
+                "-110",
+                "52.38%",
+                "-$0.73"
+              ],
+              [
+                "-107",
+                "51.69%",
+                "+$0.60"
+              ],
+              [
+                "-105",
+                "51.22%",
+                "+$1.52"
+              ],
+              [
+                "-104",
+                "50.98%",
+                "+$2.00"
+              ],
+              [
+                "-102",
+                "50.50%",
+                "+$2.98"
+              ],
+              [
+                "+100",
+                "50.00%",
+                "+$4.00"
+              ],
+              [
+                "+103",
+                "49.26%",
+                "+$5.56"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "The same bettor, with the same 52% handicapping, loses at -110 and wins at every other price in the table."
+        },
+        {
+          "h3": "What the board was paying"
+        },
+        {
+          "p": "Those prices are not hypothetical. These were the best available prices, after fees, on the main spread of the nine NFL Sunday afternoon games of November 29, 2026, read from the public TerminalUp lines board two days earlier."
+        },
+        {
+          "table": {
+            "head": [
+              "Game",
+              "One side",
+              "Other side",
+              "Total"
+            ],
+            "rows": [
+              [
+                "Falcons vs. Vikings",
+                "ATL +6.5 at +103",
+                "MIN -6.5 at -113",
+                "102.0%"
+              ],
+              [
+                "Ravens vs. Texans",
+                "BAL +6.5 at +101",
+                "HOU -6.5 at -109",
+                "101.6%"
+              ],
+              [
+                "Saints vs. Bengals",
+                "NO +9.5 at -102",
+                "CIN -9.5 at -107",
+                "101.8%"
+              ],
+              [
+                "Giants vs. Colts",
+                "NYG -5.5 at -102",
+                "IND +5.5 at -104",
+                "101.1%"
+              ],
+              [
+                "Jets vs. Dolphins",
+                "NYJ -5.5 at -105",
+                "MIA +5.5 at -104",
+                "101.8%"
+              ],
+              [
+                "Titans vs. Jaguars",
+                "TEN +14 at -103",
+                "JAX -14 at -103",
+                "101.0%"
+              ],
+              [
+                "Patriots vs. Chargers",
+                "NE -2.5 at -108",
+                "LAC +2.5 at -104",
+                "102.6%"
+              ],
+              [
+                "Seahawks vs. 49ers",
+                "SEA +2 at -103",
+                "SF -2 at -108",
+                "102.4%"
+              ],
+              [
+                "Commanders vs. Cardinals",
+                "WSH -6.5 at -109",
+                "ARI +6.5 at +102",
+                "101.3%"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "Seventeen of the eighteen sides were priced better than -110, and three were plus money. A sharp bettor's first job is to be betting into numbers like these and not into a flat -110."
+        }
+      ]
+    },
+    {
       "h2": "How sportsbooks spot them",
       "blocks": [
         {
@@ -115,10 +254,58 @@
           ]
         }
       ]
+    },
+    {
+      "h2": "Sharp betting terms",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Term",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "Sharp, wiseguy",
+                "A bettor whose bets beat the closing line over time."
+              ],
+              [
+                "Square",
+                "A recreational bettor: bets teams, not prices."
+              ],
+              [
+                "Closing line value (CLV)",
+                "How much better your price was than the final price before the game started."
+              ],
+              [
+                "Steam",
+                "A fast line move across many venues, usually set off by sharp money."
+              ],
+              [
+                "Originator",
+                "A bettor who produces the numbers, as opposed to following someone else's."
+              ],
+              [
+                "No-vig line",
+                "A price with the bookmaker's margin removed. The market's estimate of the true odds."
+              ],
+              [
+                "Hold",
+                "The share of money staked that a book expects to keep."
+              ],
+              [
+                "Limit",
+                "The maximum stake a book will take. Retail books cut it for winners."
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "takeaways": [
     "A sharp bettor bets on price, shops every venue, sizes to an edge and is judged by closing line value.",
+    "Price sets the bar: 52.38% breaks even at -110, 50.98% at -104. Seventeen of eighteen NFL spread sides on one board were better than -110.",
     "Retail sportsbooks identify sharps by positive CLV and limit them; sharp books and exchanges want them.",
     "Sharps are defined by process, not by bankroll or by any short-run record.",
     "In 2026 US sharp volume is concentrating on exchanges and prediction markets where prices have no vig and accounts are not cut.",
@@ -137,6 +324,10 @@
       "a": "Track the closing price on every bet. If you beat the no-vig close by a sustained average of 1% or more over a few hundred bets, you are sharp by the only definition that matters to a book."
     },
     {
+      "q": "What win rate does a sharp bettor need?",
+      "a": "It depends on the price. At -110 a bettor needs 52.38% to break even; at -104, 50.98%; at even money, 50%. Sharps lower the bar by getting better prices before they try to raise their win rate."
+    },
+    {
       "q": "Why do sportsbooks limit sharp bettors?",
       "a": "Retail books take the other side of your bet and lose when you win. Limiting the accounts with positive closing line value protects their margin. Sharp books, exchanges and prediction markets do not limit."
     },
@@ -151,6 +342,10 @@
     {
       "q": "Where do sharp bettors bet in the US?",
       "a": "Circa in its states, the CFTC-designated exchanges and prediction markets (Kalshi, Polymarket US, Novig, ProphetX), Sporttrade where licensed, and retail books until they are limited."
+    },
+    {
+      "q": "Is a sharp the same as a professional bettor?",
+      "a": "Mostly. A professional bets for a living. A sharp is anyone whose bets beat the closing line consistently. Most professionals are sharp, and plenty of sharp bettors have day jobs."
     }
   ],
   "related": [

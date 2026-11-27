@@ -6,8 +6,8 @@
   "label": "Directory",
   "query": "list of prediction markets",
   "site_name": "List of Prediction Markets",
-  "title": "List of Prediction Markets (2026): Every Major Venue, Compared",
-  "updated": "2026-11-18",
+  "title": "List of Prediction Markets (2026): Every Major Venue, Compared and Ranked by Volume",
+  "updated": "2026-11-27",
   "published": "2026-11-18",
   "venues_title": "The list",
   "venues_intro": "Ordered by relevance to a US trader. Regulated US venues first, then venues inside other apps, then non-US and play-money markets.",
@@ -21,7 +21,7 @@
     },
     {
       "id": "polymarket",
-      "note": "The highest-volume prediction market globally. The US app runs on a CFTC-designated exchange since January 2026; the international market settles in crypto.",
+      "note": "Second to Kalshi by volume. The US app runs on a CFTC-designated exchange since January 2026; the international market settles in crypto.",
       "access": "US app: nationwide, CFTC. International market: not for US customers."
     },
     {
@@ -50,6 +50,16 @@
       "access": "Most states. CFTC."
     },
     {
+      "id": "underdog",
+      "note": "A US sports app with predictions, pick'em and season-long fantasy. Event contracts trade on Underdog Exchange, a CFTC-regulated exchange.",
+      "access": "US; see the app for state availability. CFTC."
+    },
+    {
+      "id": "rothera",
+      "note": "An exchange and clearing venue for event contracts, built for institutions and intermediaries, not retail traders.",
+      "access": "Institutions and intermediaries. CFTC."
+    },
+    {
       "id": "predictit",
       "note": "The long-running political market, operating under CFTC permissions with position limits per contract.",
       "access": "Nationwide, politics only."
@@ -65,6 +75,16 @@
       "access": "Not for US customers."
     },
     {
+      "id": "pred",
+      "note": "A sports prediction exchange where outcomes trade as contracts priced in cents.",
+      "access": "See the venue for availability."
+    },
+    {
+      "id": "limitless",
+      "note": "A prediction market covering crypto, sports, esports, finance and politics.",
+      "access": "See the venue for availability."
+    },
+    {
       "id": "manifold",
       "note": "Play-money market with thousands of user-created questions. Useful for learning how prices form.",
       "access": "Anyone; no real money."
@@ -77,6 +97,83 @@
   ],
   "answer": "The prediction markets that matter to a US trader in 2026 are the CFTC-designated exchanges: Kalshi, Polymarket US, Novig and ProphetX, plus event contracts offered inside Robinhood and Crypto.com through regulated exchanges. Sporttrade is a state-licensed sports exchange that works the same way. PredictIt covers politics. Outside the US, Polymarket's international market, SX Bet and predict.fun trade in crypto. Manifold and Metaculus are play-money or no-money forecasting sites. The table below compares all of them.",
   "sections": [
+    {
+      "h2": "The largest prediction markets by volume",
+      "blocks": [
+        {
+          "p": "Kalshi is the largest by a wide margin. DeFi Rate tracks contract volume across nine venues. Over the 30 days to November 26, 2026 it ranked them like this, counting each contract at its $1 face value."
+        },
+        {
+          "table": {
+            "head": [
+              "Venue",
+              "30-day volume",
+              "Share of tracked volume"
+            ],
+            "rows": [
+              [
+                "Kalshi",
+                "$119.5 billion",
+                "76.4%"
+              ],
+              [
+                "Polymarket US",
+                "$16.7 billion",
+                "10.7%"
+              ],
+              [
+                "DraftKings Predictions",
+                "$6.0 billion",
+                "3.8%"
+              ],
+              [
+                "Polymarket (international)",
+                "$5.0 billion",
+                "3.2%"
+              ],
+              [
+                "Novig",
+                "$3.6 billion",
+                "2.3%"
+              ],
+              [
+                "Underdog Exchange",
+                "$3.5 billion",
+                "2.2%"
+              ],
+              [
+                "Rothera",
+                "$1.8 billion",
+                "1.1%"
+              ],
+              [
+                "ProphetX",
+                "$259 million",
+                "0.2%"
+              ],
+              [
+                "Gemini",
+                "$39 million",
+                "under 0.1%"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Source: DeFi Rate prediction market volume, data as of November 27, 2026, 11:30 AM ET. Window: October 28 to November 26, 2026. Rothera and ProphetX through November 25.",
+            "label": "defirate.com/prediction-markets/volume",
+            "url": "https://www.defirate.com/prediction-markets/volume/"
+          }
+        },
+        {
+          "p": "Two cautions on reading it. Face-value volume counts a 20-cent contract as $1, so it overstates the money spent: DeFi Rate puts dollars actually paid on Kalshi at $26.2 billion over the same 30 days. And volume is not depth. A market can trade heavily in bursts and still have little available at the quoted price when you arrive."
+        },
+        {
+          "p": "Sports drive it. Over the same window DeFi Rate attributes 66% of the dollars paid on single markets to sports, 25% to crypto and 4% to politics."
+        }
+      ]
+    },
     {
       "h2": "How to choose between them",
       "blocks": [
@@ -155,10 +252,70 @@
           "p": "CFTC-designated venues are legal to operate nationwide and their non-sports contracts are available in all 50 states. Sports contracts are contested by several states; federal appeals courts have split, the CFTC is suing states to assert exclusive jurisdiction, and petitions are pending at the Supreme Court as of November 2026. A few states have court orders restricting sports contracts. Each venue publishes its current state availability."
         }
       ]
+    },
+    {
+      "h2": "How much is listed on one weekend",
+      "blocks": [
+        {
+          "p": "For a sense of scale, the public TerminalUp lines board carried 1,214 main markets on 422 games when we read it on November 27, 2026 at 4:51 PM ET: the moneyline, the main spread and the main total of each game, wherever both sides had a real price."
+        },
+        {
+          "table": {
+            "head": [
+              "League",
+              "Games",
+              "Main markets"
+            ],
+            "rows": [
+              [
+                "NFL",
+                "24",
+                "50"
+              ],
+              [
+                "College football",
+                "72",
+                "210"
+              ],
+              [
+                "NBA",
+                "37",
+                "63"
+              ],
+              [
+                "College basketball",
+                "144",
+                "266"
+              ],
+              [
+                "Soccer, eight competitions",
+                "145",
+                "625"
+              ],
+              [
+                "Total",
+                "422",
+                "1,214"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "Every one of those prices can be read as a contract. The Seahawks vs. 49ers moneyline stood at 46.2 cents for Seattle and 54.6 cents for San Francisco: 100.8 cents for the pair."
+        }
+      ]
     }
   ],
   "takeaways": [
     "For US traders the list is Kalshi, Polymarket US, Novig and ProphetX, plus event contracts inside Robinhood and Crypto.com.",
+    "Kalshi is the largest by volume: 76% of the contract volume DeFi Rate tracked in the 30 days to November 26, 2026. Polymarket US is second.",
     "Sporttrade is a state-licensed exchange with the same mechanics; PredictIt covers politics.",
     "Polymarket international, SX Bet and predict.fun settle in crypto and exclude US customers.",
     "Liquidity, fees, market lists and state availability differ venue by venue.",
@@ -170,7 +327,7 @@
   "faq": [
     {
       "q": "What is the biggest prediction market?",
-      "a": "Polymarket by global volume, with its international market included. Kalshi is the largest CFTC-designated exchange by US activity. Both are deep on major sports and headline events."
+      "a": "Kalshi. In the 30 days to November 26, 2026 it handled 76% of the contract volume DeFi Rate tracks across nine venues: $119.5 billion at $1 face value. Polymarket US was second at $16.7 billion."
     },
     {
       "q": "Which prediction markets are legal in the US?",
@@ -191,6 +348,14 @@
     {
       "q": "Do prediction markets charge fees?",
       "a": "Yes, but not in the price. Expect a few cents per contract, a commission on net winnings, or a spread, depending on the venue; usually under 2% of stake for a round trip."
+    },
+    {
+      "q": "How many prediction markets are there?",
+      "a": "This page lists 16. Volume is concentrated in two of them: in DeFi Rate's 30-day figures to November 26, 2026, Kalshi and Polymarket US together held about 87% of tracked contract volume."
+    },
+    {
+      "q": "What is the difference between volume and liquidity?",
+      "a": "Volume is what has traded. Liquidity is what is available to trade right now at each price. A high-volume market usually has both, but not always, so check the size at the price before you rely on it."
     }
   ],
   "related": [

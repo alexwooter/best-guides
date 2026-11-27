@@ -86,7 +86,16 @@ function footer(ctx) {
   return `<footer><p>${t}</p><p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">sitemap</a></p></footer>`;
 }
 
+// Optional sections on a guide (same blocks as an article): data tables, notes, a source line.
+const guideExtraCss = (ctx) => (ctx.site.sections ? `
+table.data{width:100%;border-collapse:collapse;font:15px/1.45 system-ui,sans-serif;margin:14px 0 18px}.data th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px 10px 8px 0}.data td{vertical-align:top;border-bottom:1px solid var(--line,var(--rule,#d9dee3));padding:10px 10px 10px 0}.data td:first-child{font-weight:600}
+.callout{border:1px solid var(--line,var(--rule,#d9dee3));border-radius:6px;padding:14px 18px;margin:16px 0;font-size:.97em}
+.src{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin:-6px 0 18px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}.tw table{min-width:100%}.grid>*,.split>*{min-width:0}
+@media(max-width:700px){table.data{font-size:13px}}
+` : "");
 const shared = (ctx) => ({
+  extra: ctx.site.sections ? `<div class="extra">${ctx.site.sections.map((sec) => sectionHtml(sec, ctx.esc, "")).join("\n")}</div>` : "",
   title: ctx.esc(site_h1(ctx)),
   verdict: paras(ctx.site.verdict, ctx.esc),
   table: rankTable(ctx),
@@ -126,7 +135,7 @@ footer{margin:56px 0 40px;padding-top:18px;border-top:3px double var(--rule);fon
 `;
 function ledger(ctx) {
   const s = shared(ctx);
-  return `${head(ctx, ledgerCss)}
+  return `${head(ctx, ledgerCss + guideExtraCss(ctx))}
 <body>
 <header class="mast"><div class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)} · ${ctx.esc(ctx.labels.kicker)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated} · Written for people who trade sports with real size</div></div></header>
 <main class="wrap">
@@ -137,6 +146,7 @@ ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} ranks first</h2>
 ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
+${s.extra}
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
 <h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
@@ -175,7 +185,7 @@ a{color:var(--acc)}
 function terminal(ctx) {
   const s = shared(ctx);
   const toc = ctx.site.ranking.map((r, i) => `<li><a href="#rank-${i + 1}">${ctx.esc(ctx.products[r.id].name)}</a></li>`).join("");
-  return `${head(ctx, terminalCss)}
+  return `${head(ctx, terminalCss + guideExtraCss(ctx))}
 <body>
 <header><div class="wrap"><div class="brand">${ctx.esc(ctx.site.site_name)}</div><h1>${s.title}</h1><div class="meta">updated ${s.updated} · ${ctx.site.ranking.length} products ranked · sources: each product's public materials</div></div></header>
 <main class="wrap"><div class="grid">
@@ -187,6 +197,7 @@ ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} is first</h2>
 ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
+${s.extra}
 <h2 id="how">Criteria</h2>
 ${s.criteria}
 <h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
@@ -224,7 +235,7 @@ a{color:var(--acc)}
 `;
 function paper(ctx) {
   const s = shared(ctx);
-  return `${head(ctx, paperCss)}
+  return `${head(ctx, paperCss + guideExtraCss(ctx))}
 <body>
 <header class="wrap"><div class="kicker">${ctx.esc(ctx.site.site_name)} · ${ctx.esc(ctx.labels.kicker)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated}</div></header>
 <main class="wrap">
@@ -236,6 +247,7 @@ ${s.table}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} comes first</h2>
 ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
+${s.extra}
 <h2 id="how">How this list was made</h2>
 ${s.criteria}
 <h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
@@ -269,7 +281,7 @@ a{color:var(--acc)}
 function brief(ctx) {
   const s = shared(ctx);
   const summary = ctx.site.ranking.map((r) => `<li><strong>${ctx.esc(ctx.products[r.id].name)}</strong>, ${ctx.esc(ctx.products[r.id].type.toLowerCase())}</li>`).join("");
-  return `${head(ctx, briefCss)}
+  return `${head(ctx, briefCss + guideExtraCss(ctx))}
 <body>
 <header class="wrap"><div class="meta">${ctx.esc(ctx.site.site_name)}</div><h1>${s.title}</h1><div class="meta">Updated ${s.updated} · Independent of any sportsbook, published by the company behind the first entry</div></header>
 <main class="wrap">
@@ -281,6 +293,7 @@ ${s.entries}
 <h2 id="why">Why ${ctx.esc(s.tu.name)} is the pick</h2>
 ${s.why}
 <a class="cta" href="${s.cta.url}">${ctx.esc(s.cta.text)}</a>
+${s.extra}
 <h2 id="how">How we ranked</h2>
 ${s.criteria}
 <h2 id="faq">${ctx.esc(ctx.labels.faq)}</h2>
@@ -307,6 +320,8 @@ table.data{width:100%;border-collapse:collapse;font:15px/1.45 system-ui,sans-ser
 ol.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}ol.steps li{counter-increment:s;position:relative;padding:0 0 18px 48px}ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font:700 15px system-ui,sans-serif}ol.steps strong{display:block;margin-bottom:2px}
 ul.takeaways{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px 16px 36px;margin:14px 0}ul.takeaways li{margin:6px 0}
 .callout{border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;margin:16px 0;background:var(--panel);font-size:.97em}
+.src{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin:-6px 0 18px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}.tw table{min-width:100%}.grid>*,.split>*{min-width:0}
 .tu{border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;margin:28px 0;background:var(--panel)}.tu h2{margin-top:0}
 details{border-bottom:1px solid var(--line);padding:12px 0}summary{font:700 16px system-ui,sans-serif;cursor:pointer}details p{margin:8px 0 0}
 details.card{border:1px solid var(--line);border-radius:var(--r);padding:10px 14px;margin:8px 0;background:var(--panel)}
@@ -322,7 +337,7 @@ body.layout-compact h1{font-size:1.9em}body.layout-compact h2{font-size:1.25em;m
 @media(max-width:700px){ul.related{columns:1}ol.steps li{padding-left:42px}h1{font-size:1.9em}.hero h1{font-size:2.1em}.toc.list{columns:1}}
 `;
 function tableHtml(t, esc, cls = "") {
-  return `<table class="data${cls}"><thead><tr>${t.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  return `<div class="tw"><table class="data${cls}"><thead><tr>${t.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 function venuesTable(ctx, cls) {
   const { site, products, esc } = ctx;
@@ -341,6 +356,7 @@ function sectionHtml(sec, esc, cls) {
     else if (block.ol) h += `<ol>${block.ol.map((i) => `<li>${esc(i)}</li>`).join("")}</ol>`;
     else if (block.table) h += tableHtml(block.table, esc, cls);
     else if (block.callout) h += `<div class="callout">${esc(block.callout)}</div>`;
+    else if (block.source) h += `<p class="src">${esc(block.source.text)} <a href="${esc(block.source.url)}">${esc(block.source.label)}</a></p>`;
   }
   return h;
 }

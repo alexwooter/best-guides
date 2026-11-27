@@ -85,6 +85,27 @@ function run(){var s=parseFloat(val("hs")),o=toDec(val("ho")),h=toDec(val("hh"))
 bind(["hs","ho","hh"],run);`,
   },
 
+  // Arbitrage: two or three legs, stakes that equalize the payout.
+  arb: {
+    name: "Arbitrage calculator",
+    html: `
+<div class="calc" id="calc">
+<h2>Arbitrage calculator</h2>
+<p class="hint">Enter the best price on each outcome, after fees, and the total you want to stake. Leave the third leg blank for a two-way market. American, decimal or fractional odds all work.</p>
+<div class="row">${field("a1", "Leg 1 odds", "+116")}${field("a2", "Leg 2 odds", "-112")}${field("a3", "Leg 3 odds (optional)", "", "e.g. +340")}${field("at", "Total stake ($)", "1000")}</div>
+<div class="grid3">${res("as", "Total implied probability", true)}${res("am", "Margin on total stake", true)}${res("ap", "Profit on any result", true)}${res("s1", "Stake on leg 1")}${res("s2", "Stake on leg 2")}${res("s3", "Stake on leg 3")}${res("ar", "Return on any result")}${res("av", "Verdict")}</div>
+<p class="hint">Stake on a leg = total stake x (leg implied probability / total implied probability). If the total is 100% or more there is no arbitrage and the profit figure shows the guaranteed loss instead. Check the size available at each price before you place the first leg.</p>
+</div>`,
+    js: `
+function run(){var ds=[toDec(val("a1")),toDec(val("a2"))],d3=toDec(val("a3")),t=parseFloat(val("at"));if(d3>1)ds.push(d3);
+ if(!(ds[0]>1)||!(ds[1]>1)||!(t>0)){["as","am","ap","s1","s2","s3","ar","av"].forEach(function(i){out(i,"\\u2014")});return;}
+ var ps=ds.map(prob),s=ps.reduce(function(a,b){return a+b},0),ret=t/s,profit=ret-t;
+ out("as",pct(s));out("am",pct(profit/t));out("ap",money(profit));out("ar",money(ret));
+ out("s1",money(t*ps[0]/s));out("s2",money(t*ps[1]/s));out("s3",ds.length>2?money(t*ps[2]/s):"\\u2014");
+ out("av",s<1?"Arbitrage":"No arbitrage");}
+bind(["a1","a2","a3","at"],run);`,
+  },
+
   // Expected value with an optional fair line from a sharp source.
   ev: {
     name: "EV calculator",

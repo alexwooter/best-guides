@@ -5,7 +5,7 @@
   "query": "best odds comparison tool",
   "site_name": "Best Odds Comparison Tool",
   "title": "Best Odds Comparison Tool (2026)",
-  "updated": "2026-11-18",
+  "updated": "2026-11-27",
   "published": "2026-11-10",
   "verdict": [
     "A tool is something you work with, not something you read. By that standard the best odds comparison tool in 2026 is TerminalUp: it compares the best fee-adjusted price across nineteen live venues with the size behind each one, and it lets you act on the comparison with an order that routes from one account.",
@@ -77,6 +77,14 @@
       "a": "Unabated for a fair line to compare against, OddsJam for +EV and arbitrage flags, SpotOdds for line-move alerts. TerminalUp for a comparison you can trade from."
     },
     {
+      "q": "What is a best odds finder?",
+      "a": "Another name for an odds comparison tool: software that lines up the price on the same outcome at every venue it covers and shows the best one. The better ones show the price after fees and the size available at it."
+    },
+    {
+      "q": "How much does comparing odds save?",
+      "a": "On the nine NFL Sunday afternoon spreads of November 29, 2026, the best prices on the two sides totalled a median of 101.8% on the public TerminalUp lines board, against 104.76% at a flat -110. That is about $28 on every $1,000 staked."
+    },
+    {
       "q": "Is there a free odds comparison tool?",
       "a": "Betstamp and Oddschecker are free. Both compare sportsbooks only and neither places the bet."
     },
@@ -115,5 +123,152 @@
     "favicon": "bars",
     "label": 4,
     "footer": 4
-  }
+  },
+  "sections": [
+    {
+      "h2": "What a comparison shows, in numbers",
+      "blocks": [
+        {
+          "p": "An odds comparison earns its keep in the gap between the best price and the default one. We measured it. On November 27, 2026 at 4:51 PM ET we took the nine NFL Sunday afternoon games on the public TerminalUp lines board and added the implied probabilities of the best available price on each side, after fees. Lower is better for the bettor, and 100% means no margin at all."
+        },
+        {
+          "table": {
+            "head": [
+              "Market",
+              "Games",
+              "Lowest",
+              "Median",
+              "Highest"
+            ],
+            "rows": [
+              [
+                "Moneyline",
+                "9",
+                "100.2%",
+                "100.5%",
+                "100.8%"
+              ],
+              [
+                "Spread",
+                "9",
+                "101.0%",
+                "101.8%",
+                "102.6%"
+              ],
+              [
+                "Total",
+                "9",
+                "101.4%",
+                "101.7%",
+                "101.9%"
+              ],
+              [
+                "One sportsbook at -110 on both sides",
+                "",
+                "",
+                "104.76%",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "At a flat -110 the book keeps about 4.5% of every dollar staked across the two sides. At 101.8% it is about 1.8%. The difference is roughly $28 on every $1,000 staked, before any opinion about who wins."
+        },
+        {
+          "p": "The wider board is less tidy, and a good tool shows that too. Across all 1,181 two-sided markets listed at that moment the median was 102.9%, with college basketball and midweek European soccer wider than the NFL."
+        }
+      ]
+    },
+    {
+      "h2": "Best price is not the whole comparison",
+      "blocks": [
+        {
+          "p": "Here is the 49ers side of the Seahawks vs. 49ers moneyline from the same board a minute later, best price first, with the stake available at each level."
+        },
+        {
+          "table": {
+            "head": [
+              "Price",
+              "Implied probability",
+              "Stake available"
+            ],
+            "rows": [
+              [
+                "-121",
+                "54.6%",
+                "$94"
+              ],
+              [
+                "-123",
+                "55.1%",
+                "$58"
+              ],
+              [
+                "-125",
+                "55.5%",
+                "$839"
+              ],
+              [
+                "-126",
+                "55.7%",
+                "$1,044"
+              ],
+              [
+                "-127",
+                "55.9%",
+                "$3,991"
+              ],
+              [
+                "-128",
+                "56.0%",
+                "$1,090"
+              ],
+              [
+                "-128",
+                "56.1%",
+                "$1,842"
+              ],
+              [
+                "-129",
+                "56.2%",
+                "$7,663"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Order book read November 27, 2026 at 4:52 PM ET: stake available at each price, combined across the venues on the board, after fees. A snapshot, not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "A screen that shows only the top line points every bettor at -121. There was $94 behind it. A $100 bettor gets that price. A $10,000 bettor is really being offered about -127. This is why the first test on this page is whether a tool shows size and lets you act on it."
+        }
+      ]
+    },
+    {
+      "h2": "How to use an odds comparison tool",
+      "blocks": [
+        {
+          "ol": [
+            "Compare prices after fees. An exchange price before commission and a sportsbook price are not on the same basis.",
+            "Read the size at the price, not only the price.",
+            "Check the timestamp. A price that is thirty seconds old on a moving line is a different price.",
+            "Compare the same market: same line, same settlement rules, overtime included or not.",
+            "Act from the same screen if you can. Every tab between seeing a price and placing the order costs you some of it."
+          ]
+        }
+      ]
+    }
+  ]
 }

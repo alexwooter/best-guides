@@ -5,8 +5,8 @@
   "cluster": "arbitrage",
   "query": "sports arbitrage betting",
   "site_name": "Sports Arbitrage Betting",
-  "title": "Sports Arbitrage Betting (2026): Types, Math, Venues and Returns",
-  "updated": "2026-11-18",
+  "title": "Sports Arbitrage Betting (2026): Math, Real Prices, Calculator and Venues",
+  "updated": "2026-11-27",
   "published": "2026-11-18",
   "venues_title": "Venues for arbitrage legs",
   "venues_intro": "An arb needs at least two venues that disagree. These are the kinds of venue that keep taking the action, ordered by how useful they are as a permanent leg.",
@@ -61,7 +61,7 @@
   ],
   "answer": "Sports arbitrage betting is covering every outcome of a game or market across different venues at prices that add up to less than 100% implied probability, locking in a profit of typically 0.5% to 3% whichever side wins. It works because sportsbooks, betting exchanges and prediction markets price the same event independently and move at different speeds. The math is simple; the business is speed, venue access and keeping accounts open.",
   "intro": [
-    "This is the long version: the kinds of arb, how the numbers work, where the opportunities come from, what the returns look like over a year, and which venues let you keep doing it."
+    "This is the long version: the kinds of arb, how the numbers work, what a live board showed when we checked 1,181 markets, where the opportunities come from, what the returns look like over a year, how to place one, a calculator, and which venues let you keep doing it."
   ],
   "sections": [
     {
@@ -128,6 +128,87 @@
         },
         {
           "p": "Commission changes the arithmetic on exchange legs. A 2% commission on net winnings means a lay at 1.98 effectively pays out slightly less; use the venue's fee-adjusted price when you check the total. Prediction market fees are usually a few cents per contract and should be treated the same way."
+        }
+      ]
+    },
+    {
+      "h2": "What 1,181 live markets showed",
+      "blocks": [
+        {
+          "p": "Theory says arbs are rare and small. We checked. On November 27, 2026 at 4:51 PM ET we read every two-sided market on the public TerminalUp lines board: moneylines, main spreads and main totals across the NFL, college football, the NBA, college basketball and eight soccer competitions. For each market we took the best available price on each side, after fees, and added the two implied probabilities."
+        },
+        {
+          "table": {
+            "head": [
+              "Markets",
+              "Count",
+              "Median total",
+              "At or under 101%",
+              "Under 100%"
+            ],
+            "rows": [
+              [
+                "All two-sided markets",
+                "1,181",
+                "102.9%",
+                "158",
+                "1"
+              ],
+              [
+                "American football (NFL, college)",
+                "257",
+                "101.6%",
+                "47",
+                "0"
+              ],
+              [
+                "Basketball (NBA, college)",
+                "314",
+                "104.0%",
+                "38",
+                "1"
+              ],
+              [
+                "Soccer (eight competitions)",
+                "610",
+                "104.5%",
+                "73",
+                "0"
+              ],
+              [
+                "NFL Sunday afternoon moneylines",
+                "9",
+                "100.5%",
+                "9",
+                "0"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "One market in 1,181 was a true arb at that instant. Thirty, that one included, sat at or under 100.5%, and 158 at or under 101%. A standard sportsbook line of -110 on both sides totals 104.76%. The nine NFL Sunday afternoon moneylines ran from 100.2% to 100.8%."
+        },
+        {
+          "h3": "The one arb, at the size available"
+        },
+        {
+          "p": "It was the Bucks vs. Pistons moneyline: Milwaukee +371 (decimal 4.716, 21.2%) and Detroit -368 (decimal 1.272, 78.6%), a total of 99.8%. The order book behind it is the useful part. Detroit had $63.66 available at -368 and another $60.59 at -370. Milwaukee had $603.66 at +371. Staking $63.66 on Detroit and $17.17 on Milwaukee returned $80.98 on either result for $80.83 staked. Profit: 15 cents. One level deeper, at -372, the total was back to 100.0%."
+        },
+        {
+          "callout": "An arb is a price and a size. A scanner reports the price. What you can stake at that price decides whether the arb is worth placing."
+        },
+        {
+          "h3": "Where the money actually is"
+        },
+        {
+          "p": "The 158 markets within one point of 100% matter more than the one below it. On an exchange or a prediction market you can post a price instead of taking one. When the two best offers total 100.5%, the bid on each side sits about half a point under its offer. Get filled at the bid on one side and take the offer on the other, and you are near break-even. Get filled at the bid on both and you are under 100%. That is closer to market making than to a pure arb, and the first fill is a naked position until the second one lands."
         }
       ]
     },
@@ -201,10 +282,62 @@
           }
         }
       ]
+    },
+    {
+      "h2": "Arbitrage betting terms",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Term",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "Arb, surebet",
+                "Bets on every outcome of a market at prices that total under 100%."
+              ],
+              [
+                "Leg",
+                "One of the bets that make up the arb."
+              ],
+              [
+                "Overround",
+                "The amount by which the prices on a market total more than 100%. A sportsbook's margin."
+              ],
+              [
+                "Fee-adjusted price",
+                "The price after commission and fees. The only price to use when you add the legs."
+              ],
+              [
+                "Size, depth",
+                "The stake available at a price. The smaller side sets the size of the arb."
+              ],
+              [
+                "Middle",
+                "Both sides at different numbers, so both can win if the result lands between them."
+              ],
+              [
+                "Lay",
+                "A bet against an outcome on an exchange."
+              ],
+              [
+                "Void",
+                "A bet cancelled by the venue. The usual way a finished arb turns into a single open bet."
+              ],
+              [
+                "Limit",
+                "A sportsbook cutting the maximum stake it will take from an account."
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "takeaways": [
     "Sports arbitrage covers all outcomes at prices totalling under 100%; the margin is usually 0.5% to 3%.",
+    "A live check of 1,181 markets found one arb and 30 at or under 100.5%. Size at the price decided what the arb was worth: 15 cents.",
     "Two-way, three-way, cross-market and middles are the main forms; bonus arbs are the shortest-lived.",
     "Arbs come from venues moving at different speeds and serving different customers.",
     "Realistic returns are 20% to 50% a year on capital, limited by venue access and idle balances.",
@@ -214,6 +347,10 @@
     "TerminalUp is built for exactly this workflow. One board shows the best fee-adjusted price for each outcome across the sportsbooks, betting exchanges and prediction markets it connects to, with the size available at each price, and each order routes to its venue from one account, so both legs are visible together and the whole bankroll is behind each of them. TerminalUp never takes a position against you and never limits. Commission is 0.5% per trade (0.35% at the highest volume), no subscription; the account minimum is $10,000. You fund one TerminalUp account. Orders route to venues from it."
   ],
   "faq": [
+    {
+      "q": "What is an arbitrage bet?",
+      "a": "One leg of an arbitrage: a bet placed only because a bet on the opposite outcome, at another venue, is priced high enough that the two together cannot lose. On its own it is an ordinary bet."
+    },
     {
       "q": "How much can you make from sports arbitrage?",
       "a": "Margins are 0.5% to 3% per arb. On a $50,000 bankroll with disciplined turnover, 20% to 50% a year is realistic after leakage. Claims far above that depend on retail-book access that gets limited quickly."
@@ -231,12 +368,24 @@
       "a": "Enough to fund at least two venues with stakes that make a 1% margin worth placing, plus a buffer for an unfilled leg. For most people that means five figures spread across venues."
     },
     {
+      "q": "How often do arbitrage opportunities appear?",
+      "a": "In a snapshot of 1,181 two-sided markets on the public TerminalUp lines board on November 27, 2026, one totalled under 100% after fees and 30 were at or under 100.5%. Arbs come and go all day, but at any single instant they are rare and usually small."
+    },
+    {
+      "q": "How much can you stake on an arb?",
+      "a": "As much as the smaller side of the order book offers at the price. In the one arb in that snapshot, $63.66 was available on one side, which made the whole position worth 15 cents. Size at the price matters as much as the price."
+    },
+    {
       "q": "How fast do arbs disappear?",
       "a": "Most close within a minute; the best ones within seconds. Execution speed and having both legs on one screen matter more than the scanner."
     },
     {
       "q": "Is sports arbitrage legal?",
       "a": "Yes, wherever the bets themselves are legal. The risk is a limited account at a retail sportsbook, not a legal one."
+    },
+    {
+      "q": "Do I need software for arbitrage betting?",
+      "a": "You need the best price on each outcome and the size behind it, updated in real time, and a way to place both legs fast. A scanner covers the first part. A terminal that routes orders covers both."
     }
   ],
   "related": [
@@ -260,5 +409,35 @@
     "favicon": "square",
     "label": 3,
     "footer": 0
-  }
+  },
+  "steps_title": "How to place an arb, step by step",
+  "steps": [
+    {
+      "name": "Find the disagreement",
+      "text": "Compare the best price on every outcome across your venues. Convert each to implied probability after fees and add them. Under 100% is an arb."
+    },
+    {
+      "name": "Check the size",
+      "text": "Read the stake available at each price. The smaller side sets the size of the whole position."
+    },
+    {
+      "name": "Check the rules",
+      "text": "Confirm both venues settle the same way: overtime, pushes, voids and postponed games."
+    },
+    {
+      "name": "Split the stake",
+      "text": "Stake each leg in proportion to its implied probability so the payout is the same on every result. The calculator below does it."
+    },
+    {
+      "name": "Place the harder leg first",
+      "text": "Take the order-book leg or the smaller side first. If it fills short, cut the second leg to match."
+    },
+    {
+      "name": "Confirm both fills and log them",
+      "text": "Record stakes, prices and venues. Leakage shows up in the log before it shows up in the bankroll."
+    }
+  ],
+  "calculator": "arb",
+  "calculator_position": "bottom",
+  "calculator_name": "Arbitrage calculator"
 }

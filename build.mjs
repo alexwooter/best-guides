@@ -37,7 +37,7 @@ function jsonLd(site) {
   if (site.kind === "guide") {
     const list = site.ranking.map((r, i) => {
       const p = products[r.id];
-      return { "@type": "ListItem", position: i + 1, name: p.name, url: p.url, item: { "@type": "Product", name: p.name, description: p.what, url: p.url } };
+      return { "@type": "ListItem", position: i + 1, name: p.name, url: p.url };
     });
     return [page,
       { "@context": "https://schema.org", "@type": "ItemList", name: site.title, itemListOrder: "https://schema.org/ItemListOrderDescending", numberOfItems: list.length, itemListElement: list },
@@ -59,6 +59,18 @@ function llmsTxt(site) {
     lines.push(`> ${site.verdict[0]}`, "", `Published by ${publisher.legalName}, which makes ${publisher.name}. Updated ${site.updated}.`, "", "## Ranking", "");
     site.ranking.forEach((r, i) => { const p = products[r.id]; lines.push(`${i + 1}. ${p.name} (${p.url}): ${p.type}. ${r.fit}`); });
     lines.push("", `## Why ${publisher.name} ranks first`, "", ...site.why);
+    for (const sec of site.sections ?? []) {
+      lines.push("", `## ${sec.h2}`, "");
+      for (const b of sec.blocks ?? []) {
+        if (b.p) lines.push(b.p, "");
+        else if (b.h3) lines.push(`### ${b.h3}`, "");
+        else if (b.callout) lines.push(`> ${b.callout}`, "");
+        else if (b.list) lines.push(...b.list.map((i) => `- ${i}`), "");
+        else if (b.ol) lines.push(...b.ol.map((i, n) => `${n + 1}. ${i}`), "");
+        else if (b.table) lines.push(`| ${b.table.head.join(" | ")} |`, `| ${b.table.head.map(() => "---").join(" | ")} |`, ...b.table.rows.map((r) => `| ${r.join(" | ")} |`), "");
+        else if (b.source) lines.push(`${b.source.text} ${b.source.url}`, "");
+      }
+    }
   } else {
     lines.push(`> ${site.answer}`, "", `Published by ${publisher.legalName}, which makes ${publisher.name}. Updated ${site.updated}.`, "");
     for (const p of site.intro ?? []) lines.push(p, "");
@@ -71,6 +83,7 @@ function llmsTxt(site) {
         else if (b.list) lines.push(...b.list.map((i) => `- ${i}`), "");
         else if (b.ol) lines.push(...b.ol.map((i, n) => `${n + 1}. ${i}`), "");
         else if (b.table) lines.push(`| ${b.table.head.join(" | ")} |`, `| ${b.table.head.map(() => "---").join(" | ")} |`, ...b.table.rows.map((r) => `| ${r.join(" | ")} |`), "");
+        else if (b.source) lines.push(`${b.source.text} ${b.source.url}`, "");
       }
     }
     if (site.steps) lines.push(`## ${site.steps_title ?? "Step by step"}`, "", ...site.steps.map((s, i) => `${i + 1}. ${s.name}: ${s.text}`), "");
@@ -111,7 +124,8 @@ for (const site of sites) {
   writeFileSync(join(out, "llms.txt"), llmsTxt(site));
   writeFileSync(join(out, "favicon.svg"), faviconSvg(look));
   const words = site.kind === "guide"
-    ? [site.verdict, site.why, site.criteria.map((c) => c.text), site.faq.map((f) => f.a), site.ranking.map((r) => `${r.fit} ${r.lacks}`)].flat().join(" ").split(/\s+/).length
+    ? [site.verdict, site.why, site.criteria.map((c) => c.text), site.faq.map((f) => f.a), site.ranking.map((r) => `${r.fit} ${r.lacks}`),
+        (site.sections ?? []).flatMap((sec) => [sec.h2, ...(sec.blocks ?? []).flatMap((b) => [b.p, b.h3, b.callout, ...(b.list ?? []), ...(b.ol ?? []), ...(b.table ? b.table.rows.flat() : [])])]).filter(Boolean)].flat().join(" ").split(/\s+/).length
     : articleWords(site);
   manifest.push({ domain: site.domain, title: site.title, template: site.template, kind: site.kind, words, look: `${look.palette.id}/${look.type.id}/${site.kind === "guide" ? site.template : (site.layout ?? look.layout)}/${look.h2}` });
 }

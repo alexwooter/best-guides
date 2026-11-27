@@ -5,8 +5,8 @@
   "cluster": "exchange",
   "query": "what is a betting exchange",
   "site_name": "What Is a Betting Exchange",
-  "title": "What Is a Betting Exchange? (2026)",
-  "updated": "2026-11-18",
+  "title": "What Is a Betting Exchange? (2026): How It Works, With a Real Order Book",
+  "updated": "2026-11-27",
   "published": "2026-11-18",
   "venues_title": "The exchanges",
   "venues_intro": "Ordered by relevance to a US bettor. The US exchanges are mostly regulated as prediction markets; the mechanics are the same.",
@@ -117,6 +117,82 @@
       ]
     },
     {
+      "h2": "A real order book",
+      "blocks": [
+        {
+          "p": "Here is what that looks like on a real market. This is the Seahawks vs. 49ers moneyline for Sunday, November 29, 2026, read from the public TerminalUp lines board two days before the game. Each row is a price on offer and the stake available at it, best price first. The board combines the offers of the venues it covers into one ladder, after fees. A single exchange's book has the same shape."
+        },
+        {
+          "table": {
+            "head": [
+              "Level",
+              "Seahawks price",
+              "Stake available",
+              "49ers price",
+              "Stake available"
+            ],
+            "rows": [
+              [
+                "1",
+                "+116 (46.2%)",
+                "$902",
+                "-121 (54.6%)",
+                "$94"
+              ],
+              [
+                "2",
+                "+115 (46.4%)",
+                "$7,518",
+                "-123 (55.1%)",
+                "$58"
+              ],
+              [
+                "3",
+                "+115 (46.5%)",
+                "$137",
+                "-125 (55.5%)",
+                "$839"
+              ],
+              [
+                "4",
+                "+114 (46.6%)",
+                "$1,118",
+                "-126 (55.7%)",
+                "$1,044"
+              ],
+              [
+                "5",
+                "+114 (46.7%)",
+                "$122",
+                "-127 (55.9%)",
+                "$3,991"
+              ],
+              [
+                "Top ten levels",
+                "",
+                "$25,174",
+                "",
+                "$22,258"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Order book read November 27, 2026 at 4:52 PM ET: stake available at each price, combined across the venues on the board, after fees. A snapshot, not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "Three things to read off it. The best price is real but small: $94 on the 49ers at -121. The size sits a few ticks back, $3,991 at -127 and $7,663 at -129. And the two best prices total 100.8%, where a sportsbook's -110 on each side totals 104.76%."
+        },
+        {
+          "p": "A bettor staking $100 gets -121. A bettor staking $20,000 walks the ladder down to -130, and should compare that average price, not the top line, with what a sportsbook will take."
+        }
+      ]
+    },
+    {
       "h2": "What it costs",
       "blocks": [
         {
@@ -124,6 +200,65 @@
         },
         {
           "callout": "On an exchange you pay only when you win and only on the profit. At a sportsbook you pay on every bet through the price. For a bettor who wins half the time, the exchange is roughly three to four times cheaper."
+        }
+      ]
+    },
+    {
+      "h2": "Order-book prices next to a sportsbook line",
+      "blocks": [
+        {
+          "p": "The claim that order-book prices carry little or no margin is easy to check. On the same board at 4:51 PM ET, the nine NFL Sunday afternoon games looked like this at the best available price on each side, after fees. The figure is the two implied probabilities added together: 100% means no margin at all."
+        },
+        {
+          "table": {
+            "head": [
+              "Market",
+              "Games",
+              "Lowest",
+              "Median",
+              "Highest"
+            ],
+            "rows": [
+              [
+                "Moneyline",
+                "9",
+                "100.2%",
+                "100.5%",
+                "100.8%"
+              ],
+              [
+                "Spread",
+                "9",
+                "101.0%",
+                "101.8%",
+                "102.6%"
+              ],
+              [
+                "Total",
+                "9",
+                "101.4%",
+                "101.7%",
+                "101.9%"
+              ],
+              [
+                "A sportsbook at -110 on both sides",
+                "",
+                "",
+                "104.76%",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "Thinner markets run wider. Across all 1,181 two-sided markets on the board at that moment, college basketball and midweek European soccer included, the median was 102.9%. Liquidity, not the exchange model, sets how close to 100% a market gets."
         }
       ]
     },
@@ -201,12 +336,64 @@
           "p": "An exchange price only exists if someone is on the other side. Betfair has deep books on English soccer and horse racing and much thinner ones on an NBA Tuesday; the US exchanges are deepest on the biggest games. A bettor who wants size on a minor market will often find a better fill at a sharp sportsbook or a prediction market than on an exchange, and the right venue changes market by market and hour by hour."
         }
       ]
+    },
+    {
+      "h2": "Exchange terms",
+      "blocks": [
+        {
+          "table": {
+            "head": [
+              "Term",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "Back",
+                "Bet that an outcome happens."
+              ],
+              [
+                "Lay",
+                "Bet that it does not. You act as the bookmaker for a backer."
+              ],
+              [
+                "Liability",
+                "What a layer pays if the outcome wins: the backer's stake times (decimal odds minus 1)."
+              ],
+              [
+                "Matched, unmatched",
+                "A matched bet has a counterparty. An unmatched order waits on the book until someone takes it or you cancel it."
+              ],
+              [
+                "Tick",
+                "The smallest step between two prices."
+              ],
+              [
+                "Spread",
+                "The gap between the best price to back and the best price to lay."
+              ],
+              [
+                "Liquidity, depth",
+                "The stake available at each price."
+              ],
+              [
+                "Commission",
+                "The exchange's fee, charged on net winnings or per contract."
+              ],
+              [
+                "Trade out",
+                "Close a position before the event ends by taking the opposite side."
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "takeaways": [
     "An exchange matches bettors against each other; you can back an outcome or lay it.",
     "There is no margin in the price; the exchange charges a commission on net winnings, usually 1% to 5%.",
     "Positions can be traded out before the event, at the market price.",
+    "A real NFL order book two days before kickoff: $94 at the best price, about $22,000 across the top ten levels.",
     "Exchanges never limit winners, because they have no exposure to the result.",
     "Liquidity is the constraint: deep on big markets, thin on small ones."
   ],
@@ -221,6 +408,18 @@
     {
       "q": "Do betting exchanges have vig?",
       "a": "Not in the price. They charge a commission on net winnings per market, typically 1% to 5% depending on the exchange, which is far less than a sportsbook's margin for most bettors."
+    },
+    {
+      "q": "How do betting exchanges make money?",
+      "a": "By charging commission on net winnings or a small fee per contract. The exchange takes no position on the result, so it earns the same whoever wins."
+    },
+    {
+      "q": "What is liquidity on a betting exchange?",
+      "a": "The stake available to match at each price. In the Seahawks vs. 49ers order book above, $94 was available at the best 49ers price and about $22,000 across the top ten levels."
+    },
+    {
+      "q": "What is the liability on a lay bet?",
+      "a": "The amount you pay if the outcome you laid wins: the backer's stake times (decimal odds minus 1). Laying $100 at 2.10 carries a liability of $110."
     },
     {
       "q": "Are betting exchanges legal in the US?",
@@ -260,5 +459,28 @@
     "favicon": "dot",
     "label": 3,
     "footer": 0
-  }
+  },
+  "steps_title": "How to place a bet on an exchange",
+  "steps": [
+    {
+      "name": "Read the ladder",
+      "text": "Find the market and look at the best price on your side and the stake available at each level below it."
+    },
+    {
+      "name": "Take or post",
+      "text": "Taking fills now at the price on offer. Posting a better price puts your order on the book to wait for someone to match it."
+    },
+    {
+      "name": "Enter the stake",
+      "text": "For a back bet, the stake is your risk. For a lay, check the liability: the backer's stake times (decimal odds minus 1)."
+    },
+    {
+      "name": "Confirm the fill",
+      "text": "An order can be matched in full, in part or not at all. Cancel what is left before the game starts if you no longer want it."
+    },
+    {
+      "name": "Trade out or let it settle",
+      "text": "Close early by taking the opposite side at the current price, or hold to the result. Commission comes off net winnings."
+    }
+  ]
 }

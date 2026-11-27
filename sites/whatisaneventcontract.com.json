@@ -5,8 +5,8 @@
   "cluster": "prediction",
   "query": "what is an event contract",
   "site_name": "What Is an Event Contract",
-  "title": "What Is an Event Contract? (2026)",
-  "updated": "2026-11-18",
+  "title": "What Is an Event Contract? (2026): Definition, Types and Real Prices",
+  "updated": "2026-11-27",
   "published": "2026-11-18",
   "answer": "An event contract is a financial contract that pays a fixed amount, usually $1, if a specified event happens by a specified time, and nothing if it does not. It trades on an exchange at a price between $0 and $1 that reflects the probability of the event. In the United States, event contracts are listed by exchanges registered with the Commodity Futures Trading Commission, such as Kalshi, Polymarket US, Novig and ProphetX, and cover everything from interest rate decisions to the winner of Sunday's game.",
   "sections": [
@@ -86,6 +86,99 @@
       ]
     },
     {
+      "h2": "Real prices, read as contracts",
+      "blocks": [
+        {
+          "p": "A contract price is a probability written in cents. These are real ones: the best available price for each outcome on the public TerminalUp lines board on November 27, 2026 at 4:51 PM ET, after fees, shown the way a $1 contract is quoted. The board quotes every price as a probability, whatever kind of venue it comes from, so a price of -121 and a contract at 54.6 cents are the same thing."
+        },
+        {
+          "table": {
+            "head": [
+              "Event",
+              "Contract",
+              "Price",
+              "Same price as odds",
+              "Profit per contract if it pays"
+            ],
+            "rows": [
+              [
+                "Seahawks vs. 49ers (NFL, Nov 29)",
+                "Seahawks win",
+                "46.2 cents",
+                "+116",
+                "53.8 cents"
+              ],
+              [
+                "",
+                "49ers win",
+                "54.6 cents",
+                "-121",
+                "45.4 cents"
+              ],
+              [
+                "Torino FC vs. SS Lazio (Serie A, Nov 28)",
+                "Draw: Yes",
+                "28.4 cents",
+                "+252",
+                "71.6 cents"
+              ],
+              [
+                "",
+                "Draw: No",
+                "71.7 cents",
+                "-254",
+                "28.3 cents"
+              ],
+              [
+                "RC Deportivo vs. FC Barcelona (La Liga, Nov 29)",
+                "Barcelona win: Yes",
+                "80.2 cents",
+                "-406",
+                "19.8 cents"
+              ],
+              [
+                "",
+                "Barcelona win: No",
+                "20.0 cents",
+                "+400",
+                "80.0 cents"
+              ],
+              [
+                "Giants vs. Colts (NFL, Nov 29)",
+                "Giants -5.5",
+                "50.3 cents",
+                "-102",
+                "49.7 cents"
+              ],
+              [
+                "",
+                "Colts +5.5",
+                "50.8 cents",
+                "-104",
+                "49.2 cents"
+              ]
+            ]
+          }
+        },
+        {
+          "source": {
+            "text": "Odds by TerminalUp. Public lines board, read November 27, 2026 at 4:51 PM ET. Best available price per outcome after fees, across the venues on the board; venue names are not published. A snapshot, not a forecast and not a guarantee of fill.",
+            "label": "odds.terminalup.com/lines",
+            "url": "https://odds.terminalup.com/lines"
+          }
+        },
+        {
+          "p": "Each pair adds up to slightly more than $1.00: 100.8 cents, 100.1 cents, 100.2 cents and 101.1 cents. The excess over a dollar is the cost of trading, spread and fees together. With no costs the two sides would total exactly $1.00, because one of them must pay out."
+        },
+        {
+          "h3": "A worked trade"
+        },
+        {
+          "p": "Buy 500 Seahawks contracts at 46.2 cents and the cost is $231. If Seattle wins, the contracts settle at $1 each: $500 back, $269 profit. If Seattle loses they settle at zero and the $231 is gone. If the price rises to 60 cents before the game ends, selling returns $300, a $69 profit with no need to wait for the result."
+        }
+      ]
+    },
+    {
       "h2": "How they differ from a bet, a future and an option",
       "blocks": [
         {
@@ -156,6 +249,7 @@
   ],
   "takeaways": [
     "An event contract pays $1 if a defined event happens and $0 if not; its price is the market's probability.",
+    "Real quotes: Seahawks 46.2 cents, 49ers 54.6 cents. The pair totals 100.8 cents; the excess over $1 is the cost of trading.",
     "Contracts trade on an order book and can be sold before settlement.",
     "US venues are CFTC-designated exchanges: Kalshi, Polymarket US, Novig, ProphetX and others.",
     "Economics and politics contracts are settled law; sports contracts are contested by some states with cases pending.",
@@ -166,8 +260,16 @@
   ],
   "faq": [
     {
+      "q": "Which contract is a macroeconomic event contract?",
+      "a": "One that settles on an economic release or a policy decision, such as whether the Federal Reserve cuts rates at its next meeting. Contracts on a sports result, the weather or an award are event contracts too, but they are not macroeconomic ones."
+    },
+    {
       "q": "Is an event contract a bet?",
       "a": "Economically it is a fixed-payout position on an outcome, which is what a bet is. Legally, on CFTC-designated exchanges it is treated as a swap, and whether sports contracts are also gambling under state law is the question before the courts."
+    },
+    {
+      "q": "How much does an event contract pay?",
+      "a": "A fixed amount, usually $1, if the event happens and nothing if it does not. Bought at 46 cents, a winning contract returns $1: 54 cents of profit before fees."
     },
     {
       "q": "Who issues event contracts?",
@@ -188,6 +290,10 @@
     {
       "q": "Which exchanges list event contracts in the US?",
       "a": "Kalshi, Polymarket US, Novig, ProphetX, Crypto.com's derivatives exchange and, through partner exchanges, apps such as Robinhood. Each has its own market list and fee schedule."
+    },
+    {
+      "q": "What is the difference between an event contract and a prediction market?",
+      "a": "The prediction market is the exchange. The event contract is the thing that trades on it."
     }
   ],
   "related": [
